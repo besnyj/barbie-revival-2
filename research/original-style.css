@@ -1,0 +1,193 @@
+
+body
+{	
+	background-position:top;
+	background-attachment: scroll;
+	background-repeat : repeat-y;
+}
+
+input
+{
+	font-family : verdana, arial, san-serif; 
+	font-size : 11px;
+	font-style : normal;
+}
+TD
+{
+    FONT-FAMILY: verdana, arial, san-serif; 
+    FONT-SIZE: 11px;
+}
+ol, ul, LI
+{
+    FONT-FAMILY: verdana, arial, san-serif; 
+    FONT-SIZE: 11px;
+}
+.Backpack
+{
+    COLOR: #420169;
+    FONT-SIZE: 10px;
+}
+.BackpackBold
+{
+    COLOR: #336699;
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: bold;
+}
+.BackpackText
+{
+    BACKGROUND-COLOR: #C665FF;
+}
+.BackpackError
+{
+    COLOR: #0099ff;
+    FONT-SIZE: 12px;
+}
+
+.ScrapbookCover
+{
+    COLOR: #66cc00;
+    FONT-SIZE: 20px;
+    FONT-WEIGHT: bold;
+}
+.ScrapbookTextSm
+{
+    FONT-SIZE: 12px;
+}
+.ScrapbookTextLg
+{
+    FONT-SIZE: 16px;
+}
+.ScrapbookFooterSm
+{
+    COLOR: #3300cc;
+    FONT-SIZE: 10px;
+}
+.ScrapbookFooterLg
+{
+    COLOR: #3300cc;
+}
+.CongratulationsBold
+{
+    COLOR: #420169;
+    FONT-WEIGHT: bold;
+}
+.CalendarText
+{
+    COLOR: #330066;
+    FONT-SIZE: 13px;
+}
+.CalWeekDay
+{
+    COLOR: #ff9900;
+    FONT-SIZE: 14px;
+    FONT-WEIGHT: bolder;
+}
+.CalToday
+{
+    COLOR: #ff0000;
+    FONT-SIZE: 14px;
+    FONT-WEIGHT: bolder;
+}
+.CalPromoText
+{
+    COLOR: white;
+    FONT-SIZE: 14px;
+    FONT-WEIGHT: bolder;
+}
+.calendar {
+	font-family: verdana, arial, san-serif; 
+	font-size: 12px; 
+	color: #9933FF;
+}
+.blue {
+	font-family: verdana, arial, san-serif; 
+	color: #3399FF;
+}
+.purple {
+	font-family: verdana, arial, san-serif; 
+	color: #9933ff;
+}
+.orange {
+	font-family: verdana, arial, san-serif; 
+	color: #FF3300;
+}
+.green {
+	font-family: verdana, arial, san-serif; 
+	color: #339900;
+}
+.blue {
+	font-family: verdana, arial, san-serif; 
+	color: #3399FF;
+}
+.pink {
+	font-family: arial, verdana, san-serif;
+	color: #FF0099;
+}
+H1 {
+	font-family: verdana, arial, san-serif; 
+}
+
+H3 {
+	font-family: verdana, arial, san-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+H2 {
+	font-family: verdana, arial, san-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+.caption
+{
+	font-family: arial, verdana, san-serif;
+	font-size: 11px;
+}
+.bigLetter
+{
+	font-family: arial, verdana, san-serif;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 20px;
+}
+.mediumLetter
+{
+	font-family: arial, verdana, san-serif;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 18px;
+}
+
+.footergrey
+{
+	color:#999999;
+	font-family: arial, verdana, san-serif;
+	font-size: 11px;
+	font-weight: none;
+}
+
+A.BackpackIcon:active {color:"#000000"; text-decoration: none;}
+A.BackpackIcon:visited {color:"#000000"; text-decoration: none;}
+A.BackpackIcon:link {color:"#000000"; text-decoration: none;}
+A.BackpackIcon:hover {color:"#ffffff"; text-decoration: none;}
+
+A:active {color:"#3399FF";}
+A:visited {color:"#3399FF";}
+A:link {color:"#3399FF";}
+
+
+A.footerlinks:active { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #ea4498; text-decoration: none}
+A.footerlinks:visited {font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #ea4498; text-decoration: none}
+A.footerlinks:link {font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #ea4498; text-decoration: none}
+A.footerlinks:hover {font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #de1c85; text-decoration: none}
+
+A.footerlinkslegal:active { font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #ea4498; 	font-weight: bold;}
+A.footerlinkslegal:visited {font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #ea4498; 	font-weight: bold;}
+A.footerlinkslegal:link {font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #ea4498; 	font-weight: bold;}
+A.footerlinkslegal:hover {font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #de1c85; 	font-weight: bold;}
+
+#footer_links
+{
+	color: #ea4498;
+}
+

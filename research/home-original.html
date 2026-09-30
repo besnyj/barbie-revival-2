@@ -1,0 +1,811 @@
+
+
+<!-- Start of CDA rotation Script -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/global/homepageCDARotation/style.css"/>
+<script src="/global/homepageCDARotation/HompageCDA.js"></script>
+<!-- End of CDA rotation Script -->
+
+<!-- bgrndcolor="#30223d" -->    
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html>
+	<head><link rel="shortcut icon" href="http://barbie.everythinggirl.com/favicon.ico" type="image/x-icon" /><title>
+	
+			Barbie - Fun Games For Girls, Videos & Activities
+</title>
+
+		<meta name="description" content="Hi, dolls, have fab fun playing games, watching videos, playing dress-up and having makeovers. Make dress designs and have lots of pink-tastic fun with Barbie!">
+		<meta name="keywords" content="barbie, girls games, kids videos, activities, dress-up, makeover, games for girls">
+		
+		
+		
+
+		
+		<LINK REL="stylesheet" TYPE:"text/css" HREF="/includes/style.css">
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><meta http-equiv="expires" content="-1d" />
+
+		<!-- include virtual="/includes/adxml.aspx" -->
+		
+				
+		
+		<!-- BEGIN TRIGGER TAG -->
+		
+		<!--<script language="java_script" type="text/javascript" src="http://cdn.triggertag.gorillanation.com/js/triggertag.js"></script>
+		<script language="java_script" type="text/javascript">getTrigger('3711');</script>-->
+		<!-- END TRIGGER TAG -->
+
+		<script language="javascript">
+			function eComm_Redirect(){
+				var refarray = new Array();	
+				
+				refarray['fashionistas'] = "http://shop.mattel.com/family/index.jsp?categoryId=3888690";
+				refarray['Fab Girl'] = "page.html?from=infoseek";	
+				refarray['thumbelina'] = "www.google.com";
+				refarray['musketeers'] = "page.html?from=yahoo";
+				
+				//alert("document.referer = "+document.referer);
+				
+				for (var i in refarray){					
+					if (document.referrer.indexOf(i) != -1){
+						window.location.replace(refarray[i]);
+					}
+				}
+				//alert("window.opener.parent.href = "+self.opener.location);
+				//alert("window.parent.parent.location = "+window.parent.parent.location+" \n window.parent.location="+window.parent.location);
+			}
+		</script>
+
+		<!--<script language="JavaScript" type="text/javascript" src="http://stagematteltracker.mattel.net/tracker.aspx?site=barbie"></script>-->
+		<script language="JavaScript" type="text/javascript" src="http://tracker.mattel.com/tracker.aspx?site=barbie"></script>
+		<script language="javascript1.1" type="text/javascript" src="/includes/centeredPopup.js"></script>
+		<script LANGUAGE="JavaScript" type="text/javascript" src="/includes/swfobject.js"></script>
+		<script language="javascript" type="text/javascript" src="/includes/flashdetection/config.js"></script>
+		<script language="VBScript" type="text/vbscript" src="/includes/flashDetection/VBGetSwfVer_VB.js"></script>
+		<script language="javascript1.1" type="text/javascript" src="/includes/flashdetection/main.js"></script>		
+
+		<script type="text/javascript" src="/includes/FlashMovie.js"></script>
+		
+		<script language="javascript">
+		
+			//--------------------- Site Nav -----------------
+			var flashvars = {};
+			
+			var params = {
+				wmode: "transparent",
+				menu: "false"
+			};
+			
+			var attributes1 = {
+				id: "siteNav",
+				name: "siteNav"
+			};
+			
+			swfobject.embedSWF("/global/barbie_nav_new.swf?cat=homepage", "siteNav", "820", "100", "9", "expressInstall.swf", flashvars, params, attributes1);
+			
+			//--------------------- Shop Btn -----------------
+			
+			var attributes2 = {
+				id: "shopBtn",
+				name: "shopBtn"
+			};
+			
+			swfobject.embedSWF("/global/shop_barbie_btn.swf", "shopBtn", "131", "140", "9", "expressInstall.swf", flashvars, params, attributes2);
+			
+		</script>
+
+		<SCRIPT LANGUAGE="Javascript">
+			function pop(n,u,w,h,args2,x){
+				if (args2.indexOf('scrollbars=no') != -1){
+					args="width="+w+",height="+h+","+args2; 
+				}else{
+					args="width="+w+",height="+h+","+args2+",scrollbars=yes"; 
+				}
+				
+				remote=window.open(u,n,args);
+				
+				if (remote != null) {
+					if (remote.opener == null)
+					remote.opener = self;
+				}
+				
+				remote.focus();
+				
+				if (x == 1) { return remote; }
+			}
+
+			function getFlashMovieObject(movieName){
+				if (window.document[movieName]){
+					return window.document[movieName];
+				}
+				
+				if (navigator.appName.indexOf("Microsoft Internet")==-1){
+					if (document.embeds && document.embeds[movieName])
+					return document.embeds[movieName]; 
+				}else{
+					//if (navigator.appName.indexOf("Microsoft Internet")!=-1)
+					return document.getElementById(movieName);
+				}
+			}	
+					
+			function SendURLToFlash(){   // called by flash movies that have HostInfo integrated into them to talk to the database.	
+				var flashMovie=getFlashMovieObject("MainMovie");
+				flashMovie.SetVariable("/:currentURL", window.location.href);
+				flashMovie.Play()	
+			}
+		</SCRIPT>
+
+
+		<!--Includes for the NEW DHTML popup -->
+		<link rel="stylesheet" href="/includes/dhtml-popup/windowfiles/dhtmlwindow.css" type="text/css" />
+		<script type="text/javascript" src="/includes/dhtml-popup/windowfiles/dhtmlwindow.js"></script>
+		
+		<link rel="stylesheet" href="/includes/dhtml-popup/modalfiles/modal.css" type="text/css" />
+		<script type="text/javascript" src="/includes/dhtml-popup/modalfiles/modal.js"></script>
+		<!-- End of Includes for the NEW DHTML popup -->
+        
+        
+
+		<!-- MDN Global Nav -->
+		<!-- MDN Global Nav Style --> 
+        
+		<link href="http://corporate.mattel.com/mdn/css/header-25px.css" rel="stylesheet" type="text/css" /> 
+        <!--link href="/includes/css/header-25px.css" rel="stylesheet" type="text/css" /--> 
+        
+        <!--link href="http://dev.mattel.net/mdn/css/header-25-2px.css" rel="stylesheet" type="text/css" /--> 
+		
+		<!-- MDN Global Nav javascript libs. -->
+      
+		<script type="text/javascript" src="http://corporate.mattel.com/mdn/js/jquery-1.3.2.min.js"></script>
+        
+		
+		<script type="text/javascript" src="http://corporate.mattel.com/mdn/js/header-fixie.js"></script>
+		
+		<!--[if IE 6]>
+		  <script type="text/javascript" src="http://corporate.mattel.com/mdn/js/DD_belatedPNG_0.0.8a-min.js"></script>
+		<![endif]-->
+        
+      
+       
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$.getScript('http://corporate.mattel.com/mdn/js/gnav-25px.js', function() {
+				});			        		
+			});
+		</script>
+		
+		<!-- / MDN Global Nav -->
+		
+		<script src="/includes/jquery.stylish-select.js" type="text/javascript"></script>
+             
+			<script type="text/javascript">
+				$(document).ready(function()
+				{			
+				  $('#global-dropdown').sSelect(); 
+				  
+				  //.change(function(){alert('The value is: '+$('#my-dropdown').getSetSSValue())});    
+				});	
+			</script>
+		<link rel="stylesheet" type="text/css" href="/includes/stylish-select.css" />
+
+       
+         
+		<script language="javascript" type="text/javascript">
+			$(window).bind('beforeunload', function(){
+				//return '>>>>>Before You Go<<<<<<<< \n Your custom message go here';
+			});
+		</script>
+       
+		<script type="text/javascript">
+			function updateBackground(){
+				var bgcolor = new Array();
+				bgcolor[0] = "#FFFFFF";
+				bgcolor[1] = "#FFFFFF";
+				bgcolor[2] = "#FFFFFF";
+				bgcolor[3] = "#FFFFFF";
+				bgcolor[4] = "#FFFFFF";
+				bgcolor[5] = "#FFFFFF";
+				var num = Math.floor(Math.random()*6);	
+			
+				if (document.body){		
+					document.bgColor = bgcolor[num];
+					num = num+1;		
+					document.body.background = "/images/header/bgrnd-vote-"+num+".jpg";
+				}
+			}			
+		</script>
+	</head>
+	
+	<!-- Code for BACKGROUND -->	
+	
+		<BODY id="bodytag" bgcolor="#ffffff" bottommargin="0" leftmargin="0" topmargin="0" rightmargin="5" marginheight="0" marginwidth="0">
+		<div id="headerimgs">
+			<div id="headerimg1" class="headerimg"></div>
+			<div id="headerimg2" class="headerimg"></div>
+		</div>
+	
+	
+	<!-- End of Code for BACKGROUND -->
+   <!-- _TealiumTagPageView Include starts here for Tealium Tag -->
+
+<!-- Added _TealiumTagPageView partial view for Tealium Tag Implementation. The below script will capture all the UDO variables.
+Added on : 20 Feb, 2013
+Added By : Praveen -->
+
+
+
+<input type="hidden" id="hdnpageId" value="/index.aspx" />
+<input type="hidden" id="hdnplatform" value="Desktop" />
+<input type="hidden" id="hdncountry" value="United States" />
+<input type="hidden" id="hdnlanguage" value="English" />
+<input type="hidden" id="hdnsiteSection" value="" />
+<input type="hidden" id="hdnsubType" value="" />
+<input type="hidden" id="hdnuserIPAddres" value="207.241.226.239" />
+<input type="hidden" id="hdnPageType" value="Home" />
+
+
+<script  type="text/javascript" language="javascript" >
+
+    var utag_data = {
+        page_id: "/index.aspx",                                           // Dynamically Retrieved
+        category_id: "",                                    // Dynamically Retrieved
+        search_term: "",                                  // Dynamically Retrieved
+        search_results: "",                               // NA for Hotwheels       
+        site_country_attr3: "United States",                     //Dynamically Retrieved
+        site_region_attr4: "",   //Hardcoded
+        platform_attr5: "Desktop",             // Dynamically Retrieved            
+        language_attr7: "English",                              // Dynamically Retrieved
+        site_section_attr8: "",                         // Dynamically Retrieved
+        page_name_attr9: document.title,                         //  Dynamically Retrieved
+        page_type_attr10: "Home",                         //  Dynamically Retrieved
+        page_subtype_attr11: "",                   //  Dynamically Retrieved
+        referring_url_attr12: "",                    //  Dynamically Retrieved
+        requested_url_attr13: "http://www.barbie.com/index.aspx",                    //  Dynamically Retrieved
+        ip_address_attr14: "207.241.226.239",                          //  Dynamically Retrieved       
+        number_reviews_attr27: "",                 //NA for Hotwheels
+        average_review_rating_attr28: "",     //NA for Hotwheels
+        search_type_attr29: "",                         //NA for Hotwheels
+        search_refinement_attr30: "",             //NA for Hotwheels 
+        registration_id: "",
+        login_most_recent_date_attr38: "",
+        login_site_section_attr40: "",
+        registration_date_attr37: "",
+        link_url: "",
+        link_name: "",
+        event_id: "",
+        event_action_type: "",
+        event_category_id: "",
+        event_points: "",
+        event_action_attr46: "",
+        event_detail_attr47: "",
+        event_detail_sub_attr48: "",
+        event_length_attr49: "",
+        event_length_full_attr50: "",
+        tm_page_type: "Home"
+};
+
+</script>
+
+<!-- _TealiumTagPageView Include ends -->  
+
+	<script>
+		function goGlobal(){
+			var selObj = document.getElementById('global-dropdown');
+			goto = selObj.options[selObj.selectedIndex].value;
+			
+			
+				goto = selObj.options[selObj.selectedIndex].value + "";		
+			
+			
+			MATTEL.tracker.Tracker.enableShortCuts();
+			Tracker.name = "None: None: Button_GoButton_" + goto;
+			Tracker.campaign = CAMPAIGN.NONE;
+			Tracker.channel = CHANNEL.NONE;
+			Tracker.contenttype = CONTENTTYPE.BUTTON;
+			Tracker.action = ACTION.CLICK;
+			Tracker.track();
+			newwin = window.open("http://"+goto, "_new");
+			
+			if (newwin != null) {
+				if (newwin.opener == null)
+				  newwin.opener = self;
+			}		
+		}
+	</script>
+
+	<style type="text/css">
+
+		/*#mdn-top-nav LI:hover UL{
+			left:400px\9;
+		}*/
+			
+	
+		#header_wrapper {
+			z-index:100;
+			position:relative;			
+		}
+		
+		#header_main {
+			background-image:url(/images/header/nav_background_new.jpg); 
+			width:990px;
+			height:210px;
+		}
+		
+		#banner {
+			padding-top:8px; 
+			height:90px; 
+			position:relative;
+		}
+		
+		#nav_holder {
+			position: absolute; 
+			z-index: 2;
+		}
+		
+		#shopBtn_holder {
+			margin-left: 863px; 
+			margin-top: -102px; 
+			position: absolute;
+		}
+		
+		#dropDown_holder {
+			width:250px;
+		}
+		
+		#dropdown_container {
+			padding-left:835px; 
+			padding-top:54px; 
+			position: absolute;
+			/*position: static;*/
+		}
+		
+		#drop{
+			font-family: verdana,arial,san-serif; font-size: 11px;
+			float:left;
+			*position:relative;
+			z-index:1000;			
+		}
+		
+		#go_btn {
+			float:left; 
+			margin-left:-12px; 
+			margin-top:-3px; 
+			position:relative; 
+			z-index:1000;
+		}
+		
+		#globe {
+			float:left; 
+			margin-left:-164px; 
+			margin-top:-6px; 
+			position:relative; 
+			z-index:1000;
+		}		
+		
+		a.goRollover {
+			display:block;
+			width:28px;
+			height:27px;
+			text-decoration:none;
+			cursor:pointer;
+			background:url("/images/header/language_dropdown/go.png");
+		}
+
+		a.goRollover:hover {
+			background-position:0px -27px;
+		}
+		
+		#banner_bgImage{
+			background-image:url(/images/shared/top_banner.gif);
+			background-repeat:no-repeat;
+			width:767px;
+			height:96px;
+			padding-top:3px;
+		}
+		
+	</style>
+	
+	<!-- HEADER CODE start - includes global nav, top banner, barbie nav -->
+	
+	<div id="header_wrapper" align="center">	
+		<div id="header_main"  align="center">
+			<div id="banner">
+	            <div id="banner_bgImage">
+                    <!-- begin ad tag -->                
+                    <script type="text/javascript">
+                        ord=Math.random()*10000000000000000;
+                        document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/mdn.barbie/homepage;category=girls;gameid=;videoid=;tile=1;dcopt=ist;sz=728x90;ord=' + ord + '?"><\/script>');
+                    </script>
+                    
+                    <noscript>
+                        <a href="http://ad.doubleclick.net/jump/mdn.barbie/homepage;category=girls;gameid=;videoid=;tile=1;sz=728x90;ord=123456789?" target="_blank" ><img src="http://ad.doubleclick.net/ad/mdn.barbie/homepage;category=girls;gameid=;videoid=;tile=1;sz=728x90;ord=123456789?" border="0" alt="" /></a>
+                    </noscript>								
+                    <!-- end ad tag -->
+                 </div>
+			</div>
+			
+			<div align="left">			
+				<div id="nav_holder">
+					<div id="siteNav"> </div>
+				</div>
+				
+				<div id="shopBtn_holder">
+					<div id="shopBtn"> </div>
+				</div>
+				
+				<div id="dropdown_container">
+					<div>
+						<img src="/images/header/language_dropdown/title.png"/>
+					</div>
+					
+					<div id="dropDown_holder">
+						<div id="drop" align="left">
+							
+								<SELECT  id="global-dropdown" name="global-dropdown">
+									<OPTION value="cn.barbie.com">&#20013;&#25991;</option>
+									<OPTION value="www.barbie.cz">&#268;eština</option>
+									<OPTION value="de.barbie.com">Deutsch</option>
+									<OPTION SELECTED value="www.barbie.com">English US</option>
+									<OPTION value="mx.barbie.com">Español - América Latina</option>
+									<OPTION value="es.barbie.com">Español - España</option>
+									<OPTION value="fr.barbie.com">Français</option>
+									<OPTION value="hr.barbie.com">Hrvatski</option>
+									<OPTION value="it.barbie.com">Italiano</option>
+									<OPTION value="www.barbie.hu">Magyar</option>
+									<OPTION value="nl.barbie.com">Nederlands</option>
+									<OPTION value="www.barbie.pl">Polski</option>
+									<OPTION value="br.barbie.com">Português - Brasil</option>
+									<OPTION value="www.mybarbie.ru">&#1056;&#1091;cc&#1082;&#1080;&#1081;</option>
+									<OPTION value="www.barbie.ro">Româna</option>
+									<OPTION value="sk.barbie.com">Sloven&#269;ina</option>
+									<OPTION value="www.barbie.si">Slovenš&#269;ina</option>
+									<OPTION value="se.barbie.com">Svenska</option>
+									<OPTION value="www.barbie.ua">&#1091;&#1082;&#1088;&#1072;&#1111;&#1085;&#1089;&#1100;&#1082;&#1072;</option>
+								</SELECT>
+							 
+							
+						</div>
+						
+						<div id="globe">
+							<img src="/images/header/language_dropdown/globe.png"/>
+						</div>
+						
+						<div id="go_btn">
+							<a class="goRollover" onClick="goGlobal()"></a>
+						</div>
+						
+					</div>
+				
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+	<!-- HEADER CODE END - includes global nav, top banner, barbie nav -->
+	
+	<!-- MAIN BODY CONTENT STSRTS HERE -->
+
+	<div id="content-main" align="center" style="z-index:10;">                 
+		<center>
+			<table border="0" cellpadding="0" cellspacing="0" align="center"  width="990">      
+				<tr>
+				<td  valign="top" align="center" width="810">                   
+					<table border="0" cellpadding="0" cellspacing="0" width="810">                 
+						
+							<tr><td align="center">								 
+						  
+						
+					<script language="javascript" type="text/javascript" src="/includes/webtrends_bb.js"></script>
+                
+                
+
+
+
+<script language="javascript" type="text/javascript">
+	MATTEL.tracker.Tracker.enableShortCuts();
+	Tracker.name = "Home";
+	Tracker.campaign = CAMPAIGN.NONE;
+	Tracker.channel = CHANNEL.HOME;
+	Tracker.contenttype = CONTENTTYPE.LANDINGPAGE;
+	Tracker.action = ACTION.VIEW;
+	
+	function trackAction(_passParams){
+		
+		console.dir(_passParams);
+		//for(_prop in _passParams)
+		//{
+			//console.log(_passParams[_prop]);
+			
+			MATTEL.tracker.Tracker.enableShortCuts();
+			/*Tracker.name = _passParams[_prop];
+			Tracker.campaign = _passParams[_prop];
+			Tracker.channel = _passParams[_prop];
+			Tracker.contenttype = _passParams[_prop];
+			Tracker.action = _passParams[_prop];*/
+			//alert("_passParams[name] = "+_passParams['name']);
+			Tracker.name = _passParams['name'];
+			Tracker.campaign = _passParams['campaign'];
+			Tracker.channel = _passParams['channel'];
+			Tracker.contenttype = _passParams['contenttype'];
+			Tracker.action = _passParams['action'];
+			Tracker.track();			
+		//}
+		
+	}
+</script>
+<!-- Heat Map Script -->
+<script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/8088.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script>
+
+	var grownupsMovie	= new FlashMovie();
+	grownupsMovie.src =  "/global/grownups/grownupsPromos.swf";
+	grownupsMovie.width	 ="725";
+	grownupsMovie.height	="180";
+	grownupsMovie.bgcolor = "#d0477b";
+	grownupsMovie.wmode = "transparent";
+	grownupsMovie.name = "grownupsPromos";
+
+/*
+	//Taken out for Homepage takeover
+	var grownupsMovie	= new FlashMovie();
+	grownupsMovie.src =  "/global/grownups/grownupsPromos.swf";
+	grownupsMovie.width	 ="470";
+	grownupsMovie.height	="180";
+	grownupsMovie.bgcolor = "#d0477b";
+	grownupsMovie.wmode = "transparent";
+	grownupsMovie.name = "grownupsPromos";
+	
+	var minipromoMovie	= new FlashMovie();
+	minipromoMovie.src ="/global/minipromos/miniPromos.swf";
+	minipromoMovie.width	="270";
+	minipromoMovie.height	="180";
+	minipromoMovie.bgcolor = "#d0477b";
+	minipromoMovie.wmode = "transparent";
+	minipromoMovie.name = "miniPromos";	
+*/	
+	var overlayPromoMovie	= new FlashMovie();
+	overlayPromoMovie.src ="/flotters/mattel_FS_float_site_600x400.swf";
+	overlayPromoMovie.width	="600";
+	overlayPromoMovie.height	="400";
+	overlayPromoMovie.bgcolor = "#d0477b";
+	overlayPromoMovie.wmode = "transparent";
+	overlayPromoMovie.name = "floterPromos";
+</script>
+
+<link media="screen" rel="stylesheet" href="/includes/colorbox/colorbox.css" />
+<script src="/includes/colorbox/jquery.colorbox.js"></script>
+
+<script language="javascript" type="text/javascript">
+	mag_height = "940px";
+		
+	if ( $.browser.msie ){
+		if($.browser.version == '7.0'){
+			mag_height = "973px";
+		}
+	}
+
+	function openMagazine()	{	
+		$.colorbox({href:"/magazine/", width:"505px", height:mag_height, iframe:true, scrolling:false, opacity:.4, overlayClose:false, transition:"elastic"});
+	}	
+</script>
+
+
+<script language="javascript" type="text/javascript">
+	function updateBackground(index) {
+		ChangeBackgroundImage(index);
+	}
+</script>
+
+
+<!--
+<style>
+	#overlay {
+		position:absolute; 
+		margin-top:46px; 
+		margin-left:76px;
+		*margin-left:-330px;
+	}
+	
+	@-moz-document url-prefix() {
+		#overlay {
+			margin-left:-330px;
+		}
+	}
+</style>
+
+<iframe src="/overlay/BLID_Overlay.html" width="702px" height="415px" id="overlay" name="overlay" scrolling="No" frameborder="0" allowtransparency="true"></iframe>
+-->
+
+
+
+<center>
+	<table cellpadding="0" cellspacing="0" width="810"> <tr> <td colspan="3">
+
+	<script type="text/javascript" src="/includes/swfaddress.js"></script>
+	
+	<div id="mainFlashContent" style="position:relative; z-index:9999">
+		<!--h1>Barbie - Fun Games for Girls, Videos & Activities</h1>
+
+		<p>Welcome to Barbie.com—a place where girls can play <a href="http://www.barbie.com/activities/fun_games/">games</a>, watch <a href="http://www.barbie.com/activities/btv/"videos</a>, and have fun with <a href="http://www.barbie.com/activities/fashion/">fashion</a>. Enjoy a wide variety of activities for girls, including makeover, dress up and hair salon games or hanging out in the <a href="http://www.barbie.com/activities/friends/">Barbie Bedroom</a> or with <a href="http://www.barbie.com/activities/friends/sisters-and-pets/">Barbie Sisters and Pets</a> online and think pink!</p>
+
+		<p>Barbie loves to spend time in her bedroom, where she listens and dances to music, emails friends, and watches her favorite Barbie videos online. When she's not in her room, she is often browsing through her beautiful walk-in closet. From super stylish shoes, to chic hair accessories, to glitterized fashions, you’ll have a blast with Barbie dress up.</p>
+
+		<p>On sunny days, Barbie enjoys taking a walk through her lovely Magic Garden. Filled with Barbie <a href="www.barbie.com/activities/fantasy/princess/">princess games</a> and fairy secrets and surprises, it's easy to see why the Garden is so enchanting. You'll learn how to be 'fairy fabulous' and 'princess perfect' in this magical land. </p>
+
+		<p>Whether you're playing fun games, watching videos, or hanging out with Barbie in her room, closet or garden, there is plenty to do at Barbie.com. Get fashion advice and beauty tips, and offer your own style suggestions to keep Barbie looking her best. Let’s have some fun! </p>
+  
+		<p><a href="http://www.barbie.com/activities/fun_games/">Barbie Games</a> | <a href="http://www.barbie.com/activities/btv/">Barbie Videos</a> | <a href="http://www.barbie.com/activities/fashion/">Dress-up and Makeover Games</a> | <a href="http://www.barbie.com/activities/friends/">Barbie Sisters and Friends</a> | <a href="http://www.barbie.com/activities/fantasy/">Princess and Fairy Games</a>  | <a href="http://www.barbie.com/activities/fashion/barbie-design-play/">Barbie WoW</a> | <a href="http://dreamhouse.barbie.com/en-US/">Barbie Life in the Dreamhouse</a> | <a href="http://icanbe.barbie.com/en_us/index.html">I Can Be</a></p-->
+		
+		<h1>Barbie - Fun Games for Girls, Videos & Activities</h1>
+
+		<p>Calling all fab dolls! Join Barbie and friends and play <a href="http://www.barbie.com/activities/fun_games/">games for girls</a>, watch <a href="http://www.barbie.com/activities/btv/">Barbie Videos</a>, and dress up with the glam-tastic <a href="http://www.barbie.com/activities/fashion/">Barbie fashion</a>. Enjoy a wide variety of activities for girls, including dress up games, makeover activities, hair styling and hair salon games. Hang out in the <a href="http://www.barbie.com/activities/friends/">Barbie Bedroom</a> or with <a href="http://www.barbie.com/activities/friends/sisters-and-pets/">Barbie Sisters and Pets</a> online and think pink!</p>
+
+		<p>Barbie loves to spend time in her bedroom, where she listens and dances to music, emails friends, and watches her favorite Barbie videos online. When she's not in her room, she often browses through her beautiful walk-in closet. From super stylish shoes, to chic hair accessories, to glitter-ized fashions, you’ll have a blast with Barbie dress up.</p>
+
+		<p>On sunny days, Barbie enjoys taking a walk through her lovely Magic Garden. Filled with Barbie <a href="www.barbie.com/activities/fantasy/princess/">princess games</a>, fairy secrets and surprises, it's easy to see why the Garden is so enchanting! You'll learn how to be 'fairy fabulous' and 'princess perfect' in this magical land. </p>
+
+		<p>Whether you're playing fun games, watching videos, or hanging out with Barbie in her room, closet or garden, there is plenty to do at Barbie.com. Get fashion advice and beauty tips, and offer your own style suggestions to keep Barbie looking her best. Let’s have some fun! </p>
+		 
+		<p><a href="http://www.barbie.com/activities/fun_games/">Barbie Games</a> | <a href="http://www.barbie.com/activities/btv/">Barbie Videos</a> | <a href="http://www.barbie.com/activities/fashion/">Dress-up and Makeover Games</a> | <a href="http://www.barbie.com/activities/friends/">Barbie Sisters and Friends</a> | <a href="http://www.barbie.com/activities/fantasy/">Princess and Fairy Games</a> | <a href="http://www.barbie.com/activities/fashion/barbie-design-play/">Barbie WOW</a> | <a href="http://dreamhouse.barbie.com/en-US/">Barbie Life in the Dreamhouse</a> | <a href="http://icanbe.barbie.com/en_us/index.html"> I Can Be</a> | <a href="http://www.barbie.com/princess-popstar/">The Princess & the Popstar</a></p>		
+	</div>
+
+
+	<script>
+		
+		//swfobject.embedSWF('/global/barbie_homepage.swf', 'mainFlashContent', '810', '520', '10', '/includes/expressinstall.swf', {domain: '*'}, {allowscriptaccess: 'always', menu: 'false', wmode: 'transparent', bgcolor: '#d0477b'}, {id: 'main'});
+		swfobject.embedSWF('/global/homepageCDARotation/HomeCDA.swf', 'mainFlashContent', '910', '520', '10', '/includes/expressinstall.swf', {domain: '*'}, {allowscriptaccess: 'always', menu: 'false', wmode: 'transparent', bgcolor: '#d0477b'}, {id: 'main'});
+		
+		if(document.getElementById("mainFlashContent").innerHTML != '')
+		{
+			//document.getElementById("overlay").
+		}
+		try{
+			if(document.getElementById("overylay").getElementsById("swf_holder").innerHTML.length == 0)
+				document.getElementById("overlay").style.display = "none";
+		}catch(error){
+			console.error(error.message);
+		}
+	</script>
+
+	
+	</noscript><br><br> </td> </tr>	
+	
+	<tr> 
+	<td valign="top" align="left" width="70"><img src="/images/shim.gif" width="70" height="1"> </td>
+	<td valign="top" align="center">
+		<script language="Javascript">
+			grownupsMovie.write();
+		</script>
+	</td>
+	
+	<!--
+		Taken out for Homepage takeovers
+		<td valign="top" align="left" width="470">
+			<script language="Javascript">
+				grownupsMovie.write();
+			</script>
+		</td>	 
+		<td valign="top" align="left" width="280"><img src="/images/shim.gif" width="10" height="1">
+			<script language="Javascript">
+				minipromoMovie.write();
+			</script></td>	
+		
+		<td valign="top" align="left" width="60"><img src="/images/shim.gif" width="60" height="1"> </td>
+	-->
+	
+	 </tr>
+	</table>
+	
+</center>
+
+<!-- begin ad tag (tile=3) -->
+
+<script type="text/javascript">
+
+	//<![CDATA[
+
+	//ord=Math.random()*10000000000000000;
+
+	document.write('<script type="text/javascript" src="https://ad.doubleclick.net/adj/mdn.barbie/homepage;category=girls;tile=3;sz=1000x1000;ord=' + ord + '?"><\/script>');
+
+	//]]>
+
+</script>
+  
+<noscript><a href="https://ad.doubleclick.net/jump/mdn.barbie/homepage;category=girls;tile=3;sz=1000x1000;ord=123456789?" target="_blank" ><img src="https://ad.doubleclick.net/ad/mdn.barbie/homepage;category=girls;tile=3;sz=1000x1000;ord=123456789?" border="0" alt="" /></a></noscript>
+
+<!-- end ad tag -->
+
+
+<br>
+	            
+            <!-- This TABLE end is for the MAIN content. anything in the MAIN content window should be ablve this line.-->
+		</td></tr></table>
+    </td>
+	
+
+                <!-- This TD is for the sky scraper AD unit. -->
+
+<td height="640"></td>
+<td width="0" valign="top" align="left"> <img src="/images/shim.gif" width="0" height="18"></td>
+</table>
+
+				<div id="footer_links">
+					<img src="/images/shim.gif" width="1" height="1"> 
+					<A href="/sitemap.aspx"  class="footerlinks">Site Map</A>&nbsp;|&nbsp;<a target="_top" href="javascript:pop( 'Press','/interstitial_pressmedia.aspx?url=barbie_press',450,360,'scrollbars=no,left=0,top=150','null' )"  class="footerlinks">Press</a>&nbsp;|&nbsp;<a target="_blank" href="http://corporate.mattel.com/privacy-policy.aspx"  class="footerlinks"><font style="font-weight: bold;">New</font> Privacy Statement</a>&nbsp;|&nbsp;<a class="footerlinks" target="_blank" href="http://corporate.mattel.com/global/terms-and-conditions.aspx" target="_blank"><font style="font-weight: bold;">Updated</font> Terms & Conditions</a><br>
+					<span class="footergrey">&nbsp;&copy; 2013 Mattel, Inc. All Rights Reserved.</span><br>
+				</div>
+	</td></tr>		
+	<tr><td colspan="2"><img src="/images/shim.gif" width=1 height=25></td></tr>
+	</table>	
+	
+</td>    
+  </tr>
+</table>
+
+
+
+<!--_UtagJS Include starts hear for Tealium Tag -->
+<!--Added _UtagJS partial view for Tealium Tag Implementation to include utag.js header in all the pages just after the <body> tag
+Added on : 20 Feb, 2013
+Added By : Praveen -->
+
+
+
+
+<script type="text/javascript">
+    (function (a, b, c, d) {
+        a = '//tags.tiqcdn.com/utag/mattel/barbie/prod/utag.js';
+        b = document; c = 'script'; d = b.createElement(c); d.src = a; d.type = 'text/java' + c; d.async = true;
+        a = b.getElementsByTagName(c)[0]; a.parentNode.insertBefore(d, a);
+    })();
+</script>
+<script type="text/javascript" src="/includes/tealiumtag.js"></script>
+<!-- _UtagJS Include ends -->
+</body>
+</html>
+
+<style type="text/css">
+
+			
+	#mdn-hd{
+		z-index:999;
+	}
+	#mdn-top-nav #nav-our-sites:hover ul{ /* Display the dropdown on hover */
+		left:-300px\9; /* Bring back on-screen when needed */
+	}
+	#footer_links {
+		color: #ea4498;
+	}
+	
+	a.footerlinks:link {
+		color: #ea4498;
+	}
+	
+	a.footerlinks:hover {
+		color: #ea4498;
+	}
+	
+	a.footerlinks:visited {
+		color: #ea4498;
+	}	
+	.footergrey {
+		color: #999999;
+	}
+	body [style]{
+		background-repeat:no-repeat !important;
+	}
+	#bodytag{
+		background-repeat:no-repeat !important;
+	}
+</style>
