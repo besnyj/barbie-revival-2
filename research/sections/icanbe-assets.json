@@ -1,8 +1,8 @@
 {
   "source": "http://icanbe.barbie.com/en_US/index.html (page source captured June 28, 2013)",
   "archive_root": "public/_original/icanbe.barbie.com",
-  "status": "June 2013 stylesheet retrieved and 30 of the 50 homepage HTML image references recovered. Twenty image URLs remain unavailable after direct replay retries; see this source list and the local archive tree before treating the page as complete.",
-  "recovered": 30,
+  "status": "June 2013 stylesheet retrieved and 35 of the 50 homepage HTML image references recovered. Fifteen image URLs remain unavailable after direct replay retries; see this source list and the local archive tree before treating the page as complete.",
+  "recovered": 35,
   "expected_homepage_image_references": 50,
   "original_stylesheet": "/resources/css/style.css",
   "required": [
