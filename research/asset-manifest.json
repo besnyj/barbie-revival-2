@@ -122,32 +122,32 @@
   {
     "original": "http://www.barbie.com/images/header/language_dropdown/title.png",
     "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/header/language_dropdown/title.png",
-    "resolved": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/header/language_dropdown/title.png",
+    "resolved": "https://web.archive.org/web/20130704143853id_/http://www.barbie.com/images/header/language_dropdown/title.png",
     "local": "public/images/header/language_dropdown/title.png",
-    "ok": false,
-    "bytes": 0,
-    "sha256": null,
-    "error": "curl: (7) Failed to connect to web.archive.org port 443 after 188 ms: Couldn't connect to server"
+    "ok": true,
+    "bytes": 3300,
+    "sha256": "21c7aac62ff19e376a560db6250e50cd815c03f47cbe13a9c4c7517efa7b2748",
+    "error": null
   },
   {
     "original": "http://www.barbie.com/images/header/language_dropdown/globe.png",
     "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/header/language_dropdown/globe.png",
-    "resolved": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/header/language_dropdown/globe.png",
+    "resolved": "https://web.archive.org/web/20130704143854id_/http://www.barbie.com/images/header/language_dropdown/globe.png",
     "local": "public/images/header/language_dropdown/globe.png",
-    "ok": false,
-    "bytes": 0,
-    "sha256": null,
-    "error": "curl: (7) Failed to connect to web.archive.org port 443 after 183 ms: Couldn't connect to server"
+    "ok": true,
+    "bytes": 5340,
+    "sha256": "3e8530b0b12f81abd7a9ce3d335d7217308814c28eb6523f1dbda1ecfde1301b",
+    "error": null
   },
   {
     "original": "http://www.barbie.com/images/header/language_dropdown/go.png",
     "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/header/language_dropdown/go.png",
-    "resolved": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/header/language_dropdown/go.png",
+    "resolved": "https://web.archive.org/web/20130704143852id_/http://www.barbie.com/images/header/language_dropdown/go.png",
     "local": "public/images/header/language_dropdown/go.png",
-    "ok": false,
-    "bytes": 0,
-    "sha256": null,
-    "error": "curl: (7) Failed to connect to web.archive.org port 443 after 195 ms: Couldn't connect to server"
+    "ok": true,
+    "bytes": 3738,
+    "sha256": "f4b3b470295d345094cb1f90115b047c0835739d10be79f7b07b5dc9e3a0b67d",
+    "error": null
   },
   {
     "original": "http://www.barbie.com/global/barbie_nav_new.swf?cat=homepage",
@@ -167,6 +167,216 @@
     "ok": true,
     "bytes": 4624,
     "sha256": "39b054eee3021d5321b044a50bf99e354cf44b0728ef31fadc99e1932bcbb4cf",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/global/grownups/promo_1.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/global/grownups/promo_1.swf",
+    "resolved": "https://web.archive.org/web/20120220003845id_/http://www.barbie.com/global/grownups/promo_1.swf",
+    "local": "public/global/grownups/promo_1.swf",
+    "ok": true,
+    "bytes": 11595,
+    "sha256": "d9ae8a225094f0ec1f82ca7890504e677456d83c0c290f9f342e2785756ba0ba",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/global/grownups/promo_2.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/global/grownups/promo_2.swf",
+    "resolved": "https://web.archive.org/web/20130120080532id_/http://www.barbie.com/global/grownups/promo_2.swf",
+    "local": "public/global/grownups/promo_2.swf",
+    "ok": true,
+    "bytes": 12690,
+    "sha256": "3963f337528c0f77b40661c0863ffcd405469585df2b5e93ec100a78857ca75c",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/global/grownups/promo_3.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/global/grownups/promo_3.swf",
+    "resolved": "https://web.archive.org/web/20130120080543id_/http://www.barbie.com/global/grownups/promo_3.swf",
+    "local": "public/global/grownups/promo_3.swf",
+    "ok": true,
+    "bytes": 10073,
+    "sha256": "d93e15facca1372a289871831cd0d1e8cd82e5f546ce9c5933a5e0e8d33255a8",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/includes/stylish-select.css",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/includes/stylish-select.css",
+    "resolved": "https://web.archive.org/web/20130704143849id_/http://www.barbie.com/includes/stylish-select.css",
+    "local": "public/includes/stylish-select.css",
+    "ok": true,
+    "bytes": 2699,
+    "sha256": "3fcdc3390eb9ef20104f51076b5ea284c028e7d2cb9757a0536f4ff5e9357b84",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/images/header/barbiebg.jpg",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/header/barbiebg.jpg",
+    "resolved": "https://web.archive.org/web/20130724094622id_/http://www.barbie.com/images/header/barbiebg.jpg",
+    "local": "public/images/header/barbiebg.jpg",
+    "ok": true,
+    "bytes": 24692,
+    "sha256": "12566ec4bf34bdc3b04de4486b29c5378a924d583c5dfe9e99a3b08c783f8590",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/images/header/bgrnd-btv.jpg",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/header/bgrnd-btv.jpg",
+    "resolved": "https://web.archive.org/web/20130512134139id_/http://www.barbie.com/images/header/bgrnd-btv.jpg",
+    "local": "public/images/header/bgrnd-btv.jpg",
+    "ok": true,
+    "bytes": 68926,
+    "sha256": "296918fb17d9fc5fefe9c921862e0c16507c9ce8fe2e6157a4e79a2b39c18699",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/btv/video_bg.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/btv/video_bg.swf",
+    "resolved": "https://web.archive.org/web/20130623212258id_/http://www.barbie.com/activities/btv/video_bg.swf",
+    "local": "public/activities/btv/video_bg.swf",
+    "ok": true,
+    "bytes": 427688,
+    "sha256": "fa6ae7cf6ea8e75897a5c545b8e1a6733baf5fc7cf01ffb9877436cf1e0a4c1f",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/btv/images/agg_top.png",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/btv/images/agg_top.png",
+    "resolved": "https://web.archive.org/web/20130512133600id_/http://www.barbie.com/activities/btv/images/agg_top.png",
+    "local": "public/activities/btv/images/agg_top.png",
+    "ok": true,
+    "bytes": 14531,
+    "sha256": "6a0f1e284427ba499a3489db82cb066e26b4818ed16a6da89ac5fb9102c94312",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/btv/images/agg_center.png",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/btv/images/agg_center.png",
+    "resolved": "https://web.archive.org/web/20130512135611id_/http://www.barbie.com/activities/btv/images/agg_center.png",
+    "local": "public/activities/btv/images/agg_center.png",
+    "ok": true,
+    "bytes": 37777,
+    "sha256": "0f79873df5aae82eb9c3e36a3e8b119abd3f8974840b521285e53d210a43cac9",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/btv/images/agg_bottom.jpg",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/btv/images/agg_bottom.jpg",
+    "resolved": "https://web.archive.org/web/20130512132821id_/http://www.barbie.com/activities/btv/images/agg_bottom.jpg",
+    "local": "public/activities/btv/images/agg_bottom.jpg",
+    "ok": true,
+    "bytes": 6252,
+    "sha256": "aa4f74d81253bb567fcff15faff684292df8273b67779ff4654133c1be0dc09b",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/btv/images/videos_tab.png",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/btv/images/videos_tab.png",
+    "resolved": "https://web.archive.org/web/20130512144148id_/http://www.barbie.com/activities/btv/images/videos_tab.png",
+    "local": "public/activities/btv/images/videos_tab.png",
+    "ok": true,
+    "bytes": 7127,
+    "sha256": "e97581b4c57e6d700a6c0187576e2c7ed3f148e7cf82de298f9e8e9267439ccd",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/btv/images/footer.jpg",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/btv/images/footer.jpg",
+    "resolved": "https://web.archive.org/web/20130512140212id_/http://www.barbie.com/activities/btv/images/footer.jpg",
+    "local": "public/activities/btv/images/footer.jpg",
+    "ok": true,
+    "bytes": 39143,
+    "sha256": "75229bcfb7538c75f298515bf08ea50675e965aafdfb02fbb478aaa823a46c7c",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/images/barbie_refresh/agg_thumbBG.png",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/barbie_refresh/agg_thumbBG.png",
+    "resolved": "https://web.archive.org/web/20130512143241id_/http://www.barbie.com/images/barbie_refresh/agg_thumbBG.png",
+    "local": "public/images/barbie_refresh/agg_thumbBG.png",
+    "ok": true,
+    "bytes": 3891,
+    "sha256": "373851f53475d6296c077b2afce4fe87a8333ef531f2de81333b6d903e8618c6",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/images/barbie_refresh/agg_thumbBG_hover.png",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/barbie_refresh/agg_thumbBG_hover.png",
+    "resolved": "https://web.archive.org/web/20130512144441id_/http://www.barbie.com/images/barbie_refresh/agg_thumbBG_hover.png",
+    "local": "public/images/barbie_refresh/agg_thumbBG_hover.png",
+    "ok": true,
+    "bytes": 4780,
+    "sha256": "3321061aa5b487aad5f4bd45ffee0ffb69f024bce448e8c72b43120e40cd6ede",
+    "error": null
+  },
+  {
+    "original": "http://mediaservice.mirror-image.com/playlists/lafc94ec2f404.json",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://mediaservice.mirror-image.com/playlists/lafc94ec2f404.json",
+    "resolved": "https://web.archive.org/web/20130628161553id_/http://mediaservice.mirror-image.com/playlists/lafc94ec2f404.json",
+    "local": "public/_original/mediaservice.mirror-image.com/playlists/lafc94ec2f404.json",
+    "ok": false,
+    "bytes": 4674,
+    "sha256": null,
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/fashion/fashioncloset_landing.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fashion/fashioncloset_landing.swf",
+    "resolved": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fashion/fashioncloset_landing.swf",
+    "local": "public/activities/fashion/fashioncloset_landing.swf",
+    "ok": false,
+    "bytes": 0,
+    "sha256": null,
+    "error": "curl: (7) Failed to connect to web.archive.org port 443 after 192 ms: Couldn't connect to server\ncurl: (7) Failed to connect to web.archive.org port 443 after 178 ms: Couldn't connect to server\ncurl: (7) Failed to connect to web.archive.org port 443 after 193 ms: Couldn't connect to server"
+  },
+  {
+    "original": "http://www.barbie.com/activities/friends/friendsbedroom_landing.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/friends/friendsbedroom_landing.swf",
+    "resolved": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/friends/friendsbedroom_landing.swf",
+    "local": "public/activities/friends/friendsbedroom_landing.swf",
+    "ok": false,
+    "bytes": 0,
+    "sha256": null,
+    "error": "curl: (7) Failed to connect to web.archive.org port 443 after 191 ms: Couldn't connect to server\ncurl: (7) Failed to connect to web.archive.org port 443 after 180 ms: Couldn't connect to server\ncurl: (7) Failed to connect to web.archive.org port 443 after 183 ms: Couldn't connect to server"
+  },
+  {
+    "original": "http://www.barbie.com/images/shared/bgrnd_activities.gif",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/shared/bgrnd_activities.gif",
+    "resolved": "https://web.archive.org/web/20130726231533id_/http://www.barbie.com/images/shared/bgrnd_activities.gif",
+    "local": "public/images/shared/bgrnd_activities.gif",
+    "ok": true,
+    "bytes": 1690,
+    "sha256": "c1f5970569fe7975f481f43ccb0a690b56e2c5b64212c3a9f9d7bb11ba72a0da",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/fashion/fashioncloset_BarbieAnim.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fashion/fashioncloset_BarbieAnim.swf",
+    "resolved": "https://web.archive.org/web/20140122054615id_/http://www.barbie.com/activities/fashion/fashioncloset_BarbieAnim.swf",
+    "local": "public/activities/fashion/fashioncloset_BarbieAnim.swf",
+    "ok": true,
+    "bytes": 45032,
+    "sha256": "8cadba5eed50412c189c8801a2ce1dabbfa96a48931b5a199be5df44526c4352",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/friends/friendsbedroom_BarbieAnim.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/friends/friendsbedroom_BarbieAnim.swf",
+    "resolved": "https://web.archive.org/web/20140122054625id_/http://www.barbie.com/activities/friends/friendsbedroom_BarbieAnim.swf",
+    "local": "public/activities/friends/friendsbedroom_BarbieAnim.swf",
+    "ok": true,
+    "bytes": 40279,
+    "sha256": "b1057e5b3b678890e6e2286ec2252c5bfd566bdc4c4a2cfb09a7c4a3c4590410",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/images/header/language_dropdown/bg.png",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/header/language_dropdown/bg.png",
+    "resolved": "https://web.archive.org/web/20130622113259id_/http://www.barbie.com/images/header/language_dropdown/bg.png",
+    "local": "public/images/header/language_dropdown/bg.png",
+    "ok": true,
+    "bytes": 3731,
+    "sha256": "039c67e7de97893241123ca2ba0bf37aace9f56876fe40e20884527f18c6d4ec",
     "error": null
   }
 ]

@@ -1,0 +1,21 @@
+{
+  "source": "http://icanbe.barbie.com/en_US/index.html (page source captured June 28, 2013)",
+  "archive_root": "public/_original/icanbe.barbie.com",
+  "status": "June 2013 stylesheet retrieved and 30 of the 50 homepage HTML image references recovered. Twenty image URLs remain unavailable after direct replay retries; see this source list and the local archive tree before treating the page as complete.",
+  "recovered": 30,
+  "expected_homepage_image_references": 50,
+  "original_stylesheet": "/resources/css/style.css",
+  "required": [
+    "/resources/img/logo-barbie.gif",
+    "/resources/img/logo-i-can-be.gif",
+    "/resources/img/nav/btn-careers.png",
+    "/resources/img/nav/btn-games.png",
+    "/resources/img/nav/btn-videos.png",
+    "/resources/img/nav/btn-dolls.png",
+    "/en_US/Images/background_pv2_tcm107-2760.jpg",
+    "/en_US/Images/background_tcm107-4346.jpg",
+    "/en_US/Images/background_tcm107-2764.jpg",
+    "/en_US/Images/background_tcm107-1266.jpg",
+    "/en_US/Images/ICB_Home_LowerLeft_promo_Ballerina_tcm107-49994.jpg"
+  ]
+}

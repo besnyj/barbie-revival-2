@@ -15,7 +15,7 @@ def recover(path):
     target = ROOT / 'public' / relative
     target.parent.mkdir(parents=True, exist_ok=True)
     url = f'https://web.archive.org/web/{STAMP}id_/{original}'
-    result = subprocess.run(['curl', '-L', '--retry', '1', '--max-time', '50', '-sS', '-w', '%{http_code}\n%{url_effective}', url, '-o', str(target)], capture_output=True, text=True)
+    result = subprocess.run(['curl', '-L', '--retry', '2', '--retry-all-errors', '--max-time', '40', '-sS', '-w', '%{http_code}\n%{url_effective}', url, '-o', str(target)], capture_output=True, text=True)
     lines = result.stdout.splitlines()
     data = target.read_bytes() if target.exists() else b''
     valid = result.returncode == 0 and lines and lines[0] == '200' and bool(data)
@@ -28,7 +28,10 @@ def recover(path):
     return entry
 
 if __name__ == '__main__':
-    entries = list(concurrent.futures.ThreadPoolExecutor(max_workers=5).map(recover, sys.argv[1:]))
+    paths = sys.argv[1:]
+    if paths and paths[0] == '--list':
+        paths = pathlib.Path(paths[1]).read_text().splitlines()
+    entries = list(concurrent.futures.ThreadPoolExecutor(max_workers=2).map(recover, paths))
     manifest = ROOT / 'research' / 'asset-manifest.json'
     previous = json.loads(manifest.read_text()) if manifest.exists() else []
     merged = {e['original']:e for e in previous + entries}

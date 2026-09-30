@@ -1,0 +1,289 @@
+[
+  {
+    "path": "/my-dreamhouse/",
+    "title": "My Dreamhouse",
+    "source": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/my-dreamhouse/",
+    "resolved": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/my-dreamhouse/",
+    "research": "research/details/4d70892c96f0.html",
+    "recovered": false
+  },
+  {
+    "path": "/activities/friends/mega-bloks-build-n-style/",
+    "title": "Build 'N Style!",
+    "source": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/friends/mega-bloks-build-n-style/",
+    "resolved": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/friends/mega-bloks-build-n-style/",
+    "research": "research/details/cd3618aeffa1.html",
+    "recovered": false
+  },
+  {
+    "path": "/activities/fun_games/moregames/pink-shoes-ballerina/",
+    "title": "Tutu Star",
+    "source": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fun_games/moregames/pink-shoes-ballerina/",
+    "resolved": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fun_games/moregames/pink-shoes-ballerina/",
+    "research": "research/details/1219ebceb794.html",
+    "recovered": false
+  },
+  {
+    "path": "/princess-popstar/games/",
+    "title": "Rock 'n Harmony",
+    "source": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/princess-popstar/games/",
+    "resolved": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/princess-popstar/games/",
+    "research": "research/details/d960f9c28ed5.html",
+    "recovered": false
+  },
+  {
+    "path": "/activities/fashion/barbie-design-play/",
+    "title": "Barbie Design Studio",
+    "source": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fashion/barbie-design-play/",
+    "resolved": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fashion/barbie-design-play/",
+    "research": "research/details/8b2081c3268e.html",
+    "recovered": false
+  },
+  {
+    "path": "/dolls-of-the-world/",
+    "title": "Wildlife Shutter Snapper",
+    "source": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/dolls-of-the-world/",
+    "resolved": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/dolls-of-the-world/",
+    "research": "research/details/5922617afa89.html",
+    "recovered": false
+  },
+  {
+    "path": "/activities/fun_games/moregames/barbie-race-to-the-dreamhouse/",
+    "title": "Race to The Barbie Dreamhouse",
+    "source": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fun_games/moregames/barbie-race-to-the-dreamhouse/",
+    "resolved": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fun_games/moregames/barbie-race-to-the-dreamhouse/",
+    "research": "research/details/f05113265dec.html",
+    "recovered": false
+  },
+  {
+    "path": "/mermaid-tale-2/photofun.aspx",
+    "title": "Splashy Snapshots",
+    "source": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/mermaid-tale-2/photofun.aspx",
+    "resolved": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/mermaid-tale-2/photofun.aspx",
+    "research": "research/details/acf8fa7fbbba.html",
+    "recovered": false
+  },
+  {
+    "path": "/princess-charm-school/",
+    "title": "Princess Charm School Games",
+    "source": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/princess-charm-school/",
+    "resolved": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/princess-charm-school/",
+    "research": "research/details/366b557bb64a.html",
+    "recovered": false
+  },
+  {
+    "path": "/mermaid-tale-2/games.aspx",
+    "title": "Star Surfer Girl",
+    "source": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/mermaid-tale-2/games.aspx",
+    "resolved": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/mermaid-tale-2/games.aspx",
+    "research": "research/details/187f39cc96c5.html",
+    "recovered": false
+  },
+  {
+    "path": "/bike-game/index.aspx",
+    "title": "Bike Stylin'Ride",
+    "source": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/bike-game/index.aspx",
+    "resolved": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/bike-game/index.aspx",
+    "research": "research/details/15cc2481669f.html",
+    "recovered": false
+  },
+  {
+    "path": "/barbie-and-ken//",
+    "title": "Barbie and Ken Hangout",
+    "source": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/barbie-and-ken//",
+    "resolved": "https://web.archive.org/web/20130627122337id_/http://www.barbie.com/barbie%2Dand%2Dken/",
+    "research": "research/details/76b37b00e261.html",
+    "recovered": true,
+    "swf": "/barbie-and-ken/SceneCreator.swf",
+    "width": 750,
+    "height": 500,
+    "classic": false,
+    "section": "friends",
+    "background": "/images/header/barbiebg.jpg"
+  },
+  {
+    "path": "/diamond-castle/index.aspx",
+    "title": "Sparkle Chain",
+    "source": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/diamond-castle/index.aspx",
+    "resolved": "https://web.archive.org/web/20130701235917id_/http://www.barbie.com/diamond-castle/index.aspx",
+    "research": "research/details/fc66ceeb1643.html",
+    "recovered": true,
+    "swf": "/diamond-castle/shell.swf",
+    "width": 760,
+    "height": 570,
+    "classic": false,
+    "section": "fantasy",
+    "background": "/images/header/barbiebg.jpg"
+  },
+  {
+    "path": "/activities/fantasy/princess/princess_dressup/",
+    "title": "Princess Dress-Up\u2122",
+    "source": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fantasy/princess/princess_dressup/",
+    "resolved": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fantasy/princess/princess_dressup/",
+    "research": "research/details/7e8f0b8e55c8.html",
+    "recovered": false
+  },
+  {
+    "path": "/activities/fantasy/princess/12dp/",
+    "title": "The 12 Dancing Princesses",
+    "source": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fantasy/princess/12dp/",
+    "resolved": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fantasy/princess/12dp/",
+    "research": "research/details/7a9028f6a566.html",
+    "recovered": false
+  },
+  {
+    "path": "/islandPrincess/index.aspx",
+    "title": "Word Search",
+    "source": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/islandPrincess/index.aspx",
+    "resolved": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/islandPrincess/index.aspx",
+    "research": "research/details/dcbf67caee5a.html",
+    "recovered": false
+  },
+  {
+    "path": "/activities/fantasy/princess/swanlake/",
+    "title": "Swan Lake",
+    "source": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fantasy/princess/swanlake/",
+    "resolved": "https://web.archive.org/web/20130629180737id_/http://www.barbie.com/activities/fantasy/princess/swanlake",
+    "research": "research/details/8a719c65e83a.html",
+    "recovered": true,
+    "swf": "/activities/fantasy/princess/swanlake/swanlake_game1.swf",
+    "width": 641,
+    "height": 326,
+    "classic": true,
+    "section": "fantasy",
+    "background": "/images/header/barbiebg.jpg"
+  },
+  {
+    "path": "/activities/fantasy/princess/pegasus/",
+    "title": "The Magic Pegasus",
+    "source": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fantasy/princess/pegasus/",
+    "resolved": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fantasy/princess/pegasus/",
+    "research": "research/details/d469475e40ce.html",
+    "recovered": false
+  },
+  {
+    "path": "/activities/fantasy/princess/musketeers/",
+    "title": "The Three Musketeers",
+    "source": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fantasy/princess/musketeers/",
+    "resolved": "https://web.archive.org/web/20130629175910id_/http://www.barbie.com/activities/fantasy/princess/musketeers",
+    "research": "research/details/08d39158896e.html",
+    "recovered": true,
+    "classic": false,
+    "section": "fantasy",
+    "background": "/images/header/barbiebg.jpg"
+  },
+  {
+    "path": "/diamond-castle/",
+    "title": "The Diamond Castle",
+    "source": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/diamond-castle/",
+    "resolved": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/diamond-castle/",
+    "research": "research/details/2c54632dfb76.html",
+    "recovered": false
+  },
+  {
+    "path": "/fashion-fairytale/",
+    "title": "A Fashion Fairytale",
+    "source": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/fashion-fairytale/",
+    "resolved": "https://web.archive.org/web/20130627121741id_/http://www.barbie.com/fashion%2Dfairytale/",
+    "research": "research/details/73d19d68b189.html",
+    "recovered": true,
+    "swf": "/fashion-fairytale/spotlight.swf",
+    "width": 990,
+    "height": 688,
+    "classic": false,
+    "section": "fantasy",
+    "background": "/images/header/bgrnd-FashionFairytale.jpg"
+  },
+  {
+    "path": "/islandprincess/",
+    "title": "The Island Princess",
+    "source": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/islandprincess/",
+    "resolved": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/islandprincess/",
+    "research": "research/details/37b0dca9cd5d.html",
+    "recovered": false
+  },
+  {
+    "path": "/activities/fantasy/princess/princess_pauper/",
+    "title": "The Princess and the Pauper",
+    "source": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fantasy/princess/princess_pauper/",
+    "resolved": "https://web.archive.org/web/20130629165442id_/http://www.barbie.com/activities/fantasy/princess/princess%5Fpauper/",
+    "research": "research/details/70046230f71c.html",
+    "recovered": true,
+    "swf": "/activities/fantasy/princess/princess_pauper/pp_main.swf",
+    "width": 641,
+    "height": 326,
+    "classic": true,
+    "section": "fantasy",
+    "background": "/images/header/barbiebg.jpg"
+  },
+  {
+    "path": "/activities/fantasy/princess/rapunzel/",
+    "title": "Rapunzel",
+    "source": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fantasy/princess/rapunzel/",
+    "resolved": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fantasy/princess/rapunzel/",
+    "research": "research/details/2310c450aaa6.html",
+    "recovered": false
+  },
+  {
+    "path": "/fairytale/",
+    "title": "Fairytale Essentials",
+    "source": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/fairytale/",
+    "resolved": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/fairytale/",
+    "research": "research/details/63b5a8719808.html",
+    "recovered": false
+  },
+  {
+    "path": "/activities/fashion/hair/",
+    "title": "Snip \u2019n Style Salon",
+    "source": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fashion/hair/",
+    "resolved": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fashion/hair/",
+    "research": "research/details/1c36a9d9abdf.html",
+    "recovered": false
+  },
+  {
+    "path": "/activities/fashion/fashionistas/",
+    "title": "Fashionistas",
+    "source": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fashion/fashionistas/",
+    "resolved": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fashion/fashionistas/",
+    "research": "research/details/48ec01fc66ca.html",
+    "recovered": false
+  },
+  {
+    "path": "/activities/fashion/makeover/makeover.aspx",
+    "title": "Superstar Makeovers",
+    "source": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fashion/makeover/makeover.aspx",
+    "resolved": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fashion/makeover/makeover.aspx",
+    "research": "research/details/1bff66d2c9b2.html",
+    "recovered": false
+  },
+  {
+    "path": "/activities/friends/sisters-and-pets/",
+    "title": "Sisters & Pets",
+    "source": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/friends/sisters-and-pets/",
+    "resolved": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/friends/sisters-and-pets/",
+    "research": "research/details/29de90b2d39d.html",
+    "recovered": false
+  },
+  {
+    "path": "/activities/friends/bmail/",
+    "title": "Barbie Email",
+    "source": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/friends/bmail/",
+    "resolved": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/friends/bmail/",
+    "research": "research/details/aa38757eaafc.html",
+    "recovered": false
+  },
+  {
+    "path": "/activities/friends/soinstyle/index.aspx",
+    "title": "So In Style",
+    "source": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/friends/soinstyle/index.aspx",
+    "resolved": "https://web.archive.org/web/20130627123534id_/http://www.barbie.com/activities/friends/soinstyle/index.aspx",
+    "research": "research/details/5c62ad1d9721.html",
+    "recovered": true,
+    "swf": "/activities/friends/soinstyle/spotlight.swf",
+    "width": 990,
+    "height": 790,
+    "classic": false,
+    "section": "friends",
+    "background": "/images/header/bgrnd-SIS.jpg"
+  }
+]

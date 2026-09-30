@@ -3,7 +3,7 @@ const origin = location.origin;
 const rewriteRules = [
   [/^https?:\/\/(?:www\.)?barbie\.com(?::80)?\//i, origin + '/'],
   [/^https?:\/\/icanbe\.barbie\.com\//i, origin + '/_original/icanbe.barbie.com/'],
-  [/^https?:\/\/([^/]+)\//i, origin + '/_external/$1/'],
+  [new RegExp('^https?://((?!'+location.host.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'(?:/|$))[^/]+)/','i'), origin + '/_external/$1/'],
 ];
 window.RufflePlayer = {config:{autoplay:'on',unmuteOverlay:'hidden',splashScreen:false,contextMenu:'off',warnOnUnsupportedContent:false,logLevel:'warn',wmode:'transparent',allowScriptAccess:true,openUrlMode:'allow',urlRewriteRules:rewriteRules,publicPath:'/vendor/ruffle/'}};
 const sections = [
@@ -49,6 +49,14 @@ window.addEventListener('DOMContentLoaded',async()=>{
     main.innerHTML='<div class="home-hero" aria-label="Barbie homepage slideshow"></div><div class="promos" aria-label="More Barbie activities"></div>';
     jobs.push(movie(main.firstElementChild,'/global/homepageCDARotation/HomeCDA.swf',910,520,{domain:'*'}));
     jobs.push(movie(main.lastElementChild,'/global/grownups/grownupsPromos.swf',725,180));
+  }else if(selected && ['fashion','friends'].includes(selected[2])){
+    const link=document.createElement('link');link.rel='stylesheet';link.href='/sections/classic.css';document.head.append(link);
+    const {renderClassic}=await import('/sections/classic.js');
+    jobs.push(renderClassic(main,selected[2],movie));
+  }else if(selected?.[2]==='btv'){
+    const link=document.createElement('link');link.rel='stylesheet';link.href='/sections/videos.css';document.head.append(link);
+    const {renderVideos}=await import('/sections/videos.js');
+    jobs.push(renderVideos(main,movie));
   }else if(path==='/sitemap.aspx'){
     main.innerHTML='<div class="site-map"><h1>Site Map</h1><ul>'+sections.map(([name,href])=>`<li><a href="${href}">${name}</a></li>`).join('')+'</ul></div>';
   }else{
