@@ -35,9 +35,11 @@ async function movie(container,url,width,height,parameters={}) {
   api.volume=0;
   return player;
 }
+const normalize = path => (path.replace(/\/+$/, '') || '/');
 window.addEventListener('DOMContentLoaded',async()=>{
-  const path=location.pathname;
-  const selected=sections.find(s=>path===s[1]);
+  const path=normalize(location.pathname);
+  if(path==='/_original/icanbe.barbie.com'){location.replace('/_original/icanbe.barbie.com/en_us/index.html');return;}
+  const selected=sections.find(s=>normalize(s[1])===path);
   const isHome=path==='/'||path==='/index.aspx'||path==='/index.html';
   const nav=document.getElementById('navigation');
   const accessible=document.createElement('div');accessible.className='fallback-links';
@@ -57,6 +59,9 @@ window.addEventListener('DOMContentLoaded',async()=>{
     const link=document.createElement('link');link.rel='stylesheet';link.href='/sections/videos.css';document.head.append(link);
     const {renderVideos}=await import('/sections/videos.js');
     jobs.push(renderVideos(main,movie));
+  }else if(selected && ['fun_games','fantasy'].includes(selected[2])){
+    const {renderCatalog}=await import('/sections/catalog.js');
+    jobs.push(renderCatalog(main,selected[2],movie));
   }else if(path==='/sitemap.aspx'){
     main.innerHTML='<div class="site-map"><h1>Site Map</h1><ul>'+sections.map(([name,href])=>`<li><a href="${href}">${name}</a></li>`).join('')+'</ul></div>';
   }else{

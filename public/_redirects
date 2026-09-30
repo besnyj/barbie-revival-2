@@ -1,6 +1,8 @@
 /index.aspx /index.html 200
 /sitemap.aspx /index.html 200
 /activities/* /index.html 200
+/_original/icanbe.barbie.com /_original/icanbe.barbie.com/en_us/index.html 302
+/_original/icanbe.barbie.com/ /_original/icanbe.barbie.com/en_us/index.html 302
 /_original/* /index.html 200
 /_external/* /index.html 200
 /restoration/* /index.html 200

@@ -1,60 +1,139 @@
 import { catalogData } from './catalog-data.js';
 
-const local = path => path.startsWith('/') ? path : `/${path}`;
+/* Faithful June 2013 catalog: original ids/classes from the archived page and
+ * BarbieRefresh.css. Only the initially rendered WebForms category was
+ * archived; other tabs keep the initial listing and say so honestly. */
+const local = path => (path.startsWith('/') || /^https?:/i.test(path)) ? path : `/${path}`;
 
 function ensureStyles() {
   if (document.querySelector('link[data-catalog-style]')) return;
   const link = document.createElement('link');
-  link.rel = 'stylesheet'; link.href = '/sections/catalog.css'; link.dataset.catalogStyle = 'true';
+  link.rel = 'stylesheet';
+  link.href = '/sections/catalog.css';
+  link.dataset.catalogStyle = 'true';
   document.head.append(link);
 }
 
-/** Render the June 2013 server-rendered catalog snapshot.
- * movie is injected by app.js so the original section hero still plays in Ruffle.
- */
+function externalHost(href) {
+  try {
+    const url = new URL(href, location.origin);
+    return url.host !== location.host;
+  } catch { return false; }
+}
+
 export async function renderCatalog(main, kind, movie) {
   ensureStyles();
   const catalog = catalogData[kind];
   if (!catalog) throw new Error(`Unknown catalog: ${kind}`);
-  main.classList.add('section-stage');
-  main.replaceChildren();
-  const hero = document.createElement('div');
-  hero.className = 'catalog-hero';
-  const listing = document.createElement('section');
-  listing.className = `catalog catalog-${kind}`;
-  listing.innerHTML = `
-    <div class="catalog-tabs" role="tablist" aria-label="${kind === 'fantasy' ? 'Fairytale' : 'Games'} categories"></div>
-    <div class="catalog-panel"><div class="catalog-grid"></div></div>`;
-  const tabList = listing.querySelector('.catalog-tabs');
-  const grid = listing.querySelector('.catalog-grid');
-  const selected = catalog.tabs.find(tab => tab.image === catalog.selected) || catalog.tabs[0];
-  const renderCards = () => {
-    grid.replaceChildren(...catalog.cards.map(card => {
-      const link = document.createElement('a');
-      link.className = 'catalog-card'; link.href = local(card.href); link.title = card.blurb;
-      link.innerHTML = `<img src="${local(card.image)}" alt="${card.title}"><span>${card.title}</span><b>${card.blurb}</b>`;
-      return link;
-    }));
-  };
-  for (const tab of catalog.tabs) {
-    const button = document.createElement('button');
-    button.type = 'button'; button.className = 'catalog-tab'; button.dataset.tab = tab.id;
-    button.setAttribute('role', 'tab'); button.setAttribute('aria-selected', String(tab === selected));
-    button.innerHTML = `<img src="${local(tab === selected ? catalog.selected : tab.image)}" alt="${tab.id}">`;
-    button.addEventListener('click', () => {
-      tabList.querySelectorAll('[aria-selected=true]').forEach(item => {
-        item.setAttribute('aria-selected', 'false');
-        const previous = catalog.tabs.find(candidate => candidate.id === item.dataset.tab);
-        if (previous) item.firstElementChild.src = local(previous.image);
-      });
-      button.setAttribute('aria-selected', 'true');
-      // WebForms returned different records after a server postback. Only the
-      // saved initial result is available, so keep it visible and label this honestly.
-      listing.dataset.unavailableCategory = tab === selected ? '' : tab.id;
-    });
-    tabList.append(button);
+  const chrome = catalog.chrome;
+  if (kind === 'fantasy') {
+    document.title = 'Barbie Fairytale - Play Fantasy Puzzle & Dress-up Games, Barbie Coloring Pages & Videos | Barbie';
+  } else {
+    document.title = 'Barbie Games - Play Fun Games for Girls - Princess Games, Baby Games, Dress-Up & Makeover Games';
   }
-  main.append(hero, listing);
-  renderCards();
-  await movie(hero, local(catalog.hero), 990, 390, {});
+  document.getElementById('background').style.backgroundImage = "url('/images/header/barbiebg.jpg')";
+  document.body.classList.add('catalog-page', `catalog-${kind}`);
+  main.textContent = '';
+  const footer = document.querySelector('.site > footer');
+  if (footer) footer.hidden = true;
+
+  const stage = document.createElement('div');
+  stage.className = 'catalog-stage';
+  stage.style.setProperty('--listing-margin', chrome.listingMarginTop);
+  stage.style.setProperty('--footer-margin', chrome.footerMarginTop);
+
+  stage.innerHTML = `
+    <div id="flcontent"><div class="catalog-hero" aria-label="${kind === 'fantasy' ? 'Fairytale' : 'Games'} hero"></div></div>
+    <div class="catalog-header-art"><img src="${local(chrome.headerArt)}" alt=""></div>
+    <div id="aggrigator_holder">
+      <div id="GamesListingContainer">
+        <div id="gameslist_UpdPnlListing">
+          <div id="gameslist_divSelectedCat" class="tabSelected ${kind === 'fantasy' ? 'princessSelected' : 'whats-hotSelected'}">
+            <img id="gameslist_imgSelectedCategory" src="${local(catalog.selected)}" alt="">
+          </div>
+          <div id="itemslistwrapper">
+            <div id="categoryWrapper"></div>
+            <div id="containerTop"></div>
+            <div class="catalog-clear"></div>
+            <div class="catalog-notice" hidden>The June 2013 archive preserved only the initially loaded category listing; the original server results for the other categories were not archived.</div>
+            <div id="itemslistContainer">
+              <div id="itemslist"></div>
+              <div class="catalog-clear"></div>
+            </div>
+            <div id="containerBottom"></div>
+            <div class="catalog-clear"></div>
+          </div>
+          <div class="catalog-clear"></div>
+        </div>
+      </div>
+    </div>
+    <div id="footer_links">
+      <a href="/sitemap.aspx" class="footerlinks">Site Map</a>&nbsp;|&nbsp;<a href="/restoration/press/" class="footerlinks">Press</a>&nbsp;|&nbsp;<a href="/restoration/privacy/" class="footerlinks"><b>New</b> Privacy Statement</a>&nbsp;|&nbsp;<a class="footerlinks" href="/restoration/terms/"><b>Updated</b> Terms &amp; Conditions</a><br>
+      <span class="footergrey">&nbsp;&copy; 2013 Mattel, Inc. All Rights Reserved.</span>
+    </div>
+    <div id="footer_bg"><img src="${local(chrome.footerArt)}" alt=""></div>`;
+
+  const itemslistContainer = stage.querySelector('#itemslistContainer');
+  itemslistContainer.style.backgroundImage = `url('${local(chrome.aggCenter)}')`;
+
+  const itemslist = stage.querySelector('#itemslist');
+  for (const card of catalog.cards) {
+    const thumb = document.createElement('div');
+    thumb.className = 'itemthumb';
+    const detail = document.createElement('div');
+    detail.className = 'itemthumbdetail';
+    const title = document.createElement('span');
+    title.textContent = card.title;
+    detail.innerHTML = `
+      <div class="itemthumbimage"><a href="${card.href}"><img src="${local(card.image)}" border="0" alt="${card.title.replace(/"/g, '&quot;')}"></a></div>
+      <div class="itemdetail"><div class="thumbitemname"><a href="${card.href}"><span></span></a></div></div>`;
+    detail.querySelector('span').replaceWith(title);
+    thumb.append(detail);
+    thumb.addEventListener('mouseover', () => {
+      thumb.classList.add('itemthumbHover');
+      title.textContent = card.blurb;
+    });
+    thumb.addEventListener('mouseout', () => {
+      thumb.classList.remove('itemthumbHover');
+      title.textContent = card.title;
+    });
+    itemslist.append(thumb);
+  }
+  itemslist.append(Object.assign(document.createElement('div'), { style: 'clear:both;height:1px;' }));
+
+  const categoryWrapper = stage.querySelector('#categoryWrapper');
+  for (const [index, tab] of catalog.tabs.entries()) {
+    const holder = document.createElement('div');
+    holder.className = index === 0 ? 'categoryButtonSel' : 'categoryButton';
+    holder.style.zIndex = String(190 - index * 10);
+    const input = document.createElement('input');
+    input.type = 'image';
+    input.src = local(tab.image);
+    input.alt = tab.id;
+    input.border = '0';
+    if (tab.hover) {
+      input.addEventListener('mouseover', () => { input.src = local(tab.hover); });
+      input.addEventListener('mouseout', () => { input.src = local(tab.image); });
+    }
+    holder.append(input);
+    if (index > 0) {
+      holder.addEventListener('click', () => {
+        stage.querySelector('.catalog-notice').hidden = false;
+        input.src = local(tab.hover || tab.image);
+      });
+    }
+    categoryWrapper.append(holder);
+  }
+
+  stage.querySelectorAll('a').forEach(link => {
+    if (externalHost(link.getAttribute('href'))) {
+      link.addEventListener('click', event => {
+        event.preventDefault();
+        window.pop();
+      });
+    }
+  });
+
+  main.append(stage);
+  await movie(stage.querySelector('.catalog-hero'), local(catalog.hero), 990, 390, {});
 }

@@ -2,14 +2,24 @@
   "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com",
   "assets": [
     {
-      "original": "/activities/fantasy/fairyTale.swf",
-      "local": "/activities/fantasy/fairyTale.swf",
-      "bytes": 309892
+      "original": "/activities/fantasy/images/fairytale_footer.jpg",
+      "local": "/activities/fantasy/images/fairytale_footer.jpg",
+      "bytes": 75098
     },
     {
-      "original": "/activities/fun_games/gamesModule.swf",
-      "local": "/activities/fun_games/gamesModule.swf",
-      "bytes": 112932
+      "original": "/activities/fantasy/images/fairytale_header.jpg",
+      "local": "/activities/fantasy/images/fairytale_header.jpg",
+      "bytes": 22875
+    },
+    {
+      "original": "/activities/fun_games/images/cord_top.png",
+      "local": "/activities/fun_games/images/cord_top.png",
+      "bytes": 2689
+    },
+    {
+      "original": "/activities/fun_games/images/footer.png",
+      "local": "/activities/fun_games/images/footer.png",
+      "bytes": 126315
     },
     {
       "original": "/images/barbie_refresh/agg_bottom.jpg",
@@ -37,14 +47,34 @@
       "bytes": 14531
     },
     {
+      "original": "/images/barbie_refresh/fairytale/agg_center.png",
+      "local": "/images/barbie_refresh/fairytale/agg_center.png",
+      "bytes": 69690
+    },
+    {
+      "original": "/images/barbie_refresh/fairytale/tab_fairies_dn.png",
+      "local": "/images/barbie_refresh/fairytale/tab_fairies_dn.png",
+      "bytes": 3693
+    },
+    {
       "original": "/images/barbie_refresh/fairytale/tab_fairies_up.png",
       "local": "/images/barbie_refresh/fairytale/tab_fairies_up.png",
       "bytes": 3950
     },
     {
+      "original": "/images/barbie_refresh/fairytale/tab_holiday_dn.png",
+      "local": "/images/barbie_refresh/fairytale/tab_holiday_dn.png",
+      "bytes": 4076
+    },
+    {
       "original": "/images/barbie_refresh/fairytale/tab_holiday_up.png",
       "local": "/images/barbie_refresh/fairytale/tab_holiday_up.png",
       "bytes": 4286
+    },
+    {
+      "original": "/images/barbie_refresh/fairytale/tab_mermaids_dn.png",
+      "local": "/images/barbie_refresh/fairytale/tab_mermaids_dn.png",
+      "bytes": 4069
     },
     {
       "original": "/images/barbie_refresh/fairytale/tab_mermaids_up.png",
@@ -62,9 +92,24 @@
       "bytes": 4147
     },
     {
+      "original": "/images/barbie_refresh/games/agg_center.png",
+      "local": "/images/barbie_refresh/games/agg_center.png",
+      "bytes": 45665
+    },
+    {
+      "original": "/images/barbie_refresh/games/tab_arcade_dn.png",
+      "local": "/images/barbie_refresh/games/tab_arcade_dn.png",
+      "bytes": 4670
+    },
+    {
       "original": "/images/barbie_refresh/games/tab_arcade_up.png",
       "local": "/images/barbie_refresh/games/tab_arcade_up.png",
       "bytes": 6599
+    },
+    {
+      "original": "/images/barbie_refresh/games/tab_fashion_dn.png",
+      "local": "/images/barbie_refresh/games/tab_fashion_dn.png",
+      "bytes": 4686
     },
     {
       "original": "/images/barbie_refresh/games/tab_fashion_up.png",
@@ -72,14 +117,29 @@
       "bytes": 6440
     },
     {
+      "original": "/images/barbie_refresh/games/tab_pets_dn.png",
+      "local": "/images/barbie_refresh/games/tab_pets_dn.png",
+      "bytes": 3734
+    },
+    {
       "original": "/images/barbie_refresh/games/tab_pets_up.png",
       "local": "/images/barbie_refresh/games/tab_pets_up.png",
       "bytes": 5244
     },
     {
+      "original": "/images/barbie_refresh/games/tab_pf_dn.png",
+      "local": "/images/barbie_refresh/games/tab_pf_dn.png",
+      "bytes": 7212
+    },
+    {
       "original": "/images/barbie_refresh/games/tab_pf_up.png",
       "local": "/images/barbie_refresh/games/tab_pf_up.png",
       "bytes": 9433
+    },
+    {
+      "original": "/images/barbie_refresh/games/tab_sporty_dn.png",
+      "local": "/images/barbie_refresh/games/tab_sporty_dn.png",
+      "bytes": 4770
     },
     {
       "original": "/images/barbie_refresh/games/tab_sporty_up.png",
@@ -100,7 +160,7 @@
       "original": "/images/games/global-tab-foreground-bar-all-selected.png",
       "local": "/images/games/global-tab-foreground-bar-all-selected.png",
       "missing": true,
-      "error": "curl exit 7"
+      "error": "archive returned HTML"
     },
     {
       "original": "/images/games/thumbs/BFriends_GamesThumb.jpg",
@@ -115,8 +175,7 @@
     {
       "original": "/images/games/thumbs/DOW_GamesThumb_Argentina.jpg",
       "local": "/images/games/thumbs/DOW_GamesThumb_Argentina.jpg",
-      "missing": true,
-      "error": "curl exit 7"
+      "bytes": 13713
     },
     {
       "original": "/images/games/thumbs/DOW_GamesThumb_Australia.jpg",
@@ -146,8 +205,7 @@
     {
       "original": "/images/games/thumbs/Fairytale_website_Callouts_12dp.jpg",
       "local": "/images/games/thumbs/Fairytale_website_Callouts_12dp.jpg",
-      "missing": true,
-      "error": "curl exit 7"
+      "bytes": 11715
     },
     {
       "original": "/images/games/thumbs/Fairytale_website_Callouts_3M.jpg",
@@ -162,20 +220,17 @@
     {
       "original": "/images/games/thumbs/Fairytale_website_Callouts_FF.jpg",
       "local": "/images/games/thumbs/Fairytale_website_Callouts_FF.jpg",
-      "missing": true,
-      "error": "curl exit 7"
+      "bytes": 12300
     },
     {
       "original": "/images/games/thumbs/Fairytale_website_Callouts_PCS.jpg",
       "local": "/images/games/thumbs/Fairytale_website_Callouts_PCS.jpg",
-      "missing": true,
-      "error": "curl exit 7"
+      "bytes": 12820
     },
     {
       "original": "/images/games/thumbs/Fairytale_website_Callouts_island.jpg",
       "local": "/images/games/thumbs/Fairytale_website_Callouts_island.jpg",
-      "missing": true,
-      "error": "curl exit 7"
+      "bytes": 14539
     },
     {
       "original": "/images/games/thumbs/Fairytale_website_Callouts_pauper.jpg",
@@ -190,20 +245,17 @@
     {
       "original": "/images/games/thumbs/Fairytale_website_Callouts_rapunzel.jpg",
       "local": "/images/games/thumbs/Fairytale_website_Callouts_rapunzel.jpg",
-      "missing": true,
-      "error": "curl exit 7"
+      "bytes": 8005
     },
     {
       "original": "/images/games/thumbs/Fairytale_website_Callouts_swan.jpg",
       "local": "/images/games/thumbs/Fairytale_website_Callouts_swan.jpg",
-      "missing": true,
-      "error": "curl exit 7"
+      "bytes": 7926
     },
     {
       "original": "/images/games/thumbs/Fun_Potty_Race_babysitter.png",
       "local": "/images/games/thumbs/Fun_Potty_Race_babysitter.png",
-      "missing": true,
-      "error": "curl exit 7"
+      "bytes": 22010
     },
     {
       "original": "/images/games/thumbs/Fun_race_car_driver.png",
@@ -213,26 +265,22 @@
     {
       "original": "/images/games/thumbs/GamePromo-Ken2011_promo_135x85.jpg",
       "local": "/images/games/thumbs/GamePromo-Ken2011_promo_135x85.jpg",
-      "missing": true,
-      "error": "curl exit 7"
+      "bytes": 49741
     },
     {
       "original": "/images/games/thumbs/MD_Tutu_Star_ballerina.jpg",
       "local": "/images/games/thumbs/MD_Tutu_Star_ballerina.jpg",
-      "missing": true,
-      "error": "curl exit 7"
+      "bytes": 15628
     },
     {
       "original": "/images/games/thumbs/MegaBloks_Thumb.jpg",
       "local": "/images/games/thumbs/MegaBloks_Thumb.jpg",
-      "missing": true,
-      "error": "curl exit 7"
+      "bytes": 7697
     },
     {
       "original": "/images/games/thumbs/MermaidTail_SurferGame.jpg",
       "local": "/images/games/thumbs/MermaidTail_SurferGame.jpg",
-      "missing": true,
-      "error": "curl exit 7"
+      "bytes": 7867
     },
     {
       "original": "/images/games/thumbs/MyDreamhouse_Thumb.jpg",
@@ -242,8 +290,7 @@
     {
       "original": "/images/games/thumbs/PCS_Games_promo.jpg",
       "local": "/images/games/thumbs/PCS_Games_promo.jpg",
-      "missing": true,
-      "error": "curl exit 7"
+      "bytes": 11688
     },
     {
       "original": "/images/games/thumbs/PF_islandpCrossw.jpg",
@@ -253,26 +300,22 @@
     {
       "original": "/images/games/thumbs/PF_mariposa_dressup_game.jpg",
       "local": "/images/games/thumbs/PF_mariposa_dressup_game.jpg",
-      "missing": true,
-      "error": "curl exit 7"
+      "bytes": 33154
     },
     {
       "original": "/images/games/thumbs/PF_sparklechain_game.jpg",
       "local": "/images/games/thumbs/PF_sparklechain_game.jpg",
-      "missing": true,
-      "error": "curl exit 7"
+      "bytes": 17759
     },
     {
       "original": "/images/games/thumbs/RocknHarmonyThumb.jpg",
       "local": "/images/games/thumbs/RocknHarmonyThumb.jpg",
-      "missing": true,
-      "error": "curl exit 7"
+      "bytes": 9636
     },
     {
       "original": "/images/games/thumbs/TRU_Race.jpg",
       "local": "/images/games/thumbs/TRU_Race.jpg",
-      "missing": true,
-      "error": "curl exit 7"
+      "bytes": 15580
     },
     {
       "original": "/images/games/thumbs/Thumb_Architect_Game.jpg",
@@ -282,14 +325,12 @@
     {
       "original": "/images/games/thumbs/Thumb_Cheerleader.jpg",
       "local": "/images/games/thumbs/Thumb_Cheerleader.jpg",
-      "missing": true,
-      "error": "curl exit 7"
+      "bytes": 16657
     },
     {
       "original": "/images/games/thumbs/jetSetStyle.jpg",
       "local": "/images/games/thumbs/jetSetStyle.jpg",
-      "missing": true,
-      "error": "curl exit 7"
+      "bytes": 41374
     },
     {
       "original": "/images/games/thumbs/splashy_snapshots.jpg",
@@ -299,8 +340,7 @@
     {
       "original": "/images/games/thumbs/thumb_SprotingGoods.jpg",
       "local": "/images/games/thumbs/thumb_SprotingGoods.jpg",
-      "missing": true,
-      "error": "curl exit 7"
+      "bytes": 7505
     }
   ]
 }

@@ -94,7 +94,7 @@
 		this.target = node;
 		
 		//changed by slamont, 03.08.12 to eliminate load of sparkle.json every time this was called; improve performance
-		p.data = {"images": ["/resources/img/blit/sparkle.png"], "frames": {"count": 18, "width": 27, "height": 29, "regX": 0, "regY": 0}, "animations": {"all": [0, 17]}};
+		p.data = {"images": ["/_original/icanbe.barbie.com/resources/img/blit/sparkle.png"], "frames": {"count": 18, "width": 27, "height": 29, "regX": 0, "regY": 0}, "animations": {"all": [0, 17]}};
 		this._handleDataSuccess(null);
 	//	if(this.dataPath) this.loadData(this.dataPath); 
 	};

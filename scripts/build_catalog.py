@@ -34,9 +34,12 @@ def parse_page(kind: str, path: Path) -> tuple[dict, list[str]]:
         tag = match.group(0)
         src = one(r'\bsrc="([^"]+)', tag)
         alt = one(r'\balt="([^"]+)', tag)
+        hover = one(r'onmouseover="[^"]*?\'([^\']+)\'', tag)
         if src and alt:
-            tabs.append({"id": alt, "image": src})
+            tabs.append({"id": alt, "image": src, "hover": hover or ""})
             resources.append(src)
+            if hover:
+                resources.append(hover)
     selected = one(r'id="gameslist_imgSelectedCategory"[^>]+src="([^"]+)', text)
     if selected:
         resources.append(selected)
@@ -52,8 +55,24 @@ def parse_page(kind: str, path: Path) -> tuple[dict, list[str]]:
         "/images/barbie_refresh/agg_bottom.jpg", "/images/games/global-tab-foreground-bar-all-selected.png",
     ])
     hero = "/activities/fun_games/gamesModule.swf" if kind == "fun_games" else "/activities/fantasy/fairyTale.swf"
-    resources.append(hero)
-    return {"tabs": tabs, "selected": selected, "cards": cards, "hero": hero}, sorted(set(resources))
+    if kind == "fun_games":
+        chrome = {
+            "headerArt": "/activities/fun_games/images/cord_top.png",
+            "footerArt": "/activities/fun_games/images/footer.png",
+            "aggCenter": "/images/barbie_refresh/games/agg_center.png",
+            "listingMarginTop": "-89px",
+            "footerMarginTop": "-177px",
+        }
+    else:
+        chrome = {
+            "headerArt": "/activities/fantasy/images/fairytale_header.jpg",
+            "footerArt": "/activities/fantasy/images/fairytale_footer.jpg",
+            "aggCenter": "/images/barbie_refresh/fairytale/agg_center.png",
+            "listingMarginTop": "-170px",
+            "footerMarginTop": "-214px",
+        }
+    resources.extend([chrome["headerArt"], chrome["footerArt"], chrome["aggCenter"]])
+    return {"tabs": tabs, "selected": selected, "cards": cards, "hero": hero, "chrome": chrome}, sorted(set(resources))
 
 
 def download(path: str) -> dict:

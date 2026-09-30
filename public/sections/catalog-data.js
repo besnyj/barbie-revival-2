@@ -4,27 +4,33 @@ export const catalogData = {
     "tabs": [
       {
         "id": "whats-hot",
-        "image": "/images/barbie_refresh/games/tab_whatshot_up.png"
+        "image": "/images/barbie_refresh/games/tab_whatshot_up.png",
+        "hover": ""
       },
       {
         "id": "princess-fairy",
-        "image": "/images/barbie_refresh/games/tab_pf_up.png"
+        "image": "/images/barbie_refresh/games/tab_pf_up.png",
+        "hover": "/images/barbie_refresh/games/tab_pf_dn.png"
       },
       {
         "id": "fashion",
-        "image": "/images/barbie_refresh/games/tab_fashion_up.png"
+        "image": "/images/barbie_refresh/games/tab_fashion_up.png",
+        "hover": "/images/barbie_refresh/games/tab_fashion_dn.png"
       },
       {
         "id": "pets",
-        "image": "/images/barbie_refresh/games/tab_pets_up.png"
+        "image": "/images/barbie_refresh/games/tab_pets_up.png",
+        "hover": "/images/barbie_refresh/games/tab_pets_dn.png"
       },
       {
         "id": "arcade",
-        "image": "/images/barbie_refresh/games/tab_arcade_up.png"
+        "image": "/images/barbie_refresh/games/tab_arcade_up.png",
+        "hover": "/images/barbie_refresh/games/tab_arcade_dn.png"
       },
       {
         "id": "sporty",
-        "image": "/images/barbie_refresh/games/tab_sporty_up.png"
+        "image": "/images/barbie_refresh/games/tab_sporty_up.png",
+        "hover": "/images/barbie_refresh/games/tab_sporty_dn.png"
       }
     ],
     "selected": "/images/barbie_refresh/games/tab_whatshot_selected.png",
@@ -162,25 +168,36 @@ export const catalogData = {
         "image": "/images/games/thumbs/GamePromo-Ken2011_promo_135x85.jpg"
       }
     ],
-    "hero": "/activities/fun_games/gamesModule.swf"
+    "hero": "/activities/fun_games/gamesModule.swf",
+    "chrome": {
+      "headerArt": "/activities/fun_games/images/cord_top.png",
+      "footerArt": "/activities/fun_games/images/footer.png",
+      "aggCenter": "/images/barbie_refresh/games/agg_center.png",
+      "listingMarginTop": "-89px",
+      "footerMarginTop": "-177px"
+    }
   },
   "fantasy": {
     "tabs": [
       {
         "id": "princess",
-        "image": "/images/barbie_refresh/fairytale/tab_princesses_up.png"
+        "image": "/images/barbie_refresh/fairytale/tab_princesses_up.png",
+        "hover": ""
       },
       {
         "id": "mermaid",
-        "image": "/images/barbie_refresh/fairytale/tab_mermaids_up.png"
+        "image": "/images/barbie_refresh/fairytale/tab_mermaids_up.png",
+        "hover": "/images/barbie_refresh/fairytale/tab_mermaids_dn.png"
       },
       {
         "id": "fairy",
-        "image": "/images/barbie_refresh/fairytale/tab_fairies_up.png"
+        "image": "/images/barbie_refresh/fairytale/tab_fairies_up.png",
+        "hover": "/images/barbie_refresh/fairytale/tab_fairies_dn.png"
       },
       {
         "id": "holiday",
-        "image": "/images/barbie_refresh/fairytale/tab_holiday_up.png"
+        "image": "/images/barbie_refresh/fairytale/tab_holiday_up.png",
+        "hover": "/images/barbie_refresh/fairytale/tab_holiday_dn.png"
       }
     ],
     "selected": "/images/barbie_refresh/fairytale/tab_princesses_selected.png",
@@ -270,6 +287,13 @@ export const catalogData = {
         "image": "/images/games/thumbs/Fairytale_Essentials_thumb.jpg"
       }
     ],
-    "hero": "/activities/fantasy/fairyTale.swf"
+    "hero": "/activities/fantasy/fairyTale.swf",
+    "chrome": {
+      "headerArt": "/activities/fantasy/images/fairytale_header.jpg",
+      "footerArt": "/activities/fantasy/images/fairytale_footer.jpg",
+      "aggCenter": "/images/barbie_refresh/fairytale/agg_center.png",
+      "listingMarginTop": "-170px",
+      "footerMarginTop": "-214px"
+    }
   }
 };

@@ -120,3 +120,57 @@ Este documento registra o estado **neste momento do trabalho**, a pedido da usu�
 ## Atualização recebida ao terminar este registro
 
 O subagente de catálogos entregou seu módulo e informou 22 cards em Games e 14 em Fairytale (36 no total, atualizando a contagem intermediária de 29). Informou também 35 assets recuperados e 21 ainda indisponíveis, listados em `research/sections/catalog-assets.json`. O módulo ainda precisa de integração e revisão pelo agente principal. As outras categorias têm botões interativos, mas seus resultados históricos completos não foram recuperados: o comportamento atual mantém a listagem inicial com aviso. Isso é uma pendência de funcionalidade/fidelidade, não uma categoria restaurada.
+
+## Continuação — 30/09/2026 (integração dos catálogos e do I Can Be)
+
+Retomei exatamente do ponto em que a sessão anterior parou (integração dos catálogos, revisão dos módulos dos subagentes e validação das páginas). O que foi feito nesta continuação:
+
+### Recuperação de assets
+
+- Recuperei os 21 assets de catálogo que faltavam: 9 na captura de 28/06, 9 em capturas de 2013 mais próximas (janeiro–março) e 2 (`PF_mariposa_dressup_game.jpg`, `PF_sparklechain_game.jpg`) em capturas de fev/2012 — os únicos exemplares preservados dos mesmos arquivos referenciados pela página de junho/2013. Datas registradas no manifesto.
+- Recuperei as artes de cabeçalho/rodapé das seções: `cord_top.png` (990×102) e `footer.png` (990×198) de Games; `fairytale_header.jpg` (990×203) e `fairytale_footer.jpg` (989×303) de Fairytale; os `agg_center.png` específicos de cada seção; e as imagens `_dn` (hover) das abas de Games.
+- Recuperei as dependências de runtime dos heróis Flash: `data/config.xml` dos dois, e os SWFs listados neles (overlays, fonts, `promo_main.swf`, `gamesiconbox.swf`, `popup.swf`, 6 promos de `promo.xml`, 4 heróis do Fairytale). `Promo_DOW_China.swf` veio de captura de dez/2012 (registrado). `data/popup.xml` nunca foi arquivado — lacuna documentada.
+- Recuperei os assets que faltavam do I Can Be: `background-nav.jpg`, `sprite-buttons.png`, `sprite-icons.gif`, `background-message.gif`, `background-promo.gif`, `promo/background.jpg`, `parallax/background.jpg`, os 3 sprites de botão, `sprite-holders.png`, `blank.png`, `background-modal.png`, `btn-close.gif`, `favicon.ico`, `blit/sparkle.png` e `sparkle.json`. `btn-dolls.png`/shadow nunca foram arquivados e nunca são carregados pelo JS original (registrado). jQuery 1.6.2 vendored do CDN oficial (MIT), pois não há captura no archive.
+- Novo script `scripts/recover_cdx.py`: busca a captura de 2013 (fallback 2012) mais próxima de 28/06 para caminhos ausentes na captura principal, com retries e registro de procedência.
+
+### Catálogos Games/Fairytale (reescrita fiel)
+
+- Reescrevi `public/sections/catalog.js` e `catalog.css` reproduzindo o DOM e as classes originais das páginas arquivadas e do `BarbieRefresh.css`: herói 990×390, arte de cabeçalho, aba selecionada flutuante, botões de categoria com z-index e hover `_up`/`_dn` originais, `containerTop`/`itemslistContainer`/`containerBottom`, cards 152×135 cujo título troca para o texto de hover, margens negativas originais (−89/−170px no listado e −177/−214px no rodapé), rodapé com links brancos sobre a arte original, fundo `barbiebg.jpg`. Aproximações visuais do módulo anterior foram descartadas.
+- Apenas a categoria inicialmente arquivada é exibida; clicar em outra aba mantém a listagem e mostra um aviso honesto (os resultados de postback do servidor nunca foram arquivados).
+- Links externos dos cards (dreamhouse.barbie.com, icanbe games, barbievideogame.com) abrem o diálogo “Under restoration”.
+- `scripts/build_catalog.py` atualizado para emitir hovers das abas e as artes por seção, e para recuperar todos os assets referenciados.
+- Integração em `app.js` para as rotas `/activities/fun_games/` e `/activities/fantasy/`.
+
+### I Can Be (página fiel, autônoma)
+
+- Substituí o módulo provisório (com substitutos visuais) por uma página fiel em `public/_original/icanbe.barbie.com/en_US/index.html`: DOM original, `style.css`, fontes e imagens originais, e toda a pilha JS original (jQuery 1.6.2, modernizr, swfobject, SimpleAnimation, `plugins.js`, `script.js`).
+- O carrossel parallax de promos, os brilhos (twinkle) da navegação, o carrossel 3D de carreiras e o overlay de help/gotacode rodam o código original de 2013.
+- Adaptações documentadas: anúncios e trackers removidos (espaço preservado); links externos mostram um overlay local “Under restoration”; links barbie.com/icanbe redirecionam para as rotas locais; caminhos absolutos apontam para `/_original/icanbe.barbie.com/` (base tag não funciona para URLs absolutas); help/gotacode servem fragmentos locais com a mensagem de restauração.
+- Os módulos antigos `public/sections/icanbe.js` e `icanbe.css` foram removidos.
+
+### Verificação
+
+- Novos scripts de QA: `scripts/qa_pages.py` (erros de console e requisições falhas) e `scripts/qa_geometry.py` (geometria comparada aos valores do CSS original).
+- Resultado: 0 erros de console e 0 requisições falhas em home, Games, Fairytale e I Can Be. Geometria confere (aba selecionada em x=25/70, cards 152×135 com margens 40/20, containerTop em x=95, margens −89/−170/−177/−214, rodapé com links brancos, etc.).
+- Interações verificadas: troca de título no hover dos cards, hover das abas `_up`→`_dn`, aviso ao clicar em outra categoria, diálogo em link externo, setas do carrossel do I Can Be, título da carreira no hover, overlay de help abrindo e fechando, links do rodapé redirecionando para as rotas locais.
+- Screenshots para revisão visual: `/tmp/qa-games-full.png`, `/tmp/qa-fantasy-full.png`, `/tmp/qa-icanbe-full.png`; prévia ao vivo em `http://127.0.0.1:4173/` (servidor iniciado com `python3 scripts/serve.py`).
+
+### Correção reportada pela usuária (roteamento dos menus)
+
+- A usuária reportou que clicar em qualquer botão do menu (Games, I Can Be, etc.) mostrava “Under restoration”. Causa: o menu Flash navega para URLs **sem a barra final** (`/activities/fun_games`), e o roteador comparava caminhos exatos (`/activities/fun_games/`) — tudo caía no fallback “Under restoration”. Meus testes anteriores usavam URLs diretas com a barra, por isso não pegaram o problema.
+- Correção: `app.js` normaliza os caminhos (remove barras finais) antes de comparar com as rotas das seções; verificado novamente Games, Videos, Fashion, Friends e Fairytale sem barra — todos renderizam o conteúdo.
+- O botão “I Can Be” do menu Flash aponta para a raiz do subdomínio (`icanbe.barbie.com/`), que não tinha rota: `serve.py` agora redireciona (302) `/_original/icanbe.barbie.com` e `.../` para a home restaurada, com regra equivalente em `_redirects` para o Cloudflare.
+- Também recuperei `friendsbedroom_PetAnim1_1.swf` e `friendsbedroom_PetAnim1_2.swf`, dependências dinâmicas do quarto que davam 404 (outras variantes PetAnim existem no archive, mas a recuperação foi adiada a pedido da usuária).
+- Varredura final de logs e páginas: sem 404/500 restantes (exceto lacunas já documentadas), 0 erros de console e 0 requisições falhas em todas as páginas — nada do que já está restaurado apresenta erro.
+- `serve.py` agora escuta em todas as interfaces (0.0.0.0): o site pode ser aberto de outra máquina no mesmo Wi-Fi em `http://192.168.10.37:4173/`.
+
+**Resumo do comportamento atual:** a home, as seções dos menus (Games, Fairytale, Videos, Fashion, Friends) e a home do I Can Be mostram conteúdo restaurado. O que continua mostrando “Under restoration” **de propósito**, conforme o escopo combinado: jogos individuais e suas páginas, mundos externos (dreamhouse.barbie.com), loja, e a playlist/catálogo de vídeos (serviço antigo não preservado).
+
+### Pendências que continuam
+
+- Páginas individuais (molduras/controles) ainda não restauradas — fallback “Under restoration” permanece como provisório.
+- Cenas completas do closet/quarto, revisão final dos slides/promos da home e do preenchimento da área de anúncio.
+- Playlist histórica de vídeos (BTV) e catálogo completo de vídeos.
+- Categorias alternativas dos catálogos e `data/popup.xml` do herói de Games não existem no archive (lacunas documentadas).
+- Páginas internas do I Can Be (games, videos, careers, dolls) ainda não restauradas.
+- Revisão visual desktop completa por página e estado interativo, reconciliação final dos manifestos e preparação para GitHub/Cloudflare (publicação segue adiada conforme combinado).

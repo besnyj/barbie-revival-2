@@ -378,5 +378,793 @@
     "bytes": 3731,
     "sha256": "039c67e7de97893241123ca2ba0bf37aace9f56876fe40e20884527f18c6d4ec",
     "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/fun_games/images/cord_top.png",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fun_games/images/cord_top.png",
+    "resolved": "https://web.archive.org/web/20130724182244id_/http://www.barbie.com/activities/fun_games/images/cord_top.png",
+    "local": "public/activities/fun_games/images/cord_top.png",
+    "ok": true,
+    "bytes": 2689,
+    "sha256": "f2b6ceaccbbc729df68a8ed47a813bb91760bd01d92b7009580853a99aa1ba8a",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/fun_games/images/footer.png",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fun_games/images/footer.png",
+    "resolved": "https://web.archive.org/web/20130724181722id_/http://www.barbie.com/activities/fun_games/images/footer.png",
+    "local": "public/activities/fun_games/images/footer.png",
+    "ok": true,
+    "bytes": 126315,
+    "sha256": "34c908154a569baac46a5ba1ca7836eef6bc42914fb36532887d96e66cc9e551",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/fantasy/images/fairytale_header.jpg",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fantasy/images/fairytale_header.jpg",
+    "resolved": "https://web.archive.org/web/20130512121626id_/http://www.barbie.com/activities/fantasy/images/fairytale_header.jpg",
+    "local": "public/activities/fantasy/images/fairytale_header.jpg",
+    "ok": true,
+    "bytes": 22875,
+    "sha256": "2b8d58923d14775c1613e1a7af2665998344869ec66a4aa7caf2277161a493b0",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/fantasy/images/fairytale_footer.jpg",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fantasy/images/fairytale_footer.jpg",
+    "resolved": "https://web.archive.org/web/20130512115314id_/http://www.barbie.com/activities/fantasy/images/fairytale_footer.jpg",
+    "local": "public/activities/fantasy/images/fairytale_footer.jpg",
+    "ok": true,
+    "bytes": 75098,
+    "sha256": "1eb1a1a012d92c3654a36f664380c819ad3018b651be7574cb7a20c8ba67f9b6",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/images/barbie_refresh/games/agg_center.png",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/barbie_refresh/games/agg_center.png",
+    "resolved": "https://web.archive.org/web/20130724182047id_/http://www.barbie.com/images/barbie_refresh/games/agg_center.png",
+    "local": "public/images/barbie_refresh/games/agg_center.png",
+    "ok": true,
+    "bytes": 45665,
+    "sha256": "99d85b7591de210d016f34d3c96b9cfb334c572b506e829fd368ae5219177b89",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/images/barbie_refresh/fairytale/agg_center.png",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/barbie_refresh/fairytale/agg_center.png",
+    "resolved": "https://web.archive.org/web/20130512120015id_/http://www.barbie.com/images/barbie_refresh/fairytale/agg_center.png",
+    "local": "public/images/barbie_refresh/fairytale/agg_center.png",
+    "ok": true,
+    "bytes": 69690,
+    "sha256": "9645f1baf3ddb38293f4f604f571ece9b8ca0ca5c8184c79915759b67224f9a3",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/images/barbie_refresh/games/tab_pf_dn.png",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/barbie_refresh/games/tab_pf_dn.png",
+    "resolved": "https://web.archive.org/web/20130414211403id_/http://www.barbie.com/images/barbie_refresh/games/tab_pf_dn.png",
+    "local": "public/images/barbie_refresh/games/tab_pf_dn.png",
+    "ok": true,
+    "bytes": 7212,
+    "sha256": "3456dfbc1ae6e85953669525394d3ad6c9860b4796fa88da595e74d49994b464",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/images/barbie_refresh/games/tab_fashion_dn.png",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/barbie_refresh/games/tab_fashion_dn.png",
+    "resolved": "https://web.archive.org/web/20130314145246id_/http://www.barbie.com/images/barbie_refresh/games/tab_fashion_dn.png",
+    "local": "public/images/barbie_refresh/games/tab_fashion_dn.png",
+    "ok": true,
+    "bytes": 4686,
+    "sha256": "a959af7c0ee5d371a7b8066a464c4e19f58d8e38be0a170001e18f4914d964c0",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/images/barbie_refresh/games/tab_pets_dn.png",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/barbie_refresh/games/tab_pets_dn.png",
+    "resolved": "https://web.archive.org/web/20130302193102id_/http://www.barbie.com/images/barbie_refresh/games/tab_pets_dn.png",
+    "local": "public/images/barbie_refresh/games/tab_pets_dn.png",
+    "ok": true,
+    "bytes": 3734,
+    "sha256": "a875e6a4dc7dc7ac0f4b52b36e310ae9a206ad3c352ad1f1139790e73b7b8479",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/images/barbie_refresh/games/tab_arcade_dn.png",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/barbie_refresh/games/tab_arcade_dn.png",
+    "resolved": "https://web.archive.org/web/20130302192729id_/http://www.barbie.com/images/barbie_refresh/games/tab_arcade_dn.png",
+    "local": "public/images/barbie_refresh/games/tab_arcade_dn.png",
+    "ok": true,
+    "bytes": 4670,
+    "sha256": "560a89cf363de8dad4cfb64952c079630fe8a27dc3cd7cb07c7fa31877b24dbb",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/images/barbie_refresh/games/tab_sporty_dn.png",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/barbie_refresh/games/tab_sporty_dn.png",
+    "resolved": "https://web.archive.org/web/20130130074456id_/http://www.barbie.com/images/barbie_refresh/games/tab_sporty_dn.png",
+    "local": "public/images/barbie_refresh/games/tab_sporty_dn.png",
+    "ok": true,
+    "bytes": 4770,
+    "sha256": "32fd4acbe704ff7ef3d2253cb1d34925359fa6798a37739b324d84d487528f9f",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/images/games/thumbs/DOW_GamesThumb_Argentina.jpg",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/games/thumbs/DOW_GamesThumb_Argentina.jpg",
+    "resolved": "https://web.archive.org/web/20130724181612id_/http://www.barbie.com/images/games/thumbs/DOW_GamesThumb_Argentina.jpg",
+    "local": "public/images/games/thumbs/DOW_GamesThumb_Argentina.jpg",
+    "ok": true,
+    "bytes": 13713,
+    "sha256": "502623b3f59bfa0134325c78da76a594be273364eb0613b4dcbc42be01485ff6",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/images/games/thumbs/Fairytale_website_Callouts_12dp.jpg",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/games/thumbs/Fairytale_website_Callouts_12dp.jpg",
+    "resolved": "https://web.archive.org/web/20130512113902id_/http://www.barbie.com/images/games/thumbs/Fairytale_website_Callouts_12dp.jpg",
+    "local": "public/images/games/thumbs/Fairytale_website_Callouts_12dp.jpg",
+    "ok": true,
+    "bytes": 11715,
+    "sha256": "b549939b8b980f17ccf127f73377e8c1710a9a0bdf5b8e7c3920fd0ffe1f1426",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/images/games/thumbs/Fairytale_website_Callouts_FF.jpg",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/games/thumbs/Fairytale_website_Callouts_FF.jpg",
+    "resolved": "https://web.archive.org/web/20130512115321id_/http://www.barbie.com/images/games/thumbs/Fairytale_website_Callouts_FF.jpg",
+    "local": "public/images/games/thumbs/Fairytale_website_Callouts_FF.jpg",
+    "ok": true,
+    "bytes": 12300,
+    "sha256": "5a933f16fa92dd30853b502e4c6f1a212d95ea05ece05323dc6d2bddce23fa7e",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/images/games/thumbs/Fairytale_website_Callouts_PCS.jpg",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/games/thumbs/Fairytale_website_Callouts_PCS.jpg",
+    "resolved": "https://web.archive.org/web/20130512112724id_/http://www.barbie.com/images/games/thumbs/Fairytale_website_Callouts_PCS.jpg",
+    "local": "public/images/games/thumbs/Fairytale_website_Callouts_PCS.jpg",
+    "ok": true,
+    "bytes": 12820,
+    "sha256": "58867970218da902a2da68ba587b245e20c4514b092ecd02f200e76708ae26be",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/images/games/thumbs/Fairytale_website_Callouts_island.jpg",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/games/thumbs/Fairytale_website_Callouts_island.jpg",
+    "resolved": "https://web.archive.org/web/20130512115921id_/http://www.barbie.com/images/games/thumbs/Fairytale_website_Callouts_island.jpg",
+    "local": "public/images/games/thumbs/Fairytale_website_Callouts_island.jpg",
+    "ok": true,
+    "bytes": 14539,
+    "sha256": "0345e7a232db6a04c209f3a0d9aaac0461b07aa71b27db9679fdbe558492551d",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/images/games/thumbs/Fairytale_website_Callouts_rapunzel.jpg",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/games/thumbs/Fairytale_website_Callouts_rapunzel.jpg",
+    "resolved": "https://web.archive.org/web/20130512113840id_/http://www.barbie.com/images/games/thumbs/Fairytale_website_Callouts_rapunzel.jpg",
+    "local": "public/images/games/thumbs/Fairytale_website_Callouts_rapunzel.jpg",
+    "ok": true,
+    "bytes": 8005,
+    "sha256": "f148e318d7218534b48615531fcd7d8ee561c17628a3cfc60f652b2936f583c8",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/images/games/thumbs/Fairytale_website_Callouts_swan.jpg",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/games/thumbs/Fairytale_website_Callouts_swan.jpg",
+    "resolved": "https://web.archive.org/web/20130512122330id_/http://www.barbie.com/images/games/thumbs/Fairytale_website_Callouts_swan.jpg",
+    "local": "public/images/games/thumbs/Fairytale_website_Callouts_swan.jpg",
+    "ok": true,
+    "bytes": 7926,
+    "sha256": "67738db2742393fff41f3c838a7386680cba4cc9f89ec0aecaa6ca920be25b13",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/images/games/thumbs/Fun_Potty_Race_babysitter.png",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/games/thumbs/Fun_Potty_Race_babysitter.png",
+    "resolved": "https://web.archive.org/web/20130724181806id_/http://www.barbie.com/images/games/thumbs/Fun_Potty_Race_babysitter.png",
+    "local": "public/images/games/thumbs/Fun_Potty_Race_babysitter.png",
+    "ok": true,
+    "bytes": 22010,
+    "sha256": "5dfcc2c736456e69e700d606ff01ea3ff803ffb686f89ec2c0592f0d5d8b51e0",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/images/games/thumbs/GamePromo-Ken2011_promo_135x85.jpg",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/games/thumbs/GamePromo-Ken2011_promo_135x85.jpg",
+    "resolved": "https://web.archive.org/web/20130724181554id_/http://www.barbie.com/images/games/thumbs/GamePromo-Ken2011_promo_135x85.jpg",
+    "local": "public/images/games/thumbs/GamePromo-Ken2011_promo_135x85.jpg",
+    "ok": true,
+    "bytes": 49741,
+    "sha256": "30b1b3c002c7413acf13ff82c465dfc5d220294bb932d0e7474c0730762028b6",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/images/games/thumbs/MD_Tutu_Star_ballerina.jpg",
+    "archive": "https://web.archive.org/web/20130310193345id_/http://www.barbie.com/images/games/thumbs/MD_Tutu_Star_ballerina.jpg",
+    "capture": "20130310193345",
+    "local": "public/images/games/thumbs/MD_Tutu_Star_ballerina.jpg",
+    "ok": true,
+    "bytes": 15628,
+    "sha256": "48348d208ebda82a81f599009ee5af150f7c8bc2ab3410e6c2229a45f4a1e987"
+  },
+  {
+    "original": "http://www.barbie.com/images/games/thumbs/MegaBloks_Thumb.jpg",
+    "archive": "https://web.archive.org/web/20130310193353id_/http://www.barbie.com/images/games/thumbs/MegaBloks_Thumb.jpg",
+    "capture": "20130310193353",
+    "local": "public/images/games/thumbs/MegaBloks_Thumb.jpg",
+    "ok": true,
+    "bytes": 7697,
+    "sha256": "289fcf3c075ac4eebec81163702876cb41d2d13f8a326d01167b6d0e951aef5f"
+  },
+  {
+    "original": "http://www.barbie.com/images/games/thumbs/MermaidTail_SurferGame.jpg",
+    "archive": "https://web.archive.org/web/20130121112523id_/http://www.barbie.com/images/games/thumbs/MermaidTail_SurferGame.jpg",
+    "capture": "20130121112523",
+    "local": "public/images/games/thumbs/MermaidTail_SurferGame.jpg",
+    "ok": true,
+    "bytes": 7867,
+    "sha256": "658f5c623d81e684535cbb500b3fc6b76e62f056bbe4297ee236526d9ae7335c"
+  },
+  {
+    "original": "http://www.barbie.com/images/games/thumbs/PCS_Games_promo.jpg",
+    "archive": "https://web.archive.org/web/20130121112427id_/http://www.barbie.com/images/games/thumbs/PCS_Games_promo.jpg",
+    "capture": "20130121112427",
+    "local": "public/images/games/thumbs/PCS_Games_promo.jpg",
+    "ok": true,
+    "bytes": 11688,
+    "sha256": "eaad986186ba1fb188683724c093705513b6f8f1abed8744ce70374ab9dc5847"
+  },
+  {
+    "original": "http://www.barbie.com/images/games/thumbs/PF_mariposa_dressup_game.jpg",
+    "archive": "https://web.archive.org/web/20120206144625id_/http://www.barbie.com/images/games/thumbs/PF_mariposa_dressup_game.jpg",
+    "capture": "20120206144625",
+    "local": "public/images/games/thumbs/PF_mariposa_dressup_game.jpg",
+    "ok": true,
+    "bytes": 33154,
+    "sha256": "f7d0eddb833a4f20aca8f879a59aeb581486ed3163172b86a44993d54f7322c4"
+  },
+  {
+    "original": "http://www.barbie.com/images/games/thumbs/PF_sparklechain_game.jpg",
+    "archive": "https://web.archive.org/web/20120206144437id_/http://www.barbie.com/images/games/thumbs/PF_sparklechain_game.jpg",
+    "capture": "20120206144437",
+    "local": "public/images/games/thumbs/PF_sparklechain_game.jpg",
+    "ok": true,
+    "bytes": 17759,
+    "sha256": "15a8944a485b1fc48d876fc2132f9738dcc555ca1116ad71667c748e6f3c6d67"
+  },
+  {
+    "original": "http://www.barbie.com/images/games/thumbs/RocknHarmonyThumb.jpg",
+    "archive": "https://web.archive.org/web/20130121112309id_/http://www.barbie.com/images/games/thumbs/RocknHarmonyThumb.jpg",
+    "capture": "20130121112309",
+    "local": "public/images/games/thumbs/RocknHarmonyThumb.jpg",
+    "ok": true,
+    "bytes": 9636,
+    "sha256": "034342d93bfb321e9f2fa5cf7c20f6326fc150bf697323619bba84358f1bd989"
+  },
+  {
+    "original": "http://www.barbie.com/images/games/thumbs/TRU_Race.jpg",
+    "archive": "https://web.archive.org/web/20130121112458id_/http://www.barbie.com/images/games/thumbs/TRU_Race.jpg",
+    "capture": "20130121112458",
+    "local": "public/images/games/thumbs/TRU_Race.jpg",
+    "ok": true,
+    "bytes": 15580,
+    "sha256": "7af2815cba1b4df057704e11e119e35df860826ae8b29589cbd20389aeb272b6"
+  },
+  {
+    "original": "http://www.barbie.com/images/games/thumbs/Thumb_Cheerleader.jpg",
+    "archive": "https://web.archive.org/web/20130310193409id_/http://www.barbie.com/images/games/thumbs/Thumb_Cheerleader.jpg",
+    "capture": "20130310193409",
+    "local": "public/images/games/thumbs/Thumb_Cheerleader.jpg",
+    "ok": true,
+    "bytes": 16657,
+    "sha256": "81a0b2d868fcfbea7b0dcab20c263a131bc7b98893c01f57263d7894f6d1f855"
+  },
+  {
+    "original": "http://www.barbie.com/images/games/thumbs/jetSetStyle.jpg",
+    "archive": "https://web.archive.org/web/20130121112325id_/http://www.barbie.com/images/games/thumbs/jetSetStyle.jpg",
+    "capture": "20130121112325",
+    "local": "public/images/games/thumbs/jetSetStyle.jpg",
+    "ok": true,
+    "bytes": 41374,
+    "sha256": "9814a65955ed77997ae559ee4a681f074fff39e9e3d42eec68e2a771f2777f70"
+  },
+  {
+    "original": "http://www.barbie.com/images/games/thumbs/thumb_SprotingGoods.jpg",
+    "archive": "https://web.archive.org/web/20130121112450id_/http://www.barbie.com/images/games/thumbs/thumb_SprotingGoods.jpg",
+    "capture": "20130121112450",
+    "local": "public/images/games/thumbs/thumb_SprotingGoods.jpg",
+    "ok": true,
+    "bytes": 7505,
+    "sha256": "c177cc42beb5aad6701a4629cb03585b713f7d274976e5bae2124cb4798c1bee"
+  },
+  {
+    "original": "http://icanbe.barbie.com/resources/img/background-nav.jpg",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://icanbe.barbie.com/resources/img/background-nav.jpg",
+    "resolved": "https://web.archive.org/web/20130511165441id_/http://icanbe.barbie.com/resources/img/background-nav.jpg",
+    "local": "public/_original/icanbe.barbie.com/resources/img/background-nav.jpg",
+    "ok": true,
+    "bytes": 5817,
+    "sha256": "9b1808839fc4710753a8b9e909558d9ef132b722599ff616bd3c744c71e8c578",
+    "error": null
+  },
+  {
+    "original": "http://icanbe.barbie.com/resources/img/sprite-buttons.png",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://icanbe.barbie.com/resources/img/sprite-buttons.png",
+    "resolved": "https://web.archive.org/web/20130511140238id_/http://icanbe.barbie.com/resources/img/sprite-buttons.png",
+    "local": "public/_original/icanbe.barbie.com/resources/img/sprite-buttons.png",
+    "ok": true,
+    "bytes": 136071,
+    "sha256": "1f8849ebb5772c957a99b000788e91918950dac4fe6e8783470ea3436d5ef31b",
+    "error": null
+  },
+  {
+    "original": "http://icanbe.barbie.com/resources/img/sprite-icons.gif",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://icanbe.barbie.com/resources/img/sprite-icons.gif",
+    "resolved": "https://web.archive.org/web/20130511142547id_/http://icanbe.barbie.com/resources/img/sprite-icons.gif",
+    "local": "public/_original/icanbe.barbie.com/resources/img/sprite-icons.gif",
+    "ok": true,
+    "bytes": 2178,
+    "sha256": "fb3aca45b782122c77bfe87c43abd13f40771f31feaa11cc58550d04ea6b2ca7",
+    "error": null
+  },
+  {
+    "original": "http://icanbe.barbie.com/resources/img/background-message.gif",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://icanbe.barbie.com/resources/img/background-message.gif",
+    "resolved": "https://web.archive.org/web/20130511155842id_/http://icanbe.barbie.com/resources/img/background-message.gif",
+    "local": "public/_original/icanbe.barbie.com/resources/img/background-message.gif",
+    "ok": true,
+    "bytes": 1600,
+    "sha256": "2a1f861523669aed71bf058c174198e7ed50184e609f930d3bdb4caf0ffae6e5",
+    "error": null
+  },
+  {
+    "original": "http://icanbe.barbie.com/resources/img/background-promo.gif",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://icanbe.barbie.com/resources/img/background-promo.gif",
+    "resolved": "https://web.archive.org/web/20130511162234id_/http://icanbe.barbie.com/resources/img/background-promo.gif",
+    "local": "public/_original/icanbe.barbie.com/resources/img/background-promo.gif",
+    "ok": true,
+    "bytes": 3261,
+    "sha256": "af69e0112dce498b78dca59e518703b50a5bf5c197c7ed03be61cd4c4f05fd61",
+    "error": null
+  },
+  {
+    "original": "http://icanbe.barbie.com/resources/img/promo/background.jpg",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://icanbe.barbie.com/resources/img/promo/background.jpg",
+    "resolved": "https://web.archive.org/web/20130511155436id_/http://icanbe.barbie.com/resources/img/promo/background.jpg",
+    "local": "public/_original/icanbe.barbie.com/resources/img/promo/background.jpg",
+    "ok": true,
+    "bytes": 2617,
+    "sha256": "b275fc896cc244713eb08378a603ab62a7e76399c180e4b478b291c439e22e4a",
+    "error": null
+  },
+  {
+    "original": "http://icanbe.barbie.com/resources/img/parallax/background.jpg",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://icanbe.barbie.com/resources/img/parallax/background.jpg",
+    "resolved": "https://web.archive.org/web/20130511154320id_/http://icanbe.barbie.com/resources/img/parallax/background.jpg",
+    "local": "public/_original/icanbe.barbie.com/resources/img/parallax/background.jpg",
+    "ok": true,
+    "bytes": 2123,
+    "sha256": "695aaa63c1352deef4db876040b763793027d58ce87d3bd9ce8ea9558d5e8afb",
+    "error": null
+  },
+  {
+    "original": "http://icanbe.barbie.com/resources/img/sprite-buttons-cloud.png",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://icanbe.barbie.com/resources/img/sprite-buttons-cloud.png",
+    "resolved": "https://web.archive.org/web/20130511155130id_/http://icanbe.barbie.com/resources/img/sprite-buttons-cloud.png",
+    "local": "public/_original/icanbe.barbie.com/resources/img/sprite-buttons-cloud.png",
+    "ok": true,
+    "bytes": 41732,
+    "sha256": "204de1d6d457ed3c5ed711b7c57e1f6bbbe89548ea4c01bceca299b7b6c31c11",
+    "error": null
+  },
+  {
+    "original": "http://icanbe.barbie.com/resources/img/sprite-buttons-inline.png",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://icanbe.barbie.com/resources/img/sprite-buttons-inline.png",
+    "resolved": "https://web.archive.org/web/20130511164940id_/http://icanbe.barbie.com/resources/img/sprite-buttons-inline.png",
+    "local": "public/_original/icanbe.barbie.com/resources/img/sprite-buttons-inline.png",
+    "ok": true,
+    "bytes": 31947,
+    "sha256": "818462b1a25e81d3d022fb9eb781a15a142ee0bb2ee39bc75f75167feb794011",
+    "error": null
+  },
+  {
+    "original": "http://icanbe.barbie.com/resources/img/sprite-buttons-med.png",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://icanbe.barbie.com/resources/img/sprite-buttons-med.png",
+    "resolved": "https://web.archive.org/web/20130511145827id_/http://icanbe.barbie.com/resources/img/sprite-buttons-med.png",
+    "local": "public/_original/icanbe.barbie.com/resources/img/sprite-buttons-med.png",
+    "ok": true,
+    "bytes": 30748,
+    "sha256": "0ab301efd9600293631680dbedf893471779363653e8bf16918631587db05a02",
+    "error": null
+  },
+  {
+    "original": "http://icanbe.barbie.com/resources/img/nav/btn-dolls.png",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://icanbe.barbie.com/resources/img/nav/btn-dolls.png",
+    "resolved": "https://web.archive.org/web/20130628161553id_/http://icanbe.barbie.com/resources/img/nav/btn-dolls.png",
+    "local": "public/_original/icanbe.barbie.com/resources/img/nav/btn-dolls.png",
+    "ok": false,
+    "bytes": 4657,
+    "sha256": null,
+    "error": null
+  },
+  {
+    "original": "http://icanbe.barbie.com/resources/img/nav/btn-dolls-shadow.png",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://icanbe.barbie.com/resources/img/nav/btn-dolls-shadow.png",
+    "resolved": "https://web.archive.org/web/20130628161553id_/http://icanbe.barbie.com/resources/img/nav/btn-dolls-shadow.png",
+    "local": "public/_original/icanbe.barbie.com/resources/img/nav/btn-dolls-shadow.png",
+    "ok": false,
+    "bytes": 4664,
+    "sha256": null,
+    "error": null
+  },
+  {
+    "original": "http://icanbe.barbie.com/resources/img/blank.png",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://icanbe.barbie.com/resources/img/blank.png",
+    "resolved": "https://web.archive.org/web/20120502125207id_/http://icanbe.barbie.com/resources/img/blank.png",
+    "local": "public/_original/icanbe.barbie.com/resources/img/blank.png",
+    "ok": true,
+    "bytes": 1153,
+    "sha256": "1db7bd5dc1b8ed8988ead63335419a727874ef156a7f29785d89c1747ebd4191",
+    "error": null
+  },
+  {
+    "original": "http://icanbe.barbie.com/resources/img/sprite-holders.png",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://icanbe.barbie.com/resources/img/sprite-holders.png",
+    "resolved": "https://web.archive.org/web/20130511150237id_/http://icanbe.barbie.com/resources/img/sprite-holders.png",
+    "local": "public/_original/icanbe.barbie.com/resources/img/sprite-holders.png",
+    "ok": true,
+    "bytes": 107728,
+    "sha256": "45590dbe57df9fecde9f56a6c1977452a2154d290d5d769d314bd2f7e062e3ef",
+    "error": null
+  },
+  {
+    "original": "http://icanbe.barbie.com/resources/img/background-holder-med.png",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://icanbe.barbie.com/resources/img/background-holder-med.png",
+    "resolved": "https://web.archive.org/web/20130511144109id_/http://icanbe.barbie.com/resources/img/background-holder-med.png",
+    "local": "public/_original/icanbe.barbie.com/resources/img/background-holder-med.png",
+    "ok": true,
+    "bytes": 14046,
+    "sha256": "42a89ed72b7268659bb9822352b9a3faedf2d4a4f3da4cfe08a01054365ed153",
+    "error": null
+  },
+  {
+    "original": "http://icanbe.barbie.com/data/blitter/sparkle.json",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://icanbe.barbie.com/data/blitter/sparkle.json",
+    "resolved": "https://web.archive.org/web/20120502125324id_/http://icanbe.barbie.com/data/blitter/sparkle.json",
+    "local": "public/_original/icanbe.barbie.com/data/blitter/sparkle.json",
+    "ok": true,
+    "bytes": 153,
+    "sha256": "70e79eaa3504081a7ad61fd540b0ba69dd329b43cfebe6e41b1315e1b8252a14",
+    "error": null
+  },
+  {
+    "original": "http://icanbe.barbie.com/resources/js/libs/jquery-1.6.2.min.js",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://icanbe.barbie.com/resources/js/libs/jquery-1.6.2.min.js",
+    "resolved": "https://web.archive.org/web/20221108172824id_/https://www.mattel.com/barbie",
+    "local": "public/_original/icanbe.barbie.com/resources/js/libs/jquery-1.6.2.min.js",
+    "ok": false,
+    "bytes": 228,
+    "sha256": null,
+    "error": null
+  },
+  {
+    "original": "http://icanbe.barbie.com/resources/img/blit/sparkle.png",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://icanbe.barbie.com/resources/img/blit/sparkle.png",
+    "resolved": "https://web.archive.org/web/20120502125132id_/http://icanbe.barbie.com/resources/img/blit/sparkle.png",
+    "local": "public/_original/icanbe.barbie.com/resources/img/blit/sparkle.png",
+    "ok": true,
+    "bytes": 5826,
+    "sha256": "2d398e83afcaaab10140397a46d296bc5ede869ed7b53390fcacd3cd37c52261",
+    "error": null
+  },
+  {
+    "original": "http://icanbe.barbie.com/resources/img/background-modal.png",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://icanbe.barbie.com/resources/img/background-modal.png",
+    "resolved": "https://web.archive.org/web/20130511155512id_/http://icanbe.barbie.com/resources/img/background-modal.png",
+    "local": "public/_original/icanbe.barbie.com/resources/img/background-modal.png",
+    "ok": true,
+    "bytes": 935,
+    "sha256": "24b7d42d65bded38f4ba5c051a8a8ab76bdb73e3099f1decf66ad032d5bf898d",
+    "error": null
+  },
+  {
+    "original": "http://icanbe.barbie.com/resources/img/btn-close.gif",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://icanbe.barbie.com/resources/img/btn-close.gif",
+    "resolved": "https://web.archive.org/web/20130511164959id_/http://icanbe.barbie.com/resources/img/btn-close.gif",
+    "local": "public/_original/icanbe.barbie.com/resources/img/btn-close.gif",
+    "ok": true,
+    "bytes": 1552,
+    "sha256": "c5a88fe18732f55e20e4da4789d466cc0f600773896c3cba39556af3d3ba9063",
+    "error": null
+  },
+  {
+    "original": "http://icanbe.barbie.com/resources/img/favicon.ico",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://icanbe.barbie.com/resources/img/favicon.ico",
+    "resolved": "https://web.archive.org/web/20130820223242id_/http://icanbe.barbie.com/resources/img/favicon.ico",
+    "local": "public/_original/icanbe.barbie.com/resources/img/favicon.ico",
+    "ok": true,
+    "bytes": 1150,
+    "sha256": "4a83c8fedf4bad738cdbe0059b662c223b78739670877e11e753831937d377aa",
+    "error": null
+  },
+  {
+    "original": "http://icanbe.barbie.com/resources/img/arrow-promo-left.png",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://icanbe.barbie.com/resources/img/arrow-promo-left.png",
+    "resolved": "https://web.archive.org/web/20130512130737id_/http://icanbe.barbie.com/resources/img/arrow-promo-left.png",
+    "local": "public/_original/icanbe.barbie.com/resources/img/arrow-promo-left.png",
+    "ok": true,
+    "bytes": 8959,
+    "sha256": "b0ff682885cb6dfb9c79f5dfa88c75bba226f3d13bc77946134072146d467529",
+    "error": null
+  },
+  {
+    "original": "http://icanbe.barbie.com/resources/img/arrow-promo-right.png",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://icanbe.barbie.com/resources/img/arrow-promo-right.png",
+    "resolved": "https://web.archive.org/web/20130512133211id_/http://icanbe.barbie.com/resources/img/arrow-promo-right.png",
+    "local": "public/_original/icanbe.barbie.com/resources/img/arrow-promo-right.png",
+    "ok": true,
+    "bytes": 8859,
+    "sha256": "26b1b41fb262219112ee83ee94a74bfcdc4f3eebf7e1572f0ae9dd9355c38cf4",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/fun_games/data/config.xml",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fun_games/data/config.xml",
+    "resolved": "https://web.archive.org/web/20130126211632id_/http://www.barbie.com/activities/fun_games/data/config.xml",
+    "local": "public/activities/fun_games/data/config.xml",
+    "ok": true,
+    "bytes": 850,
+    "sha256": "a7f44390547076a25c6cf69504ac268ee920688dfc7cec45efe6bab8f0287ddf",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/fantasy/data/config.xml",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fantasy/data/config.xml",
+    "resolved": "https://web.archive.org/web/20130302193238id_/http://www.barbie.com/activities/fantasy/data/config.xml",
+    "local": "public/activities/fantasy/data/config.xml",
+    "ok": true,
+    "bytes": 1770,
+    "sha256": "9bd72c69f06c82db2daf71ce2baee0a236b88652b7acab7a758eea858c9abc39",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/fun_games/assets/swf/fonts.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fun_games/assets/swf/fonts.swf",
+    "resolved": "https://web.archive.org/web/20130314145136id_/http://www.barbie.com/activities/fun_games/assets/swf/fonts.swf",
+    "local": "public/activities/fun_games/assets/swf/fonts.swf",
+    "ok": true,
+    "bytes": 103897,
+    "sha256": "2f0fa49de542bbdde128f16581351479ed4dac0d674df8e22239d829b5e3f83b",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/fun_games/promo_main.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fun_games/promo_main.swf",
+    "resolved": "https://web.archive.org/web/20130126211633id_/http://www.barbie.com/activities/fun_games/promo_main.swf",
+    "local": "public/activities/fun_games/promo_main.swf",
+    "ok": true,
+    "bytes": 11953,
+    "sha256": "4345a827dd0bcec370069d5f606521139cfba9fd924f2ba90be8829ae23bc7c4",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/fun_games/gamesiconbox.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fun_games/gamesiconbox.swf",
+    "resolved": "https://web.archive.org/web/20130126211634id_/http://www.barbie.com/activities/fun_games/gamesiconbox.swf",
+    "local": "public/activities/fun_games/gamesiconbox.swf",
+    "ok": true,
+    "bytes": 18530,
+    "sha256": "30e75f913b868192bd609e4aec471d7c9caedfc492a869144d63cf5c9b09f2a0",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/fun_games/assets/swf/skipper_overlay.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fun_games/assets/swf/skipper_overlay.swf",
+    "resolved": "https://web.archive.org/web/20130126211635id_/http://www.barbie.com/activities/fun_games/assets/swf/skipper_overlay.swf",
+    "local": "public/activities/fun_games/assets/swf/skipper_overlay.swf",
+    "ok": true,
+    "bytes": 90020,
+    "sha256": "67b2f3da945e1b66a108dca48f5f06c4ca5c7d0d7a6795921907986f003e9b54",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/fun_games/assets/swf/girbil_overlay.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fun_games/assets/swf/girbil_overlay.swf",
+    "resolved": "https://web.archive.org/web/20121213225745id_/http://www.barbie.com/activities/fun%5Fgames/assets/swf/girbil_overlay.swf",
+    "local": "public/activities/fun_games/assets/swf/girbil_overlay.swf",
+    "ok": true,
+    "bytes": 31882,
+    "sha256": "58b8a9c483a23bd577c2f93674a50742ff6a753bb0996163d25b1c68f66c6720",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/fun_games/assets/swf/barbie_overlay2.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fun_games/assets/swf/barbie_overlay2.swf",
+    "resolved": "https://web.archive.org/web/20121213230109id_/http://www.barbie.com/activities/fun%5Fgames/assets/swf/barbie_overlay2.swf",
+    "local": "public/activities/fun_games/assets/swf/barbie_overlay2.swf",
+    "ok": true,
+    "bytes": 221363,
+    "sha256": "b696e7d249369d997e0bd93504d2d347c48304bbf12a894f81f7c15eaa63e110",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/fun_games/popup.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fun_games/popup.swf",
+    "resolved": "https://web.archive.org/web/20121213230110id_/http://www.barbie.com/activities/fun%5Fgames/popup.swf",
+    "local": "public/activities/fun_games/popup.swf",
+    "ok": true,
+    "bytes": 32097,
+    "sha256": "b9c0cce0804f6d1d6d223db13dc8a41e1960634a223900afb296000495fbb1b6",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/fantasy/assets/swf/fonts.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fantasy/assets/swf/fonts.swf",
+    "resolved": "https://web.archive.org/web/20130302193238id_/http://www.barbie.com/activities/fantasy/assets/swf/fonts.swf",
+    "local": "public/activities/fantasy/assets/swf/fonts.swf",
+    "ok": true,
+    "bytes": 103897,
+    "sha256": "2f0fa49de542bbdde128f16581351479ed4dac0d674df8e22239d829b5e3f83b",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/fantasy/assets/swf/barbieHero_Mermaid.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fantasy/assets/swf/barbieHero_Mermaid.swf",
+    "resolved": "https://web.archive.org/web/20130302193239id_/http://www.barbie.com/activities/fantasy/assets/swf/barbieHero_Mermaid.swf",
+    "local": "public/activities/fantasy/assets/swf/barbieHero_Mermaid.swf",
+    "ok": true,
+    "bytes": 230134,
+    "sha256": "a2f7715e02da00a4906e5266f54f0a15d28d1dc6d76709919b4fa93a3b27ab1a",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/fantasy/assets/swf/barbieHero_Fairy.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fantasy/assets/swf/barbieHero_Fairy.swf",
+    "resolved": "https://web.archive.org/web/20130302193240id_/http://www.barbie.com/activities/fantasy/assets/swf/barbieHero_Fairy.swf",
+    "local": "public/activities/fantasy/assets/swf/barbieHero_Fairy.swf",
+    "ok": true,
+    "bytes": 128158,
+    "sha256": "5ce1d7051254f5db26af3daaabebc2912c91f4da09cd9e758f42543a9c169d44",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/fantasy/assets/swf/barbieHero_Princess.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fantasy/assets/swf/barbieHero_Princess.swf",
+    "resolved": "https://web.archive.org/web/20130302193242id_/http://www.barbie.com/activities/fantasy/assets/swf/barbieHero_Princess.swf",
+    "local": "public/activities/fantasy/assets/swf/barbieHero_Princess.swf",
+    "ok": true,
+    "bytes": 192048,
+    "sha256": "375865726a36798655d1e430f7fea7f4834b71c2b7f5c024b67d01e1d47b7087",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/fantasy/assets/swf/promobg.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fantasy/assets/swf/promobg.swf",
+    "resolved": "https://web.archive.org/web/20130302193246id_/http://www.barbie.com/activities/fantasy/assets/swf/promobg.swf",
+    "local": "public/activities/fantasy/assets/swf/promobg.swf",
+    "ok": true,
+    "bytes": 81612,
+    "sha256": "04f5a991010d7e061249f243fa4c432058ca92ab975f5d06607da895a32ca7c2",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/fantasy/assets/swf/Promo_1.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fantasy/assets/swf/Promo_1.swf",
+    "resolved": "https://web.archive.org/web/20130302193248id_/http://www.barbie.com/activities/fantasy/assets/swf/Promo_1.swf",
+    "local": "public/activities/fantasy/assets/swf/Promo_1.swf",
+    "ok": true,
+    "bytes": 38834,
+    "sha256": "5b39939ba663d5d4749262cc57eeec4bc2dabe079399397e949ee385b462c56e",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/fantasy/assets/swf/Promo_2.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fantasy/assets/swf/Promo_2.swf",
+    "resolved": "https://web.archive.org/web/20130314145425id_/http://www.barbie.com/activities/fantasy/assets/swf/Promo_2.swf",
+    "local": "public/activities/fantasy/assets/swf/Promo_2.swf",
+    "ok": true,
+    "bytes": 31128,
+    "sha256": "8bbd11bf75ee3c16121068cccb6db66bd899cad7cfa7a485f572beb876d76e80",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/fun_games/data/popup.xml",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fun_games/data/popup.xml",
+    "resolved": "https://web.archive.org/web/20241216205355id_/https://shop.mattel.com/pages/barbie",
+    "local": "public/activities/fun_games/data/popup.xml",
+    "ok": true,
+    "bytes": 61326,
+    "sha256": "01e3cc5bedc1af61a19bbf894c459234546dd28c3f6854c8d559187f7b6a85f9",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/fun_games/data/promo.xml",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fun_games/data/promo.xml",
+    "resolved": "https://web.archive.org/web/20130126211634id_/http://www.barbie.com/activities/fun_games/data/promo.xml",
+    "local": "public/activities/fun_games/data/promo.xml",
+    "ok": true,
+    "bytes": 2707,
+    "sha256": "0eee9b258acb32394e1518abc3b9f27aa7330c47eb6cfd73620482890a15c045",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/fun_games/assets/swf/Promo_PPS.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fun_games/assets/swf/Promo_PPS.swf",
+    "resolved": "https://web.archive.org/web/20130126211635id_/http://www.barbie.com/activities/fun_games/assets/swf/Promo_PPS.swf",
+    "local": "public/activities/fun_games/assets/swf/Promo_PPS.swf",
+    "ok": true,
+    "bytes": 25101,
+    "sha256": "2c8f183bb8dac8291ef1c0a505531280b3304c92e58c8af60c5908fd32eb52d1",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/fun_games/assets/swf/Promo_BarbieWow.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fun_games/assets/swf/Promo_BarbieWow.swf",
+    "resolved": "https://web.archive.org/web/20121213225746id_/http://www.barbie.com/activities/fun%5Fgames/assets/swf/Promo_BarbieWow.swf",
+    "local": "public/activities/fun_games/assets/swf/Promo_BarbieWow.swf",
+    "ok": true,
+    "bytes": 17782,
+    "sha256": "2304c65ee7330d8d8e0a35cbe243de7a954403a8fb3e4a0d9a72a1bf0fa63677",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/fun_games/assets/swf/Promo_BLID_BFriends.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fun_games/assets/swf/Promo_BLID_BFriends.swf",
+    "resolved": "https://web.archive.org/web/20130126211636id_/http://www.barbie.com/activities/fun_games/assets/swf/Promo_BLID_BFriends.swf",
+    "local": "public/activities/fun_games/assets/swf/Promo_BLID_BFriends.swf",
+    "ok": true,
+    "bytes": 46377,
+    "sha256": "6b92bcd394269761b87158ecd93a302452353c83b93ccfa556d87f6f0988f575",
+    "error": "curl: (7) Failed to connect to web.archive.org port 443 after 192 ms: Couldn't connect to server\ncurl: (7) Failed to connect to web.archive.org port 443 after 182 ms: Couldn't connect to server"
+  },
+  {
+    "original": "http://www.barbie.com/activities/fun_games/assets/swf/Promo_DOW_China.swf",
+    "archive": "https://web.archive.org/web/20121213230111id_/http://www.barbie.com/activities/fun_games/assets/swf/Promo_DOW_China.swf",
+    "capture": "20121213230111",
+    "local": "public/activities/fun_games/assets/swf/Promo_DOW_China.swf",
+    "ok": true,
+    "bytes": 11794,
+    "sha256": "0d3378d8ca0cb7a83f619cfb3efd31e283aef8cdd78fd2b13cd57e6f5b653a39"
+  },
+  {
+    "original": "http://www.barbie.com/activities/fun_games/assets/swf/Promo_Fashion_Fun.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fun_games/assets/swf/Promo_Fashion_Fun.swf",
+    "resolved": "https://web.archive.org/web/20121213230110id_/http://www.barbie.com/activities/fun%5Fgames/assets/swf/Promo_Fashion_Fun.swf",
+    "local": "public/activities/fun_games/assets/swf/Promo_Fashion_Fun.swf",
+    "ok": true,
+    "bytes": 19151,
+    "sha256": "d57cd3a06fa084e86946744b5852913fc3854aac4b6a9591e81db03c51178a39",
+    "error": "curl: (7) Failed to connect to web.archive.org port 443 after 185 ms: Couldn't connect to server"
+  },
+  {
+    "original": "http://www.barbie.com/activities/fun_games/assets/swf/Promo_Sisters_Pets_PuppyWaterPark.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/fun_games/assets/swf/Promo_Sisters_Pets_PuppyWaterPark.swf",
+    "resolved": "https://web.archive.org/web/20121213230109id_/http://www.barbie.com/activities/fun%5Fgames/assets/swf/Promo_Sisters_Pets_PuppyWaterPark.swf",
+    "local": "public/activities/fun_games/assets/swf/Promo_Sisters_Pets_PuppyWaterPark.swf",
+    "ok": true,
+    "bytes": 72826,
+    "sha256": "7c70b2c88c15aed79f15fffa96d0580343fb846fb8f4d0ca70046dc225f5c72e",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/friends/friendsbedroom_PetAnim1_2.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/friends/friendsbedroom_PetAnim1_2.swf",
+    "resolved": "https://web.archive.org/web/20120211022642id_/http://www.barbie.com/activities/friends/friendsbedroom_PetAnim1_2.swf",
+    "local": "public/activities/friends/friendsbedroom_PetAnim1_2.swf",
+    "ok": true,
+    "bytes": 22650,
+    "sha256": "6e5ce50f8ab47c010f0308a1cbcbf3121ae553e05f0b09c13ab725b0bb60511c",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/activities/friends/friendsbedroom_PetAnim1_1.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/activities/friends/friendsbedroom_PetAnim1_1.swf",
+    "resolved": "https://web.archive.org/web/20130307194926id_/http://www.barbie.com/activities/friends/friendsbedroom_PetAnim1_1.swf",
+    "local": "public/activities/friends/friendsbedroom_PetAnim1_1.swf",
+    "ok": true,
+    "bytes": 6917,
+    "sha256": "ca1ee46a0beffa369fcf2f6edd564576976c690f9f974157104a86a372cd84a0",
+    "error": null
   }
 ]

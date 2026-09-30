@@ -1,1 +1,43 @@
-.catalog-hero{width:990px;height:390px;position:relative}.catalog{width:990px;position:relative;min-height:420px;background:url('/images/barbie_refresh/agg_center.png') repeat-y}.catalog-tabs{height:47px;padding-left:95px;display:flex;align-items:flex-start;position:relative;background:url('/images/games/global-tab-foreground-bar-all-selected.png') 55px 20px no-repeat}.catalog-tab{border:0;background:transparent;padding:0;margin:0 -18px 0 0;cursor:pointer;position:relative;z-index:1;line-height:0}.catalog-tab:hover,.catalog-tab[aria-selected=true]{z-index:4}.catalog-tab img{display:block}.catalog-tab[aria-selected=true] img{filter:brightness(1.08)}.catalog-panel{width:800px;margin-left:95px;padding:7px 0 19px;background:url('/images/barbie_refresh/agg_top.png') top no-repeat}.catalog-grid{width:800px;padding-top:40px;display:flex;flex-wrap:wrap}.catalog-card{position:relative;display:block;width:152px;height:135px;margin:0 0 20px 40px;padding:7px 0 0 7px;background:url('/images/barbie_refresh/agg_thumbBG.png') no-repeat;color:#9d0c55;text-align:center;text-decoration:none;font:700 14px Arial,Verdana,sans-serif}.catalog-card:hover{background-image:url('/images/barbie_refresh/agg_thumbBG_hover.png')}.catalog-card img{display:block;width:136px;height:auto;max-height:98px}.catalog-card span{display:block;width:136px;margin-top:3px;line-height:15px}.catalog-card b{display:none;position:absolute;left:8px;right:8px;top:42px;color:white;font-size:12px;line-height:14px;text-shadow:0 1px 2px #8c1554}.catalog-card:hover b,.catalog-card:focus b{display:block}.catalog[data-unavailable-category]:not([data-unavailable-category=""]) .catalog-panel:before{content:'This archived snapshot only preserved the initial category; the original server results for “' attr(data-unavailable-category) '” are unavailable.';display:block;margin:0 28px 10px;color:#9d0c55;font:11px Arial}.catalog[data-unavailable-category]:not([data-unavailable-category=""]) .catalog-grid{padding-top:15px}
+/* Ported from /includes/css/BarbieRefresh.css and the inline styles of the
+ * archived games/fantasy pages (June 2013). Original ids/classes kept. */
+.catalog-stage{position:relative;width:810px;min-height:640px;text-align:center}
+#flcontent{text-align:center}
+.catalog-hero{display:inline-block;width:990px;height:390px;vertical-align:top;text-align:left}
+.catalog-header-art{line-height:0}
+.catalog-header-art img{width:990px}
+.catalog-clear{clear:both;height:0}
+#GamesListingContainer{position:relative;z-index:800}
+#gameslist_UpdPnlListing{margin-top:var(--listing-margin)}
+.catalog-fun_games #gameslist_UpdPnlListing{background-image:-webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,0)),to(rgba(229,245,254,1)),color-stop(.5,#e5f5fe));background-image:-moz-linear-gradient(rgba(255,255,255,0) 30%,rgba(229,245,254,1) 100%)}
+#gameslist_divSelectedCat{position:absolute;z-index:300;overflow:hidden}
+.whats-hotSelected{left:25px}
+.princess-fairySelected{left:196px;margin-top:-4px}
+.fashionSelected{left:360px}
+.petsSelected{left:474px}
+.arcadeSelected{left:590px}
+.sportySelected{left:712px}
+.princessSelected{left:70px}
+.mermaidSelected{left:237px}
+.fairySelected{left:388px}
+.holidaySelected{left:525px}
+#itemslistwrapper{position:relative;width:990px}
+#categoryWrapper{float:left;padding:0;width:900px;margin-left:95px}
+.categoryButton{float:left;font-size:1px;margin-right:-18px;position:relative}
+.categoryButtonSel{float:left;font-size:1px;display:inline;visibility:hidden}
+.catalog-notice{display:block;margin:6px 28px 4px;padding:6px 10px;color:#9d0c55;font:11px/14px Arial,Verdana,sans-serif;text-align:center}
+.catalog-notice[hidden]{display:none}
+#containerTop{width:800px;background-image:url('/images/barbie_refresh/agg_top.png');background-repeat:no-repeat;height:46px;position:relative;float:left;margin-left:95px}
+#itemslistContainer{width:990px;background-repeat:repeat-y}
+#itemslist{height:auto;padding-left:0;position:relative;width:800px}
+#itemslist a{text-decoration:none;display:block;color:#9d0c55}
+#containerBottom{width:800px;background-image:url('/images/barbie_refresh/agg_bottom.jpg');background-repeat:no-repeat;height:19px;position:relative;float:left;margin-left:95px}
+.itemthumbdetail{float:left;padding-top:7px;padding-left:7px;position:relative}
+.itemthumb{background-image:url('/images/barbie_refresh/agg_thumbBG.png');background-repeat:no-repeat;position:relative;float:left;width:152px;height:135px;margin-bottom:20px;margin-left:40px;text-align:left;cursor:pointer}
+.itemthumbHover{background-image:url('/images/barbie_refresh/agg_thumbBG_hover.png')}
+.thumbitemname{font-family:Arial,Verdana;font-weight:bold;font-size:9pt;text-align:center;margin-top:3px;width:136px;display:block}
+#footer_links{margin-top:84px;position:relative;z-index:1000;color:#fff;font-size:11px;line-height:16px}
+#footer_links a.footerlinks:link,#footer_links a.footerlinks:hover,#footer_links a.footerlinks:visited{color:#fff}
+#footer_links .footergrey{color:#fff}
+#footer_bg{margin-top:var(--footer-margin);position:relative;z-index:600}
+#footer_bg img{width:990px}
+.catalog-page .site > footer{display:none}

@@ -140,7 +140,7 @@ var html5video = "", MATTEL = MATTEL || {};
 					shadow.src = shadowSrc; 
 				} else {
 					if(!selected) {
-						shadow.src = "/resources/img/blank.png";
+						shadow.src = "/_original/icanbe.barbie.com/resources/img/blank.png";
 					} else {
 						shadow.src = shadowSrc; 
 					}
@@ -463,7 +463,7 @@ var html5video = "", MATTEL = MATTEL || {};
 				$(targetNode).append(blitHolder);
 				blitHolder.id = "sparkle"+id;
 				blitHolder.className = "fx";
-				blit = SimpleBlitter.create("sparkle"+id, 0.5, { data:"/data/blitter/sparkle.json", pause:true });
+				blit = SimpleBlitter.create("sparkle"+id, 0.5, { data:"/_original/icanbe.barbie.com/data/blitter/sparkle.json", pause:true });
 				
 				return {holder: blitHolder, tween: blit};
 			};

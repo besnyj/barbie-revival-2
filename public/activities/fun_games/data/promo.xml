@@ -1,0 +1,59 @@
+<featured>
+	<target><![CDATA[_self]]></target>
+	<promos>
+		<promo>
+			<swf>assets/swf/Promo_PPS.swf</swf>
+			<linkURL>/princess-popstar/games/</linkURL>
+			<text><![CDATA[Rock 'n Harmony!]]></text>
+			<trackName><![CDATA[Games: None: Button_GameHottest_RocknHarmony]]></trackName>
+			<trackCampaign><![CDATA[None]]></trackCampaign>
+			<trackChannel><![CDATA[Games]]></trackChannel>
+			<trackContentType><![CDATA[Button]]></trackContentType>			
+		</promo>
+		<promo>
+			<swf>assets/swf/Promo_BLID_BFriends.swf</swf>
+			<linkURL>http://dreamhouse.barbie.com/en-US/b-friends/</linkURL>
+			<text><![CDATA[B Friends]]></text>
+			<trackName><![CDATA[Games: None: Button_GameHottest_B_Friends]]></trackName>
+			<trackCampaign><![CDATA[None]]></trackCampaign>
+			<trackChannel><![CDATA[Games]]></trackChannel>
+			<trackContentType><![CDATA[Button]]></trackContentType>
+		</promo>
+		<promo>
+			<swf>assets/swf/Promo_BarbieWow.swf</swf>
+			<linkURL>/activities/fashion/barbie-design-play/#!/design-studio</linkURL>
+			<text><![CDATA[Barbie Design Studio]]></text>
+			<trackName><![CDATA[Games: None: Button_GameHottest_BarbieDesignStudio]]></trackName>
+			<trackCampaign><![CDATA[None]]></trackCampaign>
+			<trackChannel><![CDATA[Games]]></trackChannel>
+			<trackContentType><![CDATA[Button]]></trackContentType>
+		</promo>
+		<promo>
+			<swf>assets/swf/Promo_Sisters_Pets_PuppyWaterPark.swf</swf>
+			<linkURL>/activities/friends/sisters-and-pets/#/puppygame</linkURL>
+			<text><![CDATA[Puppy Water Slide]]></text>
+			<trackName><![CDATA[Games: None: Button_GameHottest_PuppyWaterPark]]></trackName>
+			<trackCampaign><![CDATA[None]]></trackCampaign>
+			<trackChannel><![CDATA[Games]]></trackChannel>
+			<trackContentType><![CDATA[Button]]></trackContentType>
+		</promo>
+		<promo>
+			<swf>assets/swf/Promo_Fashion_Fun.swf</swf>
+			<linkURL>/activities/fashion/barbie-design-play/Barbie_Fashion_Fun/index.html</linkURL>
+			<text><![CDATA[Barbie® Fashion Fun!]]></text>
+			<trackName><![CDATA[Games: None: Button_GameHottest_KmartFashionFun]]></trackName>
+			<trackCampaign><![CDATA[None]]></trackCampaign>
+			<trackChannel><![CDATA[Games]]></trackChannel>
+			<trackContentType><![CDATA[Button]]></trackContentType>
+		</promo>
+		<promo>
+			<swf>assets/swf/Promo_DOW_China.swf</swf>
+			<linkURL>/dolls-of-the-world/#/Games</linkURL>
+			<text><![CDATA[Chef Supreme]]></text>
+			<trackName><![CDATA[Games: None: Button_GameHottest_DollsOfTheWorld_ChinaGame]]></trackName>
+			<trackCampaign><![CDATA[None]]></trackCampaign>
+			<trackChannel><![CDATA[Games]]></trackChannel>
+			<trackContentType><![CDATA[Button]]></trackContentType>
+		</promo>
+	</promos>
+</featured>

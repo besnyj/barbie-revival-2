@@ -1,0 +1,64 @@
+﻿<config>	 	 	 
+ 	<title><![CDATA[fairytale]]></title>
+	<defaultID>mermaid</defaultID>	
+	<font>
+		<url>assets/swf/fonts.swf</url>
+	</font>
+	<barbieCharacters>
+		<swf>
+			<id>mermaid</id>
+			<url>assets/swf/barbieHero_Mermaid.swf</url>
+			<x>340</x><y>0</y>
+			<channel>Fantasy</channel>
+			<campaign>None</campaign>
+			<GAName>FairytaleHotSpotMermaid</GAName>
+		</swf>
+		<swf>
+			<id>fairy</id>
+			<url>assets/swf/barbieHero_Fairy.swf</url>
+			<logoImg> </logoImg>
+			<x>340</x><y>2</y>
+			<channel>Fantasy</channel>
+			<campaign>None</campaign>
+			<GAName>FairytaleHotSpotFairy</GAName>
+		</swf>
+		<swf>
+			<id>princess</id>
+			<url>assets/swf/barbieHero_Princess.swf</url>
+			<logoImg> </logoImg>
+			<x>390</x><y>4</y>
+			<channel>Fantasy</channel>
+			<campaign>None</campaign>
+			<GAName>FairytaleHotSpotPrincess</GAName>
+		</swf>
+	</barbieCharacters>
+	<promoConfig>
+		<bg>
+			<url>assets/swf/promobg.swf</url>
+			<logoLinkURL>http://www.barbie.com</logoLinkURL>
+			<x>222</x><y>1</y>
+		</bg>
+		<promos>
+			<promo>
+				<swf>assets/swf/Promo_1.swf</swf>
+				<linkURL>/mermaid-tale-2/photofun.aspx?navhl=charsandme</linkURL>
+				<target>_parent</target>
+				<text><![CDATA[Spalshy Snapshots]]></text>
+				<x>74</x><y>100</y>
+				<channel>Fantasy</channel>
+				<campaign>None</campaign>
+				<GAName>FairytalePromo1</GAName>
+			</promo>
+			<promo>
+				<swf>assets/swf/Promo_2.swf</swf>
+				<linkURL>/mermaid-tale-2/shellsecrets.aspx?navhl=shellsecrets</linkURL>
+				<target>_parent</target>
+				<text><![CDATA[Sea Shell Game]]></text>
+				<x>74</x><y>220</y>
+				<channel>Fantasy</channel>
+				<campaign>None</campaign>
+				<GAName>FairytalePromo2</GAName>
+			</promo>
+		</promos>
+	</promoConfig>
+</config>
