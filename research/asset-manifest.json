@@ -1,0 +1,172 @@
+[
+  {
+    "original": "http://www.barbie.com/global/barbie_nav_new.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/global/barbie_nav_new.swf",
+    "resolved": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/global/barbie_nav_new.swf",
+    "local": "public/global/barbie_nav_new.swf",
+    "ok": false,
+    "bytes": 4620,
+    "sha256": null,
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/global/homepageCDARotation/HomeCDA.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/global/homepageCDARotation/HomeCDA.swf",
+    "resolved": "https://web.archive.org/web/20130704143905id_/http://www.barbie.com/global/homepageCDARotation/HomeCDA.swf",
+    "local": "public/global/homepageCDARotation/HomeCDA.swf",
+    "ok": true,
+    "bytes": 14766,
+    "sha256": "0ce801ce48e095ea2969a915f9e9b13763f469b785c98febf77bca2a7baccacf",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/global/homepageCDARotation/HomeCDA.xml",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/global/homepageCDARotation/HomeCDA.xml",
+    "resolved": "https://web.archive.org/web/20130613210556id_/http://www.barbie.com/global/homepageCDARotation/HomeCDA.xml",
+    "local": "public/global/homepageCDARotation/HomeCDA.xml",
+    "ok": true,
+    "bytes": 10393,
+    "sha256": "6a8c02ca5a7f803e49c5e25d3b4381f6831825ebe089bf031cd3aa1245484b0b",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/global/homepageCDARotation/DreamhousePuzzleParty.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/global/homepageCDARotation/DreamhousePuzzleParty.swf",
+    "resolved": "https://web.archive.org/web/20130604201546id_/http://www.barbie.com/global/homepageCDARotation/DreamhousePuzzleParty.swf",
+    "local": "public/global/homepageCDARotation/DreamhousePuzzleParty.swf",
+    "ok": true,
+    "bytes": 95160,
+    "sha256": "1e6539194e4837207e7dcc71c14041a6c39acc5f996f079de44edfc29f8998e5",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/global/homepageCDARotation/BLIDProfile.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/global/homepageCDARotation/BLIDProfile.swf",
+    "resolved": "https://web.archive.org/web/20130604204755id_/http://www.barbie.com/global/homepageCDARotation/BLIDProfile.swf",
+    "local": "public/global/homepageCDARotation/BLIDProfile.swf",
+    "ok": true,
+    "bytes": 207831,
+    "sha256": "d93f4448465a3f18aec50b36381000f69e1797fd588ca008ef640f0516b7333b",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/global/homepageCDARotation/MyDreamhouse.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/global/homepageCDARotation/MyDreamhouse.swf",
+    "resolved": "https://web.archive.org/web/20130604204758id_/http://www.barbie.com/global/homepageCDARotation/MyDreamhouse.swf",
+    "local": "public/global/homepageCDARotation/MyDreamhouse.swf",
+    "ok": true,
+    "bytes": 190800,
+    "sha256": "cc442a3590d37c0f4649dc5fe362b0d6d9df9813b67a9e9d7def094ad701afce",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/global/shop_barbie_btn.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/global/shop_barbie_btn.swf",
+    "resolved": "https://web.archive.org/web/20130704143846id_/http://www.barbie.com/global/shop_barbie_btn.swf",
+    "local": "public/global/shop_barbie_btn.swf",
+    "ok": true,
+    "bytes": 29606,
+    "sha256": "04c38c3f95290b4d60c8466b6a1f74fb24c019d952a3bb36ba995f3c433c5b91",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/global/grownups/grownupsPromos.swf",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/global/grownups/grownupsPromos.swf",
+    "resolved": "https://web.archive.org/web/20130704143856id_/http://www.barbie.com/global/grownups/grownupsPromos.swf",
+    "local": "public/global/grownups/grownupsPromos.swf",
+    "ok": true,
+    "bytes": 5748,
+    "sha256": "3c19d1b30c2dd4961ba78a83e805f9c19a7931a3933f6445b12de4be8a290f25",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/images/header/01BG.jpg",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/header/01BG.jpg",
+    "resolved": "https://web.archive.org/web/20130528170429id_/http://www.barbie.com/images/header/01BG.jpg",
+    "local": "public/images/header/01BG.jpg",
+    "ok": true,
+    "bytes": 240177,
+    "sha256": "bad07dbecec3644de7c61b8c31bf656ca9496add2be612176670699ca61d8a33",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/images/header/02BG.jpg",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/header/02BG.jpg",
+    "resolved": "https://web.archive.org/web/20130526211330id_/http://www.barbie.com/images/header/02BG.jpg",
+    "local": "public/images/header/02BG.jpg",
+    "ok": true,
+    "bytes": 162127,
+    "sha256": "6ea8f1ce1c3fae8717eb922d373913f06c4e464846183338406fc0600730fdc4",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/images/header/03BG.jpg",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/header/03BG.jpg",
+    "resolved": "https://web.archive.org/web/20130527144714id_/http://www.barbie.com/images/header/03BG.jpg",
+    "local": "public/images/header/03BG.jpg",
+    "ok": true,
+    "bytes": 78153,
+    "sha256": "139a8b92985e7b016552b681d880ef07d1f822a549ef7f22b21d14cda76a5beb",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/images/header/nav_background_new.jpg",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/header/nav_background_new.jpg",
+    "resolved": "https://web.archive.org/web/20130704143851id_/http://www.barbie.com/images/header/nav_background_new.jpg",
+    "local": "public/images/header/nav_background_new.jpg",
+    "ok": true,
+    "bytes": 15541,
+    "sha256": "455957d09458a370c7c71c5841adca15eae4e6157dcaaf1b277322e223896210",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/images/header/language_dropdown/title.png",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/header/language_dropdown/title.png",
+    "resolved": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/header/language_dropdown/title.png",
+    "local": "public/images/header/language_dropdown/title.png",
+    "ok": false,
+    "bytes": 0,
+    "sha256": null,
+    "error": "curl: (7) Failed to connect to web.archive.org port 443 after 188 ms: Couldn't connect to server"
+  },
+  {
+    "original": "http://www.barbie.com/images/header/language_dropdown/globe.png",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/header/language_dropdown/globe.png",
+    "resolved": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/header/language_dropdown/globe.png",
+    "local": "public/images/header/language_dropdown/globe.png",
+    "ok": false,
+    "bytes": 0,
+    "sha256": null,
+    "error": "curl: (7) Failed to connect to web.archive.org port 443 after 183 ms: Couldn't connect to server"
+  },
+  {
+    "original": "http://www.barbie.com/images/header/language_dropdown/go.png",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/header/language_dropdown/go.png",
+    "resolved": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/images/header/language_dropdown/go.png",
+    "local": "public/images/header/language_dropdown/go.png",
+    "ok": false,
+    "bytes": 0,
+    "sha256": null,
+    "error": "curl: (7) Failed to connect to web.archive.org port 443 after 195 ms: Couldn't connect to server"
+  },
+  {
+    "original": "http://www.barbie.com/global/barbie_nav_new.swf?cat=homepage",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/global/barbie_nav_new.swf?cat=homepage",
+    "resolved": "https://web.archive.org/web/20130704143845id_/http://www.barbie.com/global/barbie_nav_new.swf?cat=homepage",
+    "local": "public/global/barbie_nav_new.swf",
+    "ok": true,
+    "bytes": 165867,
+    "sha256": "073a8cd278501563cba48008c1cb0e9dd7e13cf4de6654f9f81f548c3430023c",
+    "error": null
+  },
+  {
+    "original": "http://www.barbie.com/global/grownups/promos.xml",
+    "archive": "https://web.archive.org/web/20130628161553id_/http://www.barbie.com/global/grownups/promos.xml",
+    "resolved": "https://web.archive.org/web/20110817005851id_/http://www.barbie.com/global/grownups/promos.xml",
+    "local": "public/global/grownups/promos.xml",
+    "ok": true,
+    "bytes": 4624,
+    "sha256": "39b054eee3021d5321b044a50bf99e354cf44b0728ef31fadc99e1932bcbb4cf",
+    "error": null
+  }
+]

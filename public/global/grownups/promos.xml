@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+
+<!--
+
+Author  - Nitin Gore.
+Perpose - This file is used for miniPromos. 
+
+About the tags in XML :-
+<name>				-	Name used for the Google/Mattel tracking
+<campaign>			-	campaign used for the Google/Mattel tracking
+<channel>			-	channel used for the Google/Mattel tracking
+<contenttype>		-	contenttype used for the Google/Mattel tracking
+<action>			-	action used for the Google/Mattel tracking
+<clickURL>			-	This is the url to open on click of promo. It can be a simple url or call to interstitial (javascript 
+						function) <clickURL><![CDATA[javascript:pop('interstitial_bc', '/interstitial_bc.aspx',550,400, 			
+						'', '')]]></clickURL>
+<openInSameWindow>	-	It opens the clickURL either in same browser window or in new window based it's value (Yes/No)
+<position>			-	This parameter is to fix the position of the promo. Below are the values for the tags
+						# - stands for random position. If you specify any number promo will be shown there, say if value is 
+						1  promo will be shown on first place. Note - position goes from left to right and top to bottom.
+<filepath>			-	Define promo swf path to load.
+
+Note :- 				If you want to open 'interstitial' or javascript popups set 'openInSameWindow' tag to 'Yes'.
+-->
+ 
+<promos>
+	<promo>
+		<name><![CDATA[Barbie Grownups - Holiday Shop]]></name>
+		<campaign><![CDATA[None]]></campaign>
+		<channel><![CDATA[Home]]></channel>
+		<contenttype><![CDATA[InternalAdBanner]]></contenttype>
+		<action><![CDATA[Click]]></action>
+		<clickURL><![CDATA[http://shop.mattel.com/shop/index.jsp?categoryId=3719989&utm_source=mdn&utm_medium=cda&utm_term=barbie&utm_content=101509&utm_campaign=barbieboutique]]></clickURL>
+		<!--clickURL><![CDATA[javascript:pop('BarbieCollector', 'http://deploy.ztelligence.com/start/index.jsp?PIN=15XXXWMJ252WS', 620, 310, '', '')]]></clickURL-->
+		<openInSameWindow>No</openInSameWindow>
+		<position>1</position>
+		<filepath><![CDATA[/global/grownups/promo_1.swf]]></filepath>
+	</promo>
+	<promo>
+		<name><![CDATA[Barbie Collector - Grownups banner]]></name>
+		<campaign><![CDATA[Grown Ups]]></campaign>
+		<channel><![CDATA[Home]]></channel>
+		<contenttype><![CDATA[InternalAdBanner]]></contenttype>
+		<action><![CDATA[Click]]></action>
+		<clickURL><![CDATA[javascript:pop('interstitial_bc', '/interstitial_bc.aspx', 618, 314, '', '')]]></clickURL>
+		<openInSameWindow>Yes</openInSameWindow>
+		<position>2</position>
+		<filepath><![CDATA[/global/grownups/promo_2.swf]]></filepath>
+	</promo>
+	<promo>
+		<name><![CDATA[Fan Barbie – Facebook banner]]></name>
+		<campaign><![CDATA[None]]></campaign>
+		<channel><![CDATA[Home]]></channel>
+		<contenttype><![CDATA[InternalAdBanner]]></contenttype>
+		<action><![CDATA[Click]]></action>
+		<clickURL><![CDATA[javascript:pop('BarbieMedia', '/includes/partner-interstitial.aspx?redirect=BarbieFacebook', 620, 310, '', '')]]></clickURL>
+		<openInSameWindow>Yes</openInSameWindow>
+		<position>3</position>
+		<filepath><![CDATA[/global/grownups/promo_3.swf]]></filepath>
+	</promo>
+	
+	<!--promo>
+		<name><![CDATA[Celebrate Barbie 50th - Grownups banner]]></name>
+		<campaign><![CDATA[Fiftieth]]></campaign>
+		<channel><![CDATA[Home]]></channel>
+		<contenttype><![CDATA[InternalAdBanner]]></contenttype>
+		<action><![CDATA[Click]]></action>
+		<clickURL><![CDATA[Javascript:pop('BarbieMedia', '/interstitial_50th.aspx',434,390, '', '')]]></clickURL>
+		<openInSameWindow>Yes</openInSameWindow>
+		<position>#</position>
+		<filepath><![CDATA[/global/grownups/promo_3.swf]]></filepath>
+	</promo-->
+	<!--promo>
+		<name><![CDATA[$3 Promo link from Home page bottom banner]]></name>
+		<campaign><![CDATA[ThreeDollarDoll]]></campaign>
+		<channel><![CDATA[Home]]></channel>
+		<contenttype><![CDATA[InternalAdBanner]]></contenttype>
+		<action><![CDATA[Click]]></action>
+		<clickURL><![CDATA[/catalog/productbrd.aspx?sku=p6508]]></clickURL>
+		<openInSameWindow>Yes</openInSameWindow>
+		<position>#</position>
+		<filepath><![CDATA[\global\grownups\promo_4.swf]]></filepath>
+	</promo>
+	<promo>
+		<name><![CDATA[Celebrate 50th link from Home page bottom banner]]></name>
+		<campaign><![CDATA[Fiftieth]]></campaign>
+		<channel><![CDATA[Home]]></channel>
+		<contenttype><![CDATA[InternalAdBanner]]></contenttype>
+		<action><![CDATA[Click]]></action>
+		<clickURL><![CDATA[Javascript:pop('BarbieMedia', '/interstitial_50th.aspx',434,390, '', '')]]></clickURL>
+		<openInSameWindow>Yes</openInSameWindow>
+		<position>#</position>
+		<filepath><![CDATA[\global\grownups\promo_5.swf]]></filepath>
+	</promo-->	
+</promos>
