@@ -1,0 +1,17 @@
+<xml>
+	<loadSchema preloader="preloader.swf" localizationXML="xml/strings.xml" fontSWF="fonts.swf" loader="loader.swf" loaderBG="img/loaderBG.jpg" audioXML="xml/soundFiles.xml" primaryBatch="primary" autoLoadQueue="" />
+	
+	<primary>
+		<!---- swf id="childswf" file="childswf.swf" -->
+		<!---- xml id="xml" file="xml.xml" -->
+		<!---- img id="img" file="img.jpg" -->
+		<!---- txtData id="childswf" file="txt.cvs" -->
+		<audioswf id="audioSWF" file="audioswf.swf" />
+		<audioLoadList groupIDQueue="music,sfx,vo" />
+		
+		<audioswf id="titlescreen" file="dhpuzzletitle.swf" />
+		<audioswf id="gameswf" file="dhpuzzlegame.swf" />
+		<xml id="gamesettings" file="xml/gamesettings.xml" />
+		
+	</primary>
+</xml>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data debugChar=''>
+		<!--
+		<dynamicText>
+			params:
+				id (required):
+					The id of the library item
+				centerVerticallyOnOriginalText (optional): 
+					Default is true.  
+					This will vertically center the new text on the original text height and y values.
+					Set to false if you want to always use the original y position (think scroll text under mask)
+
+			nodes:
+				<text> (optional):
+					The text you want to display.  
+					You can leave blank or remove text node for blank.
+		-->
+		
+	<!-- loader.fla -->
+	<dynamicText id='txt_loading' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Regular' size='33' color='#f507a9'>LOADING...</font>]]>
+		</text>
+	</dynamicText>
+
+<!-- dhpuzzletitle.fla -->
+	<dynamicText id='txt_title1' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Regular' size='53' color='#e02d87'>DREAMHOUSE</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_title2' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Regular' size='32' color='#e12e88'>PUZZLE PARTY</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_titleDescription' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Medium' size='24' color='#ffffff'>Party time! Put together five puzzles and get a fun meme! Play again and again to get new puzzles and memes!</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_titlePlayBtn' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Medium' size='29' color='#ffffff'>PLAY</font>]]>
+		</text>
+	</dynamicText>
+
+<!-- dhpuzzlegame.fla -->
+	<dynamicText id='txt_titlePlayBtn' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Medium' size='29' color='#ffffff'>PLAY</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_title2' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Regular' size='32' color='#e12e88'>PUZZLE PARTY</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_title1' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Regular' size='53' color='#e02d87'>DREAMHOUSE</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_chooselevel' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Medium' size='38' color='#ffffff'>CHOOSE A CHALLENGE LEVEL</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_easyBtn' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Medium' size='30' color='#ffffff'>EASY</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_craycray' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Medium' size='30' color='#ffffff'>CRAY CRAY</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_help1' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Medium' size='18' color='#ffffff'>Piece together 5 fab puzzles to get your fun meme!</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_help2' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Medium' size='18' color='#ffffff'>Finish the pic here!</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_help3' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Medium' size='18' color='#ffffff'>Keep playing to <br>beat your high score!</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_help4' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Medium' size='18' color='#ffffff'>Beat the clock and <br>get bonus points!</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_help5' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Medium' size='18' color='#ffffff'>Drag your puzzle pieces over to the pic! Pieces dance around in the Cray Cray level!</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_closeBtn' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Regular' size='27' color='#ffffff'>CLOSE</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_printablecopyfooter' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Regular' size='8' color='#e13696'>2013 Mattel, Inc. All Rights Reserved</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_hintBtn' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Medium' size='16' color='#ffffff'>HINT</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_BonusTimer' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Bold' size='18' color='#ffffff'>BONUS TIMER</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_score' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Bold' size='18' color='#ffffff'>SCORE</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_level' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Bold' size='18' color='#ffffff'>LEVEL</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_yourscore' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Bold' size='16' color='#570a7e'>YOUR <br>SCORE</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_printBtn' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Bold' size='16' color='#ffffff'>PRINT</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_playagainbtn' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Bold' size='17' color='#fff000'>PLAY AGAIN</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_doneBtn' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Bold' size='17' color='#fff000'>DONE</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_offhook' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Medium' size='21' color='#673385'>"You’re off the hook!"</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_trans22' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Medium' size='21' color='#673385'>"Wow! Can you help me put together a car next?"</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_trans23' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Medium' size='21' color='#673385'>"Game on! Way to go!"</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_trans24' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Medium' size='21' color='#673385'>"You're on track for the big win!"</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_trans25' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Medium' size='21' color='#673385'>"Don't go to pieces. You're almost there."</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_trans26' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Medium' size='21' color='#673385'>"You go, girl!"</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_trans27' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Medium' size='21' color='#673385'>"You make this party bearable!"</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_trans28' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Medium' size='21' color='#673385'>"You rock, doll!"</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_trans29' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Medium' size='21' color='#673385'>"You have a pedigree for puzzles!"</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_trans12' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Medium' size='21' color='#673385'>"You’re almost there! <br>The suspense! Eeeeeee!"</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_trans13' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Medium' size='21' color='#673385'>"You’re about to pwn this game!"</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_trans14' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Medium' size='21' color='#673385'>"One more to the finish line!"</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_trans15' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Medium' size='21' color='#673385'>"You’re great. Like yogurt!"</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_trans16' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Medium' size='21' color='#673385'>"Girl, you’re so close! Rock it!"</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_trans17' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Medium' size='21' color='#673385'>"Wow! You’re as fab as me!"</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_trans18' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Medium' size='21' color='#673385'>"You play puzzles like I play music. Perfect!"</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_trans19' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Medium' size='21' color='#673385'>"You’re great — you must have a little Golden Retriever in you!"</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_dreamhouseSmall' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Regular' size='53' color='#e02d87'>DREAMHOUSE</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_puzzlepartySmall' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Regular' size='32' color='#e02d87'>PUZZLE PARTY</font>]]>
+		</text>
+	</dynamicText>
+	<dynamicText id='txt_totes' centerVerticallyOnOriginalText='true'>
+		<text>
+			<![CDATA[<font face='Brandon Grotesque Medium' size='21' color='#673385'>"Totes amaze! <br>One more left!"</font>]]>
+		</text>
+	</dynamicText>
+</data>

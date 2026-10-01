@@ -1,0 +1,497 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<data>
+
+	<generalsettings>
+		<pointspertile>25</pointspertile>
+		<bonusduration>30</bonusduration>
+		<hintduration>1</hintduration>
+		<picturebasepath>pics/</picturebasepath>
+		
+		<!--How Many Tiles Get Hidden In Each Level-->
+		<tilesToHideEasy>3,5,6,9,11</tilesToHideEasy>
+		<tilesToHideHard>6,8,10,12,13</tilesToHideHard>
+		
+		<!--How Many Distractors Are Used In Each Level-->
+		<distractorPerEasyLevel>0,0,0,0,0</distractorPerEasyLevel>
+		<distractorPerHardLevel>1,2,3,3,3</distractorPerHardLevel>
+		
+	</generalsettings>
+	
+	<firstpool>
+		<p1pic img="pic43.jpg" />
+		<p1pic img="pic44.jpg" />
+		<p1pic img="pic45.jpg" />
+		<p1pic img="pic46.jpg" />
+		<p1pic img="pic47.jpg" />
+		<p1pic img="pic48.jpg" />
+		<p1pic img="pic49.jpg" />
+		<p1pic img="pic50.jpg" />
+		<p1pic img="pic51.jpg" />
+		<p1pic img="pic52.jpg" />
+		<p1pic img="pic53.jpg" />
+		<p1pic img="pic54.jpg" />
+		<p1pic img="pic55.jpg" />
+		<p1pic img="pic56.jpg" />
+		<p1pic img="pic57.jpg" />
+		<p1pic img="pic58.jpg" />
+		<p1pic img="pic59.jpg" />
+		<p1pic img="pic60.jpg" />
+		<p1pic img="pic61.jpg" />
+		<p1pic img="pic62.jpg" />
+		<p1pic img="pic63.jpg" />
+		<p1pic img="pic64.jpg" />
+		<p1pic img="pic65.jpg" />
+		<p1pic img="pic66.jpg" />
+		<p1pic img="pic67.jpg" />
+		<p1pic img="pic68.jpg" />
+		<p1pic img="pic69.jpg" />
+		<p1pic img="pic70.jpg" />
+		<p1pic img="pic71.jpg" />
+		<p1pic img="pic72.jpg" />
+		<p1pic img="pic73.jpg" />
+		<p1pic img="pic74.jpg" />
+		<p1pic img="pic75.jpg" />
+		<p1pic img="pic76.jpg" />
+		<p1pic img="pic77.jpg" />
+		<p1pic img="pic78.jpg" />
+		<p1pic img="pic79.jpg" />
+		<p1pic img="pic80.jpg" />
+		<p1pic img="pic81.jpg" />
+		<p1pic img="pic82.jpg" />
+		<p1pic img="pic83.jpg" />
+		<p1pic img="pic84.jpg" />
+		<p1pic img="pic85.jpg" />
+		<p1pic img="pic86.jpg" />
+		<p1pic img="pic87.jpg" />
+		<p1pic img="pic88.jpg" />
+		<p1pic img="pic89.jpg" />
+		<p1pic img="pic90.jpg" />
+		<p1pic img="pic91.jpg" />
+		<p1pic img="pic92.jpg" />
+		<p1pic img="pic93.jpg" />
+		<p1pic img="pic94.jpg" />
+		<p1pic img="pic95.jpg" />
+		<p1pic img="pic96.jpg" />
+		<p1pic img="pic97.jpg" />
+		<p1pic img="pic98.jpg" />
+		<p1pic img="pic99.jpg" />
+		<p1pic img="pic100.jpg" />
+		<p1pic img="pic101.jpg" />
+		<p1pic img="pic102.jpg" />
+		<p1pic img="pic103.jpg" />
+		<p1pic img="pic104.jpg" />
+		<p1pic img="pic105.jpg" />
+		<p1pic img="pic106.jpg" />
+		<p1pic img="pic107.jpg" />
+		<p1pic img="pic108.jpg" />
+		<p1pic img="pic109.jpg" />
+		<p1pic img="pic110.jpg" />
+		<p1pic img="pic111.jpg" />
+		<p1pic img="pic112.jpg" />
+		<p1pic img="pic113.jpg" />
+		<p1pic img="pic114.jpg" />
+		<p1pic img="pic115.jpg" />
+		<p1pic img="pic116.jpg" />
+		<p1pic img="pic117.jpg" />
+		<p1pic img="pic118.jpg" />
+		<p1pic img="pic119.jpg" />
+		<p1pic img="pic120.jpg" />
+		<p1pic img="pic121.jpg" />
+		<p1pic img="pic122.jpg" />
+		<p1pic img="pic123.jpg" />
+		<p1pic img="pic124.jpg" />
+		<p1pic img="pic125.jpg" />
+		<p1pic img="pic126.jpg" />
+		<p1pic img="pic127.jpg" />
+		<p1pic img="pic128.jpg" />
+		<p1pic img="pic129.jpg" />
+		<p1pic img="pic130.jpg" />
+		<p1pic img="pic131.jpg" />
+		<p1pic img="pic132.jpg" />
+		<p1pic img="pic133.jpg" />
+		<p1pic img="pic134.jpg" />
+		<p1pic img="pic135.jpg" />
+		<p1pic img="pic136.jpg" />
+		<p1pic img="pic137.jpg" />
+		<p1pic img="pic138.jpg" />
+		<p1pic img="pic139.jpg" />
+		<p1pic img="pic140.jpg" />
+		<p1pic img="pic141.jpg" />
+		<p1pic img="pic142.jpg" />
+		<p1pic img="pic143.jpg" />
+		<p1pic img="pic144.jpg" />
+		<p1pic img="pic145.jpg" />
+		<p1pic img="pic146.jpg" />
+		<p1pic img="pic147.jpg" />
+		<p1pic img="pic148.jpg" />
+		<p1pic img="pic149.jpg" />
+		<p1pic img="pic150.jpg" />
+		<p1pic img="pic151.jpg" />
+		<p1pic img="pic152.jpg" />
+		<p1pic img="pic153.jpg" />
+		<p1pic img="pic154.jpg" />
+		<p1pic img="pic155.jpg" />
+		<p1pic img="pic156.jpg" />
+		<p1pic img="pic157.jpg" />
+		<p1pic img="pic158.jpg" />
+		<p1pic img="pic159.jpg" />
+		<p1pic img="pic160.jpg" />
+		<p1pic img="pic161.jpg" />
+		<p1pic img="pic162.jpg" />
+		<p1pic img="pic163.jpg" />
+		<p1pic img="pic164.jpg" />
+		<p1pic img="pic165.jpg" />
+			
+	</firstpool>
+
+	
+	<finalpool>
+		<picture img="pic1.jpg" bigimg="pic1big.jpg">
+			<topmeme><![CDATA[REAL DOLL LOVE ]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+		
+		<picture img="pic2.jpg" bigimg="pic2big.jpg">
+			<topmeme><![CDATA[SHE DISHONORS THE FAMILY ]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+                <picture img="pic3.jpg" bigimg="pic3big.jpg">
+			<topmeme><![CDATA[NO SCONES FOR YOU!  ]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+                <picture img="pic4.jpg" bigimg="pic4big.jpg">
+			<topmeme><![CDATA[KEEP CALM and]]></topmeme>
+			<botmeme><![CDATA[EAT CUPCAKES ]]></botmeme>
+		</picture>
+                <picture img="pic5.jpg" bigimg="pic5big.jpg">
+			<topmeme><![CDATA[DERP ]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+                <picture img="pic6.jpg" bigimg="pic6big.jpg">
+			<topmeme><![CDATA[]]></topmeme>
+			<botmeme><![CDATA[RIDICULOUSLY PHOTOGENIC GUY ]]></botmeme>
+		</picture>
+                <picture img="pic7.jpg" bigimg="pic7big.jpg">
+			<topmeme><![CDATA[KEN, STOP. STOP, WILL YOU? STOP, KEN.  ]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+                <picture img="pic8.jpg" bigimg="pic8big.jpg">
+			<topmeme><![CDATA[SWAGGER  ]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+                <picture img="pic9.jpg" bigimg="pic9big.jpg">
+			<topmeme><![CDATA[WAX ON, KEN, WAX ON ]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+                <picture img="pic10.jpg" bigimg="pic10big.jpg">
+			<topmeme><![CDATA[LIKE DOLLS' EYES]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+                <picture img="pic12.jpg" bigimg="pic12big.jpg">
+			<topmeme><![CDATA[I AM NOT GOOD WITH COMPUTER  ]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+                <picture img="pic13.jpg" bigimg="pic13big.jpg">
+			<topmeme><![CDATA[ONE DOES NOT SIMPLY WALK INTO]]></topmeme>
+			<botmeme><![CDATA[THE DREAMHOUSE ]]></botmeme>
+		</picture>
+                <picture img="pic14.jpg" bigimg="pic14big.jpg">
+			<topmeme><![CDATA[]]></topmeme>
+			<botmeme><![CDATA[MAN HUNK NAMED RYAN ]]></botmeme>
+		</picture>
+                <picture img="pic15.jpg" bigimg="pic15big.jpg">
+			<topmeme><![CDATA[]]></topmeme>
+			<botmeme><![CDATA[GIVE US THE PRECIOUS! ]]></botmeme>
+		</picture>
+                <picture img="pic16.jpg" bigimg="pic16big.jpg">
+			<topmeme><![CDATA[SKIPPER IS THE INTERNET   ]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+                <picture img="pic17.jpg" bigimg="pic17big.jpg">
+			<topmeme><![CDATA[CHALLENGE ACCEPTED ]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+                <picture img="pic18.jpg" bigimg="pic18big.jpg">
+			<topmeme><![CDATA[I HAVE NO IDEA WHAT I'M DOING  ]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+                <picture img="pic19.jpg" bigimg="pic19big.jpg">
+			<topmeme><![CDATA[ROCKIN' HORSE! ]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+                <picture img="pic20.jpg" bigimg="pic20big.jpg">
+			<topmeme><![CDATA[WOL]]></topmeme>
+			<botmeme><![CDATA[WHINNYING OUT LOUD ]]></botmeme>
+		</picture>
+                <picture img="pic21.jpg" bigimg="pic21big.jpg">
+			<topmeme><![CDATA[KEN'S ANGELS  ]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+	
+		
+                <picture img="pic22.jpg" bigimg="pic22big.jpg">
+			<topmeme><![CDATA[BECAUSE SHE'S BARBIE ]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+                <picture img="pic23.jpg" bigimg="pic23big.jpg">
+			<topmeme><![CDATA[FASHION ICON]]></topmeme>
+			<botmeme><![CDATA[SINCE 1959 ]]></botmeme>
+		</picture>
+                <picture img="pic24.jpg" bigimg="pic24big.jpg">
+			<topmeme><![CDATA[MADE FOR EACH OTHER  ]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+                <picture img="pic25.jpg" bigimg="pic25big.jpg">
+			<topmeme><![CDATA[OTP  ]]></topmeme>
+			<botmeme><![CDATA[ONE TRUE PAIRING]]></botmeme>
+		</picture>
+                <picture img="pic26.jpg" bigimg="pic26big.jpg">
+			<topmeme><![CDATA[ ]]></topmeme>
+			<botmeme><![CDATA[YOLO]]></botmeme>
+		</picture>
+			<!-- START -->
+                      <picture img="pic27.jpg" bigimg="pic27big.jpg">
+			<topmeme><![CDATA[BLISSA DON'T PLAY BALL ]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+                <picture img="pic28.jpg" bigimg="pic28big.jpg">
+			<topmeme><![CDATA[CHEEZBURGER?]]></topmeme>
+			<botmeme><![CDATA[I CAN HAS STEAK! ]]></botmeme>
+		</picture>
+                <picture img="pic29.jpg" bigimg="pic29big.jpg">
+			<topmeme><![CDATA[MAKE ME AN OFFER ]]></topmeme>
+			<botmeme><![CDATA[I CAN'T REFUSE ]]></botmeme>
+		</picture>
+                <picture img="pic30.jpg" bigimg="pic30big.jpg">
+			<topmeme><![CDATA[WATCH OUT ]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>  
+					</picture>    
+				<!-- END -->
+                <picture img="pic31.jpg" bigimg="pic31big.jpg">
+			<topmeme><![CDATA[]]></topmeme>
+			<botmeme><![CDATA[SASSY -- THE FASHION FORWARD SNOWMAN ]]></botmeme>
+		</picture>
+                <picture img="pic32.jpg" bigimg="pic32big.jpg">
+			<topmeme><![CDATA[DEAL WITH IT!  ]]></topmeme>
+			<botmeme><![CDATA[OBJECTS IN THE MIRROR MAY BE HANDSOMER THAN THEY APPEAR]]></botmeme>
+		</picture>
+                <picture img="pic34.jpg" bigimg="pic34big.jpg">
+			<topmeme><![CDATA[I'M ON IT  ]]></topmeme>
+			<botmeme><![CDATA[LIKE A BOSS]]></botmeme>
+		</picture>
+                <picture img="pic35.jpg" bigimg="pic35big.jpg">
+			<topmeme><![CDATA[DO YOU EVEN LIFT?]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+                <picture img="pic36.jpg" bigimg="pic36big.jpg">
+			<topmeme><![CDATA[CUTENESS OVERLOAD  ]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+
+                <picture img="pic37.jpg" bigimg="pic37big.jpg">
+			<topmeme><![CDATA[DOES THIS LOOK LIKE A   ]]></topmeme>
+			<botmeme><![CDATA[SCHLOND POOFA TO YOU?]]></botmeme>
+		</picture>
+                <picture img="pic38.jpg" bigimg="pic38big.jpg">
+			<topmeme><![CDATA[FAN GIRLS ]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+                <picture img="pic39.jpg" bigimg="pic39big.jpg">
+			<topmeme><![CDATA[IT'S A TRAP! ]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+                <picture img="pic40.jpg" bigimg="pic40big.jpg">
+			<topmeme><![CDATA[SPYWARE]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+  
+
+	  <picture img="pic41.jpg" bigimg="pic41big.jpg">
+			<topmeme><![CDATA[BARBIE COSPLAY IS FAB]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+    <picture img="pic42.jpg" bigimg="pic42big.jpg">
+			<topmeme><![CDATA[CHELSEA IS]]></topmeme>
+			<botmeme><![CDATA[NOT IMPRESSED ]]></botmeme>
+		</picture>
+    <picture img="pic166.jpg" bigimg="pic166big.jpg">
+			<topmeme><![CDATA[MY FACE WHEN]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+                <picture img="pic167.jpg" bigimg="pic167big.jpg">
+			<topmeme><![CDATA[EVERYBODY NEEDS A KEN]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+                <picture img="pic168.jpg" bigimg="pic168big.jpg">
+			<topmeme><![CDATA[EPIC FASHION FAIL]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+                <picture img="pic169.jpg" bigimg="pic169big.jpg">
+			<topmeme><![CDATA[I DUNNO. LOL! ]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+                <picture img="pic170.jpg" bigimg="pic170big.jpg">
+			<topmeme><![CDATA[THAT HAIR LOOKS YUMMY  ]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+                <picture img="pic171.jpg" bigimg="pic171big.jpg">
+			<topmeme><![CDATA[DANCING IS EASY ]]></topmeme>
+			<botmeme><![CDATA[ALL YOU HAVE TO DO IS SHAKE IT ]]></botmeme>
+		</picture>
+                <picture img="pic172.jpg" bigimg="pic172big.jpg">
+			<topmeme><![CDATA[TERESA ]]></topmeme>
+			<botmeme><![CDATA[SAVING THE SPACE-TIME CONTINUUM ONE STITCH AT A TIME ]]></botmeme>
+		</picture>
+           <picture img="pic173.jpg" bigimg="pic173big.jpg">
+			<topmeme><![CDATA[PUPPIES!!!]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+
+
+		<picture img="pic174.jpg" bigimg="pic174big.jpg">
+			<topmeme><![CDATA[THAT MOMENT WHEN]]></topmeme>
+			<botmeme><![CDATA[THE TEACHER SAYS THERE WAS HOMEWORK]]></botmeme>
+		</picture>
+
+
+		<picture img="pic175.jpg" bigimg="pic175big.jpg">
+			<topmeme><![CDATA[KEN, I'M A DOCTOR NOT A...]]></topmeme>
+			<botmeme><![CDATA[OH, WAIT]]></botmeme>
+		</picture>
+
+
+		<picture img="pic176.jpg" bigimg="pic176big.jpg">
+			<topmeme><![CDATA[STAR SHIP]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+
+
+		<picture img="pic177.jpg" bigimg="pic177big.jpg">
+			<topmeme><![CDATA[LICENSED TO]]></topmeme>
+			<botmeme><![CDATA[LOOK KILLER]]></botmeme>
+		</picture>
+
+
+		<picture img="pic178.jpg" bigimg="pic178big.jpg">
+			<topmeme><![CDATA[]]></topmeme>
+			<botmeme><![CDATA[YES, THIS IS ART]]></botmeme>
+		</picture>
+
+
+		<picture img="pic179.jpg" bigimg="pic179big.jpg">
+			<topmeme><![CDATA[FEELS]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+
+
+		<picture img="pic180.jpg" bigimg="pic180big.jpg">
+			<topmeme><![CDATA[WITH GREAT POWER]]></topmeme>
+			<botmeme><![CDATA[COMES GREAT RESPONSIBILITY]]></botmeme>
+		</picture>
+
+
+		<picture img="pic181.jpg" bigimg="pic181big.jpg">
+			<topmeme><![CDATA[I MUST GO]]></topmeme>
+			<botmeme><![CDATA[MY PLANET NEEDS ME]]></botmeme>
+		</picture>
+
+
+		<picture img="pic182.jpg" bigimg="pic182big.jpg">
+			<topmeme><![CDATA[NACHO CHEESE]]></topmeme>
+			<botmeme><![CDATA[THAT'S THE JOKE]]></botmeme>
+		</picture>
+
+
+		<picture img="pic183.jpg" bigimg="pic183big.jpg">
+			<topmeme><![CDATA[WHEN BOYS HAVE A SENSE YOU NEED THEM]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+
+
+		<picture img="pic184.jpg" bigimg="pic184big.jpg">
+			<topmeme><![CDATA[FACEPALM]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+
+
+		<picture img="pic185.jpg" bigimg="pic185big.jpg">
+			<topmeme><![CDATA[]]></topmeme>
+			<botmeme><![CDATA[THIS ISN'T EVEN MY FINAL FORM]]></botmeme>
+		</picture>
+
+
+		<picture img="pic186.jpg" bigimg="pic186big.jpg">
+			<topmeme><![CDATA[]]></topmeme>
+			<botmeme><![CDATA[SUGAR, SPICE AND POLYVINYLCHLORIDE]]></botmeme>
+		</picture>
+
+
+		<picture img="pic187.jpg" bigimg="pic187big.jpg">
+			<topmeme><![CDATA[RAQUELLE IS SWEET]]></topmeme>
+			<botmeme><![CDATA[SAID NO ONE EVER]]></botmeme>
+		</picture>
+
+
+		<picture img="pic188.jpg" bigimg="pic188big.jpg">
+			<topmeme><![CDATA[]]></topmeme>
+			<botmeme><![CDATA[THIS IS WHY WE CAN'T HAVE NICE THINGS]]></botmeme>
+		</picture>
+
+   
+		<picture img="pic189.jpg" bigimg="pic189big.jpg">
+			<topmeme><![CDATA[]]></topmeme>
+			<botmeme><![CDATA[YOU CAME TO THE RIGHT NEIGHBORHOOD FRIEND]]></botmeme>
+		</picture>
+
+
+		<picture img="pic190.jpg" bigimg="pic190big.jpg">
+			<topmeme><![CDATA[]]></topmeme>
+			<botmeme><![CDATA[NIGHT OF THE LIVING DISCO BALL]]></botmeme>
+		</picture>
+
+
+		<picture img="pic191.jpg" bigimg="pic191big.jpg">
+			<topmeme><![CDATA[I DIDN'T CHOOSE THE FAB LIFE]]></topmeme>
+			<botmeme><![CDATA[THE FAB LIFE CHOSE ME]]></botmeme>
+		</picture>
+
+
+		<picture img="pic192.jpg" bigimg="pic192big.jpg">
+			<topmeme><![CDATA[WHY SO SERIOUS?]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+
+		<picture img="pic193.jpg" bigimg="pic193big.jpg">
+			<topmeme><![CDATA[YOU HAD ONE JOB]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+
+		<picture img="pic194.jpg" bigimg="pic194big.jpg">
+			<topmeme><![CDATA[]]></topmeme>
+			<botmeme><![CDATA[ONLY THE BEAR NECESSITIES]]></botmeme>
+		</picture>
+
+		<picture img="pic195.jpg" bigimg="pic195big.jpg">
+			<topmeme><![CDATA[DAY 12:]]></topmeme>
+			<botmeme><![CDATA[THEY STILL DON'T KNOW I HAVE NO MAGICAL POWERS]]></botmeme>
+		</picture>
+
+		<picture img="pic196.jpg" bigimg="pic196big.jpg">
+			<topmeme><![CDATA[HE-MAN SEES]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>
+
+		<picture img="pic197.jpg" bigimg="pic197big.jpg">
+			<topmeme><![CDATA[BRACE YOURSELVES]]></topmeme>
+			<botmeme><![CDATA[SUMMER IS COMING]]></botmeme>
+		</picture>
+
+		<picture img="pic198.jpg" bigimg="pic198big.jpg">
+			<topmeme><![CDATA[WE LOVE YOU TOO DREAMHOUSERS]]></topmeme>
+			<botmeme><![CDATA[]]></botmeme>
+		</picture>		
+		
+	</finalpool>
+	
+	
+</data>

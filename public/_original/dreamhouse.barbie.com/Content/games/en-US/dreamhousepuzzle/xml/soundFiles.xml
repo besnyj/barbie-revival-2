@@ -1,0 +1,45 @@
+<data dir="mp3/">
+	<music channel="music" volume="50">
+		<sound file="helpLoop" volume="40" inLibrary="true" />
+		<sound file="music1" volume="50" inLibrary="true" />
+		<sound file="sting1" volume="50" loops="1" inLibrary="true" />
+		<sound file="music2" volume="50" inLibrary="true" />
+		<sound file="sting2" volume="50" loops="1" inLibrary="true" />
+	</music>
+	
+	<sfx channel="sfx" volume="50">
+		<sound file="click1" volume="15" inLibrary="true" />
+		<sound file="click2" volume="15" inLibrary="true" />
+		<sound file="ro1" volume="15" inLibrary="true" />
+		<sound file="ro2" volume="15" inLibrary="true" />
+		<sound file="ro3-1" id="ro3" volume="15" inLibrary="true" />
+		<sound file="ro3-2" id="ro3" volume="15" inLibrary="true" />
+		<sound file="ro3-3" id="ro3" volume="15" inLibrary="true" />
+		<sound file="ro3-4" id="ro3" volume="15" inLibrary="true" />
+		<sound file="ro3-5" id="ro3" volume="15" inLibrary="true" />
+		<sound file="ro3-6" id="ro3" volume="15" inLibrary="true" />
+
+		<sound file="CA1" id="CA" volume="50" inLibrary="true" />
+		<sound file="CA2" id="CA" volume="50" inLibrary="true" />
+		<sound file="CA3" id="CA" volume="50" inLibrary="true" />
+		<sound file="CA4" id="CA" volume="50" inLibrary="true" />
+		<sound file="CA5" id="CA" volume="50" inLibrary="true" />
+
+		<sound file="WA" volume="50" inLibrary="true" />
+		<sound file="timeBurst1" volume="50" inLibrary="true" />
+		<sound file="timeBurst2" volume="50" inLibrary="true" />
+		<sound file="spin1" id="spin" volume="50" inLibrary="true" />
+		<sound file="spin2" id="spin" volume="50" inLibrary="true" />
+		<sound file="spin3" id="spin" volume="50" inLibrary="true" />
+
+		<sound file="Cloths" volume="100" inLibrary="true" />
+		<sound file="Girls" volume="100" inLibrary="true" />
+		<sound file="Shoes" volume="100" inLibrary="true" />
+		<sound file="L2" volume="100" inLibrary="true" />
+		<sound file="L4" volume="100" inLibrary="true" />
+	</sfx>
+	
+	<vo channel="vo" volume="50">
+		
+	</vo>
+</data>

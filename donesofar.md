@@ -193,3 +193,29 @@ A pedido da usuária, o logo da Barbie no canto superior esquerdo foi trocado **
 - Categorias alternativas dos catálogos e `data/popup.xml` do herói de Games não existem no archive (lacunas documentadas).
 - Páginas internas do I Can Be (games, videos, careers, dolls) ainda não restauradas.
 - Revisão visual desktop completa por página e estado interativo, reconciliação final dos manifestos e preparação para GitHub/Cloudflare (publicação segue adiada conforme combinado).
+
+## Continuação — 01/10/2026 (Dreamhouse Puzzle Party e My Dreamhouse)
+
+Os dois destinos da home/Games de junho de 2013 foram identificados no HTML/XML original: **Dreamhouse Puzzle Party** (`dreamhouse.barbie.com/en-US/games/puzzle-party/`, anunciado pelo slide Dreamhouse Puzzle Party) e **My Dreamhouse** (`/my-dreamhouse/`, anunciado pelo slide My Dreamhouse). “Life in the Dreamhouse” é o nome da área/franquia; não foi confundido com o jogo comercial Dreamhouse Party lançado depois. Cópias das páginas HTML de 27/06/2013 estão em `research/details/`.
+
+### Dreamhouse Puzzle Party — jogável com quase todo o acervo de imagens
+
+- Recuperei o `dhpuzzlewrapper.swf` de 25/06/2013 e suas dependências de runtime (configuração, preloader, fontes, loader, áudio, título, jogo e textos). As dependências restantes resolvem para capturas de 2014; cada data está no manifesto.
+- A configuração original lista 123 imagens no primeiro conjunto e 73 imagens com versão grande no conjunto final. A primeira busca no Wayback trouxe **25 JPEGs válidos**; outras respostas eram páginas de erro/redirecionamento ou bytes que não eram JPEG. Depois encontrei o jogo no [Flashpoint Archive](https://flashpointarchive.org/view?id=ed19bc40-a48f-4c88-8253-bd97a764027f) e recuperei **213 JPEGs adicionais** do seu espelho Legacy: agora há **238 de 269 arquivos** referenciados. `research/flashpoint-puzzle-images.json` lista o resultado e a origem de cada arquivo; `scripts/recover_flashpoint_puzzle.py` reproduz a busca.
+- Preservei o `gamesettings.xml` integral em `research/dreamhouse-puzzle-gamesettings-original.xml`. A cópia de runtime filtra referências indisponíveis: **96 de 123** imagens no primeiro conjunto e **71 de 73** pares de imagem/meme final. Esta adaptação evita sorteios de arquivos ausentes; ainda não equivale ao acervo original completo.
+- Integrei a rota local `/dreamhouse/puzzle-party/`, o clique do card em Games e a URL externa reescrita pelo slide. Teste visual com Ruffle após a expansão: tela inicial, escolha de dificuldade e primeira fase com imagem e peças originais carregadas. Não completei as cinco fases; a tela final ainda exige teste.
+
+### My Dreamhouse — editor local jogável com artes preservadas
+
+- Recuperei o `barbie.swf` original referenciado pela página de 2013; a captura preservada do SWF é de 22/01/2014, mas os metadados internos indicam modificação em 20/05/2013. Este arquivo foi mantido em `public/my-dreamhouse/barbie.swf`.
+- O SWF pede `/en-us/xml/assets.xml` e `/en-us/xml/sitecopy.xml` no antigo `design-my-dreamhouse.barbie.com`. Ambos foram encontrados apenas na captura de 01/08/2015, portanto não comprovam o catálogo de junho de 2013.
+- Examinei as cópias dos dois jogos no NuMuKi. Para My Dreamhouse, recuperei também o `game.swf` disponibilizado lá; seus metadados internos indicam **30/06/2014**. Essa versão posterior é a prévia executada na rota `/my-dreamhouse/`, porque o SWF original ficou em branco no teste local, enquanto a versão posterior abre o menu e a tela de construção.
+- Encontrei [My Dreamhouse no Flashpoint Archive](https://flashpointarchive.org/view?id=8b1220a2-e543-49e4-8f36-0b349083309d). O SWF desse acervo é idêntico, byte a byte, ao do NuMuKi; o XML de assets é idêntico à cópia Wayback. O espelho Legacy fornece também as artes: recuperei **todos os 473 arquivos distintos PNG/JPEG/SWF/MP3** referenciados pelo XML, inclusive os quatro arquivos de menu verificados, com assinatura válida. `research/flashpoint-my-dreamhouse-assets.json` registra URL e estado por arquivo; `scripts/recover_flashpoint.py` reproduz a recuperação.
+- Testei no navegador local: menu, miniaturas de casas, escolha e construção da Chelsea Dreamhouse, interior, catálogo de decorações e arrastar uma palmeira para o cômodo. As artes aparecem e a interação funciona. O aviso da rota agora informa que o jogo está jogável localmente. Salvar e galeria online seguem **não verificados**; o conjunto SWF/XML/artes de 2014/2015 não comprova uma reprodução exata do estado de junho de 2013.
+
+### Estado e próximos passos desses dois jogos
+
+- **Puzzle Party:** rota e primeira fase funcionam com 238/269 JPEGs referenciados; testar as cinco fases, a tela final e controles. As 31 imagens ausentes continuam listadas no relatório.
+- **My Dreamhouse:** editor de decoração jogável localmente com as 473 artes referenciadas pelo XML recuperadas; testar salvar e galeria. A versão executada é de 2014 com XML/artes preservadas em 2015 e não deve ser apresentada como equivalente exata à de junho de 2013.
+- `scripts/recover.py` agora valida assinaturas reais de SWF/JPEG/PNG/GIF, impedindo que erros do arquivo histórico sejam registrados como assets válidos.
+- Nenhum dos dois jogos foi publicado; GitHub/Cloudflare continuam adiados.

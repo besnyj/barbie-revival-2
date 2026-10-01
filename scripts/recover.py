@@ -19,7 +19,14 @@ def recover(path):
     lines = result.stdout.splitlines()
     data = target.read_bytes() if target.exists() else b''
     valid = result.returncode == 0 and lines and lines[0] == '200' and bool(data)
-    if target.suffix.lower() in ('.swf', '.jpg', '.png', '.gif') and data.lstrip().startswith((b'<', b'<!')):
+    signatures = {
+        '.swf': (b'FWS', b'CWS', b'ZWS'),
+        '.jpg': (b'\xff\xd8\xff',),
+        '.jpeg': (b'\xff\xd8\xff',),
+        '.png': (b'\x89PNG\r\n\x1a\n',),
+        '.gif': (b'GIF87a', b'GIF89a'),
+    }
+    if target.suffix.lower() in signatures and not data.startswith(signatures[target.suffix.lower()]):
         valid = False
     if not valid and target.exists():
         target.unlink()

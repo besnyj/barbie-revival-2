@@ -3,6 +3,7 @@ const origin = location.origin;
 const rewriteRules = [
   [/^https?:\/\/(?:www\.)?barbie\.com(?::80)?\//i, origin + '/'],
   [/^https?:\/\/icanbe\.barbie\.com\//i, origin + '/_original/icanbe.barbie.com/'],
+  [/^https?:\/\/dreamhouse\.barbie\.com\/en-US\/games\/puzzle-party\/?$/i, origin + '/dreamhouse/puzzle-party/'],
   [new RegExp('^https?://((?!'+location.host.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'(?:/|$))[^/]+)/','i'), origin + '/_external/$1/'],
 ];
 window.RufflePlayer = {config:{autoplay:'on',unmuteOverlay:'hidden',splashScreen:false,contextMenu:'off',warnOnUnsupportedContent:false,logLevel:'warn',wmode:'transparent',allowScriptAccess:true,openUrlMode:'allow',urlRewriteRules:rewriteRules,publicPath:'/vendor/ruffle/'}};
@@ -71,6 +72,12 @@ document.addEventListener('click', event => {
   let url;
   try { url = new URL(href); } catch { return; }
   if (url.host === location.host) return;
+  if (url.hostname === 'dreamhouse.barbie.com' && normalize(url.pathname) === '/en-US/games/puzzle-party') {
+    event.preventDefault();
+    event.stopPropagation();
+    location.href = '/dreamhouse/puzzle-party/';
+    return;
+  }
   event.preventDefault();
   event.stopPropagation();
   location.href = '/includes/partner-interstitial.aspx?redirect=' + encodeURIComponent(url.href);
@@ -96,6 +103,10 @@ window.addEventListener('DOMContentLoaded',async()=>{
     location.replace('/');return;
   }
   if(path.startsWith('/_external/')){
+    if (path.toLowerCase() === '/_external/dreamhouse.barbie.com/en-us/games/puzzle-party') {
+      location.replace('/dreamhouse/puzzle-party/');
+      return;
+    }
     renderInterstitial('http://' + path.slice('/_external/'.length) + location.search + location.hash);
     return;
   }
@@ -122,6 +133,15 @@ window.addEventListener('DOMContentLoaded',async()=>{
   }else if(selected && ['fun_games','fantasy'].includes(selected[2])){
     const {renderCatalog}=await import('/sections/catalog.js');
     jobs.push(renderCatalog(main,selected[2],movie));
+  }else if(path==='/dreamhouse/puzzle-party'){
+    document.title='Dreamhouse Puzzle Party - Barbie';
+    main.innerHTML='<div class="dreamhouse-game" aria-label="Dreamhouse Puzzle Party game"></div>';
+    const base='/_original/dreamhouse.barbie.com/Content/games/en-US/dreamhousepuzzle/';
+    jobs.push(movie(main.firstElementChild,base+'dhpuzzlewrapper.swf',990,550,{assetPath:base}));
+  }else if(path==='/my-dreamhouse'){
+    document.title='My Dreamhouse - Barbie';
+    main.innerHTML='<div class="dreamhouse-status">My Dreamhouse is playable with recovered house and decoration artwork. The original online gallery and save services have not been verified. <a href="https://www.numuki.com/game/barbie-my-dreamhouse/">NuMuKi copy</a>.</div><div class="dreamhouse-game" aria-label="My Dreamhouse game"></div>';
+    jobs.push(movie(main.querySelector('.dreamhouse-game'),'/my-dreamhouse/game-numuki.swf',990,800,{environment:origin+'/_original/design-my-dreamhouse.barbie.com',locale:'en-us'}));
   }else if(path==='/sitemap.aspx'){
     main.innerHTML='<div class="site-map"><h1>Site Map</h1><ul>'+sections.map(([name,href])=>`<li><a href="${href}">${name}</a></li>`).join('')+'</ul></div>';
   }else{
