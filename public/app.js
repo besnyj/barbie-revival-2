@@ -122,7 +122,19 @@ window.addEventListener('DOMContentLoaded',async()=>{
   const accessible=document.createElement('div');accessible.className='fallback-links';
   for(const [name,href] of [['Barbie home','/'],...sections]){const a=document.createElement('a');a.href=href;a.textContent=name;accessible.append(a,document.createTextNode(' | '));}
   nav.append(accessible);
-  const jobs=[movie(nav,'/global/barbie_nav_new.swf?v=2',820,100,{cat:selected?.[2]||'homepage'})];
+  const hitAreas=document.createElement('div');hitAreas.className='nav-hit-areas';
+  for(const [name,href] of [['Barbie home','/'],...sections]){const a=document.createElement('a');a.href=href;a.setAttribute('aria-label',name);hitAreas.append(a);}
+  nav.append(hitAreas);
+  const navDeadline=performance.now()+5000;
+  const navJob=movie(nav,'/global/barbie_nav_new.swf?v=2',820,100,{cat:selected?.[2]||'homepage'});
+  navJob.then(player=>setTimeout(()=>{
+    if(!player.isConnected||typeof player.pause!=='function')return;
+    player.pause();
+    const playButton=player.shadowRoot?.getElementById('play-button');
+    if(playButton)playButton.style.display='none';
+    nav.classList.add('nav-paused');
+  },Math.max(0,navDeadline-performance.now())),noop);
+  const jobs=[navJob];
   const main=document.getElementById('main');
   if(isHome){
     const shoppingLink=url=>'/includes/partner-interstitial.aspx?redirect='+encodeURIComponent(url);
