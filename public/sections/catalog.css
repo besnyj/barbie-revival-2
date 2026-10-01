@@ -28,7 +28,7 @@
 .catalog-notice[hidden]{display:none}
 #containerTop{width:800px;background-image:url('/images/barbie_refresh/agg_top.png');background-repeat:no-repeat;height:46px;position:relative;float:left;margin-left:95px}
 #itemslistContainer{width:990px;background-repeat:repeat-y}
-#itemslist{height:auto;padding-left:0;position:relative;width:800px}
+#itemslist{height:auto;padding-left:0;position:relative;width:800px;margin-left:auto;margin-right:auto}
 #itemslist a{text-decoration:none;display:block;color:#9d0c55}
 #containerBottom{width:800px;background-image:url('/images/barbie_refresh/agg_bottom.jpg');background-repeat:no-repeat;height:19px;position:relative;float:left;margin-left:95px}
 .itemthumbdetail{float:left;padding-top:7px;padding-left:7px;position:relative}

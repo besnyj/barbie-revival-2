@@ -37,7 +37,7 @@ async def main():
         ["card size", "const e=document.querySelector('.itemthumb'); e.getBoundingClientRect().width+'x'+e.getBoundingClientRect().height"],
         ["card marginLeft/bottom", "const s=getComputedStyle(document.querySelector('.itemthumb')); s.marginLeft+'/'+s.marginBottom"],
         ["card count", "document.querySelectorAll('.itemthumb').length"],
-        ["cards per row", "(function(){const cards=[...document.querySelectorAll('.itemthumb')];const tops=new Set(cards.map(c=>Math.round(c.getBoundingClientRect().top)));return cards.length/tops.size})()"],
+        ["cards per row", "(function(){const cards=[...document.querySelectorAll('.itemthumb')];const tops=new Map();cards.forEach(c=>{const t=Math.round(c.getBoundingClientRect().top);tops.set(t,(tops.get(t)||0)+1)});return Math.max(...tops.values())+' max ('+[...tops.values()].join(',')+')'})()"],
         ["thumb title font", "getComputedStyle(document.querySelector('.thumbitemname')).fontSize+' '+getComputedStyle(document.querySelector('.thumbitemname')).fontWeight"],
         ["containerBottom h", "document.getElementById('containerBottom').getBoundingClientRect().height"],
         ["footer_links marginTop", "getComputedStyle(document.getElementById('footer_links')).marginTop"],

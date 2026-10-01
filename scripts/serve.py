@@ -7,6 +7,9 @@ import os
 os.chdir(Path(__file__).resolve().parent.parent / 'public')
 class Handler(SimpleHTTPRequestHandler):
     extensions_map = {**SimpleHTTPRequestHandler.extensions_map, '.wasm':'application/wasm', '.swf':'application/x-shockwave-flash', '.xml':'application/xml'}
+    def end_headers(self):
+        self.send_header('Cache-Control', 'no-cache, no-store, must-revalidate')
+        super().end_headers()
     def do_GET(self):
         p = urlsplit(self.path).path
         if p in ('/_original/icanbe.barbie.com', '/_original/icanbe.barbie.com/'):

@@ -105,7 +105,7 @@ window.addEventListener('DOMContentLoaded',async()=>{
   const accessible=document.createElement('div');accessible.className='fallback-links';
   for(const [name,href] of [['Barbie home','/'],...sections]){const a=document.createElement('a');a.href=href;a.textContent=name;accessible.append(a,document.createTextNode(' | '));}
   nav.append(accessible);
-  const jobs=[movie(nav,'/global/barbie_nav_new.swf',820,100,{cat:selected?.[2]||'homepage'}),movie(document.getElementById('shop'),'/global/shop_barbie_btn.swf',131,140)];
+  const jobs=[movie(nav,'/global/barbie_nav_new.swf?v=2',820,100,{cat:selected?.[2]||'homepage'}),movie(document.getElementById('shop'),'/global/shop_barbie_btn.swf',131,140)];
   const main=document.getElementById('main');
   if(isHome){
     main.innerHTML='<div class="home-hero" aria-label="Barbie homepage slideshow"></div><div class="promos" aria-label="More Barbie activities"></div>';
