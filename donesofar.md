@@ -223,3 +223,17 @@ Os dois destinos da home/Games de junho de 2013 foram identificados no HTML/XML 
 **Verificação posterior dos acessos:** cliquei nas duas thumbnails da aba Games e nas chamadas para jogar dos dois slides da home. Cada uma abriu a rota local do jogo correspondente (`/dreamhouse/puzzle-party/` ou `/my-dreamhouse/`). O logo “Life in the Dreamhouse” dentro do slide Puzzle Party é uma área clicável distinta que leva à página de personagens pela tela intermediária externa; a chamada do jogo no mesmo slide leva ao Puzzle Party local.
 
 **Dossiê de continuidade:** os achados técnicos, fontes, caminhos dos arquivos, listas de recursos, testes e lacunas dos dois jogos foram reunidos em `research/dreamhouse-games-restoration.md`, dentro do projeto de restauração.
+
+## Continuação — 01/10/2026 (backup dos slides da homepage)
+
+Criei três arquivos ZIP em `backups/homepage-carousel/`, um por slide: `01-dreamhouse-puzzle-party.zip`, `02-blid-profile.zip` e `03-my-dreamhouse.zip`. Cada um guarda a animação SWF e o plano de fundo correspondente. Para preservar o contexto de restauração, cada ZIP também traz cópias do controlador `HomeCDA.swf`, do XML original com os três slides, de `index.html`, `app.js`, `site.css` e dos arquivos do Ruffle necessários à reprodução; os source maps de depuração ficaram de fora.
+
+Cada arquivo inclui um `README.md` com instruções e um `MANIFEST.json` com hashes SHA-256. Verifiquei a integridade dos ZIPs e comparei os hashes de todos os itens com os arquivos atuais. Para recompor o carrossel completo, são necessários os três backups. Para repor apenas um slide em um carrossel ainda existente, é preciso recolocar seu SWF e JPG e conferir sua entrada no XML. Antes de substituir os arquivos compartilhados da homepage por cópias do backup, é necessário comparar eventuais mudanças posteriores. Nenhum arquivo ativo do carrossel foi removido ou alterado nesta etapa.
+
+## Continuação — 01/10/2026 (cabeçalho e páginas do bottom)
+
+- O cabeçalho recebeu a arte “The pink world is back” no espaço de anúncio; o antigo botão SWF de compras saiu da página. Sua cópia e recorte estão em `backups/header-bag/`, e o backup do cabeçalho em `backups/homepage-header/`.
+- Os três promos Flash abaixo do carrossel foram substituídos por seis botões HTML/CSS com capas aprovadas, títulos em texto real e animações de entrada, hover e clique. Blog, Printables, E-book e Wallpapers abrem páginas locais individuais de restauração. Barbie.com e Mattel Creations passam pela tela intermediária antes das lojas indicadas pela usuária.
+- Shopping ganhou uma faixa de título feita em CSS, paleta salmão suave e caixa compacta alinhada à direita, separada da primeira linha de botões. As capas usadas estão em `public/images/bottom-pages/` e as prévias em `design-previews/bottom-buttons/`.
+- A sintaxe JavaScript e as respostas das rotas locais foram conferidas. A última alteração de cor e posição ainda precisa de inspeção visual, pois o navegador integrado ficou indisponível nessa etapa.
+- A pasta `backups/` fica apenas neste computador e está no `.gitignore`. Copie esses arquivos separadamente antes de mover ou substituir esta cópia do projeto; eles não acompanham o repositório.

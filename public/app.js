@@ -10,6 +10,12 @@ window.RufflePlayer = {config:{autoplay:'on',unmuteOverlay:'hidden',splashScreen
 const sections = [
   ['Games','/activities/fun_games/','fun_games'],['Videos','/activities/btv/','btv'],['Fashion','/activities/fashion/','fashion'],['Sisters & Friends','/activities/friends/','friends'],['Fairytale','/activities/fantasy/','fantasy'],['I Can Be…','/_original/icanbe.barbie.com/en_us/index.html','iCanBe']
 ];
+const bottomPages = {
+  '/restoration/blog':'Blog',
+  '/restoration/printables':'Printables',
+  '/restoration/e-book':'E-book',
+  '/restoration/wallpapers':'Wallpapers'
+};
 const noop = ()=>{};
 window.trackAction = noop;
 window.trackClick = noop;
@@ -116,12 +122,28 @@ window.addEventListener('DOMContentLoaded',async()=>{
   const accessible=document.createElement('div');accessible.className='fallback-links';
   for(const [name,href] of [['Barbie home','/'],...sections]){const a=document.createElement('a');a.href=href;a.textContent=name;accessible.append(a,document.createTextNode(' | '));}
   nav.append(accessible);
-  const jobs=[movie(nav,'/global/barbie_nav_new.swf?v=2',820,100,{cat:selected?.[2]||'homepage'}),movie(document.getElementById('shop'),'/global/shop_barbie_btn.swf',131,140)];
+  const jobs=[movie(nav,'/global/barbie_nav_new.swf?v=2',820,100,{cat:selected?.[2]||'homepage'})];
   const main=document.getElementById('main');
   if(isHome){
-    main.innerHTML='<div class="home-hero" aria-label="Barbie homepage slideshow"></div><div class="promos" aria-label="More Barbie activities"></div>';
+    const shoppingLink=url=>'/includes/partner-interstitial.aspx?redirect='+encodeURIComponent(url);
+    const bottomButton=(name,image,index,href)=>`<a class="bottom-page-button" href="${href}" style="--button-index:${index}"><span class="bottom-page-art" style="background-image:url('/images/bottom-pages/${image}.png')" aria-hidden="true"></span><span class="bottom-page-label"><span>${name}</span><span class="bottom-page-arrow" aria-hidden="true">›</span></span></a>`;
+    main.innerHTML='<div class="home-hero" aria-label="Barbie homepage slideshow"></div><section class="bottom-pages" aria-label="Páginas do bottom"><div class="bottom-pages-grid">'+
+      bottomButton('Blog','blog',0,'/restoration/blog/')+bottomButton('Printables','printables',1,'/restoration/printables/')+bottomButton('E-book','e-books',2,'/restoration/e-book/')+bottomButton('Wallpapers','wallpapers',3,'/restoration/wallpapers/')+
+      '</div><section class="bottom-shopping" aria-labelledby="bottom-shopping-title"><h2 id="bottom-shopping-title"><span>Shopping</span></h2><div class="bottom-pages-grid">'+
+      bottomButton('Barbie.com','barbie-com',4,shoppingLink('https://shop.mattel.com/pt-br/pages/barbie'))+bottomButton('Mattel Creations','mattel-creations',5,shoppingLink('https://creations.mattel.com/pages/barbie-signature'))+
+      '</div></section></section>';
     jobs.push(movie(main.firstElementChild,'/global/homepageCDARotation/HomeCDA.swf',910,520,{domain:'*'}));
-    jobs.push(movie(main.lastElementChild,'/global/grownups/grownupsPromos.swf',725,180));
+    main.querySelectorAll('.bottom-page-button').forEach(button=>button.addEventListener('click',event=>{
+      if(event.metaKey||event.ctrlKey||event.shiftKey||event.altKey||event.button!==0)return;
+      event.preventDefault();
+      event.stopPropagation();
+      button.classList.add('is-clicked');
+      window.setTimeout(()=>{location.href=button.href},300);
+    }));
+  }else if(bottomPages[path]){
+    const name=bottomPages[path];
+    document.title=name+' - Barbie Revival';
+    main.innerHTML=`<section class="restoration-page bottom-restoration"><h1>${name}</h1><p>This page is under restoration and construction. Come back soon!</p><a class="pink-button" href="/">Back to Barbie</a></section>`;
   }else if(selected && ['fashion','friends'].includes(selected[2])){
     const link=document.createElement('link');link.rel='stylesheet';link.href='/sections/classic.css';document.head.append(link);
     const {renderClassic}=await import('/sections/classic.js');
