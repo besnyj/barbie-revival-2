@@ -219,3 +219,7 @@ Os dois destinos da home/Games de junho de 2013 foram identificados no HTML/XML 
 - **My Dreamhouse:** editor de decoração jogável localmente com as 473 artes referenciadas pelo XML recuperadas; testar salvar e galeria. A versão executada é de 2014 com XML/artes preservadas em 2015 e não deve ser apresentada como equivalente exata à de junho de 2013.
 - `scripts/recover.py` agora valida assinaturas reais de SWF/JPEG/PNG/GIF, impedindo que erros do arquivo histórico sejam registrados como assets válidos.
 - Nenhum dos dois jogos foi publicado; GitHub/Cloudflare continuam adiados.
+
+**Verificação posterior dos acessos:** cliquei nas duas thumbnails da aba Games e nas chamadas para jogar dos dois slides da home. Cada uma abriu a rota local do jogo correspondente (`/dreamhouse/puzzle-party/` ou `/my-dreamhouse/`). O logo “Life in the Dreamhouse” dentro do slide Puzzle Party é uma área clicável distinta que leva à página de personagens pela tela intermediária externa; a chamada do jogo no mesmo slide leva ao Puzzle Party local.
+
+**Dossiê de continuidade:** os achados técnicos, fontes, caminhos dos arquivos, listas de recursos, testes e lacunas dos dois jogos foram reunidos em `research/dreamhouse-games-restoration.md`, dentro do projeto de restauração.
