@@ -36,7 +36,6 @@
 .itemthumbHover{background-image:url('/images/barbie_refresh/agg_thumbBG_hover.png')}
 .thumbitemname{font-family:Arial,Verdana;font-weight:bold;font-size:9pt;text-align:center;margin-top:3px;width:136px;display:block}
 #footer_links{margin-top:84px;position:relative;z-index:1000;color:#fff;font-size:11px;line-height:16px}
-#footer_links a.footerlinks:link,#footer_links a.footerlinks:hover,#footer_links a.footerlinks:visited{color:#fff}
 #footer_links .footergrey{color:#fff}
 #footer_bg{margin-top:var(--footer-margin);position:relative;z-index:600}
 #footer_bg img{width:990px}

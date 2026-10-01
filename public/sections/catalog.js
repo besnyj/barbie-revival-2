@@ -68,8 +68,8 @@ export async function renderCatalog(main, kind, movie) {
       </div>
     </div>
     <div id="footer_links">
-      <a href="/sitemap.aspx" class="footerlinks">Site Map</a>&nbsp;|&nbsp;<a href="/restoration/press/" class="footerlinks">Press</a>&nbsp;|&nbsp;<a href="/restoration/privacy/" class="footerlinks"><b>New</b> Privacy Statement</a>&nbsp;|&nbsp;<a class="footerlinks" href="/restoration/terms/"><b>Updated</b> Terms &amp; Conditions</a><br>
-      <span class="footergrey">&nbsp;&copy; 2013 Mattel, Inc. All Rights Reserved.</span>
+      Site Map&nbsp;|&nbsp;Privacy&nbsp;|&nbsp;Credit&nbsp;|&nbsp;About<br>
+      <span class="footergrey">Barbie Revival is an unofficial fan preservation project and is not affiliated with or endorsed by Mattel. Barbie and related trademarks belong to Mattel, Inc.<br>Barbie Revival 2026</span>
     </div>
     <div id="footer_bg"><img src="${local(chrome.footerArt)}" alt=""></div>`;
 
