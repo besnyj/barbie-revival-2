@@ -14,6 +14,8 @@ class Handler(SimpleHTTPRequestHandler):
             self.send_header('Location', '/_original/icanbe.barbie.com/en_us/index.html')
             self.end_headers()
             return
+        if p.startswith('/_external/'):
+            self.path='/index.html'
         if not Path(self.translate_path(p)).is_file() and (p.endswith(('/', '.aspx', '.html')) or not Path(p).suffix):
             self.path='/index.html'
         super().do_GET()

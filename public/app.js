@@ -25,6 +25,57 @@ function showRestoration(){document.getElementById('restoration').showModal();}
 window.pop = showRestoration;
 window.openMagazine = showRestoration;
 
+function interstitialRedirect(){
+  const raw = location.search.slice(1);
+  if (!raw.startsWith('redirect=')) return null;
+  let url = raw.slice(9);
+  try { url = decodeURIComponent(url); } catch {}
+  return /^https?:\/\//i.test(url) ? url : null;
+}
+function renderInterstitial(redirect){
+  document.title = 'Barbie.com - Partner Interstitial';
+  document.body.classList.add('interstitial-page');
+  const stage = document.createElement('div');
+  stage.className = 'interstitial';
+  stage.innerHTML = `
+    <img src="/images/interstitial/interstitial_Barbie.jpg" alt="You are now leaving Barbie.com" border="0" usemap="#interstitialMap">
+    <map name="interstitialMap" id="interstitialMap">
+      <area shape="rect" coords="414,259,528,301" href="#interstitial-go" alt="Keep Going">
+      <area shape="rect" coords="213,259,392,301" href="#interstitial-back" alt="Back">
+    </map>`;
+  const leave = () => {
+    try {
+      if (document.referrer && new URL(document.referrer).host === location.host) {
+        location.href = document.referrer;
+        return;
+      }
+    } catch {}
+    location.href = '/';
+  };
+  stage.querySelector('area[href="#interstitial-go"]').addEventListener('click', event => {
+    event.preventDefault();
+    const win = window.open(redirect, '_blank');
+    if (win) { win.opener = null; leave(); } else { location.href = redirect; }
+  });
+  stage.querySelector('area[href="#interstitial-back"]').addEventListener('click', event => {
+    event.preventDefault();
+    leave();
+  });
+  document.body.append(stage);
+}
+document.addEventListener('click', event => {
+  const link = event.target && event.target.closest ? event.target.closest('a') : null;
+  if (!link || event.defaultPrevented) return;
+  const href = link.getAttribute('href') || '';
+  if (!/^https?:/i.test(href)) return;
+  let url;
+  try { url = new URL(href); } catch { return; }
+  if (url.host === location.host) return;
+  event.preventDefault();
+  event.stopPropagation();
+  location.href = '/includes/partner-interstitial.aspx?redirect=' + encodeURIComponent(url.href);
+});
+
 async function movie(container,url,width,height,parameters={}) {
   const player = window.RufflePlayer.newest().createPlayer();
   player.style.width=width+'px';player.style.height=height+'px';
@@ -39,6 +90,15 @@ const normalize = path => (path.replace(/\/+$/, '') || '/');
 window.addEventListener('DOMContentLoaded',async()=>{
   const path=normalize(location.pathname);
   if(path==='/_original/icanbe.barbie.com'){location.replace('/_original/icanbe.barbie.com/en_us/index.html');return;}
+  if(path==='/includes/partner-interstitial.aspx'){
+    const redirect=interstitialRedirect();
+    if(redirect){renderInterstitial(redirect);return;}
+    location.replace('/');return;
+  }
+  if(path.startsWith('/_external/')){
+    renderInterstitial('http://' + path.slice('/_external/'.length) + location.search + location.hash);
+    return;
+  }
   const selected=sections.find(s=>normalize(s[1])===path);
   const isHome=path==='/'||path==='/index.aspx'||path==='/index.html';
   const nav=document.getElementById('navigation');

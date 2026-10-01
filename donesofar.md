@@ -166,6 +166,15 @@ Retomei exatamente do ponto em que a sessão anterior parou (integração dos ca
 
 **Resumo do comportamento atual:** a home, as seções dos menus (Games, Fairytale, Videos, Fashion, Friends) e a home do I Can Be mostram conteúdo restaurado. O que continua mostrando “Under restoration” **de propósito**, conforme o escopo combinado: jogos individuais e suas páginas, mundos externos (dreamhouse.barbie.com), loja, e a playlist/catálogo de vídeos (serviço antigo não preservado).
 
+## Continuação — 30/09/2026 (rodapé e tela intermediária de links externos)
+
+A pedido da usuária:
+
+1. **Rodapé**: os links originais foram substituídos por `Site Map | Privacy | Credit | About` (texto simples, ainda sem links), em rosa mais escuro (`#d60986`, o rosa escuro usado pelo CSS do próprio site original). Abaixo, em duas linhas: o aviso de que Barbie Revival é um projeto de preservação não afiliado à Mattel e a linha `Barbie Revival 2026`. Aplicado ao rodapé principal e ao rodapé do catálogo (que mantém texto branco por ficar sobre a arte rosa original).
+2. **Tela intermediária de links externos**: recuperei do Wayback Machine a tela original que aparecia ao sair do site — `partner-interstitial.aspx` (captura de 27/06/2013, um dia antes da referência) com a imagem `interstitial_Barbie.jpg` (600×310; o replay resolveu a imagem para a captura mais próxima preservada, de 02/03/2013 — registrado no manifesto). Ela agora aparece sempre que um link leva a um site externo, na rota local `/includes/partner-interstitial.aspx?redirect=…`: página branca com a imagem centralizada e as duas áreas clicáveis originais — **Keep Going** abre o destino em nova aba e volta o site para onde estava; **Back** volta para a página anterior. Os links externos do catálogo, da página I Can Be e os URLs reescritos de dentro dos Flash (inclusive os do carrossel da home, que já apontavam para essa tela no original) passam todos por ela. O overlay provisório “Under restoration” do I Can Be para links externos foi removido.
+3. **Verificação**: 0 erros de console e 0 requisições falhas em home, Games, Fairytale e I Can Be; testados no navegador o clique em card externo, o Back, o Keep Going (destino em nova aba, site permanece aberto), o parâmetro `redirect` cru como o Ruffle produz e os links de loja do I Can Be.
+4. **Correção reportada pela usuária**: a URL reescrita de um Flash aberta diretamente (`/_external/shop.mattel.com/shop/index.jsp?…`) mostrava página vazia — o `serve.py` só servia `index.html` para caminhos com `/`, `.aspx`, `.html` ou sem extensão, então URLs `.jsp` davam 404 antes de chegar à aplicação. Agora `/_external/*` sempre serve a aplicação (o `_redirects` do Cloudflare já cobria isso). Também troquei o `history.back()` da tela pelo retorno ao referer de mesma origem quando existe, porque em visita direta a entrada anterior do histórico é `about:blank` (ficava em branco); visita direta sem referer volta para a home.
+
 ### Pendências que continuam
 
 - Páginas individuais (molduras/controles) ainda não restauradas — fallback “Under restoration” permanece como provisório.

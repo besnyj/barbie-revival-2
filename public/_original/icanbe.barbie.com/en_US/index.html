@@ -20,11 +20,6 @@
         <style>
             /* Advertising removed; the original slot keeps its space over the page background. */
             #ad { background: none; }
-            #icb-restoration { position: fixed; inset: 0; z-index: 10000; background: url("/_original/icanbe.barbie.com/resources/img/background-modal.png") repeat; }
-            #icb-restoration .icb-restoration-box { position: absolute; left: 50%; top: 50%; width: 320px; margin: -90px 0 0 -160px; padding: 22px 24px 26px; background: #fff; border: 8px solid #f6d1e3; color: #e33899; text-align: center; font-family: Arial, sans-serif; }
-            #icb-restoration h1 { margin: 0 0 8px; font-size: 24px; font-style: italic; }
-            #icb-restoration p { margin: 0; font-size: 13px; }
-            #icb-restoration .icb-restoration-close { position: absolute; right: 8px; top: 4px; border: 0; background: none; color: #e33899; font-size: 18px; cursor: pointer; }
             #blocker .icb-help-box { position: absolute; left: 50%; top: 50%; width: 340px; margin: -90px 0 0 -170px; padding: 26px; background: #fff; border: 8px solid #f6d1e3; color: #e33899; text-align: center; font-family: Arial, sans-serif; }
             #blocker h1 { margin: 0 0 8px; font-size: 24px; font-style: italic; }
             #blocker p { margin: 0; font-size: 13px; }
@@ -32,13 +27,6 @@
         </style>
 	</head>
 	<body id="home">
-	<div id="icb-restoration" hidden>
-		<div class="icb-restoration-box">
-			<button class="icb-restoration-close" type="button" onclick="document.getElementById('icb-restoration').hidden = true;" aria-label="Close">&times;</button>
-			<h1>Under restoration</h1>
-			<p>This part of Barbie's world is coming back soon!</p>
-		</div>
-	</div>
 
 		<div id="container">
 			<header>
@@ -324,7 +312,7 @@ Barbie lets you be anything you want to be!</div>
 		</script>
 		<script>
 			/* Keep restored destinations inside this restoration; other original
-			   external destinations show the restoration notice. */
+			   external destinations go through the recovered partner interstitial. */
 			document.addEventListener('click', function (event) {
 				var link = event.target && event.target.closest ? event.target.closest('a') : null;
 				if (!link) return;
@@ -340,7 +328,7 @@ Barbie lets you be anything you want to be!</div>
 				} else if (a.host === 'icanbe.barbie.com') {
 					location.href = '/_original/icanbe.barbie.com' + a.pathname + a.search + a.hash;
 				} else {
-					document.getElementById('icb-restoration').hidden = false;
+					location.href = '/includes/partner-interstitial.aspx?redirect=' + encodeURIComponent(a.href);
 				}
 			}, true);
 		</script>

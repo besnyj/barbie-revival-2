@@ -1166,5 +1166,15 @@
     "bytes": 6917,
     "sha256": "ca1ee46a0beffa369fcf2f6edd564576976c690f9f974157104a86a372cd84a0",
     "error": null
+  },
+  {
+    "original": "http://www.barbie.com/images/interstitial/interstitial_Barbie.jpg",
+    "archive": "https://web.archive.org/web/20130302192843im_/http://www.barbie.com/images/interstitial/interstitial_Barbie.jpg",
+    "resolved": "https://web.archive.org/web/20130302192843im_/http://www.barbie.com/images/interstitial/interstitial_Barbie.jpg",
+    "capture": "20130302192843",
+    "local": "public/images/interstitial/interstitial_Barbie.jpg",
+    "ok": true,
+    "bytes": 65844,
+    "sha256": "32c979adfb77cad135236a9096d8bc99eb36a81d0d0c99fef4e41963d9929cd7"
   }
 ]

@@ -14,13 +14,6 @@ function ensureStyles() {
   document.head.append(link);
 }
 
-function externalHost(href) {
-  try {
-    const url = new URL(href, location.origin);
-    return url.host !== location.host;
-  } catch { return false; }
-}
-
 export async function renderCatalog(main, kind, movie) {
   ensureStyles();
   const catalog = catalogData[kind];
@@ -124,15 +117,6 @@ export async function renderCatalog(main, kind, movie) {
     }
     categoryWrapper.append(holder);
   }
-
-  stage.querySelectorAll('a').forEach(link => {
-    if (externalHost(link.getAttribute('href'))) {
-      link.addEventListener('click', event => {
-        event.preventDefault();
-        window.pop();
-      });
-    }
-  });
 
   main.append(stage);
   await movie(stage.querySelector('.catalog-hero'), local(catalog.hero), 990, 390, {});
