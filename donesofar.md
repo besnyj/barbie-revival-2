@@ -364,3 +364,4 @@ Enquanto o agente dos dois jogos segue trabalhando, fiz o levantamento completo 
 - Criei `public/carousel/lower-frame-step-connector.svg` para unir os degraus com curvas simétricas. O acabamento final continua o painel rosa, a linha dourada, o brilho e a sombra, sem blocos de tonalidade diferente ou segmentos inferiores aparentes.
 - Conferi o resultado no navegador local em 1280 px: posição central preservada, laterais rebaixadas e junções arredondadas contínuas nos dois lados.
 - Organizei os três backups dos slides nas pastas correspondentes dentro de `carrossel/`, preservei os ZIPs e extraí os SWFs, fundos, controlador e XML em `originais/`. O catálogo de animações ficou documentado em `carrossel/animacoes/README.md`.
+- Depois da conferência visual, desci o rodapé decorativo completo mais 10 px (`top: 509px`), mantendo centro, laterais e conexões curvas deslocados juntos.
