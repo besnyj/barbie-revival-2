@@ -102,6 +102,15 @@ export function renderHomeCarousel(host) {
   const lowerFrame = document.createElement('div');
   lowerFrame.className = 'home-carousel-lower-frame';
   lowerFrame.setAttribute('aria-hidden','true');
+  const lowerFrameCenter = document.createElement('span');
+  lowerFrameCenter.className = 'home-carousel-lower-frame-piece center';
+  const lowerFrameSides = document.createElement('span');
+  lowerFrameSides.className = 'home-carousel-lower-frame-piece sides';
+  const lowerFrameLeftConnector = document.createElement('span');
+  lowerFrameLeftConnector.className = 'home-carousel-lower-frame-connector left';
+  const lowerFrameRightConnector = document.createElement('span');
+  lowerFrameRightConnector.className = 'home-carousel-lower-frame-connector right';
+  lowerFrame.append(lowerFrameCenter,lowerFrameSides,lowerFrameLeftConnector,lowerFrameRightConnector);
   const nav = document.createElement('nav');
   nav.className = 'home-carousel-navigation';
   nav.setAttribute('aria-label','Home carousel');

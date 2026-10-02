@@ -1,0 +1,220 @@
+<?xml version="1.0"?>
+<!--
+Author  - Nitin Gore.
+Perpose - This file is used for loading swf and tracking user clicks from CDA. 
+
+About the tags in XML :-
+<numberOfButtons>			-	Defines the number of active CDA thumbnails.
+<showDefaultScreen>			-	You can show some default screen ("defaultScreen_mc") before CDA starts running. 
+								This screen will be shown only one time, once CDA starts running/user clicks on some 
+								CDA thumbnail this screen will not be shown. [ Values are -> 'yes', 'no']
+<firstChosenIndex>			-	CDA of this index will be shown selected by default (Indexing starts from 1). By default first CDA will be shown.
+
+<trackingName>				-	Name used for the Google/Mattel tracking
+<trackingCampaign>			-	campaign used for the Google/Mattel tracking
+<trackingChannel>			-	channel used for the Google/Mattel tracking
+<trackingContenttype>		-	contenttype used for the Google/Mattel tracking
+<trackingAction>			-	action used for the Google/Mattel tracking
+<filePath>					-	Define CDA swf path to load.
+<autoSelectTime>			-	Time for which this CDA will be displayed. Time is in seconds. 
+-->
+ 
+<homeCDAs>
+
+	<numberOfButtons>5</numberOfButtons>
+	<showDefaultScreen>yes</showDefaultScreen>
+	<firstChosenIndex>1</firstChosenIndex>
+	<thumbnailFilePath><![CDATA[ThumbnailButtons.swf]]></thumbnailFilePath>
+		
+	<cda>  <!-- # 1 for now -->
+		<trackingName><![CDATA[Dreamhouse Puzzle-Party – from Homepage CDA]]></trackingName>
+		<trackingCampaign><![CDATA[None]]></trackingCampaign>
+		<trackingChannel><![CDATA[Home]]></trackingChannel>
+		<trackingContenttype><![CDATA[cda]]></trackingContenttype>
+		<trackingAction><![CDATA[Click]]></trackingAction>
+		<filePath><![CDATA[/global/homepageCDARotation/DreamhousePuzzleParty.swf]]></filePath>
+		<autoSelectTime>10</autoSelectTime>
+		<clickURL><![CDATA[http://dreamhouse.barbie.com/en-US/games/puzzle-party/]]></clickURL>
+		<openInSameWindow>yes</openInSameWindow>
+		<eventID><![CDATA[Home:P1 BLID Puzzle Game]]></eventID>
+		<eventCategory><![CDATA[CDA]]></eventCategory>		
+	</cda>
+
+	<cda>  	<!-- # 2 for now -->
+		<trackingName><![CDATA[BLID Profile – from Homepage CDA]]></trackingName>
+		<trackingCampaign><![CDATA[None]]></trackingCampaign>
+		<trackingChannel><![CDATA[Home]]></trackingChannel>
+		<trackingContenttype><![CDATA[cda]]></trackingContenttype>
+		<trackingAction><![CDATA[Click]]></trackingAction>
+		<filePath><![CDATA[/global/homepageCDARotation/BLIDProfile.swf]]></filePath>
+		<autoSelectTime>10</autoSelectTime>
+		<clickURL><![CDATA[http://dreamhouse.barbie.com/en-US/cast/]]></clickURL>
+		<openInSameWindow>yes</openInSameWindow>
+		<eventID><![CDATA[Home:P2 BLID Profile]]></eventID>
+		<eventCategory><![CDATA[CDA]]></eventCategory>
+	</cda>
+	
+	<cda>  <!-- # 3 for now -->	
+		<trackingName><![CDATA[Barbie Life In Dreamhouse – from Homepage CDA]]></trackingName>		
+		<trackingCampaign><![CDATA[MyDreamhouse]]></trackingCampaign>
+		<trackingChannel><![CDATA[Home]]></trackingChannel>
+		<trackingContenttype><![CDATA[cda]]></trackingContenttype>
+		<trackingAction><![CDATA[Click]]></trackingAction>
+		<filePath><![CDATA[/global/homepageCDARotation/MyDreamhouse.swf]]></filePath>
+		<autoSelectTime>10</autoSelectTime>
+		<clickURL><![CDATA[/my-dreamhouse/]]></clickURL>		
+		<openInSameWindow>yes</openInSameWindow>
+		<eventID><![CDATA[Home:P3 My Dreamhouse]]></eventID>
+		<eventCategory><![CDATA[CDA]]></eventCategory>
+	</cda>	
+</homeCDAs>
+
+<!-- >
+
+	<cda>
+		<trackingName><![CDATA[Pink Shoes Trailer – from Homepage CDA]]></trackingName>
+		<trackingCampaign><![CDATA[None]]></trackingCampaign>
+		<trackingChannel><![CDATA[Home]]></trackingChannel>
+		<trackingContenttype><![CDATA[cda]]></trackingContenttype>
+		<trackingAction><![CDATA[Click]]></trackingAction>
+		<filePath><![CDATA[/global/homepageCDARotation/03.swf]]></filePath>
+		<autoSelectTime>7</autoSelectTime>
+		<clickURL><![CDATA[/activities/btv/?playVideo=13489eece4a57]]></clickURL>
+		<openInSameWindow>yes</openInSameWindow>
+		<eventID><![CDATA[Home:P3 Pink Shoes]]></eventID>
+		<eventCategory><![CDATA[CDA]]></eventCategory>
+	</cda>
+	
+	<cda>
+		<trackingName><![CDATA[Barbie RoyalCaribbean – from Homepage CDA]]></trackingName>
+		<trackingCampaign><![CDATA[None]]></trackingCampaign>
+		<trackingChannel><![CDATA[Home]]></trackingChannel>
+		<trackingContenttype><![CDATA[cda]]></trackingContenttype>
+		<trackingAction><![CDATA[Click]]></trackingAction>
+		<filePath><![CDATA[CDA-RCCL/CDA.swf]]></filePath>
+		<autoSelectTime>5</autoSelectTime>
+		<clickURL><![CDATA[/royal-caribbean/]]></clickURL>		
+		<openInSameWindow>yes</openInSameWindow>
+	</cda>	
+	<cda>  
+		<trackingName><![CDATA[Mattel Shop Dream Townhouse – from Homepage CDA]]></trackingName>
+		<trackingCampaign><![CDATA[None]]></trackingCampaign>
+		<trackingChannel><![CDATA[Home]]></trackingChannel>
+		<trackingContenttype><![CDATA[cda]]></trackingContenttype>
+		<trackingAction><![CDATA[Click]]></trackingAction>
+		<filePath><![CDATA[CDA-MattelShop/CDA.swf]]></filePath>
+		<autoSelectTime>9</autoSelectTime>
+		<clickURL><![CDATA[http://www.barbie.com/includes/partner-interstitial.aspx?redirect=http://shop.mattel.com/shop/index.jsp?categoryId=3719989]]></clickURL>
+		<openInSameWindow>No</openInSameWindow>
+	</cda>
+
+	<cda> 
+		<trackingName><![CDATA[Barbie BLID – from Homepage CDA]]></trackingName>
+		<trackingCampaign><![CDATA[None]]></trackingCampaign>
+		<trackingChannel><![CDATA[Home]]></trackingChannel>
+		<trackingContenttype><![CDATA[cda]]></trackingContenttype>
+		<trackingAction><![CDATA[Click]]></trackingAction>
+		<filePath><![CDATA[global/homeCDA/CDA-BLID/CDA.swf]]></filePath>
+		<autoSelectTime>5</autoSelectTime>
+		<clickURL><![CDATA[http://dreamhouse.barbie.com/en-US]]></clickURL>
+		<openInSameWindow>yes</openInSameWindow>
+	</cda>
+
+	<cda> 
+		<trackingName><![CDATA[Barbie Princess Popstar – from Homepage CDA]]></trackingName>
+		<trackingCampaign><![CDATA[None]]></trackingCampaign>
+		<trackingChannel><![CDATA[Home]]></trackingChannel>
+		<trackingContenttype><![CDATA[cda]]></trackingContenttype>
+		<trackingAction><![CDATA[Click]]></trackingAction>
+		<filePath><![CDATA[global/homeCDA/CDA-POP/CDA.swf]]></filePath>
+		<autoSelectTime>10</autoSelectTime>
+		<clickURL><![CDATA[../../princess-popstar/index.aspx]]></clickURL>
+		<openInSameWindow>yes</openInSameWindow>
+	</cda>
+
+	<cda>		
+		<trackingName><![CDATA[Dolls of the world – from Homepage CDA]]></trackingName>
+		<trackingCampaign><![CDATA[None]]></trackingCampaign>
+		<trackingChannel><![CDATA[Home]]></trackingChannel>
+		<trackingContenttype><![CDATA[cda]]></trackingContenttype>
+		<trackingAction><![CDATA[Click]]></trackingAction>
+		<filePath><![CDATA[global/homeCDA/CDA-DOW/CDA.swf]]></filePath>
+		<autoSelectTime>6</autoSelectTime>
+		<clickURL><![CDATA[/dolls-of-the-world/]]></clickURL>
+		<openInSameWindow>yes</openInSameWindow>
+	</cda>
+
+	<cda> 
+		<trackingName><![CDATA[Data Diva Game - from Homepage CDA]]></trackingName>
+		<trackingCampaign><![CDATA[None]]></trackingCampaign>
+		<trackingChannel><![CDATA[Home]]></trackingChannel>
+		<trackingContenttype><![CDATA[cda]]></trackingContenttype>
+		<trackingAction><![CDATA[Click]]></trackingAction>		
+		<filePath><![CDATA[global/homeCDA/CDA-DataDiva/CDA.swf]]></filePath>		
+		<autoSelectTime>5</autoSelectTime>
+		<clickURL><![CDATA[http://icanbe.barbie.com/games.html?goto=computerengineer]]></clickURL>
+		<openInSameWindow>yes</openInSameWindow>		
+	</cda>
+
+	<cda>  
+		<trackingName><![CDATA[Barbie Video Girls - from Homepage CDA]]></trackingName>
+		<trackingCampaign><![CDATA[None]]></trackingCampaign>
+		<trackingChannel><![CDATA[Home]]></trackingChannel>
+		<trackingContenttype><![CDATA[cda]]></trackingContenttype>
+		<trackingAction><![CDATA[Click]]></trackingAction>		
+		<filePath><![CDATA[global/homeCDA/CDA-VideoGirlContest/CDA.swf]]></filePath>		
+		<autoSelectTime>5</autoSelectTime>
+		<clickURL><![CDATA[http://videogirlcontest.barbie.com/]]></clickURL>
+		<openInSameWindow>yes</openInSameWindow>		
+	</cda>	
+
+	<cda>  
+		 
+		<trackingName><![CDATA[Barbie Girls - from Homepage CDA]]></trackingName>
+		<trackingCampaign><![CDATA[None]]></trackingCampaign>
+		<trackingChannel><![CDATA[Home]]></trackingChannel>
+		<trackingContenttype><![CDATA[Button]]></trackingContenttype>
+		<trackingAction><![CDATA[Click]]></trackingAction>		
+		<filePath><![CDATA[global/homeCDA/CDA-Barbiegirls/CDA.swf]]></filePath>
+		<autoSelectTime>5</autoSelectTime>
+		<clickURL><![CDATA[/http://www.barbie.com/barbiegirls/]]></clickURL>
+		<openInSameWindow>yes</openInSameWindow>		
+	</cda>
+	
+	<cda>
+		<trackingName><![CDATA[So In Style Game - from Homepage CDA]]></trackingName>
+		<trackingCampaign><![CDATA[SoInStyle]]></trackingCampaign>
+		<trackingChannel><![CDATA[Home]]></trackingChannel>
+		<trackingContenttype><![CDATA[Button]]></trackingContenttype>
+		<trackingAction><![CDATA[Click]]></trackingAction>
+		<filePath><![CDATA[global/homeCDA/CDA_3/CDA_3.swf]]></filePath>
+		<autoSelectTime>5</autoSelectTime>
+		<clickURL><![CDATA[/activities/friends/soinstyle/index.aspx?section=game]]></clickURL>
+		<openInSameWindow>yes</openInSameWindow>		
+	</cda>
+	
+	<cda>
+		<trackingName><![CDATA[Barbie Girls - from Homepage CDA]]></trackingName>
+		<trackingCampaign><![CDATA[Thumbelina]]></trackingCampaign>
+		<trackingChannel><![CDATA[Home]]></trackingChannel>
+		<trackingContenttype><![CDATA[Button]]></trackingContenttype>
+		<trackingAction><![CDATA[Click]]></trackingAction>		
+		<filePath><![CDATA[global/homeCDA/CDA_5/CDA_5.swf]]></filePath>
+		<autoSelectTime>11</autoSelectTime>
+		<clickURL><![CDATA[/thumbelina/index.aspx?goto=GamesSection]]></clickURL>
+		<openInSameWindow>yes</openInSameWindow>		
+	</cda>
+
+	<cda>  
+		 
+		<trackingName><![CDATA[Fall Fashions– from Homepage CDA]]></trackingName>
+		<trackingCampaign><![CDATA[None]]></trackingCampaign>
+		<trackingChannel><![CDATA[Home]]></trackingChannel>
+		<trackingContenttype><![CDATA[cda]]></trackingContenttype>
+		<trackingAction><![CDATA[Click]]></trackingAction>
+		<filePath><![CDATA[global/homeCDA/CDA-Barbiegirls/CDA.swf]]></filePath>
+		<autoSelectTime>5</autoSelectTime>
+		<clickURL><![CDATA[http://barbiegirls.com/]]></clickURL>
+		<openInSameWindow>yes</openInSameWindow>	
+	</cda>	
+-->

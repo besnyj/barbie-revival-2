@@ -5,12 +5,13 @@
 .scene-stage{position:absolute;left:50%;top:50%;width:1920px;height:1080px;transform-origin:center center;background:transparent}
 .scene-element{position:absolute;display:block;box-sizing:border-box;animation-duration:1s;animation-fill-mode:both;animation-timing-function:cubic-bezier(.18,.72,.18,1);animation-delay:var(--entry-delay)}
 .scene-element.entry-pop{animation-name:scene-pop}
+.scene-element.welcome-sticker{animation-name:scene-sticker-shake;animation-duration:5.5s}
 .scene-element.entry-from-left{animation-name:scene-from-left;animation-duration:1.4s}
 .scene-element.entry-from-right{animation-name:scene-from-right}
 .scene-element.entry-from-top{animation-name:scene-from-top}
 .scene-element.entry-from-bottom{animation-name:scene-from-bottom}
 .scene-element.entry-zoom{animation-name:scene-zoom}
-.scene-element.entry-glitter-reveal{animation-name:scene-glitter-reveal;animation-duration:1.85s;animation-timing-function:cubic-bezier(.17,.72,.2,1);overflow:visible}
+.scene-element.entry-glitter-reveal{animation:none;overflow:visible}
 img.scene-element{height:auto;user-select:none;pointer-events:none}
 .scene-element:not(img){white-space:pre-line;text-align:center;line-height:1.04}
 .welcome-question{font:60px/1.04 WelcomeSingleDay,cursive;color:#a600ce;background:#fff;border-radius:28px;padding:12px 5px 15px;letter-spacing:2px}
@@ -18,13 +19,22 @@ img.scene-element{height:auto;user-select:none;pointer-events:none}
 .welcome-subtitle{font:86px/.9 'Kitten',WelcomeBerkshire,cursive;color:#ff54b8;-webkit-text-stroke:8px white;paint-order:stroke fill;font-style:italic}
 .welcome-barbiecom{font:94px/1 WelcomeBerkshire,serif;color:#a200c0;-webkit-text-stroke:10px white;paint-order:stroke fill;white-space:nowrap!important;letter-spacing:-3px}
 .welcome-credit{font:49px/1 'Kitten',WelcomeBerkshire,cursive;color:#ff9900;-webkit-text-stroke:6px white;paint-order:stroke fill;font-style:italic;white-space:nowrap!important}
-.scene-element.entry-glitter-reveal::after{content:"";position:absolute;z-index:2;top:-25%;bottom:-25%;right:-15%;width:40%;background:radial-gradient(circle at 50% 8%,#fff 0 2px,transparent 3.4px),radial-gradient(circle at 22% 31%,#fff9d1 0 1.5px,transparent 2.8px),radial-gradient(circle at 72% 48%,#fff 0 1.2px,transparent 2.6px),radial-gradient(circle at 36% 70%,#fff5ac 0 2px,transparent 3.2px),radial-gradient(circle at 82% 87%,#fff 0 1.4px,transparent 2.8px);filter:drop-shadow(0 0 3px #fff);mix-blend-mode:screen;opacity:0;pointer-events:none;transform:translateX(0) rotate(7deg);animation:scene-glitter-sweep 1.85s var(--entry-delay) both}
+.welcome-glitter-line{position:relative;display:block;width:max-content;margin-inline:auto}
+.welcome-glitter-ink{display:block;animation:scene-glitter-reveal-ltr 1.1s var(--line-delay) linear both}
+.welcome-glitter-sparkles{position:absolute;z-index:10;left:0;top:-25%;width:180px;height:150%;pointer-events:none;background:radial-gradient(ellipse at 52% 48%,#ffadd8a8 0,#fb58ad80 30%,#ef5aa833 56%,transparent 76%);filter:drop-shadow(0 0 7px #e82c9c);transform:translateX(-50%);animation:scene-glitter-edge-ltr 1.1s var(--line-delay) linear both}
+.welcome-glitter-sparkles::before{content:"";position:absolute;z-index:0;inset:-8% 19%;background:radial-gradient(ellipse at 50% 50%,#fff 0%,#ffffffed 20%,#fff9 42%,#fff5 62%,transparent 80%);filter:blur(11px) drop-shadow(0 0 13px #fff);animation:scene-glitter-haze .34s ease-in-out infinite alternate}
+.welcome-glitter-particle{position:absolute;z-index:1;left:var(--particle-x);top:var(--particle-y);width:var(--particle-size);height:var(--particle-size);animation:scene-glitter-particle var(--particle-duration) var(--particle-delay) ease-in-out infinite}
+.welcome-glitter-particle.is-dot{border-radius:50%;background:radial-gradient(circle,#fff 0 22%,#ffe9f5 30%,#f880ba 48%,#e9409c 63%,transparent 76%)}
+.welcome-glitter-particle.is-star{background:#fff;clip-path:polygon(50% 0,56% 38%,100% 50%,56% 62%,50% 100%,44% 62%,0 50%,44% 38%)}
 @keyframes scene-pop{from{opacity:0;scale:.35;rotate:-12deg}70%{opacity:1;scale:1.12}to{opacity:1;scale:1}}
+@keyframes scene-sticker-shake{0%{opacity:0;scale:.35;rotate:-12deg}18%{opacity:1;scale:1.12;rotate:10deg}26%{scale:1;rotate:-9deg}34%{rotate:9deg}42%{rotate:-8deg}50%{rotate:8deg}58%{rotate:-7deg}66%{rotate:7deg}74%{rotate:-6deg}82%{rotate:5deg}90%{rotate:-3deg}96%{rotate:1deg}100%{opacity:1;scale:1;rotate:0deg}}
 @keyframes scene-from-left{from{opacity:0;translate:-430px 0}to{opacity:1;translate:0 0}}
 @keyframes scene-from-right{from{opacity:0;translate:320px 0}to{opacity:1;translate:0 0}}
 @keyframes scene-from-top{from{opacity:0;translate:0 -140px}to{opacity:1;translate:0 0}}
 @keyframes scene-from-bottom{from{opacity:0;translate:0 120px}to{opacity:1;translate:0 0}}
 @keyframes scene-zoom{from{opacity:0;scale:.5}75%{opacity:1;scale:1.04}to{opacity:1;scale:1}}
-@keyframes scene-glitter-reveal{from{opacity:0;clip-path:inset(0 0 0 100%)}12%{opacity:1}to{opacity:1;clip-path:inset(0)}}
-@keyframes scene-glitter-sweep{0%{opacity:0;transform:translateX(8%) rotate(7deg)}14%{opacity:1}48%{opacity:.92}100%{opacity:0;transform:translateX(-340%) rotate(7deg)}}
-@media(prefers-reduced-motion:reduce){.scene-element{animation:none}.scene-element.entry-glitter-reveal::after{animation:none;opacity:0}}
+@keyframes scene-glitter-reveal-ltr{0%{clip-path:inset(0 100% 0 0)}25%{clip-path:inset(0 75% 0 0)}50%{clip-path:inset(0 50% 0 0)}75%{clip-path:inset(0 25% 0 0)}100%{clip-path:inset(0)}}
+@keyframes scene-glitter-edge-ltr{0%{left:0;opacity:0}8%{opacity:1}85%{opacity:1}100%{left:100%;opacity:0}}
+@keyframes scene-glitter-particle{0%{opacity:0;transform:translate(calc(-1 * var(--particle-drift)),7px) rotate(-40deg) scale(.2)}48%{opacity:1;transform:translate(0,0) rotate(70deg) scale(1.15)}100%{opacity:0;transform:translate(var(--particle-drift),-7px) rotate(180deg) scale(.15)}}
+@keyframes scene-glitter-haze{from{opacity:.72;transform:scaleX(.86)}to{opacity:1;transform:scaleX(1.14)}}
+@media(prefers-reduced-motion:reduce){.scene-element,.welcome-glitter-ink,.welcome-glitter-sparkles,.welcome-glitter-particle{animation:none}.welcome-glitter-sparkles{opacity:0}}

@@ -9,7 +9,8 @@
    shopping/footer content. The SVG keeps its natural curved top; the white
    continuation prevents side gaps and future sections from exposing the
    page backdrop. */
-.home-with-carousel .home-carousel-lower-frame{width:max(100vw,990px);height:800px;background:transparent url('/carousel/fixed-lower-frame.svg') center top/100% 450px no-repeat}
+.home-with-carousel .home-carousel-lower-frame{width:max(100vw,990px);height:800px}
+.home-with-carousel .home-carousel-lower-frame-piece{background-size:100% 450px;background-repeat:no-repeat}
 .home-with-carousel .home-carousel-lower-frame::after{content:"";position:absolute;z-index:0;top:450px;right:0;bottom:0;left:0;background:#fff;pointer-events:none}
 
 /* Keep the reduced header-to-carousel gap when the shell stylesheet is loaded

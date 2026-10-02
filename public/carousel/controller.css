@@ -1,7 +1,14 @@
-.home-carousel{position:relative;width:910px;height:520px}
+.home-carousel{position:relative;z-index:0;width:910px;height:520px}
 .home-carousel-viewport{position:absolute;inset:0;overflow:visible;background:transparent}
 .home-carousel-viewport ruffle-player{width:910px;height:520px}
-.home-carousel-lower-frame{position:absolute;z-index:5;left:50%;top:499px;width:990px;height:450px;transform:translateX(-50%);pointer-events:none;background:url('/carousel/fixed-lower-frame.svg') center top/100% 100% no-repeat}
+.home-carousel-lower-frame{position:absolute;z-index:5;left:50%;top:499px;width:990px;height:450px;transform:translateX(-50%);pointer-events:none}
+.home-carousel-lower-frame-piece{position:absolute;z-index:1;inset:0;display:block;background:transparent url('/carousel/fixed-lower-frame.svg') center top/100% 100% no-repeat}
+.home-carousel-lower-frame-piece.center{-webkit-mask-image:linear-gradient(to right,transparent 0,transparent calc(50% - 495px),#000 calc(50% - 495px),#000 calc(50% + 495px),transparent calc(50% + 495px),transparent 100%);mask-image:linear-gradient(to right,transparent 0,transparent calc(50% - 495px),#000 calc(50% - 495px),#000 calc(50% + 495px),transparent calc(50% + 495px),transparent 100%)}
+.home-carousel-lower-frame-piece.sides{top:20px;-webkit-mask-image:linear-gradient(to right,#000 0,#000 calc(50% - 495px),transparent calc(50% - 495px),transparent calc(50% + 495px),#000 calc(50% + 495px),#000 100%);mask-image:linear-gradient(to right,#000 0,#000 calc(50% - 495px),transparent calc(50% - 495px),transparent calc(50% + 495px),#000 calc(50% + 495px),#000 100%)}
+.home-carousel-lower-frame-connector{position:absolute;z-index:2;top:32.5px;display:none;width:64px;height:64px;background:url('/carousel/lower-frame-step-connector.svg') center/100% 100% no-repeat}
+.home-carousel-lower-frame-connector.left{left:calc(50% - 527px)}
+.home-carousel-lower-frame-connector.right{right:calc(50% - 527px);transform:scaleX(-1)}
+@media(min-width:991px){.home-carousel-lower-frame-connector{display:block}}
 .home-carousel-navigation{position:absolute;inset:0 0 -80px;z-index:20;pointer-events:none}
 .home-carousel-navigation button{pointer-events:auto;cursor:pointer}
 .home-carousel-arrow{position:absolute;top:228px;width:57px;height:57px;padding:0;border:0;background:none}

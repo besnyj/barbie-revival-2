@@ -2,6 +2,18 @@
 
 Status: proposta inicial para revisão. As regras de entrada abaixo refletem o pedido da usuária; as decisões visuais só se tornam padrão aprovado depois da avaliação do resultado.
 
+## Slides originais preservados
+
+Os três primeiros slides Flash têm pastas com textos visíveis nas cenas:
+
+| Slide | Pasta | Animação | Fundo |
+|---|---|---|---|
+| 1 | [`DREAMHOUSE PUZZLE PARTY/`](DREAMHOUSE%20PUZZLE%20PARTY/) | `originais/DreamhousePuzzleParty.swf` | `originais/01BG.jpg` |
+| 2 | [`Galleries!/`](Galleries%21/) | `originais/BLIDProfile.swf` | `originais/02BG.jpg` |
+| 3 | [`myDreamhouse/`](myDreamhouse/) | `originais/MyDreamhouse.swf` | `originais/03BG.jpg` |
+
+Cada pasta contém o ZIP original completo, com `README.md` e `MANIFEST.json` internos para restauração e verificação SHA-256. A subpasta `originais/` facilita o acesso ao SWF do slide, ao fundo e às cópias do controlador `HomeCDA.swf` e da configuração `HomeCDA.xml`. Os elementos gráficos e suas animações estão incorporados nos SWFs; os ZIPs também preservam os arquivos compartilhados da homepage e o runtime Ruffle. As imagens de `design-previews/carousel-four-slide-1.png` a `carousel-four-slide-3.png` serviram para conferir os textos usados nos nomes.
+
 ## Entrada por cena
 
 Cada subpasta representa um slide/cena do carrossel principal:
@@ -51,6 +63,8 @@ Setas pertencem ao controlador. Indicadores correspondem apenas às cenas ativas
 | Novas cenas | Pasta de entrada em `carrossel/`, arquivos publicados em `public/carousel/` | Cada elemento declara entrada, atraso, posição, inclinação e camada; o controlador faz o resto. |
 
 As animações padrão são `pop`, `from-left`, `from-right`, `from-top`, `from-bottom` e `zoom`. Cada elemento pode escolher uma entrada e atraso; a animação reinicia ao voltar para a cena. `prefers-reduced-motion` desativa esses movimentos. Uma nova cena não deve alterar o CSS do rodapé ou incluir setas/bolinhas próprias.
+
+O inventário completo das entradas, do brilho das setas e bolinhas e das animações dos cartões está em [`animacoes/README.md`](animacoes/README.md), com descrições breves e referências ao código ativo para reutilização nas próximas cenas.
 
 A moldura curva não é o rodapé de links/texto do fim da página. O SVG preserva o desenho do fundo dos slides antigos com traços e gradientes nítidos; o controlador o monta uma vez, fora da área recortada de cada slide. O `home-shell.css` posiciona os cartões sobre o painel. Ao revisar uma nova cena, conferir se a moldura e a frase final da cena continuam legíveis, sem mover a estrutura comum para dentro do slide.
 

@@ -108,6 +108,7 @@ Recovery and implementation in progress. Not published. Home, Games/Fairytale ca
 ## Homepage carousel backups — 2026-10-01
 
 - At the user's request, created three ZIP backups in `backups/homepage-carousel/`: `01-dreamhouse-puzzle-party.zip`, `02-blid-profile.zip`, and `03-my-dreamhouse.zip`. Each contains its slide SWF and corresponding `01BG.jpg`/`02BG.jpg`/`03BG.jpg` background, plus copies of the shared carousel controller (`HomeCDA.swf`), original three-slide `HomeCDA.xml`, homepage HTML/JS/CSS, and the Ruffle runtime files needed to play the SWFs. Source maps are excluded.
+- On 2026-10-02, moved those three per-slide ZIPs to `carrossel/DREAMHOUSE PUZZLE PARTY/`, `carrossel/Galleries!/`, and `carrossel/myDreamhouse/`, using text visible in each slide. Extracted each slide SWF/background and shared `HomeCDA.swf`/`HomeCDA.xml` into its `originais/` subfolder. ZIP integrity and every manifest SHA-256 passed before the move; ZIP hashes and extracted-file hashes passed afterward. Other backups remained in `backups/homepage-carousel/`.
 - Each archive contains `README.md` with restore guidance and `MANIFEST.json` with SHA-256 hashes. ZIP CRC, every archived hash against its source file, and consistency of the shared copies across all three archives were verified.
 - To restore the full original carousel after removal, use all three ZIPs. Restoring only one slide into an existing carousel requires its SWF/background and a matching XML entry. Compare current `index.html`, `app.js`, and `site.css` before replacing them from the snapshot, since these files also contain unrelated site code. No live carousel files were removed or changed while making the backups.
 
@@ -202,3 +203,13 @@ While the Dreamhouse-games agent keeps working on the two games, this session pr
 - A composição atual também inclui o ajuste de posição das bolinhas do carrossel e dos elementos `silver-heart-middle` e `credit` da cena Welcome.
 - QA: header conferido nas rotas principais e no I Can Be; hover, rollout e clique das duas setas verificados; quadros finais 7/39/15 confirmados; navegação para o segundo slide confirmada; fundo Welcome conferido em 1920×1080 e 2560×1080. Nenhum erro de página, requisição falha ou resposta HTTP 4xx/5xx foi observado nesses testes.
 - Backup anterior à restauração das setas: `backups/homepage-carousel/20261002-original-arrow-hover-before.zip` (local e ignorado pelo Git), com integridade e SHA-256 verificados.
+
+## Checkpoint — 2026-10-02 (Welcome e rodapé externo finalizados)
+
+- Os indicadores compartilhados do carrossel foram deslocados 20 px para baixo (`top: 561px`) sem alterar tamanho, espaçamento ou navegação.
+- Na cena Welcome, o crédito “A fan-made revival of the classic Barbie.com experience.” terminou em `y: 960`; o coração prateado central em `y: 781`; e a ilustração da página web em `y: 523`. Os ajustes foram feitos separadamente para preservar os demais elementos.
+- Os stickers da cena usam uma entrada com balanço progressivo. Os textos principais passaram a ser revelados da esquerda para a direita por uma faixa de glitter rosa com partículas; `prefers-reduced-motion` mantém o conteúdo legível sem animação.
+- A moldura inferior foi dividida em uma camada central de 990 px e duas camadas laterais. O centro permanece na posição original e somente as áreas externas ao container descem 20 px.
+- As duas mudanças de nível receberam conexões curvas em `public/carousel/lower-frame-step-connector.svg`. O acabamento mantém o trecho reto, o rosa do painel, a faixa dourada, o brilho claro e a sombra rosa sem o retângulo de cor diferente ou resíduos da borda inferior.
+- QA visual local em navegador, com viewport de 1280 px: centro imóvel, laterais 20 px abaixo, curvas simétricas e continuidade de cor/sombra conferidos. `git diff --check` passou sem erros de whitespace.
+- Os três ZIPs dos slides Flash foram preservados nas pastas `carrossel/DREAMHOUSE PUZZLE PARTY/`, `carrossel/Galleries!/` e `carrossel/myDreamhouse/`, com os originais extraídos em cada subpasta `originais/`. O inventário de animações compartilhadas está em `carrossel/animacoes/README.md`.

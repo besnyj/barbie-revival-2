@@ -228,6 +228,8 @@ Os dois destinos da home/Games de junho de 2013 foram identificados no HTML/XML 
 
 Criei três arquivos ZIP em `backups/homepage-carousel/`, um por slide: `01-dreamhouse-puzzle-party.zip`, `02-blid-profile.zip` e `03-my-dreamhouse.zip`. Cada um guarda a animação SWF e o plano de fundo correspondente. Para preservar o contexto de restauração, cada ZIP também traz cópias do controlador `HomeCDA.swf`, do XML original com os três slides, de `index.html`, `app.js`, `site.css` e dos arquivos do Ruffle necessários à reprodução; os source maps de depuração ficaram de fora.
 
+Em 02/10/2026, esses três ZIPs foram movidos para `carrossel/DREAMHOUSE PUZZLE PARTY/`, `carrossel/Galleries!/` e `carrossel/myDreamhouse/`, respectivamente. Os SWFs, fundos, controlador e XML também foram extraídos nas subpastas `originais/`; os ZIPs originais permanecem íntegros. Os outros backups continuam em `backups/homepage-carousel/`.
+
 Cada arquivo inclui um `README.md` com instruções e um `MANIFEST.json` com hashes SHA-256. Verifiquei a integridade dos ZIPs e comparei os hashes de todos os itens com os arquivos atuais. Para recompor o carrossel completo, são necessários os três backups. Para repor apenas um slide em um carrossel ainda existente, é preciso recolocar seu SWF e JPG e conferir sua entrada no XML. Antes de substituir os arquivos compartilhados da homepage por cópias do backup, é necessário comparar eventuais mudanças posteriores. Nenhum arquivo ativo do carrossel foi removido ou alterado nesta etapa.
 
 ## Continuação — 01/10/2026 (cabeçalho e páginas do bottom)
@@ -352,3 +354,13 @@ Enquanto o agente dos dois jogos segue trabalhando, fiz o levantamento completo 
 - O fundo Welcome passou de tamanho natural para `cover`, centralizado, preenchendo 1920×1080 e 2560×1080 sem faixas laterais lisas. A imagem original 1672×941 permaneceu intacta.
 - Conferidos no navegador: carregamento do header, animação completa de ambas as setas, avanço de slide, fundo Welcome em dois formatos de tela, ausência de erros de JavaScript, requisições falhas e respostas HTTP de erro.
 - Backup local anterior às setas: `backups/homepage-carousel/20261002-original-arrow-hover-before.zip`.
+
+## Welcome e acabamento externo do carrossel — concluído em 02/10/2026
+
+- Desci as bolinhas compartilhadas do carrossel em 20 px, mantendo a centralização e os quatro estados de navegação.
+- Reposicionei individualmente na cena Welcome o crédito final (`y: 960`), o coração prateado central (`y: 781`) e a janela que representa uma página web (`y: 523`).
+- Os stickers ganharam entrada com balanço amortecido. Os textos principais agora aparecem da esquerda para a direita acompanhados por glitter rosa e partículas; a preferência por movimento reduzido continua respeitada.
+- Separei a moldura inferior em centro e laterais: os 990 px internos continuam na altura original e apenas as duas áreas externas descem 20 px.
+- Criei `public/carousel/lower-frame-step-connector.svg` para unir os degraus com curvas simétricas. O acabamento final continua o painel rosa, a linha dourada, o brilho e a sombra, sem blocos de tonalidade diferente ou segmentos inferiores aparentes.
+- Conferi o resultado no navegador local em 1280 px: posição central preservada, laterais rebaixadas e junções arredondadas contínuas nos dois lados.
+- Organizei os três backups dos slides nas pastas correspondentes dentro de `carrossel/`, preservei os ZIPs e extraí os SWFs, fundos, controlador e XML em `originais/`. O catálogo de animações ficou documentado em `carrossel/animacoes/README.md`.
