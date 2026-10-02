@@ -1,0 +1,627 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<!--locked>true</locked-->
+	<styleSheet>/styles/latin.css</styleSheet>
+	<fontSwf>/library/fontLibrary_latin.swf</fontSwf>
+	<locked>false</locked>
+	
+	<isInternational>false</isInternational>
+	<printable>/printable/CE_laptopStickers_enUS.pdf</printable>
+	
+	<localization>
+		<!--missing-->
+		<replayBtn valign="true"><![CDATA[Play Again]]></replayBtn>
+		<nextBtn valign="true"><![CDATA[Next]]></nextBtn>
+		
+		<unlock_tooltip><![CDATA[Enter your code to unlock this!]]></unlock_tooltip>
+		<logo2><![CDATA[Data]]></logo2>
+		<logo1><![CDATA[Diva]]></logo1>
+		<splashCopy valign="true"><![CDATA[You can be a computer engineer! Help Barbie™ program a robot puppy to do cute tricks!]]></splashCopy>
+		<playBtn valign="true"><![CDATA[play]]></playBtn>
+		<printBtn valign="true"><![CDATA[print]]></printBtn>
+		<hubCopy><![CDATA[Use sticker paper to print out your own stickers. 
+Decorate your computer, locker, notebook, and more!]]></hubCopy>
+		<goBtn valign="true"><![CDATA[go]]></goBtn>
+		<codeWidgetCTA><![CDATA[Codes unlock cool stuff in games!]]></codeWidgetCTA>
+		<clickHere><![CDATA[Got a code?]]></clickHere>
+		<helpBtn valign="true"><![CDATA[?]]></helpBtn>
+		<help2><![CDATA[Watch out for locks. They keep the rows in one place.]]></help2>
+		<help1><![CDATA[Use your mouse to drag color blocks left, right, up, or down. Try to match 3 or more of the same color! (Hint: hit "shuffle" if you get stuck.)]]></help1>
+		<help3><![CDATA[Look for treats! They help you make matches and keep your puppy happy.]]></help3>
+		<help4><![CDATA[Match 4 blocks or more to create a super block -- and see a surprise!]]></help4>
+		<helpDescription><![CDATA[Computer engineers use a special language called "code" to make programs work.  
+Match blocks of code to make your puppy do tricks!]]></helpDescription>
+		<helpHeader><![CDATA[How to play!]]></helpHeader>
+		<helpAwardsHeader><![CDATA[Earn Awards!]]></helpAwardsHeader>
+		<helpAwardDesc1><![CDATA[Type in the code on the package to unlock the laptop and stickers!]]></helpAwardDesc1>
+		<helpAwardDesc2><![CDATA[Match 3 treat codes to get the doggy bone.]]></helpAwardDesc2>
+		<helpAwardDesc3><![CDATA[Earn more than 20,000 points to unlock<br>the mouse!]]></helpAwardDesc3>
+		<helpAwardDesc4><![CDATA[Create more than 15 super blocks to unlock pink glasses!]]></helpAwardDesc4>
+		<helpAward1><![CDATA[LAPTOP]]></helpAward1>
+		<helpAward2><![CDATA[BONE]]></helpAward2>
+		<helpAward3><![CDATA[MOUSE]]></helpAward3>
+		<helpAward4><![CDATA[GLASSES]]></helpAward4>
+		<shuffleBtn valign="true"><![CDATA[SHUFFLE]]></shuffleBtn>
+		<score><![CDATA[Score]]></score>
+		
+		<ready><![CDATA[Ready]]></ready>
+		<set><![CDATA[Set]]></set>
+		<go><![CDATA[GO!]]></go>
+		
+		<score_match><![CDATA[MATCH x]]></score_match>
+		<score_combo><![CDATA[COMBO x]]></score_combo>
+		<score_chain><![CDATA[CHAIN x]]></score_chain>
+		<score_no_matches><![CDATA[OH NO!<br/>NO POSSIBLE<br/>MATCHES!]]></score_no_matches>
+		<score_try_shuffle><![CDATA[TRY<br/>SHUFFLING]]></score_try_shuffle>
+	
+	</localization>
+	
+	<endScreen>
+		<item score="20000">
+			<head><![CDATA[Awesome job!]]></head>
+			<body><![CDATA[You get an A+ for creating super-cool computer code!]]></body>
+		</item>
+		<item score="10000">
+			<head><![CDATA[Wow!]]></head>
+			<body><![CDATA[You created terrific tricks for your robot dog!]]></body>
+		</item>
+		<item score="0">
+			<head><![CDATA[Way to go!]]></head>
+			<body><![CDATA[Keep practicing to match more blocks of programming code!]]></body>
+		</item>
+	</endScreen>
+	
+	<gameSettings>
+		<levels>
+			<level id="1">
+				<coins>
+					<colors>
+						<color value="0x0001" weight="1" />
+						<color value="0x0002" weight="1" />
+						<color value="0x0004" weight="1" />
+						<color value="0x0008" weight="1" />
+					</colors>
+					<specials>
+						<special value="0x0040" frequency="0.5" />
+						<special value="0x0080" frequency="0.0" />
+					</specials>
+				</coins>
+				<scoring>
+					<matches>
+						<matched coins="3" value="11" multiplier="1.00" special="100" bonus="0" />
+						<matched coins="4" value="17" multiplier="2.00" special="200" bonus="1" />
+						<matched coins="5" value="23" multiplier="3.00" special="300" bonus="2" />
+						<matched coins="6" value="29" multiplier="4.00" special="400" bonus="3" />
+					</matches>
+					<chains>
+						<chain count="1" value="100" multiplier="1.00" />
+						<chain count="2" value="200" multiplier="1.50" />
+						<chain count="3" value="300" multiplier="2.00" />
+						<chain count="4" value="400" multiplier="2.50" />
+					</chains>
+				</scoring>
+				<toNextLevel>25</toNextLevel>
+				<timeDecrease>1</timeDecrease>
+			</level>
+			<level id="2">
+				<coins>
+					<colors>
+						<color value="0x0001" weight="1" />
+						<color value="0x0002" weight="1" />
+						<color value="0x0004" weight="1" />
+						<color value="0x0008" weight="1" />
+						<color value="0x0010" weight="2" />
+					</colors>
+					<specials>
+						<special value="0x0040" frequency="0.4" />
+						<special value="0x0080" frequency="0.0" />
+					</specials>
+				</coins>
+				<scoring>
+					<matches>
+						<matched coins="3" value="11" multiplier="1.00" special="100" bonus="0" />
+						<matched coins="4" value="17" multiplier="2.00" special="200" bonus="1" />
+						<matched coins="5" value="23" multiplier="3.00" special="300" bonus="2" />
+						<matched coins="6" value="29" multiplier="4.00" special="400" bonus="3" />
+					</matches>
+					<chains>
+						<chain count="1" value="100" multiplier="1.00" />
+						<chain count="2" value="200" multiplier="1.50" />
+						<chain count="3" value="300" multiplier="2.00" />
+						<chain count="4" value="400" multiplier="2.50" />
+					</chains>
+				</scoring>
+				<toNextLevel>25</toNextLevel>
+				<timeDecrease>1</timeDecrease>
+			</level>
+			<level id="3">
+				<coins>
+					<colors>
+						<color value="0x0001" weight="1" />
+						<color value="0x0002" weight="1" />
+						<color value="0x0004" weight="1" />
+						<color value="0x0008" weight="1" />
+						<color value="0x0010" weight="1" />
+						<color value="0x0020" weight="2" />
+					</colors>
+					<specials>
+						<special value="0x0040" frequency="0.3" />
+						<special value="0x0080" frequency="0.0" />
+					</specials>
+				</coins>
+				<scoring>
+					<matches>
+						<matched coins="3" value="11" multiplier="1.00" special="100" bonus="0" />
+						<matched coins="4" value="17" multiplier="2.00" special="200" bonus="1" />
+						<matched coins="5" value="23" multiplier="3.00" special="300" bonus="2" />
+						<matched coins="6" value="29" multiplier="4.00" special="400" bonus="3" />
+					</matches>
+					<chains>
+						<chain count="1" value="100" multiplier="1.00" />
+						<chain count="2" value="200" multiplier="1.50" />
+						<chain count="3" value="300" multiplier="2.00" />
+						<chain count="4" value="400" multiplier="2.50" />
+					</chains>
+				</scoring>
+				<toNextLevel>25</toNextLevel>
+				<timeDecrease>1</timeDecrease>
+			</level>
+			<level id="4">
+				<coins>
+					<colors>
+						<color value="0x0001" weight="1" />
+						<color value="0x0002" weight="1" />
+						<color value="0x0004" weight="1" />
+						<color value="0x0008" weight="1" />
+						<color value="0x0010" weight="1" />
+						<color value="0x0020" weight="1" />
+					</colors>
+					<specials>
+						<special value="0x0040" frequency="0.2" />
+						<special value="0x0080" frequency="0.0" />
+					</specials>
+				</coins>
+				<scoring>
+					<matches>
+						<matched coins="3" value="11" multiplier="1.00" special="100" bonus="0" />
+						<matched coins="4" value="17" multiplier="2.00" special="200" bonus="1" />
+						<matched coins="5" value="23" multiplier="3.00" special="300" bonus="2" />
+						<matched coins="6" value="29" multiplier="4.00" special="400" bonus="3" />
+					</matches>
+					<chains>
+						<chain count="1" value="100" multiplier="1.00" />
+						<chain count="2" value="200" multiplier="1.50" />
+						<chain count="3" value="300" multiplier="2.00" />
+						<chain count="4" value="400" multiplier="2.50" />
+					</chains>
+				</scoring>
+				<toNextLevel>50</toNextLevel>
+				<timeDecrease>2</timeDecrease>
+			</level>
+			<level id="5">
+				<coins>
+					<colors>
+						<color value="0x0001" weight="1" />
+						<color value="0x0002" weight="1" />
+						<color value="0x0004" weight="1" />
+						<color value="0x0008" weight="1" />
+						<color value="0x0010" weight="1" />
+						<color value="0x0020" weight="1" />
+					</colors>
+					<specials>
+						<special value="0x0040" frequency="0.1" />
+						<special value="0x0080" frequency="0.1" />
+					</specials>
+				</coins>
+				<scoring>
+					<matches>
+						<matched coins="3" value="11" multiplier="1.00" special="100" bonus="0" />
+						<matched coins="4" value="17" multiplier="2.00" special="200" bonus="1" />
+						<matched coins="5" value="23" multiplier="3.00" special="300" bonus="2" />
+						<matched coins="6" value="29" multiplier="4.00" special="400" bonus="3" />
+					</matches>
+					<chains>
+						<chain count="1" value="100" multiplier="1.00" />
+						<chain count="2" value="200" multiplier="1.50" />
+						<chain count="3" value="300" multiplier="2.00" />
+						<chain count="4" value="400" multiplier="2.50" />
+					</chains>
+				</scoring>
+				<toNextLevel>50</toNextLevel>
+				<timeDecrease>2</timeDecrease>
+			</level>
+			<level id="6">
+				<coins>
+					<colors>
+						<color value="0x0001" weight="1" />
+						<color value="0x0002" weight="1" />
+						<color value="0x0004" weight="1" />
+						<color value="0x0008" weight="1" />
+						<color value="0x0010" weight="1" />
+						<color value="0x0020" weight="1" />
+					</colors>
+					<specials>
+						<special value="0x0040" frequency="0.2" />
+						<special value="0x0080" frequency="0.2" />
+					</specials>
+				</coins>
+				<scoring>
+					<matches>
+						<matched coins="3" value="11" multiplier="1.00" special="100" bonus="0" />
+						<matched coins="4" value="17" multiplier="2.00" special="200" bonus="1" />
+						<matched coins="5" value="23" multiplier="3.00" special="300" bonus="2" />
+						<matched coins="6" value="29" multiplier="4.00" special="400" bonus="3" />
+					</matches>
+					<chains>
+						<chain count="1" value="100" multiplier="1.00" />
+						<chain count="2" value="200" multiplier="1.50" />
+						<chain count="3" value="300" multiplier="2.00" />
+						<chain count="4" value="400" multiplier="2.50" />
+					</chains>
+				</scoring>
+				<toNextLevel>50</toNextLevel>
+				<timeDecrease>2</timeDecrease>
+			</level>
+			<level id="7">
+				<coins>
+					<colors>
+						<color value="0x0001" weight="1" />
+						<color value="0x0002" weight="1" />
+						<color value="0x0004" weight="1" />
+						<color value="0x0008" weight="1" />
+						<color value="0x0010" weight="1" />
+						<color value="0x0020" weight="1" />
+					</colors>
+					<specials>
+						<special value="0x0040" frequency="0.3" />
+						<special value="0x0080" frequency="0.3" />
+					</specials>
+				</coins>
+				<scoring>
+					<matches>
+						<matched coins="3" value="11" multiplier="1.00" special="100" bonus="0" />
+						<matched coins="4" value="17" multiplier="2.00" special="200" bonus="1" />
+						<matched coins="5" value="23" multiplier="3.00" special="300" bonus="2" />
+						<matched coins="6" value="29" multiplier="4.00" special="400" bonus="3" />
+					</matches>
+					<chains>
+						<chain count="1" value="100" multiplier="1.00" />
+						<chain count="2" value="200" multiplier="1.50" />
+						<chain count="3" value="300" multiplier="2.00" />
+						<chain count="4" value="400" multiplier="2.50" />
+					</chains>
+				</scoring>
+				<toNextLevel>60</toNextLevel>
+				<timeDecrease>2</timeDecrease>
+			</level>
+			<level id="8">
+				<coins>
+					<colors>
+						<color value="0x0001" weight="1" />
+						<color value="0x0002" weight="1" />
+						<color value="0x0004" weight="1" />
+						<color value="0x0008" weight="1" />
+						<color value="0x0010" weight="1" />
+						<color value="0x0020" weight="1" />
+					</colors>
+					<specials>
+						<special value="0x0040" frequency="0.4" />
+						<special value="0x0080" frequency="0.4" />
+					</specials>
+				</coins>
+				<scoring>
+					<matches>
+						<matched coins="3" value="11" multiplier="1.00" special="100" bonus="0" />
+						<matched coins="4" value="17" multiplier="2.00" special="200" bonus="1" />
+						<matched coins="5" value="23" multiplier="3.00" special="300" bonus="2" />
+						<matched coins="6" value="29" multiplier="4.00" special="400" bonus="3" />
+					</matches>
+					<chains>
+						<chain count="1" value="100" multiplier="1.00" />
+						<chain count="2" value="200" multiplier="1.50" />
+						<chain count="3" value="300" multiplier="2.00" />
+						<chain count="4" value="400" multiplier="2.50" />
+					</chains>
+				</scoring>
+				<toNextLevel>70</toNextLevel>
+				<timeDecrease>2</timeDecrease>
+			</level>
+			<level id="9">
+				<coins>
+					<colors>
+						<color value="0x0001" weight="1" />
+						<color value="0x0002" weight="1" />
+						<color value="0x0004" weight="1" />
+						<color value="0x0008" weight="1" />
+						<color value="0x0010" weight="1" />
+						<color value="0x0020" weight="1" />
+					</colors>
+					<specials>
+						<special value="0x0040" frequency="0.5" />
+						<special value="0x0080" frequency="0.5" />
+					</specials>
+				</coins>
+				<scoring>
+					<matches>
+						<matched coins="3" value="11" multiplier="1.00" special="100" bonus="0" />
+						<matched coins="4" value="17" multiplier="2.00" special="200" bonus="1" />
+						<matched coins="5" value="23" multiplier="3.00" special="300" bonus="2" />
+						<matched coins="6" value="29" multiplier="4.00" special="400" bonus="3" />
+					</matches>
+					<chains>
+						<chain count="1" value="100" multiplier="1.00" />
+						<chain count="2" value="200" multiplier="1.50" />
+						<chain count="3" value="300" multiplier="2.00" />
+						<chain count="4" value="400" multiplier="2.50" />
+					</chains>
+				</scoring>
+				<toNextLevel>80</toNextLevel>
+				<timeDecrease>2</timeDecrease>
+			</level>
+			<level id="10">
+				<coins>
+					<colors>
+						<color value="0x0001" weight="1" />
+						<color value="0x0002" weight="1" />
+						<color value="0x0004" weight="1" />
+						<color value="0x0008" weight="1" />
+						<color value="0x0010" weight="1" />
+						<color value="0x0020" weight="1" />
+					</colors>
+					<specials>
+						<special value="0x0040" frequency="0.5" />
+						<special value="0x0080" frequency="0.6" />
+					</specials>
+				</coins>
+				<scoring>
+					<matches>
+						<matched coins="3" value="11" multiplier="1.00" special="100" bonus="0" />
+						<matched coins="4" value="17" multiplier="2.00" special="200" bonus="1" />
+						<matched coins="5" value="23" multiplier="3.00" special="300" bonus="2" />
+						<matched coins="6" value="29" multiplier="4.00" special="400" bonus="3" />
+					</matches>
+					<chains>
+						<chain count="1" value="100" multiplier="1.00" />
+						<chain count="2" value="200" multiplier="1.50" />
+						<chain count="3" value="300" multiplier="2.00" />
+						<chain count="4" value="400" multiplier="2.50" />
+					</chains>
+				</scoring>
+				<toNextLevel>90</toNextLevel>
+				<timeDecrease>2</timeDecrease>
+			</level>
+			<level id="11">
+				<coins>
+					<colors>
+						<color value="0x0001" weight="1" />
+						<color value="0x0002" weight="1" />
+						<color value="0x0004" weight="1" />
+						<color value="0x0008" weight="1" />
+						<color value="0x0010" weight="1" />
+						<color value="0x0020" weight="1" />
+					</colors>
+					<specials>
+						<special value="0x0040" frequency="0.5" />
+						<special value="0x0080" frequency="0.7" />
+					</specials>
+				</coins>
+				<scoring>
+					<matches>
+						<matched coins="3" value="11" multiplier="1.00" special="100" bonus="0" />
+						<matched coins="4" value="17" multiplier="2.00" special="200" bonus="1" />
+						<matched coins="5" value="23" multiplier="3.00" special="300" bonus="2" />
+						<matched coins="6" value="29" multiplier="4.00" special="400" bonus="3" />
+					</matches>
+					<chains>
+						<chain count="1" value="100" multiplier="1.00" />
+						<chain count="2" value="200" multiplier="1.50" />
+						<chain count="3" value="300" multiplier="2.00" />
+						<chain count="4" value="400" multiplier="2.50" />
+					</chains>
+				</scoring>
+				<toNextLevel>100</toNextLevel>
+				<timeDecrease>2</timeDecrease>
+			</level>
+			<level id="12">
+				<coins>
+					<colors>
+						<color value="0x0001" weight="1" />
+						<color value="0x0002" weight="1" />
+						<color value="0x0004" weight="1" />
+						<color value="0x0008" weight="1" />
+						<color value="0x0010" weight="1" />
+						<color value="0x0020" weight="1" />
+					</colors>
+					<specials>
+						<special value="0x0040" frequency="0.5" />
+						<special value="0x0080" frequency="0.8" />
+					</specials>
+				</coins>
+				<scoring>
+					<matches>
+						<matched coins="3" value="11" multiplier="1.00" special="100" bonus="0" />
+						<matched coins="4" value="17" multiplier="2.00" special="200" bonus="1" />
+						<matched coins="5" value="23" multiplier="3.00" special="300" bonus="2" />
+						<matched coins="6" value="29" multiplier="4.00" special="400" bonus="3" />
+					</matches>
+					<chains>
+						<chain count="1" value="100" multiplier="1.00" />
+						<chain count="2" value="200" multiplier="1.50" />
+						<chain count="3" value="300" multiplier="2.00" />
+						<chain count="4" value="400" multiplier="2.50" />
+					</chains>
+				</scoring>
+				<toNextLevel>100</toNextLevel>
+				<timeDecrease>2</timeDecrease>
+			</level>
+			<level id="13">
+				<coins>
+					<colors>
+						<color value="0x0001" weight="1" />
+						<color value="0x0002" weight="1" />
+						<color value="0x0004" weight="1" />
+						<color value="0x0008" weight="1" />
+						<color value="0x0010" weight="1" />
+						<color value="0x0020" weight="1" />
+					</colors>
+					<specials>
+						<special value="0x0040" frequency="0.5" />
+						<special value="0x0080" frequency="0.9" />
+					</specials>
+				</coins>
+				<scoring>
+					<matches>
+						<matched coins="3" value="11" multiplier="1.00" special="100" bonus="0" />
+						<matched coins="4" value="17" multiplier="2.00" special="200" bonus="1" />
+						<matched coins="5" value="23" multiplier="3.00" special="300" bonus="2" />
+						<matched coins="6" value="29" multiplier="4.00" special="400" bonus="3" />
+					</matches>
+					<chains>
+						<chain count="1" value="100" multiplier="1.00" />
+						<chain count="2" value="200" multiplier="1.50" />
+						<chain count="3" value="300" multiplier="2.00" />
+						<chain count="4" value="400" multiplier="2.50" />
+					</chains>
+				</scoring>
+				<toNextLevel>100</toNextLevel>
+				<timeDecrease>2</timeDecrease>
+			</level>
+			<level id="14">
+				<coins>
+					<colors>
+						<color value="0x0001" weight="1" />
+						<color value="0x0002" weight="1" />
+						<color value="0x0004" weight="1" />
+						<color value="0x0008" weight="1" />
+						<color value="0x0010" weight="1" />
+						<color value="0x0020" weight="1" />
+					</colors>
+					<specials>
+						<special value="0x0040" frequency="0.5" />
+						<special value="0x0080" frequency="1" />
+					</specials>
+				</coins>
+				<scoring>
+					<matches>
+						<matched coins="3" value="11" multiplier="1.00" special="100" bonus="0" />
+						<matched coins="4" value="17" multiplier="2.00" special="200" bonus="1" />
+						<matched coins="5" value="23" multiplier="3.00" special="300" bonus="2" />
+						<matched coins="6" value="29" multiplier="4.00" special="400" bonus="3" />
+					</matches>
+					<chains>
+						<chain count="1" value="100" multiplier="1.00" />
+						<chain count="2" value="200" multiplier="1.50" />
+						<chain count="3" value="300" multiplier="2.00" />
+						<chain count="4" value="400" multiplier="2.50" />
+					</chains>
+				</scoring>
+				<toNextLevel>100</toNextLevel>
+				<timeDecrease>2</timeDecrease>
+			</level>
+			<level id="15">
+				<coins>
+					<colors>
+						<color value="0x0001" weight="1" />
+						<color value="0x0002" weight="1" />
+						<color value="0x0004" weight="1" />
+						<color value="0x0008" weight="1" />
+						<color value="0x0010" weight="1" />
+						<color value="0x0020" weight="1" />
+					</colors>
+					<specials>
+						<special value="0x0040" frequency="0.5" />
+						<special value="0x0080" frequency="1" />
+					</specials>
+				</coins>
+				<scoring>
+					<matches>
+						<matched coins="3" value="11" multiplier="1.00" special="100" bonus="0" />
+						<matched coins="4" value="17" multiplier="2.00" special="200" bonus="1" />
+						<matched coins="5" value="23" multiplier="3.00" special="300" bonus="2" />
+						<matched coins="6" value="29" multiplier="4.00" special="400" bonus="3" />
+					</matches>
+					<chains>
+						<chain count="1" value="100" multiplier="1.00" />
+						<chain count="2" value="200" multiplier="1.50" />
+						<chain count="3" value="300" multiplier="2.00" />
+						<chain count="4" value="400" multiplier="2.50" />
+					</chains>
+				</scoring>
+				<toNextLevel>100</toNextLevel>
+				<timeDecrease>3</timeDecrease>
+			</level>
+			<level id="16">
+				<coins>
+					<colors>
+						<color value="0x0001" weight="1" />
+						<color value="0x0002" weight="1" />
+						<color value="0x0004" weight="1" />
+						<color value="0x0008" weight="1" />
+						<color value="0x0010" weight="1" />
+						<color value="0x0020" weight="1" />
+					</colors>
+					<specials>
+						<special value="0x0040" frequency="0.5" />
+						<special value="0x0080" frequency="1" />
+					</specials>
+				</coins>
+				<scoring>
+					<matches>
+						<matched coins="3" value="11" multiplier="1.00" special="100" bonus="0" />
+						<matched coins="4" value="17" multiplier="2.00" special="200" bonus="1" />
+						<matched coins="5" value="23" multiplier="3.00" special="300" bonus="2" />
+						<matched coins="6" value="29" multiplier="4.00" special="400" bonus="3" />
+					</matches>
+					<chains>
+						<chain count="1" value="100" multiplier="1.00" />
+						<chain count="2" value="200" multiplier="1.50" />
+						<chain count="3" value="300" multiplier="2.00" />
+						<chain count="4" value="400" multiplier="2.50" />
+					</chains>
+				</scoring>
+				<toNextLevel>100</toNextLevel>
+				<timeDecrease>4</timeDecrease>
+			</level>
+			<level id="17">
+				<coins>
+					<colors>
+						<color value="0x0001" weight="1" />
+						<color value="0x0002" weight="1" />
+						<color value="0x0004" weight="1" />
+						<color value="0x0008" weight="1" />
+						<color value="0x0010" weight="1" />
+						<color value="0x0020" weight="1" />
+					</colors>
+					<specials>
+						<special value="0x0040" frequency="0.5" />
+						<special value="0x0080" frequency="1" />
+					</specials>
+				</coins>
+				<scoring>
+					<matches>
+						<matched coins="3" value="11" multiplier="1.00" special="100" bonus="0" />
+						<matched coins="4" value="17" multiplier="2.00" special="200" bonus="1" />
+						<matched coins="5" value="23" multiplier="3.00" special="300" bonus="2" />
+						<matched coins="6" value="29" multiplier="4.00" special="400" bonus="3" />
+					</matches>
+					<chains>
+						<chain count="1" value="100" multiplier="1.00" />
+						<chain count="2" value="200" multiplier="1.50" />
+						<chain count="3" value="300" multiplier="2.00" />
+						<chain count="4" value="400" multiplier="2.50" />
+					</chains>
+				</scoring>
+				<toNextLevel>100</toNextLevel>
+				<timeDecrease>5</timeDecrease>
+			</level>
+		</levels>
+		
+		<kudos>
+			<kudo threshold="0" />
+			<kudo threshold="500" />
+			<kudo threshold="3000" />
+		</kudos>
+	</gameSettings>	
+
+	
+</data>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<!-- config block is  universal, all games must have path to data transfer swf and game ID
+		 When adding game specific tags, consider distinguishing them
+	     from required tags. -->
+	<config>
+		<gameID>14</gameID>
+		<gameTrackingName><![CDATA[I Can Be: Super Wedding Stylist Game]]></gameTrackingName>
+		<tracking>
+			<item id="view" name='I Can Be: Super Wedding Stylist Game' campaign='None' channel='I can be' contenttype='Game' action='View' />
+			<item id="play" name='I Can Be: Super Wedding Stylist Game' campaign='None' channel='I can be' contenttype='Game' action='Play' />
+			<item id="play_ring" name='I Can Be: Super Wedding Stylist Game - Your Ring' campaign='None' channel='I can be' contenttype='Game' action='Click' />
+			<item id="play_dress" name='I Can Be: Super Wedding Stylist Game - Your Dress' campaign='None' channel='I can be' contenttype='Game' action='Click' />
+			<item id="play_cake" name='I Can Be: Super Wedding Stylist Game - Your Cake' campaign='None' channel='I can be' contenttype='Game' action='Click' />
+			<item id="replay" name='I Can Be: Super Wedding Stylist Game' campaign='None' channel='I can be' contenttype='Game' action='Game Replay' />
+		</tracking>
+		<!-- controllerSWF will contain the path of the swf used for scoring -->
+		<controllerSWF>/Resources/Games_Data/global/swf/gameapi.swf</controllerSWF>
+		<contentData>/data/weddingplanner.xmlx</contentData>
+		<contentDataMulti parent_folder="/data/">weddingplanner.xmlx</contentDataMulti>
+
+		<gameKey>bride</gameKey>				
+		<libraries>
+			<item>/library/soundBank.swf</item>
+		</libraries>
+		
+		<audio>
+		</audio>
+
+		<actions>
+			<item id="lock" actionID='0'  itemID='14' description='Barbie I Can Be Doll' />
+			<item id="ring" actionID='13' itemID='78' description='Game: Bride rings' />
+			<item id="cake" actionID='14' itemID='79' description='Game: Bride cake' />
+		</actions>
+
+		<codeUnlockURL>change/configxml/codeUnlockURL/placeholder.html</codeUnlockURL>
+	</config>
+
+</data>

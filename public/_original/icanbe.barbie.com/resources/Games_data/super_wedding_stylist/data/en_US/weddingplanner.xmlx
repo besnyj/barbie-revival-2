@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<styleSheet>/styles/latin.css</styleSheet>
+	<fontSwf>/library/fontLibrary_latin.swf</fontSwf>	
+	<locked>false</locked>
+	<localization>
+		
+		<ring_larger><![CDATA[larger]]></ring_larger>
+		<ring_smaller><![CDATA[smaller]]></ring_smaller>
+		<ring_carat><![CDATA[carat]]></ring_carat>
+		
+		<txt_super><![CDATA[Super]]></txt_super>
+		<txt_wedding_stylist_header valign="true"><![CDATA[Wedding Stylist]]></txt_wedding_stylist_header>
+		<txt_ui_btn_tryon><![CDATA[try it on!]]></txt_ui_btn_tryon>
+		<txt_ui_btn_ring_shape><![CDATA[shape]]></txt_ui_btn_ring_shape>
+		<txt_ui_btn_color><![CDATA[color]]></txt_ui_btn_color>
+		<txt_ui_btn_setting><![CDATA[setting]]></txt_ui_btn_setting>
+		<txt_ui_btn_style><![CDATA[style]]></txt_ui_btn_style>
+		<txt_ui_btn_frosting><![CDATA[frosting]]></txt_ui_btn_frosting>
+		<txt_ui_btn_shape><![CDATA[shape]]></txt_ui_btn_shape>
+		<txt_ui_btn_details><![CDATA[details]]></txt_ui_btn_details>
+		<txt_ui_btn_veil><![CDATA[veil]]></txt_ui_btn_veil>
+		<txt_ui_btn_bodice><![CDATA[bodice]]></txt_ui_btn_bodice>
+		<txt_ui_btn_skirt><![CDATA[skirt]]></txt_ui_btn_skirt>
+		<txt_chooseKarats><![CDATA[Click on the controls below to change the size of your diamond!]]></txt_chooseKarats>
+		<txt_selectDiamond><![CDATA[Pick the shape of your diamond:]]></txt_selectDiamond>
+		<txt_chooseMetal valign="true"><![CDATA[Choose the metal for your setting:]]></txt_chooseMetal>
+		<txt_chooseRingColor valign="true"><![CDATA[Click on a color for your diamond:]]></txt_chooseRingColor>
+		<txt_chooseSetting><![CDATA[Choose a setting for your ring!]]></txt_chooseSetting>
+		<txt_chooseDetails><![CDATA[Add as many details as you want!]]></txt_chooseDetails>
+		<txt_chooseVeil><![CDATA[Pick a veil to go with your dress:]]></txt_chooseVeil>
+		<txt_chooseBodice><![CDATA[Pick a bodice to go with your skirt:]]></txt_chooseBodice>
+		<txt_chooseSkirt><![CDATA[Choose one of the skirts below:]]></txt_chooseSkirt>
+		<txt_chooseStyle><![CDATA[Choose a style for your cake:]]></txt_chooseStyle>
+		<txt_pickFrostingColor><![CDATA[Pick the color of your frosting:]]></txt_pickFrostingColor>
+		<txt_chooseTiers><![CDATA[Choose the number of tiers:]]></txt_chooseTiers>
+		<txt_chooseShape><![CDATA[Pick the shape of your cake:]]></txt_chooseShape>
+		<txt_pickDiamond><![CDATA[Pick Your Diamond!]]></txt_pickDiamond>
+		<txt_yourCake valign="true"><![CDATA[Your Cake]]></txt_yourCake>
+		<txt_yourRing valign="true"><![CDATA[Your Ring]]></txt_yourRing>
+		<txt_yourGown valign="true"><![CDATA[Your Dress]]></txt_yourGown>
+		<txt_tooltip><![CDATA[Enter your code to unlock this!]]></txt_tooltip>
+		<txt_splashDescription><![CDATA[Create a sparkly engagement ring, build the perfect cake and design the wedding dress of your dreams!]]></txt_splashDescription>
+		<txt_ringShapeSquare><![CDATA[square]]></txt_ringShapeSquare>
+		<txt_ringShapeRound><![CDATA[round]]></txt_ringShapeRound>
+		<txt_ringShapePear><![CDATA[pear]]></txt_ringShapePear>
+		<txt_ringShapeMarquis><![CDATA[marquis]]></txt_ringShapeMarquis>
+		<txt_ringShapeHeart><![CDATA[heart]]></txt_ringShapeHeart>
+		<txt_ringShapeEmerald><![CDATA[emerald]]></txt_ringShapeEmerald>
+		<txt_ringSettingModern><![CDATA[modern]]></txt_ringSettingModern>
+		<txt_ringSettingLuxe><![CDATA[luxe]]></txt_ringSettingLuxe>
+		<txt_ringSettingClassic><![CDATA[classic]]></txt_ringSettingClassic>
+		<txt_ringMetal_yellow><![CDATA[yellow gold]]></txt_ringMetal_yellow>
+		<txt_ringMetal_white><![CDATA[white gold]]></txt_ringMetal_white>
+		<txt_ringMetal_platinum><![CDATA[platinum]]></txt_ringMetal_platinum>
+		<txt_ringMetal_pink><![CDATA[pink gold]]></txt_ringMetal_pink>
+		<txt_printable_legal2><![CDATA[ © 2009 Mattel, Inc. All Rights Reserved. ]]></txt_printable_legal2>
+		<txt_printable_legal><![CDATA[ © 2009 Mattel, Inc. All Rights Reserved. ]]></txt_printable_legal>
+		<txt_printable_head><![CDATA[What a refined sense of style!]]></txt_printable_head>
+		<txt_printable_fold><![CDATA[fold]]></txt_printable_fold>
+		<txt_printable_copy><![CDATA[Cut along the dashes around your bride book then fold it in half. Fold it in half one more time and it’s ready to go!]]></txt_printable_copy>
+		<txt_playBtnLg valign="true"><![CDATA[play]]></txt_playBtnLg>
+		<txt_playBtn valign="true"><![CDATA[play]]></txt_playBtn>
+		<txt_hubDescription><![CDATA[Create a sparkly engagement ring, build the perfect cake and design the wedding dress of your dreams!]]></txt_hubDescription>
+		<txt_helpHeader><![CDATA[How to play]]></txt_helpHeader>
+		<txt_helpDescription><![CDATA[Design a ring, cake and wedding dress for your Bride Book.]]></txt_helpDescription>
+		<txt_helpCopy4><![CDATA[When you’re done, preview your Bride Book and print it!]]></txt_helpCopy4>
+		<txt_helpCopy3><![CDATA[Click on "back to menu" to design something else!]]></txt_helpCopy3>
+		<txt_helpCopy2><![CDATA[Click to make choices for each item you design.]]></txt_helpCopy2>
+		<txt_helpCopy1><![CDATA[Pick what you want to design from the game menu. (You can choose ring, cake or dress.)]]></txt_helpCopy1>
+		<txt_goBtn><![CDATA[go]]></txt_goBtn>
+		<txt_dressDetailsSash><![CDATA[sash]]></txt_dressDetailsSash>
+		<txt_dressDetailsRhinestones><![CDATA[rhinestones]]></txt_dressDetailsRhinestones>
+		<txt_dressDetailsPearls><![CDATA[pearls]]></txt_dressDetailsPearls>
+		<txt_dressDetailsLace><![CDATA[lace]]></txt_dressDetailsLace>
+		<txt_dressDetailsFlower><![CDATA[flower]]></txt_dressDetailsFlower>
+		<txt_dressDetailsBow><![CDATA[bow]]></txt_dressDetailsBow>
+		<txt_codeWidgetCTA><![CDATA[Codes unlock cool stuff in games!]]></txt_codeWidgetCTA>
+		<txt_toActivate><![CDATA[to activate a code]]></txt_toActivate>
+		<txt_clickHere><![CDATA[Got a code?]]></txt_clickHere>
+		<txt_cakeTiersTwo><![CDATA[two]]></txt_cakeTiersTwo>
+		<txt_cakeTiersThree><![CDATA[three]]></txt_cakeTiersThree>
+		<txt_cakeTiersOne><![CDATA[one]]></txt_cakeTiersOne>
+		<txt_cakeTiersFour><![CDATA[four]]></txt_cakeTiersFour>
+		<txt_cakeStyleRibbons><![CDATA[ribbons]]></txt_cakeStyleRibbons>
+		<txt_cakeStyleLuxe><![CDATA[luxe]]></txt_cakeStyleLuxe>
+		<txt_cakeStyleJewels><![CDATA[jewels]]></txt_cakeStyleJewels>
+		<txt_cakeStyleHearts><![CDATA[hearts]]></txt_cakeStyleHearts>
+		<txt_cakeStyleFlowers><![CDATA[flowers]]></txt_cakeStyleFlowers>
+		<txt_cakeStyleButterflies><![CDATA[butterflies]]></txt_cakeStyleButterflies>
+		<txt_cakeShapeSquare><![CDATA[square]]></txt_cakeShapeSquare>
+		<txt_cakeShapeRound><![CDATA[round]]></txt_cakeShapeRound>
+		<txt_cakeShapeHeart><![CDATA[heart]]></txt_cakeShapeHeart>
+		<txt_cakeShapeFlower><![CDATA[flower]]></txt_cakeShapeFlower>
+		<txt_btnRingUITry valign="true"><![CDATA[Try it on!]]></txt_btnRingUITry>
+		<txt_btnRingUIShape valign="true"><![CDATA[Shape]]></txt_btnRingUIShape>
+		<txt_btnRingUISetting valign="true"><![CDATA[Setting]]></txt_btnRingUISetting>
+		<txt_btnRingUIColor valign="true"><![CDATA[Color]]></txt_btnRingUIColor>
+		<txt_btnCloseHelp><![CDATA[close]]></txt_btnCloseHelp>
+		<txt_btnCakeStyle valign="true"><![CDATA[Style]]></txt_btnCakeStyle>
+		<txt_btnCakeShape valign="true"><![CDATA[Shape]]></txt_btnCakeShape>
+		<txt_btnCakeFrosting valign="true"><![CDATA[Frosting]]></txt_btnCakeFrosting>
+		<txt_printPlanner valign="true"><![CDATA[print bride book]]></txt_printPlanner>
+		<txt_previewPlanner valign="true"><![CDATA[see bride book]]></txt_previewPlanner>
+		<txt_closePlanner><![CDATA[close bride book]]></txt_closePlanner>
+		<txt_backtohub valign="true"><![CDATA[back to menu]]></txt_backtohub>
+		<txt_btn_clear><![CDATA[clear all]]></txt_btn_clear>
+		<txt_ringSetting3Stone><![CDATA[3 - stone]]></txt_ringSetting3Stone>
+		<txt_btnDressUISkirt valign="true"><![CDATA[Skirt]]></txt_btnDressUISkirt>
+		<txt_btnDressUIBodice valign="true"><![CDATA[Bodice]]></txt_btnDressUIBodice>
+		<txt_btnDressUIVeil valign="true"><![CDATA[Veil]]></txt_btnDressUIVeil>
+		<txt_btnDressUIDetails valign="true"><![CDATA[Details]]></txt_btnDressUIDetails>
+	</localization>
+	
+	<musicVolume>.5</musicVolume>
+	
+	<!-- setting debug to true allows viewing of locked content -->
+	<debug>false</debug>
+</data>

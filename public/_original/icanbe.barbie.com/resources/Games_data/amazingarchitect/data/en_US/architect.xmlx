@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<!--locked>true</locked-->
+	<styleSheet>/styles/latin.css</styleSheet>
+	<fontSwf>/library/fontLibrary_latin.swf</fontSwf>
+	<locked>false</locked>
+	<isInternational>false</isInternational>
+	<!--
+	<printable>printable/CE_laptopStickers.pdf</printable>
+	-->
+	
+<localization>
+	<legal><![CDATA[© 2011 Mattel, Inc. All Rights Reserved.]]></legal>
+	
+	<story1><![CDATA[An architect designs buildings that are strong, safe, and super stylish too!  ]]></story1>
+	<story2><![CDATA[What’s YOUR design style, architect? Find out when you create an outdoor mall of I Can Be career shops! ]]></story2>
+	<story3><![CDATA[Learn about building types & DESIGN each shop. Then PRINT your design & BUILD the model!  ]]></story3>
+	<story4><![CDATA[Make as many shops as you want—with any looks you want! ]]></story4>
+	
+	
+	
+	<backBtnLarge><![CDATA[back]]></backBtnLarge>
+	<clearSideBTN><![CDATA[clear side]]></clearSideBTN>
+	<closeBtnLG><![CDATA[close]]></closeBtnLG>
+	<done><![CDATA[done]]></done>
+	<goBtn><![CDATA[go]]></goBtn>
+	<helpBtn><![CDATA[?]]></helpBtn>
+	<nextBtn><![CDATA[next]]></nextBtn>
+	<playBtn><![CDATA[play]]></playBtn>
+	<clear><![CDATA[clear]]></clear>
+	
+	
+	<tabWall><![CDATA[WALLS]]></tabWall>
+	<tabRoof><![CDATA[ROOFS]]></tabRoof>
+	<tabDoor><![CDATA[DOORS]]></tabDoor>
+	<tabWindows><![CDATA[SHOP WINDOWS]]></tabWindows>
+	<tabExtra><![CDATA[EXTRAS]]></tabExtra>
+	<tabSeeAll><![CDATA[see all shops]]></tabSeeAll>
+	<tabBakery><![CDATA[cupcake shop]]></tabBakery>
+	<tabDance><![CDATA[dance studio]]></tabDance>
+	<tabDentist><![CDATA[dentist]]></tabDentist>
+	<tabPetVet><![CDATA[pet vet]]></tabPetVet>
+	<tabArtSchool><![CDATA[art school]]></tabArtSchool>
+	<turnLabel><![CDATA[turn]]></turnLabel>
+	
+	<trashLabel><![CDATA[trash]]></trashLabel>
+	
+	<notDoneBtn><![CDATA[go back]]></notDoneBtn>
+	<btnPrint><![CDATA[print]]></btnPrint>
+	<btnDesignMore><![CDATA[design more]]></btnDesignMore>
+	
+	
+	<front><![CDATA[front]]></front>
+	
+	<selectShopType><![CDATA[SELECT SHOP TYPE:]]></selectShopType>
+	
+	<help1><![CDATA[What kind of shop do you want to design? Pick windows for your<br>fave shop type:<br><br>- Cupcake shop<br>- Dance studio<br>- Dentist<br>- Art school<br>- Pet vet]]></help1>
+	<help2><![CDATA[Click around to check out different looks. Roll over an item to find out<br>the style:<br><br>- Victorian<br>- Tudor<br>- Modern<br>- Silly Chic]]></help2>
+	<help4><![CDATA[To remove an item, click it & then click the trash can.]]></help4>
+	<help5><![CDATA[Done designing? Hit “done” & print your design.]]></help5>
+	<help6><![CDATA[Follow instructions on the printout to build your shop model!]]></help6>
+	<help3><![CDATA[Click an item to pick it up, then click your shop to place it. Design all sides of the building!]]></help3>
+	<help7><![CDATA[Make more shops to create a mini mall! ]]></help7>
+	<helpHeader><![CDATA[How to play!]]></helpHeader>
+	
+	<allDoneHeader><![CDATA[Fab job, architect!]]></allDoneHeader>
+	
+	<helpDescription><![CDATA[Make a shop for your outdoor mall!
+]]></helpDescription>
+	<hubCopy><![CDATA[Use sticker paper to print out your own stickers. 
+Decorate your computer, locker, notebook, and more!]]></hubCopy>
+	<logo1><![CDATA[Architect]]></logo1>
+	<logo2><![CDATA[Amazing]]></logo2>
+	<splashCopy><![CDATA[Get creative, architect! Design shops for the ultimate outdoor mall!]]></splashCopy>
+	<unlock_tooltip><![CDATA[Enter your code to unlock this!]]></unlock_tooltip>
+	<project><![CDATA[PROJECT: MALL]]></project>
+	<clearSide><![CDATA[clear side?]]></clearSide>
+	<clearSideBody><![CDATA[Are you sure you want to erase your design on this side?]]></clearSideBody>
+	<allDoneBody><![CDATA[Now print your shop & put it together! Plus, design more buildings for your mall!]]></allDoneBody>
+	<startOver><![CDATA[start over?]]></startOver>
+	<startOverBody><![CDATA[Are you sure you want to erase your entire design?]]></startOverBody>
+	<objectPrompt><![CDATA[CLICK AN ITEM TO PICK IT UP. CLICK AGAIN TO PLACE IT!]]></objectPrompt>
+	<placePrompt><![CDATA[TO START, PUT YOUR FIRST ITEM HERE!]]></placePrompt>
+
+	<leftSide><![CDATA[left side]]></leftSide>
+	<back><![CDATA[back]]></back>
+	<rightSide><![CDATA[right side]]></rightSide>
+	<toolTipFantasy><![CDATA[silly chic]]></toolTipFantasy>
+	<toolTipModern><![CDATA[modern]]></toolTipModern>
+	<toolTipTudor><![CDATA[tudor]]></toolTipTudor>
+	<toolTipVictorian><![CDATA[victorian]]></toolTipVictorian>
+	<winToolTipModern><![CDATA[silly chic]]></winToolTipModern>
+	<winToolTipFantasy><![CDATA[modern]]></winToolTipFantasy>
+	<winToolTipTudor><![CDATA[tudor]]></winToolTipTudor>
+	<winToolTipVictorian><![CDATA[victorian]]></winToolTipVictorian>
+	
+	<printStep6><![CDATA[Attach tab F to edge F, then G to G.]]></printStep6>
+	<printStep5><![CDATA[Attach tab D to edge D, then E to E.]]></printStep5>
+	<printStep4><![CDATA[Attach tab B to Edge B, then C to C.]]></printStep4>
+	<printStep3a><![CDATA[Tip: Always tape or glue from the inside.]]></printStep3a>
+	<printStep3><![CDATA[Use tape or glue to attach tab A to edge A.]]></printStep3>
+	<printStep2><![CDATA[With safety scissors, cut out the two pieces of your shop. Cut on solid lines and then fold along all dotted lines.]]></printStep2>
+	<printStep1><![CDATA[Ask a grownup for help.]]></printStep1>
+	<printHeaderArchitect><![CDATA[Architect]]></printHeaderArchitect>
+	
+	<trashToolTip><![CDATA[Remove an item by dropping it here!]]></trashToolTip>
+	
+	
+	<startOverBTN><![CDATA[start over]]></startOverBTN>
+	<storyTitle><![CDATA[Be an Architect!]]></storyTitle>
+	
+	<noBtn><![CDATA[no]]></noBtn>
+	<yesBtnLg><![CDATA[yes]]></yesBtnLg>
+</localization>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!--
+	<localization>
+		
+		<unlock_tooltip><![CDATA[Enter your code to unlock this!]]></unlock_tooltip>
+		<logo2><![CDATA[Amazing]]></logo2>
+		<logo1><![CDATA[Architect!]]></logo1>
+		<splashCopy><![CDATA[Get creative, architect! Design shops for the ultimate outdoor mall!]]></splashCopy>
+		<playBtn><![CDATA[play]]></playBtn>
+		<printBtn><![CDATA[print]]></printBtn>
+		<hubCopy><![CDATA[Use sticker paper to print out your own stickers. 
+Decorate your computer, locker, notebook, and more!]]></hubCopy>
+		<goBtn><![CDATA[go]]></goBtn>
+		<codeWidgetCTA><![CDATA[Codes unlock cool stuff in games!]]></codeWidgetCTA>
+		<clickHere><![CDATA[Got a code?]]></clickHere>
+		<helpBtn><![CDATA[?]]></helpBtn>
+		<help2><![CDATA[Watch out for locks. They keep the rows in one place.]]></help2>
+		<help1><![CDATA[Use your mouse to drag color blocks left, right, up, or down. Try to match 3 or more of the same color! (Hint: hit "shuffle" if you get stuck.)]]></help1>
+		<help3><![CDATA[Look for treats! They help you make matches and keep your puppy happy.]]></help3>
+		<help4><![CDATA[Match 4 blocks or more to create a super block -- and see a surprise!]]></help4>
+		<helpDescription><![CDATA[]]></helpDescription>
+		<helpHeader><![CDATA[How to play!]]></helpHeader>
+		<helpAwardsHeader><![CDATA[Earn Awards!]]></helpAwardsHeader>
+		<helpAwardDesc1><![CDATA[Type in the code on the package to unlock the laptop and stickers!]]></helpAwardDesc1>
+		<helpAwardDesc2><![CDATA[Match 3 treat codes to get the doggy bone.]]></helpAwardDesc2>
+		<helpAwardDesc3><![CDATA[Earn more than 20,000 points to unlock<br>the mouse!]]></helpAwardDesc3>
+		<helpAwardDesc4><![CDATA[Create more than 15 super blocks to unlock pink glasses!]]></helpAwardDesc4>
+		<helpAward1><![CDATA[LAPTOP]]></helpAward1>
+		<helpAward2><![CDATA[BONE]]></helpAward2>
+		<helpAward3><![CDATA[MOUSE]]></helpAward3>
+		<helpAward4><![CDATA[GLASSES]]></helpAward4>
+		<shuffleBtn><![CDATA[SHUFFLE]]></shuffleBtn>
+		<score><![CDATA[Score]]></score>
+		
+		<ready><![CDATA[Ready]]></ready>
+		<set><![CDATA[Set]]></set>
+		<go><![CDATA[GO!]]></go>
+		
+		<score_match><![CDATA[MATCH x]]></score_match>
+		<score_combo><![CDATA[COMBO x]]></score_combo>
+		<score_chain><![CDATA[CHAIN x]]></score_chain>
+		<score_no_matches><![CDATA[OH NO!<br/>NO POSSIBLE<br/>MATCHES!]]></score_no_matches>
+		<score_try_shuffle><![CDATA[TRY<br/>SHUFFLING]]></score_try_shuffle>
+	
+	</localization>
+	-->
+	<endScreen>
+		<item score="20000">
+			<head><![CDATA[Awesome job!]]></head>
+			<body><![CDATA[You get an A+ for creating super-cool computer code!]]></body>
+		</item>
+		<item score="10000">
+			<head><![CDATA[Wow!]]></head>
+			<body><![CDATA[You created terrific tricks for your robot dog!]]></body>
+		</item>
+		<item score="0">
+			<head><![CDATA[Way to go!]]></head>
+			<body><![CDATA[Keep practicing to match more blocks of programming code!]]></body>
+		</item>
+	</endScreen>
+	
+	<gameSettings>
+		
+	</gameSettings>	
+
+	
+</data>

@@ -1,0 +1,1583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<styleSheet>/styles/latin.css</styleSheet>
+	<fontSwf>/library/fontLibrary_latin.swf</fontSwf>
+	<locked>false</locked>	
+
+	<localization>
+		
+		<txt_logo_Race><![CDATA[Race]]></txt_logo_Race>
+		<txt_logo_Potty><![CDATA[POTTY]]></txt_logo_Potty>
+		<txt_game_Score valign="true"><![CDATA[Score:]]></txt_game_Score>
+		
+		<!-- Regular win kudos (no stick earned) -->
+		<kudosHeader1><![CDATA[Awesome!]]></kudosHeader1>
+		<kudosHeader2><![CDATA[Great Job!]]></kudosHeader2>
+		<kudosHeader3><![CDATA[Congrats!]]></kudosHeader3>		
+		<kudosCopy1><![CDATA[You helped little sis make it to the potty in time!]]></kudosCopy1>
+		<kudosCopy2><![CDATA[No accidents!]]></kudosCopy2>
+		<kudosCopy3><![CDATA[You're a super babysitter!]]></kudosCopy3>
+		
+		<!-- Lost game kudos -->
+		<!-- <oopsKudosHeader1><![CDATA[Oops!]]></oopsKudosHeader1> -->
+		<oopsKudosHeader1><![CDATA[Don't give up!]]></oopsKudosHeader1>
+		<oopsKudosHeader2><![CDATA[Try Again!]]></oopsKudosHeader2>
+		<oopsKudosHeader3><![CDATA[Don't give up!]]></oopsKudosHeader3>
+		<oopsKudosCopy1><![CDATA[Keep practicing to get more potty-training practice!]]></oopsKudosCopy1>
+		<oopsKudosCopy2><![CDATA[You'll have little sis potty-trained in no time!]]></oopsKudosCopy2>
+		<oopsKudosCopy3><![CDATA[Keep playing to get little sis to the potty in time!]]></oopsKudosCopy3>
+		
+		<!-- Sticker earned win kudos -->
+		<stickerKudosHeader1><![CDATA[Awesome!]]></stickerKudosHeader1>
+		<stickerKudosHeader2><![CDATA[Great Job!]]></stickerKudosHeader2>
+		<stickerKudosHeader3><![CDATA[Congrats!]]></stickerKudosHeader3>		
+		<stickerKudosCopy1><![CDATA[You helped little sis make it to the potty in time! You earned a perfect potty sticker!]]></stickerKudosCopy1>
+		<stickerKudosCopy2><![CDATA[No accidents! You earned a perfect potty sticker!]]></stickerKudosCopy2>
+		<stickerKudosCopy3><![CDATA[You're a super babysitter! You earned a perfect potty sticker!]]></stickerKudosCopy3>		
+		
+		<playAgainCopy><![CDATA[Play again to beat your best score or choose a new floor!]]></playAgainCopy>
+		<scoreFinal><![CDATA[Final score:]]></scoreFinal>
+		<bestTimeFinal><![CDATA[Best time: ]]></bestTimeFinal>
+		
+		<firstFloor><![CDATA[1st floor]]></firstFloor>
+		<secondFloor><![CDATA[2nd floor]]></secondFloor>
+		<thirdFloor><![CDATA[3rd floor]]></thirdFloor>
+		
+		<ready><![CDATA[Ready?]]></ready>
+		<set><![CDATA[Set?]]></set>
+		<go><![CDATA[Go!]]></go>
+		
+		<helpHeader><![CDATA[How to play!]]></helpHeader>
+		<helpDescription><![CDATA[Help little sis get to the potty before she has an accident!]]></helpDescription>
+		<helpCopy1><![CDATA[Click to open the kid gates for little sis.]]></helpCopy1>
+		<helpCopy2><![CDATA[Click the toys to move them out of her way.]]></helpCopy2>
+		<helpCopy3><![CDATA[Collect Toilet Paper so little sis will get a "Perfect Potty" sticker!]]></helpCopy3>
+		<helpCopy4><![CDATA[Click the dog to keep him away from little sis or she will get off track!]]></helpCopy4>
+		
+		<kellyPottyChart><![CDATA[Little Sis' potty chart]]></kellyPottyChart>
+		<hubCopy><![CDATA[Help little sis get to the potty before she has an accident!]]></hubCopy>
+		<hubInstructions><![CDATA[Choose a level to play:]]></hubInstructions>
+		<perfectPotty><![CDATA[PERFECT<br>POTTY</br>]]></perfectPotty>
+		
+		<introInstructions><![CDATA[Hey, babysitter! Can you help potty-train little sis? Get her to the bathroom before she has an accident!]]></introInstructions>
+		
+		<btnHelp><![CDATA[?]]></btnHelp>
+		<btnPlayLarge><![CDATA[play]]></btnPlayLarge>
+		<btnReplay valign="true"><![CDATA[replay]]></btnReplay>
+		<btnSkip><![CDATA[skip]]></btnSkip>
+		<btnPlay><![CDATA[play]]></btnPlay>		
+		
+		<txt_clickHere><![CDATA[Got a code?]]></txt_clickHere>
+		<txt_codeWidgetCTA valign="true"><![CDATA[Codes unlock cool stuff in games!]]></txt_codeWidgetCTA>
+		<txt_goBtn><![CDATA[go]]></txt_goBtn>
+	</localization>
+	
+	<settings>
+		<walkSpeed>0.5</walkSpeed>
+		<kellyStepPause>0</kellyStepPause>
+		<dogStepPause>300</dogStepPause>
+		
+		<kellyStartingGrid1>74</kellyStartingGrid1>
+		<kellyStartingGrid2>116</kellyStartingGrid2>
+		<kellyStartingGrid3>57</kellyStartingGrid3>
+		<dogStartingGrid1>134</dogStartingGrid1>
+		<dogStartingGrid2>113</dogStartingGrid2>
+		<dogStartingGrid3>229</dogStartingGrid3>
+		
+		<greatRank>5000</greatRank>
+		<goodRank>1000</goodRank>
+		
+		<oopsGreatRank>500</oopsGreatRank>
+		<oopsGoodRank>200</oopsGoodRank>
+		
+		<!-- Amount of x/y offset for the uppert left corner of the game grid -->
+		<startX>22</startX>
+		<startY>55</startY>
+		
+		<gridSize>30</gridSize>
+		<rowCount>14</rowCount>
+		<colCount>24</colCount>
+		
+		<floor1EndX>500</floor1EndX>
+		<floor1EndY>50</floor1EndY>
+		<floor2EndX>350</floor2EndX>
+		<floor2EndY>50</floor2EndY>
+		<floor3EndX>500</floor3EndX>
+		<floor3EndY>50</floor3EndY>
+		
+		<floor1>
+			<region1>145</region1>
+			<region1>169</region1>
+			<region1>170</region1>
+			<region1>171</region1>
+			<region1>195</region1>
+			<region2>195</region2>
+		</floor1>
+		<quickGrid>
+			<row1 1="0"2="0"3="0"4="0"5="0"6="0"7="0"8="0"9="0"10="0"11="0"12="0"13="0"14="0"15="0"16="0"17="0"18="0"19="0"20="0"21="0"22="0"23="0"24="0"></row1>
+		</quickGrid>
+		<grid1>
+			<second index="139" dir="left"></second>
+			<second index="249" dir="right"></second>
+			<second index="153" dir="left"></second>
+			
+			<best index="30" dir="right"></best>
+			<best index="31" dir="right"></best>
+			<best index="32" dir="right"></best>
+			<best index="33" dir="front"></best>
+			<best index="36" dir="right"></best>
+			<best index="37" dir="right"></best>
+			<best index="38" dir="right"></best>
+			<best index="39" dir="back"></best>
+			<best index="40" dir="left"></best>
+			<best index="41" dir="left"></best>
+			<best index="42" dir="left"></best>
+			<best index="43" dir="left"></best>
+			<best index="44" dir="left"></best>
+			<best index="45" dir="left"></best>
+			<best index="46" dir="left"></best>
+			<best index="54" dir="back"></best>
+			<best index="57" dir="right"></best>
+			<best index="58" dir="right"></best>
+			<best index="59" dir="right"></best>
+			<best index="60" dir="back"></best>
+			<best index="67" dir="back"></best>
+			<best index="68" dir="back"></best>
+			<best index="69" dir="left"></best>
+			<best index="70" dir="left"></best>
+			<best index="74" dir="front"></best>
+			<best index="78" dir="back"></best>
+			<best index="81" dir="back"></best>
+			<best index="91" dir="back"></best>
+			<best index="97" dir="front"></best>
+			<best index="98" dir="left"></best>
+			<best index="102" dir="back"></best>
+			<best index="105" dir="back"></best>
+			<best index="111" dir="right"></best>
+			<best index="115" dir="back"></best>
+			<best index="121" dir="front"></best>
+			<best index="126" dir="back"></best>
+			<best index="129" dir="back"></best>
+			<best index="131" dir="front"></best>
+			<best index="132" dir="left"></best>
+			<best index="133" dir="right"></best>
+			<best index="134" dir="right"></best>
+			<best index="135" dir="right"></best>
+			<best index="136" dir="right"></best>
+			<best index="137" dir="right"></best>
+			<best index="138" dir="right"></best>
+			<best index="139" dir="back"></best>
+			<best index="140" dir="left"></best>
+			<best index="141" dir="left"></best>
+			<best index="142" dir="left"></best>
+			<best index="145" dir="front"></best>
+			<best index="150" dir="back"></best>
+			<best index="151" dir="left"></best>
+			<best index="152" dir="left"></best>
+			<best index="153" dir="back"></best>
+			<best index="154" dir="left"></best>
+			<best index="155" dir="left"></best>
+			<best index="157" dir="back"></best>
+			<best index="163" dir="back"></best>
+			<best index="169" dir="right"></best>
+			<best index="170" dir="right"></best>
+			<best index="171" dir="front"></best>
+			<best index="177" dir="back"></best>
+			<best index="187" dir="back"></best>
+			<best index="195" dir="front"></best>
+			<best index="205" dir="back"></best>
+			<best index="211" dir="back"></best>
+			<best index="225" dir="back"></best>
+			<best index="229" dir="back"></best>
+			<best index="230" dir="right"></best>
+			<best index="231" dir="right"></best>
+			<best index="232" dir="right"></best>
+			<best index="233" dir="right"></best>
+			<best index="234" dir="right"></best>
+			<best index="235" dir="back"></best>
+			<best index="236" dir="left"></best>
+			<best index="237" dir="left"></best>
+			<best index="238" dir="left"></best>
+			<best index="243" dir="right"></best>
+			<best index="244" dir="right"></best>
+			<best index="245" dir="right"></best>
+			<best index="246" dir="right"></best>
+			<best index="247" dir="right"></best>
+			<best index="248" dir="right"></best>
+			<best index="249" dir="back"></best>
+			<best index="250" dir="right"></best>
+			<best index="251" dir="right"></best>
+			<best index="252" dir="right"></best>
+			<best index="253" dir="back"></best>
+			<best index="260" dir="back"></best>
+			<best index="261" dir="back"></best>
+			<best index="262" dir="back"></best>
+			<best index="284" dir="back"></best>
+			<best index="285" dir="back"></best>
+			
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>finish</tile>
+			<tile>finish</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+
+			<tile>undefined</tile>
+			<tile>undefined</tile>
+			<tile>undefined</tile>
+			<tile>undefined</tile>
+			<tile>undefined</tile>
+			<tile>undefined</tile>
+			<tile>undefined</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>undefined</tile>
+			<tile>undefined</tile>
+			<tile>undefined</tile>
+			<tile>undefined</tile>
+			<tile>undefined</tile>
+			<tile>undefined</tile>
+			<tile>undefined</tile>
+			<tile>undefined</tile>
+			<tile>undefined</tile>
+			<tile>undefined</tile>
+			<tile>undefined</tile>
+			<tile>undefined</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+		</grid1>
+		
+		<grid2>
+			<second index="273" dir="left"></second>
+			<second index="277" dir="left"></second>
+			
+			<best index="30" dir="right"></best>
+			<best index="31" dir="right"></best>
+			<best index="32" dir="right"></best>
+			<best index="33" dir="right"></best>
+			<best index="34" dir="back"></best>
+			<best index="35" dir="left"></best>
+			<best index="36" dir="right"></best>
+			<best index="37" dir="right"></best>
+			<best index="38" dir="front"></best>
+			<best index="39" dir="front"></best>
+			<best index="40" dir="left"></best>
+			<best index="41" dir="left"></best>
+			<best index="42" dir="left"></best>
+			<best index="43" dir="left"></best>
+			<best index="44" dir="left"></best>
+			<best index="45" dir="left"></best>
+			<best index="46" dir="left"></best>
+			<best index="54" dir="back"></best>
+			<best index="57" dir="back"></best>
+			<best index="58" dir="back"></best>
+			<best index="59" dir="back"></best>
+			<best index="60" dir="back"></best>
+			<best index="62" dir="front"></best>
+			<best index="63" dir="left"></best>
+			<best index="67" dir="back"></best>
+			<best index="68" dir="back"></best>
+			<best index="69" dir="left"></best>
+			<best index="70" dir="left"></best>
+			<best index="72" dir="right"></best>
+			<best index="73" dir="right"></best>
+			<best index="74" dir="right"></best>
+			<best index="75" dir="right"></best>
+			<best index="76" dir="right"></best>
+			<best index="77" dir="right"></best>
+			<best index="78" dir="right"></best>
+			<best index="79" dir="right"></best>
+			<best index="80" dir="right"></best>
+			<best index="81" dir="back"></best>
+			<best index="82" dir="back"></best>
+			<best index="83" dir="back"></best>
+			<best index="84" dir="left"></best>
+			<best index="85" dir="left"></best>
+			<best index="86" dir="left"></best>
+			<best index="87" dir="back"></best>
+			<best index="88" dir="left"></best>
+			<best index="89" dir="left"></best>
+			<best index="91" dir="back"></best>
+			<best index="97" dir="front"></best>
+			<best index="98" dir="left"></best>
+			<best index="99" dir="back"></best>
+			<best index="102" dir="back"></best>
+			<best index="111" dir="right"></best>
+			<best index="113" dir="back"></best>
+			<best index="116" dir="front"></best>
+			<best index="119" dir="back"></best>
+			<best index="121" dir="front"></best>
+			<best index="123" dir="back"></best>
+			<best index="126" dir="back"></best>
+			<best index="129" dir="back"></best>
+			<best index="131" dir="front"></best>
+			<best index="132" dir="left"></best>
+			<best index="133" dir="right"></best>
+			<best index="134" dir="right"></best>
+			<best index="135" dir="right"></best>
+			<best index="136" dir="right"></best>
+			<best index="137" dir="back"></best>
+			<best index="138" dir="right"></best>
+			<best index="139" dir="back"></best>
+			<best index="140" dir="right"></best>
+			<best index="141" dir="right"></best>
+			<best index="142" dir="front"></best>
+			<best index="145" dir="front"></best>
+			<best index="147" dir="back"></best>
+			<best index="148" dir="left"></best>
+			<best index="149" dir="left"></best>
+			<best index="150" dir="left"></best>
+			<best index="151" dir="left"></best>
+			<best index="152" dir="left"></best>
+			<best index="153" dir="left"></best>
+			<best index="154" dir="left"></best>
+			<best index="155" dir="left"></best>
+			<best index="157" dir="back"></best>
+			<best index="161" dir="back"></best>
+			<best index="163" dir="back"></best>
+			<best index="166" dir="front"></best>
+			<best index="169" dir="right"></best>
+			<best index="170" dir="right"></best>
+			<best index="171" dir="back"></best>
+			<best index="177" dir="back"></best>
+			<best index="179" dir="back"></best>
+			<best index="180" dir="left"></best>
+			<best index="181" dir="right"></best>
+			<best index="182" dir="right"></best>
+			<best index="183" dir="right"></best>
+			<best index="184" dir="right"></best>
+			<best index="185" dir="back"></best>
+			<best index="187" dir="back"></best>
+			<best index="190" dir="front"></best>
+			<best index="193" dir="right"></best>
+			<best index="194" dir="right"></best>
+			<best index="195" dir="back"></best>
+			<best index="201" dir="back"></best>
+			<best index="205" dir="back"></best>
+			<best index="211" dir="back"></best>
+			<best index="214" dir="front"></best>
+			<best index="219" dir="back"></best>
+			<best index="225" dir="back"></best>
+			<best index="229" dir="back"></best>
+			<best index="230" dir="right"></best>
+			<best index="231" dir="right"></best>
+			<best index="232" dir="right"></best>
+			<best index="233" dir="right"></best>
+			<best index="234" dir="right"></best>
+			<best index="235" dir="back"></best>
+			<best index="236" dir="front"></best>
+			<best index="237" dir="left"></best>
+			<best index="238" dir="left"></best>
+			<best index="243" dir="back"></best>
+			<best index="244" dir="right"></best>
+			<best index="245" dir="right"></best>
+			<best index="246" dir="right"></best>
+			<best index="247" dir="right"></best>
+			<best index="248" dir="right"></best>
+			<best index="249" dir="back"></best>
+			<best index="250" dir="right"></best>
+			<best index="251" dir="right"></best>
+			<best index="252" dir="right"></best>
+			<best index="253" dir="back"></best>
+			<best index="260" dir="front"></best>
+			<best index="261" dir="back"></best>
+			<best index="262" dir="back"></best>
+			<best index="267" dir="back"></best>
+			<best index="268" dir="left"></best>
+			<best index="269" dir="left"></best>
+			<best index="270" dir="left"></best>
+			<best index="271" dir="back"></best>
+			<best index="272" dir="back"></best>
+			<best index="273" dir="back"></best>
+			<best index="274" dir="left"></best>
+			<best index="275" dir="left"></best>
+			<best index="276" dir="right"></best>
+			<best index="277" dir="back"></best>
+			<best index="278" dir="left"></best>
+			<best index="279" dir="left"></best>
+			<best index="280" dir="left"></best>
+			<best index="281" dir="left"></best>
+			<best index="282" dir="left"></best>
+			<best index="283" dir="left"></best>
+			<best index="284" dir="left"></best>
+			<best index="285" dir="back"></best>
+			
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>finish</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+		</grid2>
+		
+		<grid3>
+			<second index="232" dir="right"></second>
+			<second index="270" dir="back"></second>
+			
+			<best index="15" dir="right"></best>
+			<best index="16" dir="left"></best>
+			<best index="30" dir="right"></best>
+			<best index="31" dir="right"></best>
+			<best index="32" dir="right"></best>
+			<best index="33" dir="front"></best>
+			<best index="36" dir="right"></best>
+			<best index="37" dir="right"></best>
+			<best index="38" dir="right"></best>
+			<best index="39" dir="back"></best>
+			<best index="40" dir="left"></best>
+			<best index="41" dir="left"></best>
+			<best index="42" dir="left"></best>
+			<best index="43" dir="left"></best>
+			<best index="44" dir="left"></best>
+			<best index="45" dir="left"></best>
+			<best index="46" dir="left"></best>
+			<best index="50" dir="front"></best>
+			<best index="54" dir="back"></best>
+			<best index="55" dir="front"></best>
+			<best index="56" dir="front"></best>
+			<best index="57" dir="front"></best>
+			<best index="58" dir="right"></best>
+			<best index="59" dir="right"></best>
+			<best index="60" dir="back"></best>
+			<best index="61" dir="back"></best>
+			<best index="67" dir="back"></best>
+			<best index="68" dir="back"></best>
+			<best index="69" dir="left"></best>
+			<best index="70" dir="left"></best>
+			<best index="73" dir="right"></best>
+			<best index="74" dir="front"></best>
+			<best index="75" dir="front"></best>
+			<best index="78" dir="back"></best>
+			<best index="79" dir="front"></best>
+			<best index="80" dir="front"></best>
+			<best index="81" dir="front"></best>
+			<best index="85" dir="back"></best>
+			<best index="86" dir="left"></best>
+			<best index="91" dir="back"></best>
+			<best index="97" dir="right"></best>
+			<best index="98" dir="front"></best>
+			<best index="99" dir="left"></best>
+			<best index="100" dir="left"></best>
+			<best index="101" dir="left"></best>
+			<best index="102" dir="left"></best>
+			<best index="103" dir="left"></best>
+			<best index="104" dir="left"></best>
+			<best index="105" dir="left"></best>
+			<best index="109" dir="back"></best>
+			<best index="111" dir="right"></best>
+			<best index="114" dir="front"></best>
+			<best index="115" dir="left"></best>
+			<best index="116" dir="left"></best>
+			<best index="117" dir="left"></best>
+			<best index="118" dir="left"></best>
+			<best index="119" dir="left"></best>
+			<best index="121" dir="front"></best>
+			<best index="122" dir="front"></best>
+			<best index="123" dir="front"></best>
+			<best index="126" dir="back"></best>
+			<best index="129" dir="back"></best>
+			<best index="131" dir="front"></best>
+			<best index="132" dir="left"></best>
+			<best index="133" dir="back"></best>
+			<best index="134" dir="left"></best>
+			<best index="135" dir="left"></best>
+			<best index="136" dir="left"></best>
+			<best index="137" dir="left"></best>
+			<best index="138" dir="left"></best>
+			<best index="139" dir="back"></best>
+			<best index="140" dir="back"></best>
+			<best index="141" dir="left"></best>
+			<best index="142" dir="left"></best>
+			<best index="145" dir="front"></best>
+			<best index="146" dir="front"></best>
+			<best index="147" dir="front"></best>
+			<best index="150" dir="back"></best>
+			<best index="151" dir="left"></best>
+			<best index="152" dir="left"></best>
+			<best index="153" dir="back"></best>
+			<best index="154" dir="left"></best>
+			<best index="155" dir="left"></best>
+			<best index="157" dir="back"></best>
+			<best index="160" dir="back"></best>
+			<best index="163" dir="back"></best>
+			<best index="164" dir="back"></best>
+			<best index="169" dir="right"></best>
+			<best index="170" dir="front"></best>
+			<best index="171" dir="front"></best>
+			<best index="177" dir="back"></best>
+			<best index="184" dir="back"></best>
+			<best index="187" dir="back"></best>
+			<best index="188" dir="back"></best>
+			<best index="194" dir="front"></best>
+			<best index="195" dir="left"></best>
+			<best index="198" dir="right"></best>
+			<best index="199" dir="right"></best>
+			<best index="200" dir="right"></best>
+			<best index="201" dir="right"></best>
+			<best index="202" dir="front"></best>
+			<best index="205" dir="back"></best>
+			<best index="208" dir="back"></best>
+			<best index="211" dir="back"></best>
+			<best index="212" dir="back"></best>
+			<best index="218" dir="front"></best>
+			<best index="222" dir="back"></best>
+			<best index="225" dir="right"></best>
+			<best index="226" dir="right"></best>
+			<best index="227" dir="right"></best>
+			<best index="228" dir="right"></best>
+			<best index="229" dir="right"></best>
+			<best index="230" dir="right"></best>
+			<best index="231" dir="right"></best>
+			<best index="232" dir="back"></best>
+			<best index="233" dir="right"></best>
+			<best index="234" dir="right"></best>
+			<best index="235" dir="right"></best>
+			<best index="236" dir="back"></best>
+			<best index="237" dir="left"></best>
+			<best index="238" dir="left"></best>
+			<best index="242" dir="front"></best>
+			<best index="243" dir="right"></best>
+			<best index="244" dir="right"></best>
+			<best index="245" dir="right"></best>
+			<best index="246" dir="back"></best>
+			<best index="247" dir="left"></best>
+			<best index="248" dir="right"></best>
+			<best index="249" dir="right"></best>
+			<best index="250" dir="back"></best>
+			<best index="251" dir="right"></best>
+			<best index="252" dir="right"></best>
+			<best index="253" dir="right"></best>
+			<best index="254" dir="right"></best>
+			<best index="255" dir="right"></best>
+			<best index="256" dir="back"></best>
+			<best index="260" dir="back"></best>
+			<best index="261" dir="back"></best>
+			<best index="262" dir="back"></best>
+			<best index="266" dir="right"></best>
+			<best index="267" dir="right"></best>
+			<best index="268" dir="right"></best>
+			<best index="269" dir="right"></best>
+			<best index="270" dir="right"></best>
+			<best index="271" dir="right"></best>
+			<best index="273" dir="right"></best>
+			<best index="274" dir="back"></best>
+			<best index="280" dir="back"></best>
+			<best index="284" dir="back"></best>
+			<best index="285" dir="back"></best>
+			
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>finish</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>open</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+			<tile>closed</tile>
+		</grid3>
+		<!--  Debugging Options  -->
+		<unlocked>true</unlocked>
+	</settings>
+</data>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<!-- config block is  universal, all games must have path to data transfer swf and game ID
+		 When adding game specific tags, consider distinguishing them
+	     from required tags. -->
+	<config>
+		<gameID>30</gameID>
+		<!-- Tracking code for specific events.  DO NOT CHANGE id tags.  All other attributes are editable to
+		match tracking content-->
+		<tracking>
+			<item id="view" name='I Can Be: I Can Be 11: LandingPage_AmazingArchitectLandingPage' campaign='I Can Be 11' channel="I Can Be" contenttype='LandingPage' action='View' />
+			<item id="play" name='I Can Be: I Can Be 11: Game_AmazingArchitectPlayButton' campaign='I Can Be 11' channel="I Can Be" contenttype='Game' action='Game Play' />
+			<item id="print" name='I Can Be: I Can Be 11: Game_AmazingArchitectPrint' campaign='I Can Be 11' channel="I Can Be" contenttype='Button' action='Print' />
+			<item id="replay" name='I Can Be: I Can Be 11: Game_AmazingArchitectPlayButton' campaign='I Can Be 11' channel="I Can Be" contenttype='Game' action='Game Play' />
+			<item id="goBack" name='I Can Be: I Can Be 11: Game_AmazingArchitectGoBack' campaign='I Can Be 11' channel="I Can Be" contenttype='Button' action='Click' />
+			<item id="done" name='I Can Be: I Can Be 11: Game_AmazingArchitectDone' campaign='I Can Be 11' channel="I Can Be" contenttype='Button' action='Click' />
+			<item id="clearSide" name='I Can Be: I Can Be 11: Game_AmazingArchitectClearSide' campaign='I Can Be 11' channel="I Can Be" contenttype='Button' action='Click' />
+			<item id="startOver" name='I Can Be: I Can Be 11: Game_AmazingArchitectStartOver' campaign='I Can Be 11' channel="I Can Be" contenttype='Button' action='Click' />
+			
+		</tracking>
+		<!-- controllerSWF will contain the path of the swf used for scoring -->
+		<controllerSWF>/Resources/Games_Data/global/swf/gameapi.swf</controllerSWF>
+		<contentData>/data/architect.xmlx</contentData>
+		<contentDataMulti parent_folder="/data">architect.xmlx</contentDataMulti>
+		
+		<libraries>
+			<item>/library/soundBank.swf</item>
+			<item>/library/stickers.swf</item>
+			<item>/library/PrintableOutline.swf</item>
+			<item>/library/doorButtonCarousel.swf</item>
+			<item>/library/extrasButtonCarousel.swf</item>
+			<item>/library/wallButtonCarousel.swf</item>
+			<item>/library/roofButtonCarousel.swf</item>
+			<item>/library/windowButtonCarousel.swf</item>
+		</libraries>
+		
+		<audio>
+		</audio>
+		
+		<actions>
+			<!-- update itemID xxx with an id number like 431 -->
+			<!-- update actionID xx with an id number like 99 -->
+			<!--
+			<item id="lock" actionID='120' itemID='706' description='Barbie I Can Be Doll' />
+			<item id="laptop" actionID='117' itemID='702' description='Barbie I Can Be Doll' />
+			-->
+			<item id="lock" actionID='117' itemID='702' description='Barbie I Can Be Doll' />
+			<item id="bone" actionID='118' itemID='703' description='Game: Data Diva happiness meter 6+' />
+			<item id="computerMouse" actionID='119' itemID='704' description='Game: Data Diva 20000+ score' />
+			<item id="glasses" actionID='121' itemID='705' description='Game: Data Diva 15+ super icons' />				
+		</actions>
+	</config>
+
+</data>

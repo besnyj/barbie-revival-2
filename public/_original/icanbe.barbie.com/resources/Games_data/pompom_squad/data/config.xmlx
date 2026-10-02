@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<!-- config block is  universal, all games must have path to data transfer swf and game ID
+		 When adding game specific tags, consider distinguishing them
+	     from required tags. -->
+	<config>
+		<gameID>14</gameID>
+		<!-- Tracking code for specific events.  DO NOT CHANGE id tags.  All other attributes are editable to
+		match tracking content-->
+		<tracking>
+			<item id="view" name='I Can Be: Pom Pom Squad Game' campaign='None' channel='I can be' contenttype='Game' action='View' />
+			<item id="play" name='I Can Be: Pom Pom Squad Game' campaign='None' channel='I can be' contenttype='Game' action='Play' />
+			<item id="play_sophomore" name='I Can Be: Pom Pom Squad Game - A-Frame' campaign='None' channel='I can be' contenttype='Game' action='Click' />
+			<item id="play_junior" name='I Can Be: Pom Pom Squad Game - Wall' campaign='None' channel='I can be' contenttype='Game' action='Click' />
+			<item id="play_senior" name='I Can Be: Pom Pom Squad Game - Super' campaign='None' channel='I can be' contenttype='Game' action='Click' />
+			<item id="replay" name='I Can Be: Pom Pom Squad Game' campaign='None' channel='I can be' contenttype='Game' action='Game Replay' />
+		</tracking>
+		<!-- controllerSWF will contain the path of the swf used for scoring -->
+		<controllerSWF>/Resources/Games_Data/global/swf/gameapi.swf</controllerSWF>
+		<contentData>/data/cheerleader.xmlx</contentData>
+		<contentDataMulti parent_folder="/data/">cheerleader.xmlx</contentDataMulti>
+		
+		<libraries>
+			<item>/library/soundBank.swf</item> 
+		</libraries>
+		
+		<audio>
+		</audio>
+		
+		<actions>
+			<item id="lock" actionID='0' itemID='647' description='Barbie I Can Be Doll' />
+			<item id="pomPoms" actionID='103' itemID='648' description='Game: award 1' />
+			<item id="megaphone" actionID='104' itemID='649' description='Game: award 2' />
+			<item id="cheerSkirt" actionID='105' itemID='650' description='Game: award 3' />
+		</actions>
+
+	</config>
+
+</data>

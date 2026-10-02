@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<!-- config block is  universal, all games must have path to data transfer swf and game ID
+		 When adding game specific tags, consider distinguishing them
+	     from required tags. -->
+	<config>
+		<gameID>30</gameID>
+		<!-- Tracking code for specific events.  DO NOT CHANGE id tags.  All other attributes are editable to
+		match tracking content-->
+		<tracking>
+			<item id="view" name='I Can Be: Data Diva Game' campaign='None' channel='I can be' contenttype='Game' action='View' />
+			<item id="play" name='I Can Be: Data Diva Game' campaign='None' channel='I can be' contenttype='Game' action='Play' />
+			<item id="replay" name='I Can Be: Data Diva Game' campaign='None' channel='I can be' contenttype='Game' action='Game Replay' />
+		</tracking>
+		<!-- controllerSWF will contain the path of the swf used for scoring -->
+		<controllerSWF>/Resources/Games_Data/global/swf/gameapi.swf</controllerSWF>
+		<contentData>/data/computerengineer.xmlx</contentData>
+		<contentDataMulti parent_folder="/data/">computerengineer.xmlx</contentDataMulti>
+		
+		<libraries>
+			<item>/library/soundBank.swf</item>
+		</libraries>
+		
+		<audio>
+		</audio>
+		
+		<actions>
+			<!-- update itemID xxx with an id number like 431 -->
+			<!-- update actionID xx with an id number like 99 -->
+			<!--
+			<item id="lock" actionID='120' itemID='706' description='Barbie I Can Be Doll' />
+			<item id="laptop" actionID='117' itemID='702' description='Barbie I Can Be Doll' />
+			-->
+			<item id="lock" actionID='117' itemID='702' description='Barbie I Can Be Doll' />
+			<item id="bone" actionID='118' itemID='703' description='Game: Data Diva happiness meter 6+' />
+			<item id="computerMouse" actionID='119' itemID='704' description='Game: Data Diva 20000+ score' />
+			<item id="glasses" actionID='121' itemID='705' description='Game: Data Diva 15+ super icons' />				
+		</actions>
+	</config>
+
+</data>

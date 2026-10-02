@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<!--locked>true</locked-->
+	<styleSheet>/styles/latin.css</styleSheet>
+	<fontSwf>/library/fontLibrary_latin.swf</fontSwf>
+	<isInternational>false</isInternational>
+	
+	<localization>
+		<!-- global -->
+		<helpBtn><![CDATA[?]]></helpBtn>
+		<logo1><![CDATA[Halfpipe]]></logo1>
+		<logo2><![CDATA[Pixie]]></logo2>
+		
+		<backBtn valign="true"><![CDATA[back]]></backBtn>
+		<easyBtn valign="true"><![CDATA[easy]]></easyBtn>
+		<goBtn><![CDATA[go]]></goBtn>
+		<hardBtn valign="true"><![CDATA[hard]]></hardBtn>
+		<nextBtn valign="true"><![CDATA[next]]></nextBtn>
+		<pauseBtn valign="true"><![CDATA[pause]]></pauseBtn>
+		<playBtn valign="true"><![CDATA[play]]></playBtn>
+		<replayBtn valign="true"><![CDATA[play again]]></replayBtn>
+		<skipBtn valign="true"><![CDATA[skip]]></skipBtn>
+		
+		
+		<!-- splash hub -->
+		<splashCopy><![CDATA[Perform slammin’ snowboarding tricks for points!]]></splashCopy>
+		<splashCTA><![CDATA[You can be a snowboarder, too! Gretchen Bleiler’s advice for young snowboarders is “Set goals and have fun!”]]></splashCTA>
+		<txt_entercode><![CDATA[Enter your code to unlock this!]]></txt_entercode>
+		<clickHere><![CDATA[Got a code?]]></clickHere>
+		<codeWidgetCTA><![CDATA[Codes unlock cool stuff in games!]]></codeWidgetCTA>
+		<hubCopy><![CDATA[Perform slammin’ snowboarding tricks for points!]]></hubCopy>
+		
+		<difficultyHeader valign="true"><![CDATA[Pick a level!]]></difficultyHeader>
+		
+		<!-- tutorial -->
+		<tutorial1><![CDATA[Hold the spacebar down to go faster.]]></tutorial1>
+		<tutorial2><![CDATA[Release the spacebar in the launch zone to jump.]]></tutorial2>
+		<tutorial3><![CDATA[Press the arrow keys to perform tricks while Barbie™ is in the air.]]></tutorial3>
+		
+		<!-- help -->
+		<helpHeader><![CDATA[How to play!]]></helpHeader>
+		<helpDescription><![CDATA[Use the arrow keys to perform epic tricks on the half pipe!]]></helpDescription>
+		<help1><![CDATA[Press and hold the spacebar to go faster.]]></help1>
+		<help2><![CDATA[When Barbie™ reaches the launch zone, release the spacebar to launch her into the air.]]></help2>
+		<help3><![CDATA[Press the arrow keys to perform tricks in the air!]]></help3>
+		<help4><![CDATA[]]></help4>
+		<help5><![CDATA[]]></help5>
+		<help6><![CDATA[]]></help6>
+		
+		<helpAwardsHeader><![CDATA[Earn Awards!]]></helpAwardsHeader>
+		<helpAward1><![CDATA[SNOWFLAKE]]></helpAward1>
+		<helpAwardDesc1><![CDATA[Enter the code from the package to unlock the Snowflake.]]></helpAwardDesc1>
+		<helpAward2><![CDATA[GOGGLES]]></helpAward2>
+		<helpAwardDesc2><![CDATA[Find the Goggles on the snowboarder page to unlock them.]]></helpAwardDesc2>
+		<helpAward3><![CDATA[KNIT HAT]]></helpAward3>
+		<helpAwardDesc3><![CDATA[Complete more than 1 trick in a single jump to unlock the Knit Hat.]]></helpAwardDesc3>
+		<helpAward4><![CDATA[BOOTS]]></helpAward4>
+		<helpAwardDesc4><![CDATA[Earn more than 10000 points to unlock a pair of Snowboard Boots.]]></helpAwardDesc4>
+		
+		<!-- game -->
+		<score><![CDATA[Score]]></score>
+		<round><![CDATA[Round]]></round>
+		<time><![CDATA[Time]]></time>
+		
+		<trick1><![CDATA[Upside Air]]></trick1>
+		<trick2><![CDATA[Nollie]]></trick2>
+		<trick3><![CDATA[Snowflake Twist]]></trick3>
+		<trick4><![CDATA[Rainbow Trail]]></trick4>
+		<trick5><![CDATA[Frosty Twist]]></trick5>
+		<trick6><![CDATA[Free Flip]]></trick6>
+		
+		<ready><![CDATA[Ready]]></ready>
+		<set><![CDATA[Set]]></set>
+		<go><![CDATA[Shred]]></go>
+		
+		<paused><![CDATA[Paused]]></paused>
+		<pausedCTA><![CDATA[Press any key to continue]]></pausedCTA>
+		
+		<tooLate><![CDATA[Too Late!]]></tooLate>
+		<threeTrickCombo><![CDATA[3 Trick Combo]]></threeTrickCombo>
+		<threeTrickComboPoints><![CDATA[+ 200]]></threeTrickComboPoints>
+		<fourTrickCombo><![CDATA[4 Trick Combo]]></fourTrickCombo>
+		<fourTrickComboPoints><![CDATA[+ 300]]></fourTrickComboPoints>
+		<superCombo><![CDATA[Super Combo]]></superCombo>
+		<superComboPoints><![CDATA[+ 2000]]></superComboPoints>
+		
+		<!-- level and game end screen -->
+		<startLevel><![CDATA[Start Round {LEVEL}:]]></startLevel>
+		<levelTransitionHead><![CDATA[Round {LEVEL}:]]></levelTransitionHead>
+		<levelTransitionSubHead><![CDATA[Complete]]></levelTransitionSubHead>
+		<levelTransitionBody1><![CDATA[You have qualified!]]></levelTransitionBody1>
+		<levelTransitionBody2><![CDATA[Get ready for the Finals!]]></levelTransitionBody2>
+		
+		<levelTransitionScore><![CDATA[Score:]]></levelTransitionScore>
+		<levelTransitionTricks><![CDATA[Tricks:]]></levelTransitionTricks>
+		<totalTricks><![CDATA[Total Tricks:]]></totalTricks>
+		<finalScore><![CDATA[Final Score:]]></finalScore>
+		
+	
+	</localization>
+	
+	<endScreen>
+		<item score="15000">
+			<head><![CDATA[Awesome!]]></head>
+			<body><![CDATA[You’re a super snowboarder! Keep playing to try to beat your own best score!]]></body>
+		</item>
+		<item score="7500">
+			<head><![CDATA[Fantastic!]]></head>
+			<body><![CDATA[Way to shred it up! Keep boardin’ to learn even more cool tricks!]]></body>
+		</item>
+		<item score="0">
+			<head><![CDATA[Nice!]]></head>
+			<body><![CDATA[You performed some rad moves. Keep practicing to become an even better boarder!]]></body>
+		</item>
+	</endScreen>
+	<!--
+	<tutorial>
+		<level id="tutorial">
+			<goal>3</goal>
+			<time>120</time>
+			<maxCustomers>1</maxCustomers>
+			<newCustomerDelay>-1</newCustomerDelay>
+			
+			<toppings>pepperoni</toppings>
+			<sprinkles>parmesan</sprinkles>
+			
+			<completeHead><![CDATA[]]></completeHead>
+		</level>
+	</tutorial>
+	-->
+	
+	<levels>
+		<level id="1">
+			<time>60</time>
+		</level>
+	</levels>
+	
+</data>

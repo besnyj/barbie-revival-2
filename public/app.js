@@ -6,7 +6,7 @@ const rewriteRules = [
   [/^https?:\/\/dreamhouse\.barbie\.com\/en-US\/games\/puzzle-party\/?$/i, origin + '/dreamhouse/puzzle-party/'],
   [new RegExp('^https?://((?!'+location.host.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'(?:/|$))[^/]+)/','i'), origin + '/_external/$1/'],
 ];
-window.RufflePlayer = {config:{autoplay:'on',unmuteOverlay:'hidden',splashScreen:false,contextMenu:'off',warnOnUnsupportedContent:false,logLevel:'warn',wmode:'transparent',allowScriptAccess:true,openUrlMode:'allow',urlRewriteRules:rewriteRules,publicPath:'/vendor/ruffle/'}};
+window.RufflePlayer = {config:{autoplay:'on',unmuteOverlay:'hidden',splashScreen:false,contextMenu:'off',warnOnUnsupportedContent:false,logLevel:(new URLSearchParams(location.search).has('ruffletrace')?'trace':'warn'),wmode:'transparent',allowScriptAccess:true,openUrlMode:'allow',urlRewriteRules:rewriteRules,publicPath:'/vendor/ruffle/'}};
 const sections = [
   ['Games','/activities/fun_games/','fun_games'],['Videos','/activities/btv/','btv'],['Fashion','/activities/fashion/','fashion'],['Sisters & Friends','/activities/friends/','friends'],['Fairytale','/activities/fantasy/','fantasy'],['I Can Be…','/_original/icanbe.barbie.com/en_us/index.html','iCanBe']
 ];

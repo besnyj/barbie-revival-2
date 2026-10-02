@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+	
+	<styleSheet>/styles/latin.css</styleSheet>
+	<fontSwf>/library/fontLibrary_latin.swf</fontSwf>
+	<locked>false</locked>	
+	<isInternational>false</isInternational>
+	
+	<endScreen>
+		<threshold id="high" score="3000" />
+		<threshold id="middle" score="1500" />
+		<threshold id="low" score="0" />
+	</endScreen>
+	
+	<formations>
+		<formation id="1" cheerleaderCount="10" />
+		<formation id="2" cheerleaderCount="15" />
+		<formation id="3" cheerleaderCount="12" />
+	</formations>
+	
+	<awardTriggers>
+		<!-- corresponding localized copy must match these values -->
+		<trigger id="1" val="4" />
+		<trigger id="2" val="1000" />
+		<trigger id="3" val="5" />
+	</awardTriggers>
+	
+	<localization>
+		<logo_1><![CDATA[Pom-]]></logo_1>
+		<logo_2><![CDATA[Pom]]></logo_2>
+		<logo_3><![CDATA[Squad]]></logo_3>
+		<formationThumb_1><![CDATA[The A-Frame]]></formationThumb_1>
+		<formationThumb_2><![CDATA[The Wall]]></formationThumb_2>
+		<formationThumb_3><![CDATA[The Super]]></formationThumb_3>
+		<btnSkip><![CDATA[skip]]></btnSkip>
+		<helpAwardTitleSuper><![CDATA[SUPER PYRAMID]]></helpAwardTitleSuper>
+		<helpCheerSkirtCopy><![CDATA[Complete a formation with 5 cheerleaders remaining to unlock a Cheer Skirt.]]></helpCheerSkirtCopy>
+		<helpMegaphoneCopy><![CDATA[Earn 1000 points to unlock a Megaphone.]]></helpMegaphoneCopy>
+		<helpPomPomsCopy><![CDATA[Successfully land 4 cheerleaders to unlock Pom Poms.]]></helpPomPomsCopy>
+		<helpSuperCopy><![CDATA[Enter the code from the package to unlock the Super Pyramid.]]></helpSuperCopy>
+		<help_mainDescription><![CDATA[Use your mouse to pull off the perfect pyramid! ]]></help_mainDescription>
+		<help_title><![CDATA[How to play!]]></help_title>
+		<btnPlay><![CDATA[play]]></btnPlay>
+		<btnReplay><![CDATA[replay]]></btnReplay>
+		<btnNext><![CDATA[next]]></btnNext>
+		<btnPlaySmall><![CDATA[play]]></btnPlaySmall>
+		<btnBack><![CDATA[back]]></btnBack>
+		<splash_copy><![CDATA[See if you've got what it takes to perform the ultimate cheerleading stunt!]]></splash_copy>
+		<helpBtn><![CDATA[?]]></helpBtn>
+		<helpCopy1><![CDATA[Move your mouse left and right to adjust the angle of the arrow.]]></helpCopy1>
+		<helpCopy2><![CDATA[When Barbie™  is aimed at the right landing zone, press the left mouse button to launch her into the air.]]></helpCopy2>
+		<helpCopy3><![CDATA[Hit each landing zone to complete the stunt!]]></helpCopy3>
+		<helpAwardTitleCheerSkirt><![CDATA[CHEER SKIRT]]></helpAwardTitleCheerSkirt>
+		<helpAwardTitlePomPoms><![CDATA[POM-POMS]]></helpAwardTitlePomPoms>
+		<helpAwardTitleMegaphone><![CDATA[MEGAPHONE]]></helpAwardTitleMegaphone>
+		<helpAwardsTitle><![CDATA[Earn Awards!]]></helpAwardsTitle>
+		<btnGo><![CDATA[go]]></btnGo>
+		<btnPlayFormationChoice><![CDATA[play]]></btnPlayFormationChoice>
+		<hub_promo_body><![CDATA[Use it to unlock cool stuff in games!]]></hub_promo_body>
+		<hub_promo_header><![CDATA[Got a code?]]></hub_promo_header>
+		<unlockPrompt><![CDATA[Type in your code to unlock this formation!]]></unlockPrompt>
+		<tutorialPopup1><![CDATA[Move your mouse to change the angle of the arrow.]]></tutorialPopup1>
+		<tutorialPopup2><![CDATA[Aim for one of the open landing zones.]]></tutorialPopup2>
+		<tutorialPopup3><![CDATA[Press the left mouse button to launch Barbie™  into the air.]]></tutorialPopup3>
+		<tutorialPopup4><![CDATA[Awesome! Let's try another one!]]></tutorialPopup4>
+		<tutorialPopup5><![CDATA[Land on all the open landing zones to finish the stunt.]]></tutorialPopup5>
+		<hudScore><![CDATA[Score:]]></hudScore>
+		<hudRound><![CDATA[Cheerleaders left:]]></hudRound>
+		<hub_instructions><![CDATA[Pick a formation to get started!]]></hub_instructions>
+		<btn_play_ani><![CDATA[play]]></btn_play_ani>
+		<kudos_nice><![CDATA[Nice!]]></kudos_nice>
+		<perfectLandings><![CDATA[Perfect landings:]]></perfectLandings>
+		<finalScore><![CDATA[Final score:]]></finalScore>
+		<resultHigh><![CDATA[You're a cheerleading champ! Keep going to see if you can beat your own best score!]]></resultHigh>
+		<resultMiddle><![CDATA[Way to cheer! Keep playing to unlock more super stunts!]]></resultMiddle>
+		<resultLow><![CDATA[You've got team spirit! Keep practicing – you'll learn some new stunts in no time!]]></resultLow>
+	</localization>
+	
+
+	
+</data>

@@ -402,7 +402,10 @@ var html5video = "", MATTEL = MATTEL || {};
                 */
                 var selectedTag = $(".aggregator .main-nav").children(".selected");
                 var page = (selectedTag.children("a")).attr("href");
-                aggregator.loadPage(".content", page);
+                // Restoration adaptation: pages that reuse the #games body id without a
+                // tab aggregator (individual game pages) must not fire a bogus AJAX
+                // load of the "undefined" URL (the original did).
+                if (page) { aggregator.loadPage(".content", page); }
                 defaults.selected = ""; 
 
 			}; 
@@ -507,54 +510,10 @@ var html5video = "", MATTEL = MATTEL || {};
 			var curId, useFlash, htmlVid, htmlVidType, attributes, currentVidId, autoPlay, hasFlash = null;
 		
 			init = function(params) {
-				// check if we're on a video subpage by looking for 'assoc-videos'
-				// redirect to the main page with a deeplink
-				if(!$("#assoc-videos").length) {
-					var $id = $("#video-player").attr("data-video-id"),
-						$playlistURL = $("#video-player").attr("data-playlist-url");
-					window.location = $playlistURL+"#!"+$id;
-				};
-				
-				var $container = $(params.container),
-					$id = $(params.thumbs).first().attr("data-video-id"),
-                    $videoTitle = $(params.thumbs).first().attr("data-video-title"),
-					flashvars = {
-						//id: $id,
-                        id: $videoTitle,
-						default_vid: $id +"/play.flv",
-						poster_frame: $id + "/screenshots/320w239h.jpg",
-						auto_play: (MATTEL.global.currentSection == "" ) ? "true" : "false",
-						tracking_function:"trackingCall",
-						video_directory:"http://mediaservice.mirror-image.com/videos/",
-						image_directory:"http://mediaservice.mirror-image.com/videos/"
-					};
-					
-				autoPlay = $container.attr("data-video-autoplay");
-			
-				attributes = {
-					id: "bicbVideoPlayer",
-					name: "bicbVideoPlayer",
-					allowscriptaccess: "always",
-					base:"/swfs/"
-				};
-			
-				hasFlash = swfobject.hasFlashPlayerVersion("10");
-				if(!hasFlash){
-					htmlVidType = Modernizr.video.ogg ? 'ogg' : Modernizr.video.h264 ? 'h264' : Modernizr.video.webm ? 'webm' : 'unsupported';
-					htmlVid = document.getElementById('html5video');
-					loadNewVideo($id);
-				}
-				
-                var player = $("#flashContent").attr("data-video-player");
-				var expressInstall = $("#flashContent").attr("data-video-install");
-				swfobject.embedSWF(player, "flashContent", "440", "370", "10.0.0", expressInstall, flashvars, { wmode: "transparent" }, attributes);
-				
-				$("#assoc-videos a").click(handleVideoClick);
-				
-				if(MATTEL.global.currentSection != "") {
-					//console.log("re-init");
-					loadNewVideo(MATTEL.global.currentSection);
-				}
+				// Restoration adaptation (documented in the project log): the historical
+				// video service (mediaservice.mirror-image.com) was never archived, so no
+				// player is embedded, no external service is contacted and video
+				// thumbnails simply link to the restored video detail pages.
 			};
 			
 			/**

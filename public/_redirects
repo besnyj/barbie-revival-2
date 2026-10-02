@@ -3,6 +3,13 @@
 /activities/* /index.html 200
 /_original/icanbe.barbie.com /_original/icanbe.barbie.com/en_us/index.html 302
 /_original/icanbe.barbie.com/ /_original/icanbe.barbie.com/en_us/index.html 302
+# I Can Be legacy aliases (original 301s) and the original broken Dolls index link
+/_original/icanbe.barbie.com/en_US/games.html /_original/icanbe.barbie.com/en_US/games/index.html 302
+/_original/icanbe.barbie.com/en_US/careers.html /_original/icanbe.barbie.com/en_US/careers/index.html 302
+/_original/icanbe.barbie.com/en_US/videos.html /_original/icanbe.barbie.com/en_US/videos/index.html 302
+/_original/icanbe.barbie.com/en_US/Dolls/index.html /_original/icanbe.barbie.com/en_US/dolls/team_barbie.html 302
+/_original/icanbe.barbie.com/en_US/dolls/index.html /_original/icanbe.barbie.com/en_US/dolls/team_barbie.html 302
+/_original/icanbe.barbie.com/en_US/Videos/* /_original/icanbe.barbie.com/en_US/videos/:splat 302
 /_original/* /index.html 200
 /_external/* /index.html 200
 /restoration/* /index.html 200

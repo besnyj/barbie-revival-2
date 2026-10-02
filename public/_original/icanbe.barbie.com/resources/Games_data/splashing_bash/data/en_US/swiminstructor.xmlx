@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	
+	<styleSheet>/styles/latin.css</styleSheet>
+	<fontSwf>/library/fontLibrary_latin.swf</fontSwf>	
+	<locked>false</locked>
+	<isInternational>false</isInternational>
+	
+	<localization>
+		<!-- global -->
+		<logo1><![CDATA[Splashin’]]></logo1>
+		<logo2><![CDATA[Bash]]></logo2>
+		
+		
+		<helpBtn valign="true"><![CDATA[?]]></helpBtn>
+		<playBtn valign="true"><![CDATA[play]]></playBtn>
+		<nextBtn valign="true"><![CDATA[next]]></nextBtn>
+		<backBtn valign="true"><![CDATA[back]]></backBtn>
+		<yesBtn valign="true"><![CDATA[yes]]></yesBtn>
+		<noBtn valign="true"><![CDATA[no]]></noBtn>
+		<replayBtn valign="true"><![CDATA[swim again]]></replayBtn>
+		
+		<!-- splash hub -->
+		<splashCopy><![CDATA[Go swimming with little sis! <br/>Splash and kick all the way to the Super Pool!]]></splashCopy>
+		<hubCopy><![CDATA[Click to pick a pool!]]></hubCopy>
+		<level1Label><![CDATA[Kiddy<br/>  Pool]]></level1Label>
+		<level2Label><![CDATA[Practice<br/>  Pool]]></level2Label>
+		<level3Label><![CDATA[Super<br/>  Pool]]></level3Label>
+		
+		<txt_entercode><![CDATA[Enter your code to unlock this!]]></txt_entercode>
+		<clickHere><![CDATA[Click here]]></clickHere>
+		<clickHere2><![CDATA[to activate a code]]></clickHere2>
+		<codeWidgetCTA><![CDATA[Use it to unlock cool stuff in games!]]></codeWidgetCTA>
+		<goBtn><![CDATA[go]]></goBtn>
+		
+		
+		<!-- help -->
+		<helpHeader><![CDATA[How to play!]]></helpHeader>
+		<helpDescription><![CDATA[Collect pool toys for points, avoid obstacles and swim fast!]]></helpDescription>
+		<help1><![CDATA[Use your mouse to swim. Hold down the button to move faster!]]></help1>
+		<help2><![CDATA[Stay away from these obstacles! ]]></help2>
+		<help3><![CDATA[Collect pool toys to score higher!]]></help3>
+		<help4><![CDATA[Swim as fast as you can to earn the most points.]]></help4>
+		<helpObstacle1><![CDATA[Buoy]]></helpObstacle1>
+		<helpObstacle2><![CDATA[Whirlpool]]></helpObstacle2>
+		<helpAwardsHeader><![CDATA[Earn Awards!]]></helpAwardsHeader>
+		<helpAward1><![CDATA[SWIM SUIT]]></helpAward1>
+		<helpAwardDesc1><![CDATA[Enter the code on the box to unlock the swim suit.]]></helpAwardDesc1>
+		<helpAward2><![CDATA[SWIM CAP]]></helpAward2>
+		<helpAwardDesc2><![CDATA[Earn the Swim Cap Award for swimming a lap in record time.]]></helpAwardDesc2>
+		<helpAward3><![CDATA[GOGGLES]]></helpAward3>
+		<helpAwardDesc3><![CDATA[Earn the Goggle Award for collecting 10 pool toys.]]></helpAwardDesc3>
+		<helpAward4><![CDATA[FLIPPERS]]></helpAward4>
+		<helpAwardDesc4><![CDATA[Earn the Flipper Award for avoiding all the pool obstacles.]]></helpAwardDesc4>
+		
+		<!-- game -->
+		<score valign="true"><![CDATA[SCORE]]></score>
+		<time valign="true"><![CDATA[TIME]]></time>
+		<lap valign="true"><![CDATA[LAP]]></lap>
+		<popover_quit_game_msg><![CDATA[Are you sure?<br/> Your current score will not be saved...]]></popover_quit_game_msg>
+		<prompt_ready><![CDATA[Ready Set..]]></prompt_ready>
+		<prompt_go><![CDATA[Swim!]]></prompt_go>
+		
+		<!-- end screen -->
+		<endScoreLabel><![CDATA[Final Score :]]></endScoreLabel>
+		<endBestScoreLabel><![CDATA[Best Score :]]></endBestScoreLabel>
+		
+		
+	</localization>
+	
+	
+	<pointMap>
+		<item id="flowerPink">50</item>
+		<item id="flowerPink2">50</item>
+		<item id="flowerPurple">100</item>
+		<item id="flowerPurple2">100</item>
+		<item id="flowerYellow">200</item>
+		<item id="flowerYellow2">200</item>
+		<item id="duck">100</item>
+		<item id="duck2">100</item>
+		<item id="beachball">200</item>
+		<item id="beachball2">200</item>
+		<item id="frogBall">400</item>
+		<item id="frogBall2">400</item>
+	</pointMap>
+	
+	<levels>
+		<level id="1">
+			<goal>2</goal>
+			<awardTime>18</awardTime>
+			<bonusTime>35</bonusTime>
+			<maxTimeBonus>500</maxTimeBonus>
+			
+			<poolTiles>3</poolTiles>
+			<startSpeed>100</startSpeed>
+			<acceleration>150</acceleration>
+			<slowSpeed>200</slowSpeed>
+			<fastSpeed>300</fastSpeed>
+			
+			<pickups>flowerPink,flowerPink,flowerPink,duck</pickups>
+			<obstacles>buoy</obstacles>
+			<obstacleSpeed>0</obstacleSpeed>
+			
+			<endScreenCopy><![CDATA[Great start! Keep practicing to swim even faster and boost your score!]]></endScreenCopy>
+			<music>loop_ingame</music>
+		</level>
+		
+		<level id="2">
+			<goal>3</goal>
+			<awardTime>17</awardTime>
+			<bonusTime>50</bonusTime>
+			<maxTimeBonus>750</maxTimeBonus>
+			
+			<poolTiles>4</poolTiles>
+			<startSpeed>125</startSpeed>
+			<acceleration>175</acceleration>
+			<slowSpeed>250</slowSpeed>
+			<fastSpeed>450</fastSpeed>
+			
+			<pickups>flowerPurple,flowerPurple,flowerPurple,beachball</pickups>
+			<obstacles>buoy2</obstacles>
+			<obstacleSpeed>25</obstacleSpeed>
+			
+			<endScreenCopy><![CDATA[Way to go! Next time, try to score more points and make an even bigger splash!]]></endScreenCopy>
+			<music>loop_level2</music>
+		</level>
+		
+		<level id="3">
+			<goal>4</goal>
+			<awardTime>19</awardTime>
+			<bonusTime>75</bonusTime>
+			<maxTimeBonus>1000</maxTimeBonus>
+			
+			<poolTiles>5</poolTiles>
+			<startSpeed>150</startSpeed>
+			<acceleration>250</acceleration>
+			<slowSpeed>300</slowSpeed>
+			<fastSpeed>500</fastSpeed>
+			
+			<pickups>flowerYellow2,flowerYellow2,flowerYellow2,frogBall2</pickups>
+			<obstacles>whirlpool,buoy3</obstacles>
+			<obstacleSpeed>25</obstacleSpeed>
+			
+			<endScreenCopy><![CDATA[Wow, you swim like a champ! Play again to try and top your own best score!]]></endScreenCopy>
+			<music>loop_level3</music>
+		</level>
+		
+	</levels>
+	
+	
+	
+	
+</data>

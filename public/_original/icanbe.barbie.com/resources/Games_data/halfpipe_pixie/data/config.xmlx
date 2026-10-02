@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<!-- config block is  universal, all games must have path to data transfer swf and game ID
+		 When adding game specific tags, consider distinguishing them
+	     from required tags. -->
+	<config>
+		<gameID>13</gameID>
+		<!-- Tracking code for specific events.  DO NOT CHANGE id tags.  All other attributes are editable to
+		match tracking content-->
+		<tracking>
+			<item id="view" name='I Can Be: Halfpipe Pixie Game' campaign='None' channel='I can be' contenttype='Game' action='View' />
+			<item id="play" name='I Can Be: Halfpipe Pixie Game' campaign='None' channel='I can be' contenttype='Game' action='Play' />
+			<item id="replay" name='I Can Be: Halfpipe Pixie Game' campaign='None' channel='I can be' contenttype='Game' action='Game Replay' />
+			<item id="easy" name='I Can Be: Halfpipe Pixie Game(easy)' campaign='None' channel='I can be' contenttype='Game' action='Click' />
+			<item id="hard" name='I Can Be: Halfpipe Pixie Game(hard)' campaign='None' channel='I can be' contenttype='Game' action='Click' />
+		</tracking>
+		<!-- controllerSWF will contain the path of the swf used for scoring -->
+		<controllerSWF>/Resources/Games_Data/global/swf/gameapi.swf</controllerSWF>
+		<contentData>/data/snowboarder.xmlx</contentData>
+		<contentDataMulti parent_folder="/data/">snowboarder.xmlx</contentDataMulti>
+		
+		<libraries>
+			<item>/library/soundBank.swf</item>
+		</libraries>
+		
+		<audio>
+		</audio>
+		
+		<actions>
+			<item id="lock" actionID='0' itemID='431' description='Barbie I Can Be Doll' />
+			<item id="goggles" actionID='95' itemID='432' description='Game: Snowboarder Easter Egg' />
+			<item id="knitHat" actionID='96' itemID='433' description='Game: Snowboarder 2+ tricks in one jump' />
+			<item id="boots" actionID='97' itemID='434' description='Game: Snowboarder 10000 points' />				
+		</actions>
+	</config>
+
+</data>

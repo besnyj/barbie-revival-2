@@ -237,3 +237,108 @@ Cada arquivo inclui um `README.md` com instruções e um `MANIFEST.json` com has
 - Shopping ganhou uma faixa de título feita em CSS, paleta salmão suave e caixa compacta alinhada à direita, separada da primeira linha de botões. As capas usadas estão em `public/images/bottom-pages/` e as prévias em `design-previews/bottom-buttons/`.
 - A sintaxe JavaScript e as respostas das rotas locais foram conferidas. A última alteração de cor e posição ainda precisa de inspeção visual, pois o navegador integrado ficou indisponível nessa etapa.
 - A pasta `backups/` fica apenas neste computador e está no `.gitignore`. Copie esses arquivos separadamente antes de mover ou substituir esta cópia do projeto; eles não acompanham o repositório.
+
+## Continuação — 01/10/2026 (QA dos jogos: ferramentas e engenharia reversa)
+
+Retomei a reconstrução dos dois jogos (Puzzle Party e My Dreamhouse). O servidor local foi iniciado e confirmado em `http://127.0.0.1:4173/`; a captura de referência continua sendo a de 28/06/2013.
+
+### Tentativa de completar as imagens do Puzzle Party
+
+- Faltavam 31 JPEGs. Reconsultei todas as fontes conhecidas: **Wayback** (CDX do domínio `dreamhouse.barbie.com` inteiro, do host `assets.barbie.com` e do CDN do NuMuKi), **espelhos do Flashpoint** e **CDN do NuMuKi**. Só o `pic56.jpg` tinha captura 200 real (19/08/2014) — recuperado e salvo com assinatura JPEG válida. Os outros 30 realmente não existem: o espelho Legacy do Flashpoint responde 404 (é o espelho oficial do acervo), o Wayback só guardou o SWF do NuMuKi (não as imagens) e o acesso direto ao `media.numuki.com` é bloqueado pelo Cloudflare (HTTP 418). Continuam como lacuna documentada de variedade, não como bloqueio.
+- Auditoria do XML de runtime: os **238 arquivos** referenciados existem localmente com assinatura válida (239 imagens agora, com o `pic56`). 0 ausentes, 0 corrompidos.
+
+### Ferramentas de QA criadas
+
+- **Limitação desta sessão**: o modelo agente não enxerga imagens, então toda verificação visual passou a ser feita por análise programática de pixels (Pillow), captura de rede e geometria do DOM — não por screenshots "a olho".
+- Instalei Playwright (navegador headless Chromium) e Pillow; criei `scripts/qa_gameplay.py` (cliques/arrastos/screenshots), `scripts/qa_puzzle_trace.py` (captura de trace do Ruffle — abandonado, ver abaixo) e `scripts/qa_puzzle_solve.py` (solucionador cego que joga o jogo real).
+- Descobri que o Ruffle 0.6.0 vendido **não tem** a opção `traceOutput`; os `trace()` do AS3 só aparecem com `logLevel:'trace'`, que inunda o console com logs internos do Ruffle e trava a página — o feedback por trace foi abandonado. Deixei um toggle de desenvolvimento `?ruffletrace=1` no `app.js` (só liga o trace quando o parâmetro existe). Uma edição intermediária que ligava trace em todas as páginas foi revertida na mesma sessão.
+
+### Engenharia reversa do Puzzle Party (FFDec + JDK baixados em /tmp)
+
+- Descompilei o `dhpuzzlegame.swf` (102 classes) e o `dhpuzzletitle.swf` e extraí a geometria completa do palco: botão Play do título (828, 474.9); grade 4×4 `h1_1..h4_4` (peças de 95×95) a partir de (45.5, 132.3); bandeja `m1..m16`; botões do HUD (dica, ajuda, mudo); tela final (PLAY AGAIN em 795.95, 410.1).
+- Documentei a lógica do jogo: peças ocultas Easy [3,5,6,9,11] / Hard [6,8,10,12,13]; distratores 0 vs 1,2,3,3,3; soltura validada por `hitTestPoint` no buraco da própria peça; erro volta a peça; +25 pontos por peça; dica = prévia de 1 s; transição ~1,5 s; fase 5 termina na tela do meme com PLAY AGAIN.
+- Achei atalhos de desenvolvimento no código ("Jump To Level 5" / "Finish Current Puzzle"), mas eles só aparecem no menu de contexto quando a URL do SWF contém `dev.cricketmoon` — inacessível sob o Ruffle (menus de contexto customizados não suportados). Os métodos `skipCurrentLevel()`/`jumpToLevel5()` são públicos.
+- Localizei os botões Easy/Hard da tela de dificuldade por análise de pixels do render real: faixas em ~(368,244)-(790,326) e ~(526,432)-(904,502).
+- **Bloqueio em aberto**: no jogo real sob Ruffle, cliques nessas coordenadas **não** iniciam a fase (varri 32 pontos em grade, todos sem efeito); o botão Play do título funciona (confirmado por diff de tela). Suspeito de problema de área de clique/roteamento de eventos nos SimpleButtons animados, ou de um overlay por cima. Plano de contingência: gerar uma cópia de QA do `dhpuzzlegame.swf` instrumentada com FFDec (`-importScript`) que inicia o modo Easy sozinha — o jogo real permanece intocado para o fluxo visível à usuária.
+
+### My Dreamhouse — análise dos serviços de salvar/galeria
+
+- Descompilei o `game-numuki.swf` (588 classes) e confirmei o contrato do servidor: `POST /Index/InsertDreamhouse` (salvar), `GET /Index/GetDreamhouse?user=<id>` (retomar), `/Index/InsertGalleryImage`, `/Index/GetGallery(+ByFeatured/ByLikes/ByRoomType)`, `/Index/LikeGalleryImage` e `/Index/PostMail` em `design-my-dreamhouse.barbie.com`; flashvars apenas `environment` e `locale`.
+- O SWF consulta `MAT.SESSION.isUserLoggedIn`/`getSessionInfo` via ExternalInterface; o HTML de 2013 define o login Janrain mas **não** define `MAT.SESSION`, então o SWF cai no estado "não logado". O salvamento dispara na barra de preview ("Triggering Save DH …"). Ainda falta rastrear se existe salvamento como visitante; a decisão de persistência local (arquivo via `serve.py` vs localStorage vs Cloudflare Functions posterior) está pendente com a usuária.
+
+### Estado no fim deste registro
+
+- Puzzle Party: 239/269 imagens; o XML de runtime fecha 100% das referências; solucionador cego pronto, esperando resolver o bloqueio dos cliques na tela de dificuldade.
+- My Dreamhouse: endpoints de salvar/galeria mapeados; implementação local pendente de decisão.
+- Nada foi publicado; nenhum arquivo ativo do site foi alterado além do toggle dev `?ruffletrace=1` em `app.js`.
+
+## Continuação — 01/10/2026 (levantamento do I Can Be contra o snapshot do Wayback)
+
+Enquanto o agente dos dois jogos segue trabalhando, fiz o levantamento completo do que falta no **I Can Be** em relação ao snapshot do Wayback Machine. Evidência primária: o índice CDX completo de `icanbe.barbie.com` (12.952 capturas, 2012–2016) e as páginas HTML arquivadas.
+
+### O que o site original tinha e o que está restaurado
+
+- O site de junho/2013 tinha **43 páginas HTML `en_US`**: home, help e gotacode; **5 de Careers** (index + professional/artsy/nurturing/sporty); **25 de Games** (index + 4 páginas de categoria + 20 páginas de jogo); **8 de Videos** (index + 7 páginas de vídeo); **2 de Dolls** (team_barbie e president).
+- Desse total, só **home, help e gotacode** estão restauradas localmente — **faltam 40 páginas**.
+- Para cada página escolhi a captura mais próxima da baseline de 28/06/2013: quase tudo resolve para **27/06, 29/06, 01/07 ou 02/07/2013**; só `dolls/president.html` é de 15/05 (−44 dias). Os 43 HTMLs originais estão em `research/sections/icanbe-pages/`, com timestamps em `inventory.json` e o resultado do download em `download-report.json`.
+
+### Assets
+
+- Extraí **174 referências de assets** das 43 páginas e cruzei com o CDX (`assets-report.json`): **126 recuperáveis**, o restante são lacunas reais.
+- Recuperáveis: as 7 miniaturas de vídeo (capturas de mai/2013); o herói e os 6 retratos de carreiras professional (mai/2013); os thumbs de jogos professional (mai–jun/2013); o herói e retratos artsy/nurturing/sporty existem apenas como **cópias de outras localidades** (pt_BR — mesma arte, tcm diferente; substituição documentada, como o projeto já aceita); as artes da Team Barbie (`Team_Dolls`, `Team_Stars`, `down_arrow`, `shopping_cart`) só em capturas de **set/2013** (procedência de captura próxima); e os sprites/estilos que faltavam para as páginas internas (`sprite-buttons-xl/l/aggregator.png`, `background-videos.jpg`, `background-title-videos.png`, `background-survey.png`, `btn-back-to-games.png`, `non_flash_vidBg.png`, `jquery.jscrollpane.css`, `arrows-scrollbar.gif`) — todos com captura 200.
+- **Não recuperáveis em lugar nenhum** (lacunas documentadas): `ICB_Hero_Sporty` e os retratos `snowboarder`, `swim-instructor`, `art-teacher`, `babysitter` e `pastry-chef`; toda a arte da doll **President** (`ICB_President_BG_New`, `_Doll`, `_PinkBanner`); `Team_landing_BG_tcm107-4342.jpg`; `game_thumb_pastrychef`; e `expressInstall.swf` (instalador genérico da Adobe, inofensivo com Ruffle). Esses espaços ficarão com aviso honesto de restauração.
+
+### Jogos
+
+- **13 dos 20 SWFs de jogos estão no archive**: 7 com conjunto completo (SWF + `data/config.xmlx` + bibliotecas: amazing-architect, data-diva, halfpipe-pixie, pom-pom-squad, potty-race, splashin-bash, super-wedding-stylist) e 6 só com o SWF principal (disco-ballroom, fantastic-concert, good-morning-barbie, little-critter-clinic, presto-pizza, ready-set-check-up).
+- **7 jogos nunca foram capturados**: art-teacher, cakery-bakery, kiddie-classroom, race-car-cutie, sugar-bug-blast, tutu-star e years-of-careers → “Under restoration” na área do jogo.
+
+### Vídeos
+
+- **Nenhum arquivo de mídia foi capturado** — os 7 vídeos vinham de serviço externo de streaming (IDs `data-video-id`). A moldura da seção (player, miniaturas, títulos, carrossel) é totalmente restaurável; a área do player fica “Under restoration”.
+
+### Decisões sobre o comportamento original
+
+- O botão Dolls do menu apontava para `/en_US/Dolls/index.html`, que dava **404/500 no próprio original** (link quebrado em junho/2013); a home linkava direto para `dolls/team_barbie.html`. Proposta documentada: apontar o botão Dolls para a página Team Barbie restaurada.
+- `/en_US/games.html`, `/careers.html` e `/videos.html` eram redirecionamentos 301 para os index — replicar como redirecionamentos locais.
+
+### Ferramentas novas
+
+- `scripts/icanbe_inventory.py` (inventário de melhor captura a partir de um dump CDX), `scripts/icanbe_download_pages.py` (baixa cada página na captura escolhida) e `scripts/icanbe_assets_report.py` (extrai referências e cruza com o CDX). O `gotacode.html` foi baixado de novo com sucesso após uma falha transitória de rede.
+
+### Próximos passos do I Can Be
+
+1. Construir as 40 páginas fiéis a partir dos HTMLs arquivados (mesma técnica da home: DOM original, caminhos sob `/_original/icanbe.barbie.com/`, anúncios/trackers removidos com espaço preservado, links externos pela tela intermediária).
+2. Recuperar os assets disponíveis com procedência por arquivo no manifesto.
+3. Montar as páginas de jogo com Ruffle nos 13 SWFs recuperáveis (sem som) e aviso nos 7 ausentes; QA de runtime.
+4. Vídeos: moldura completa + “Under restoration” no player.
+5. Integrar rotas, links da home e do menu, `_redirects`, e rodar os scripts de QA.
+
+## Continuação — 01/10/2026 (páginas internas do I Can Be)
+
+### Recuperação de assets
+
+- `scripts/icanbe_recover_assets.py`: recuperação guiada pelo CDX com procedência por arquivo em `research/icanbe-assets-manifest.json` (URL de origem, timestamp, SHA-256, flag de substituição, motivo do gap). Resultado: **178 recuperados, 23 lacunas documentadas**. Validação de assinatura binária (SWF/JPEG/PNG/GIF) e execuções idempotentes (reaproveita o manifest anterior e arquivos locais).
+- Correções de parsing do CDX no caminho: URLs com `:80` poluíam as chaves do índice (bloqueavam capturas de 2012/2013); prefixos de host (`www.`, `origin.`, `ndcbeta.`) normalizados; arquivos de jogos gravados no caminho em minúsculas que os SWFs pedem em runtime.
+- Destaques de procedência: **12 substituições cross-locale do pt_BR** (mesma arte, tcm diferente — heróis Artsy/Nurturing, retratos dancer/pizza-chef/rock-star/kid-doctor/race-car-driver e thumbs ballerina/ballroom/bride/heritage/petdoctor/rockstar); vários itens en_US só em capturas de **set–nov/2013** (Team_Dolls/Team_Stars/down_arrow/shopping_cart, retratos ballerina/cheerleader/rock-star-sm, thumbs ballroom/pizzachef/snowboarder); alguns recursos compartilhados só em capturas de **2012** (background-title-videos.png, background-videos.jpg, background-survey.png, btn-back-to-games.png, non_flash_vidBg.png, sprite-buttons-aggregator.png, arrows-scrollbar.gif e os dois PDFs das páginas de dolls); `video_player.swf` só de nov/2014 (mantido por procedência, sem uso). Datas registradas no manifesto.
+- **Lacunas reais** (nunca capturadas em lugar nenhum): ICB_Hero_Sporty, retratos art-teacher/babysitter/pastry-chef/snowboarder/swim-instructor e os ícones `-sm` correspondentes, toda a arte da doll President (3 arquivos), Team_landing_BG, game_thumb_pastrychef, btn-dolls.png/shadow, expressInstall.swf e os 7 SWFs de jogos nunca capturados.
+- Normalização de árvore: arquivos de jogos gravados em `resources/Games_data/…` (minúsculas); o `controllerSWF` hardcoded `/Resources/Games_Data/global/swf/gameapi.swf` (caixa original) é espelhado na raiz (`public/Resources/Games_Data/global/swf/gameapi.swf`) e o loader do Ruffle roda com `base` na raiz do site; os config.xmlx permanecem byte a byte iguais aos originais.
+
+### Páginas (40 construídas)
+
+- `scripts/build_icanbe_pages.py` escreve as 40 páginas em `public/_original/icanbe.barbie.com/en_US/` a partir dos HTMLs arquivados: DOM/CSS originais mantidos; caminhos do site repontados sob `/_original/icanbe.barbie.com/`; removidos anúncios (doubleclick) com o espaço preservado, `tracker.mattel.com`, injeção utag/Tealium, blocos `var track`/`utag_data`, `hdnpageId`, scripts/estilos de corporate.mattel.com (header-fixie/gnav/DD_belatedPNG/header-25px.css), Chrome-Frame do IE, o script externo do serviço de vídeo `mediaportal.mirror-image.com/api/script` e o jQuery do CDN do Google (substituído pela cópia local vendored); adicionados o mesmo stub do MATTEL (tracker + no-ops de `modules.analytics`) e o mesmo interceptador de cliques da home (barbie.com → rotas locais, icanbe.barbie.com → `_original` local, Dreamhouse Puzzle Party → jogo local, outros hosts → tela intermediária).
+- **Jogos**: as 13 páginas cujo SWF foi recuperado embutem o jogo via Ruffle (760×480, mudo, flashvars absolutos em minúsculas; `config` só quando o arquivo foi recuperado). Os 7 jogos não capturados mantêm o texto de fallback original com painel “Under restoration” na área do jogo. Miniaturas de jogos associados sem arte viram avisos honestos.
+- **Vídeos**: index e 7 páginas de detalhe com moldura, miniaturas e títulos restaurados; a área do player leva aviso (os vídeos nunca foram arquivados). As páginas de detalhe não redirecionam mais para o index (o original redirecionava visitantes com JS para o index com deeplink `#!` — sem sentido sem vídeo reproduzível; desvio documentado).
+- **Carreiras**: professional completa com a arte de mai/2013; heróis e retratos artsy/nurturing vêm das cópias pt_BR (documentado); herói sporty e os retratos/ícones `-sm` não recuperados são avisos ou botões só com o sprite.
+- **Dolls**: team_barbie restaurada com a arte de set/2013 mais aviso onde ficava o cenário de fundo não recuperável; president mostra aviso completo (as três camadas de arte nunca foram arquivadas) enquanto os botões originais de PDF e loja funcionam (PDFs de 2012).
+- `script.js` (local, já adaptado) recebeu mais dois patches documentados: o aggregator só carrega a página da aba por AJAX quando existe aba selecionada (o original disparava um `load("undefined .content")` inválido nas páginas de jogo individuais, que reutilizam o id `#games` do body), e o módulo de vídeos foi neutralizado (sem player, sem chamadas externas, sem redirecionamento; as miniaturas linkam para as páginas de detalhe).
+
+### Rotas
+
+- `serve.py`: aliases legados com 302 (`en_US/games.html|careers.html|videos.html` → páginas index) e o link quebrado de Dolls (`en_US/Dolls/index.html` → `dolls/team_barbie.html`, correção documentada). `_redirects` espelha isso para o Cloudflare e inclui variante de caixa `en_US/Videos/*`.
+
+### QA
+
+- Novo `scripts/qa_icanbe.py` cobre as 38 URLs novas/afetadas (status, geometria do DOM, avisos, abas/cards, presença de Ruffle, redirecionamentos). Depois das correções, todas as páginas respondem 200 com 0 erros de console; as únicas requisições falhas restantes são de arquivos de runtime dos jogos nunca arquivados (config/soundBank/fontes dos jogos “só SWF principal”) — coerente com as lacunas documentadas, ainda a triar jogo a jogo.
+- Corrigido durante o QA: a checagem de boot do Ruffle **chamava** `newest()` antes do ruffle.js (defer) definir a função — o TypeError matava o polling (agora é checagem com `typeof`); o loader/aviso agora espera o `#flashgame` existir (o script fica antes do div; o swfobject original adiava para o DOM ready); o script mediaportal ainda estava nas páginas de vídeo e era buscado; thumbs de jogos associados sem arte davam 404.
+- Pendências: verificação de jogabilidade por jogo (7 conjuntos completos vs 6 só com SWF principal), triagem do status do potty-race no QA, revisão visual (screenshots) e o `<title>` vazio da página Team Barbie (mantido exatamente como no arquivo).

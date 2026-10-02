@@ -1,0 +1,2012 @@
+[
+ {
+  "path": "/en_US/Images/Home_Doll_FashionDesigner_tcm107-3131.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/Home_Doll_FashionDesigner_tcm107-3131.png",
+  "timestamp": "20130121160454",
+  "substitution": false,
+  "bytes": 10420,
+  "sha256": "1e464feda666d5880f0b18f9ff107ce07f02fa71ac9db4fea8ac826d1e161d59",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/Home_Doll_PetVet_tcm107-3129.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/Home_Doll_PetVet_tcm107-3129.png",
+  "timestamp": "20130121160340",
+  "substitution": false,
+  "bytes": 10460,
+  "sha256": "0450f2700f53f9c478f7396498c099cf904dc4d567e06ca082f08077c0e1e259",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/Home_Doll_Team_Swimmer_tcm107-4352.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/Home_Doll_Team_Swimmer_tcm107-4352.png",
+  "timestamp": "20130121112606",
+  "substitution": false,
+  "bytes": 8394,
+  "sha256": "03f3c8d63e78186a92edce9812495317f4653ac7a6cd97360c848474102df9cf",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/ICB_Hero_Artsy_tcm107-1735.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/pt_BR/Images/ICB_Hero_Artsy_tcm118-1735.png",
+  "timestamp": "20130527204646",
+  "substitution": true,
+  "bytes": 57104,
+  "sha256": "963698eb40445fe270e0b1c8fbc96e778194a57b623512a9e0e834f99d5156ec",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/ICB_Hero_Nurturing_tcm107-2479.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/pt_BR/Images/ICB_Hero_Nurturing_tcm118-2479.png",
+  "timestamp": "20130528023642",
+  "substitution": true,
+  "bytes": 60176,
+  "sha256": "62f20b8aac75a5459daecb0dcb7621ce2526f0056f7936498cce573b13667068",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/ICB_Hero_Professional_tcm107-2067.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/ICB_Hero_Professional_tcm107-2067.png",
+  "timestamp": "20130524020432",
+  "substitution": false,
+  "bytes": 66755,
+  "sha256": "d551b3d90a634cc2f1fabd10ba843a88bba815123583de5e0b6ed5146e3e49c5",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/ICB_Hero_Sporty_tcm107-2478.png",
+  "ok": false,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 0,
+  "sha256": null,
+  "gap": "no 200 capture anywhere (any locale, any year)"
+ },
+ {
+  "path": "/en_US/Images/ICB_Home_LowerLeft_promo_Ballerina_tcm107-49994.jpg",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 28774,
+  "sha256": "a0361c892bca531205cf648ab11f2563407cf5471dfc23edf5de86d86c668fb6",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/en_US/Images/ICB_Home_Promo_Cloud_FashionDesigner_tcm107-3130.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/ICB_Home_Promo_Cloud_FashionDesigner_tcm107-3130.png",
+  "timestamp": "20130121160501",
+  "substitution": false,
+  "bytes": 18343,
+  "sha256": "7fde4a5325bc049e867d43e80b06fd31600f4cabff2575d6c7510a8e81e7e4eb",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/ICB_Home_Promo_Cloud_PetVet_tcm107-3128.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/ICB_Home_Promo_Cloud_PetVet_tcm107-3128.png",
+  "timestamp": "20130121160641",
+  "substitution": false,
+  "bytes": 17264,
+  "sha256": "ff461acdfd7188ebf9a58ea0fd01cd99a52692f2c95fad261eaf01eb9f27b170",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/ICB_President_BG_New_tcm107-4316.jpg",
+  "ok": false,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 0,
+  "sha256": null,
+  "gap": "no 200 capture anywhere (any locale, any year)"
+ },
+ {
+  "path": "/en_US/Images/ICB_President_Doll_tcm107-4315.png",
+  "ok": false,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 0,
+  "sha256": null,
+  "gap": "no 200 capture anywhere (any locale, any year)"
+ },
+ {
+  "path": "/en_US/Images/ICB_President_Packet_tcm107-4320.pdf",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/ICB_President_Packet_tcm107-4320.pdf",
+  "timestamp": "20120916065615",
+  "substitution": false,
+  "bytes": 1780693,
+  "sha256": "1e818cec0b6bb3b73e50ce9fea718cb9f6c4b7d5d419c41b1d8882b37669955b",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/ICB_President_PinkBanner_tcm107-4317.png",
+  "ok": false,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 0,
+  "sha256": null,
+  "gap": "no 200 capture anywhere (any locale, any year)"
+ },
+ {
+  "path": "/en_US/Images/ICB_Team_Printables_v3_tcm107-4345.pdf",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com:80/en_US/Images/ICB_Team_Printables_v3_tcm107-4345.pdf",
+  "timestamp": "20120522224913",
+  "substitution": false,
+  "bytes": 1756182,
+  "sha256": "ca83d505c80130ae850efc8a8a93b8bbc992919bc30a16d13040fb03335942f3",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/Level0_tcm107-2761.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/Level0_tcm107-2761.png",
+  "timestamp": "20130121160527",
+  "substitution": false,
+  "bytes": 56736,
+  "sha256": "33928d2c58168623cd566740488f7c9f8460ae9204941e66283a5c5594b865b9",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/Level1_tcm107-2762.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/Level1_tcm107-2762.png",
+  "timestamp": "20130121112524",
+  "substitution": false,
+  "bytes": 68085,
+  "sha256": "580c3d1e5277b14bad8961fcd21e69e5c855f736d4e0104aa7e477c5c14519a8",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/Level2_tcm107-2763.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/Level2_tcm107-2763.png",
+  "timestamp": "20130121112602",
+  "substitution": false,
+  "bytes": 58312,
+  "sha256": "79d9614a5a0581213328db3c51530c8f2d0dc4842884743502d37a0912bd30d8",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/Promo_Cloud_Team_tcm107-4347.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/Promo_Cloud_Team_tcm107-4347.png",
+  "timestamp": "20130121160336",
+  "substitution": false,
+  "bytes": 17622,
+  "sha256": "625e75af666a61a8f8ac12fba0a597c73fdf7dc652941375f27cb028eec88622",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/Team_Dolls_tcm107-4343.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/Team_Dolls_tcm107-4343.png",
+  "timestamp": "20130928090322",
+  "substitution": false,
+  "bytes": 365042,
+  "sha256": "ee7cc22b7d175f8cf63712c93d1ed11c9dd94d44e9a269b9199c579c0052a6bc",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/Team_Stars_tcm107-4344.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/Team_Stars_tcm107-4344.png",
+  "timestamp": "20130928092544",
+  "substitution": false,
+  "bytes": 107981,
+  "sha256": "c8acf59b107e4953f97af714d89bb202134aa459ae747ade5d0af4568b551ff3",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/Team_landing_BG_tcm107-4342.jpg",
+  "ok": false,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 0,
+  "sha256": null,
+  "gap": "no 200 capture anywhere (any locale, any year)"
+ },
+ {
+  "path": "/en_US/Images/architect-sm_tcm107-2483.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/architect-sm_tcm107-2483.png",
+  "timestamp": "20130524021018",
+  "substitution": false,
+  "bytes": 5892,
+  "sha256": "d3050aa2f9809f770d7ae11cb0c7524217040808b37d4f21eb00b949cf73c78a",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/architect_tcm107-1285.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/architect_tcm107-1285.png",
+  "timestamp": "20130121160428",
+  "substitution": false,
+  "bytes": 61972,
+  "sha256": "3c9f1b8cc68592fc8e3ae85e87da4cf8fec9ef37ecd01f25df52208d230caf7a",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/architect_tcm107-2482.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/architect_tcm107-2482.png",
+  "timestamp": "20130524020634",
+  "substitution": false,
+  "bytes": 27951,
+  "sha256": "5dbff813c28a3e08e4796a56d350b534bfd404c5fbe09f7c3b73e7edf6f71cb5",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/arrow-back_tcm107-1301.gif",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/arrow-back_tcm107-1301.gif",
+  "timestamp": "20130625170309",
+  "substitution": false,
+  "bytes": 1254,
+  "sha256": "e5692ed0319f7404e9514be2e5cdeec1c3efd2f50c96c3f7c115127312baa91a",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/art-teacher-sm_tcm107-2485.png",
+  "ok": false,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 0,
+  "sha256": null,
+  "gap": "no 200 capture anywhere (any locale, any year)"
+ },
+ {
+  "path": "/en_US/Images/art-teacher_tcm107-2484.png",
+  "ok": false,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 0,
+  "sha256": null,
+  "gap": "no 200 capture anywhere (any locale, any year)"
+ },
+ {
+  "path": "/en_US/Images/art_teacher_tcm107-1284.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/art_teacher_tcm107-1284.png",
+  "timestamp": "20130121160424",
+  "substitution": false,
+  "bytes": 70040,
+  "sha256": "eed78d3e55360bde06c2513d914c3632a35b4cae69a4294d57651a620877d456",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/babysitter-sm_tcm107-2545.png",
+  "ok": false,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 0,
+  "sha256": null,
+  "gap": "no 200 capture anywhere (any locale, any year)"
+ },
+ {
+  "path": "/en_US/Images/babysitter_tcm107-2544.png",
+  "ok": false,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 0,
+  "sha256": null,
+  "gap": "no 200 capture anywhere (any locale, any year)"
+ },
+ {
+  "path": "/en_US/Images/background_pv2_tcm107-2760.jpg",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/background_pv2_tcm107-2760.jpg",
+  "timestamp": "20130121160540",
+  "substitution": false,
+  "bytes": 46664,
+  "sha256": "be8b29f8e8b36f263505b2b1d95f270e9cc984c66892dbcaba5e991ded5d4aa3",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/background_tcm107-1266.jpg",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/background_tcm107-1266.jpg",
+  "timestamp": "20130121160535",
+  "substitution": false,
+  "bytes": 2123,
+  "sha256": "695aaa63c1352deef4db876040b763793027d58ce87d3bd9ce8ea9558d5e8afb",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/background_tcm107-2764.jpg",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/background_tcm107-2764.jpg",
+  "timestamp": "20130121112539",
+  "substitution": false,
+  "bytes": 29824,
+  "sha256": "0f63b70fcd263cdb73ccbf488b69608edd3d39535f7c05c7665ce66299900079",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/background_tcm107-4346.jpg",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/background_tcm107-4346.jpg",
+  "timestamp": "20130121160629",
+  "substitution": false,
+  "bytes": 135378,
+  "sha256": "c3367f31ef93604cb90c0927cf70f9b70e00c95c112b9ebd0f8198940f52be5b",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/ballerina-sm_tcm107-1245.png",
+  "ok": false,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 0,
+  "sha256": null,
+  "gap": "no 200 capture anywhere (any locale, any year)"
+ },
+ {
+  "path": "/en_US/Images/ballerina_tcm107-1244.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/ballerina_tcm107-1244.png",
+  "timestamp": "20131102141559",
+  "substitution": false,
+  "bytes": 18421,
+  "sha256": "6530130f1b34e8c57185ce07abd9e900228f6a55e15e2b4c60e9d10f930628f5",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/ballerina_tcm107-1287.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/ballerina_tcm107-1287.png",
+  "timestamp": "20130121160355",
+  "substitution": false,
+  "bytes": 58424,
+  "sha256": "5c69f9c54de618909d51e86946ca3f3d06dba94e3e6711a2d047a3e3e4281ad4",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/cheerleader-sm_tcm107-2487.png",
+  "ok": false,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 0,
+  "sha256": null,
+  "gap": "no 200 capture anywhere (any locale, any year)"
+ },
+ {
+  "path": "/en_US/Images/cheerleader_tcm107-2486.png",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 24945,
+  "sha256": "b9e39cd7b4b1f84adc96c8a1a11f00f8532a6a43ad1f94d788bb5b5ca13216a5",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/en_US/Images/cloud-green_tcm107-1273.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/cloud-green_tcm107-1273.png",
+  "timestamp": "20130121112518",
+  "substitution": false,
+  "bytes": 17836,
+  "sha256": "8d29950cf11cede1c476874ffc5df4805a294d02e17f5ec279204e4c73f287bb",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/computer-engineer-sm_tcm107-2489.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/computer-engineer-sm_tcm107-2489.png",
+  "timestamp": "20130524031140",
+  "substitution": false,
+  "bytes": 5176,
+  "sha256": "42fce965ae2a568952c7f3f5575141b4629753747053affe8ca1b282a3c7a4e4",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/computer-engineer_tcm107-2488.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/computer-engineer_tcm107-2488.png",
+  "timestamp": "20130524011336",
+  "substitution": false,
+  "bytes": 29678,
+  "sha256": "9ab600825eff0acdf9ff6243d059ecb238c0063a210542ce32a0abe660da9eb2",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/computer_engineer_tcm107-1288.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/computer_engineer_tcm107-1288.png",
+  "timestamp": "20130121112559",
+  "substitution": false,
+  "bytes": 67547,
+  "sha256": "1e5c7499d98556ea92fb794473ed986fc21ab71e602242a9e2cb5388ce94c87b",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/dancer-sm_tcm107-2491.png",
+  "ok": false,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 0,
+  "sha256": null,
+  "gap": "no 200 capture anywhere (any locale, any year)"
+ },
+ {
+  "path": "/en_US/Images/dancer_tcm107-2490.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/pt_BR/Images/dancer_tcm118-2490.png",
+  "timestamp": "20130527231130",
+  "substitution": true,
+  "bytes": 21929,
+  "sha256": "408319a45be07c420eaf9a7ee9bdc0fe9f07f7408a2eeaab477bde01ec10dff5",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/dentist-sm_tcm107-2493.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/dentist-sm_tcm107-2493.png",
+  "timestamp": "20130524015042",
+  "substitution": false,
+  "bytes": 4804,
+  "sha256": "a849d9fa99703ad946650adf819141e9957c2e0ef705276be6c5f3b88d333bc4",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/dentist_tcm107-2492.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/dentist_tcm107-2492.png",
+  "timestamp": "20130524005658",
+  "substitution": false,
+  "bytes": 25563,
+  "sha256": "2f9a698c8e9f0a6f6a07c9daa2f644123448a6a18b2188262ddbe5468a7c6e06",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/doll-architect_tcm107-1269.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/doll-architect_tcm107-1269.png",
+  "timestamp": "20130121160551",
+  "substitution": false,
+  "bytes": 9763,
+  "sha256": "8e13797ab1ca086938365f3120e891a905a0d6121a8ed2477a3bc4ee02b145a2",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/down_arrow_tcm107-4353.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/down_arrow_tcm107-4353.png",
+  "timestamp": "20130928094113",
+  "substitution": false,
+  "bytes": 3124,
+  "sha256": "cb7540f56579314c6ed6fe16cf142d32c3e1571d83ef8b2aa79167a153c94d95",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/game-promo-lrg_tcm107-1309.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/game-promo-lrg_tcm107-1309.png",
+  "timestamp": "20130524024829",
+  "substitution": false,
+  "bytes": 91786,
+  "sha256": "7260b72bffc0b337ee6373298dfeec87a82b6b3dd76063e4a3ba660de6246fcb",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/game-sm_tcm107-1246.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/game-sm_tcm107-1246.png",
+  "timestamp": "20130121160506",
+  "substitution": false,
+  "bytes": 2817,
+  "sha256": "eb2dcd466d20a29a32d15b0170ad12b20fa9d7f1ff0ef908c46c059be33e0647",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/game_tcm107-1270.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/game_tcm107-1270.png",
+  "timestamp": "20130121160458",
+  "substitution": false,
+  "bytes": 5536,
+  "sha256": "6ee1a9b6fa3fdd138824eab5feaa21175b640ad8337316710b549b58c828e584",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/game_thumb_architect_tcm107-2048.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/game_thumb_architect_tcm107-2048.png",
+  "timestamp": "20130524015909",
+  "substitution": false,
+  "bytes": 24912,
+  "sha256": "fc6536ef1601ec604c2fa8443b4d909ae5025f5a166ed498be3c609041a9700d",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/game_thumb_artteacher_tcm107-2049.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/game_thumb_artteacher_tcm107-2049.png",
+  "timestamp": "20130524023621",
+  "substitution": false,
+  "bytes": 20365,
+  "sha256": "75ab3919fcee08e130bbacd491b2b7d34fcafeee5ba9da0b00b4300f88f1ef70",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/game_thumb_babysitter_tcm107-2050.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/game_thumb_babysitter_tcm107-2050.png",
+  "timestamp": "20130625164443",
+  "substitution": false,
+  "bytes": 24053,
+  "sha256": "f0fdb28e3f2e5563ca9da6db033aabc286ba4a76e73557146932dc1dc5765e6b",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/game_thumb_ballerina_tcm107-2051.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/pt_BR/Images/game_thumb_ballerina_tcm118-2051.png",
+  "timestamp": "20130430082143",
+  "substitution": true,
+  "bytes": 21448,
+  "sha256": "a0fc62d6a3dbe2a09b948b44bd390a9cabe07319886420538580ad50e28aeffa",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/game_thumb_ballroom_tcm107-2052.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/game_thumb_ballroom_tcm107-2052.png",
+  "timestamp": "20131102153747",
+  "substitution": false,
+  "bytes": 26752,
+  "sha256": "95614cde9b298d4491e83d30a295888cfd82bea3783b1c065083432f5ed1a10a",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/game_thumb_bride_tcm107-2053.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/pt_BR/Images/game_thumb_bride_tcm118-2053.png",
+  "timestamp": "20130528075003",
+  "substitution": true,
+  "bytes": 23674,
+  "sha256": "aa40c910c931822b69a70ef1271c6e3b22bcb7144f2bad5a87d5ca25124b4fc5",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/game_thumb_cheerleader_tcm107-2054.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/game_thumb_cheerleader_tcm107-2054.png",
+  "timestamp": "20130625162928",
+  "substitution": false,
+  "bytes": 25706,
+  "sha256": "8778542f55723f6948d476ecbc774458364226846317eeee0f271e0e75f694e0",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/game_thumb_computerengineer_tcm107-2055.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/game_thumb_computerengineer_tcm107-2055.png",
+  "timestamp": "20130524040050",
+  "substitution": false,
+  "bytes": 21901,
+  "sha256": "e0f5d2d8033894de278afbd4e1117b7f133e5e171396fb1d71b3fae108b05e9c",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/game_thumb_dentist_tcm107-2056.png",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 22846,
+  "sha256": "f14e0e90e65b98be0a204e031f23b4ae642d2332b75dde9a7cce54f182fa756f",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/en_US/Images/game_thumb_heritage_tcm107-2057.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/pt_BR/Images/game_thumb_heritage_tcm118-2057.png",
+  "timestamp": "20130528072800",
+  "substitution": true,
+  "bytes": 28030,
+  "sha256": "101faacc1afa2ef64e481d1454ed68bd04e865a91ec7963a999399481c3e8b81",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/game_thumb_kiddoctor_tcm107-2058.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/game_thumb_kiddoctor_tcm107-2058.png",
+  "timestamp": "20130625151946",
+  "substitution": false,
+  "bytes": 15858,
+  "sha256": "a8eddca4c6406b24c4d8c1672c09afb2376d21d2b59091c7c22a26d9a95bd66c",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/game_thumb_newsanchor_tcm107-2059.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/game_thumb_newsanchor_tcm107-2059.png",
+  "timestamp": "20130524043128",
+  "substitution": false,
+  "bytes": 22602,
+  "sha256": "af7423ae5556bf0b5fb6c2965445780141f7c2b0bdf0239dab76d2ae40fa765a",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/game_thumb_pastrychef_tcm107-2060.png",
+  "ok": false,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 0,
+  "sha256": null,
+  "gap": "no 200 capture anywhere (any locale, any year)"
+ },
+ {
+  "path": "/en_US/Images/game_thumb_petdoctor_tcm107-2061.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/pt_BR/Images/game_thumb_petdoctor_tcm118-2061.png",
+  "timestamp": "20130430131821",
+  "substitution": true,
+  "bytes": 24303,
+  "sha256": "6ed64cfa8631ef310009aa1edd127a6581e2881dffb26c45e4d32ac0f0c6e29a",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/game_thumb_pizzachef_tcm107-2062.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/game_thumb_pizzachef_tcm107-2062.png",
+  "timestamp": "20131102165130",
+  "substitution": false,
+  "bytes": 25222,
+  "sha256": "3e318270b898a62a8e4f243ff0f42833412f75cd4384e2e717078372d2333297",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/game_thumb_racecarddriver_tcm107-2063.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/game_thumb_racecarddriver_tcm107-2063.png",
+  "timestamp": "20130625172424",
+  "substitution": false,
+  "bytes": 17539,
+  "sha256": "7aa4fa57dba91b30866a6e53b680e67e609700e8b8be04e3f2d82ae67640cf0d",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/game_thumb_rockstar_tcm107-2064.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/pt_BR/Images/game_thumb_rockstar_tcm118-2064.png",
+  "timestamp": "20130430055643",
+  "substitution": true,
+  "bytes": 22091,
+  "sha256": "e78dd3ed63405f524f54697c2b3b76cdee8537b0e346d2a9ac313a516db45351",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/game_thumb_snowboarder_tcm107-2065.jpg",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/game_thumb_snowboarder_tcm107-2065.jpg",
+  "timestamp": "20131031165045",
+  "substitution": false,
+  "bytes": 8317,
+  "sha256": "02959d2a9f46c6bd2e5a68cbfe23795e405a696f6efc57d23bf939745b874637",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/game_thumb_swiminstructor_tcm107-2066.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/game_thumb_swiminstructor_tcm107-2066.png",
+  "timestamp": "20130625160812",
+  "substitution": false,
+  "bytes": 28400,
+  "sha256": "2fa7963c3c2185bc0d1d9e9706712216eb30a59ec9e8e826e654c31f1f477148",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/game_thumb_teacher_tcm107-2047.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/game_thumb_teacher_tcm107-2047.png",
+  "timestamp": "20130524020830",
+  "substitution": false,
+  "bytes": 22173,
+  "sha256": "7de8a7f2ec2b450c8ead34ee3b1dc0bc6f8b2630071889045994145f88731f0c",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/kid-doctor-sm_tcm107-2496.png",
+  "ok": false,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 0,
+  "sha256": null,
+  "gap": "no 200 capture anywhere (any locale, any year)"
+ },
+ {
+  "path": "/en_US/Images/kid-doctor_tcm107-2495.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/pt_BR/Images/kid-doctor_tcm118-2495.png",
+  "timestamp": "20130528031549",
+  "substitution": true,
+  "bytes": 28147,
+  "sha256": "35de09c5fb7fbd3b8d2b52fcb904294e06139544eb9942632cc5ca9b87804dee",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/level0_tcm107-1267.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/level0_tcm107-1267.png",
+  "timestamp": "20130121160415",
+  "substitution": false,
+  "bytes": 49563,
+  "sha256": "2b08b191fb892d842e7e77dd0ee67067e5db3a57a70b0cd7431698f618b787da",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/level0_tcm107-2765.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/level0_tcm107-2765.png",
+  "timestamp": "20130121112550",
+  "substitution": false,
+  "bytes": 143112,
+  "sha256": "01bcdcc83f702e318094ef8369e3eb3ac4e6459ecb14c19ec8a827efded4c624",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/level0_tcm107-4348.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/level0_tcm107-4348.png",
+  "timestamp": "20130121112535",
+  "substitution": false,
+  "bytes": 40829,
+  "sha256": "fa1df054f1f78fc9920609a5f78fa5ee2909a50acafc0139bac3aad6c9de963a",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/level1_tcm107-1268.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/level1_tcm107-1268.png",
+  "timestamp": "20130121160516",
+  "substitution": false,
+  "bytes": 109118,
+  "sha256": "cfd9d155c278b00cca1bb72ab982319689314e28fa23d88002958630029922df",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/level1_tcm107-2766.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/level1_tcm107-2766.png",
+  "timestamp": "20130121160532",
+  "substitution": false,
+  "bytes": 33393,
+  "sha256": "7afce11013f9307b209129fd187607f8d7d946c540d61e08769c424ed5a5c9ca",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/level1_tcm107-4349.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/level1_tcm107-4349.png",
+  "timestamp": "20130121112556",
+  "substitution": false,
+  "bytes": 34408,
+  "sha256": "65a5846b2ff2a24577d6740ad0e0cf7eaf664824bc2924e27d7b9cd43f8df186",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/level2_tcm107-1272.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/level2_tcm107-1272.png",
+  "timestamp": "20130121112514",
+  "substitution": false,
+  "bytes": 87988,
+  "sha256": "2157a556f98270461999682473f605cc31811246e6e57113390a9ccc62f855a1",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/level2_tcm107-2767.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/level2_tcm107-2767.png",
+  "timestamp": "20130121160634",
+  "substitution": false,
+  "bytes": 20220,
+  "sha256": "212b336bba9311a33d3539013746c3061f0734526568cf4f4899b4b5b2be4f21",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/level2_tcm107-4350.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/level2_tcm107-4350.png",
+  "timestamp": "20130121160403",
+  "substitution": false,
+  "bytes": 43898,
+  "sha256": "3693af172d0f5fea2baf23677f2470bdf42f752eefcb58e7bb4318c1241e80b5",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/level3_tcm107-2768.png",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 94550,
+  "sha256": "1e80b6e128dea202796985cb5672f2cffb8df994b6d66d8bf6c70aeb58bf7db7",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/en_US/Images/level3_tcm107-4351.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/level3_tcm107-4351.png",
+  "timestamp": "20130121160345",
+  "substitution": false,
+  "bytes": 108624,
+  "sha256": "a14ecf707c18504d486ea31ca7240303492f0e0775aed59107b6baadf8e572a8",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/new-sanchor-sm_tcm107-2498.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/new-sanchor-sm_tcm107-2498.png",
+  "timestamp": "20130524040156",
+  "substitution": false,
+  "bytes": 5132,
+  "sha256": "d69226d6681a62ba84918ec2b9f78da5b9e2c1ca6c1d6d5578de196d5f9a9b99",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/new-sanchor_tcm107-2497.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/new-sanchor_tcm107-2497.png",
+  "timestamp": "20130524011711",
+  "substitution": false,
+  "bytes": 27720,
+  "sha256": "86018d5d7ea8abff3bd07eaeab08211b50acfb880eb0d1727715c94cd122c077",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/news_anchor_tcm107-1282.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/news_anchor_tcm107-1282.png",
+  "timestamp": "20130121160558",
+  "substitution": false,
+  "bytes": 58309,
+  "sha256": "9433883cd54f574fc3a6ac1909ada5f4cae0db890d23ee3ecd4db483cef0f912",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/pastry-chef-sm_tcm107-2500.png",
+  "ok": false,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 0,
+  "sha256": null,
+  "gap": "no 200 capture anywhere (any locale, any year)"
+ },
+ {
+  "path": "/en_US/Images/pastry-chef_tcm107-2499.png",
+  "ok": false,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 0,
+  "sha256": null,
+  "gap": "no 200 capture anywhere (any locale, any year)"
+ },
+ {
+  "path": "/en_US/Images/pastry_chef_tcm107-1286.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/pastry_chef_tcm107-1286.png",
+  "timestamp": "20130121112532",
+  "substitution": false,
+  "bytes": 58968,
+  "sha256": "031236491dfb5a3c61bcec090438cd7a9b6ce7ee382d6e13e0a40c1413d120d7",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/pet-vet-sm_tcm107-2502.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/pet-vet-sm_tcm107-2502.png",
+  "timestamp": "20130524025147",
+  "substitution": false,
+  "bytes": 4848,
+  "sha256": "9f25ce58bad9d499af4070c22d17b5f09ead26333cb04b373900b508da99fa71",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/pet-vet_tcm107-2501.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/pet-vet_tcm107-2501.png",
+  "timestamp": "20130524015149",
+  "substitution": false,
+  "bytes": 31672,
+  "sha256": "cf1c576797af5f1f6c6dea22a95c9ba692fef0fa7de7e00798868d8696c51eac",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/pizza-chef-sm_tcm107-1250.png",
+  "ok": false,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 0,
+  "sha256": null,
+  "gap": "no 200 capture anywhere (any locale, any year)"
+ },
+ {
+  "path": "/en_US/Images/pizza-chef_tcm107-2503.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/pt_BR/Images/pizza-chef_tcm118-2503.png",
+  "timestamp": "20130527223955",
+  "substitution": true,
+  "bytes": 30864,
+  "sha256": "9e0ef300aaeddb212a054fea1664b53d60e4fffdc7354132a7088415047888a3",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/race-car-driver-sm_tcm107-2505.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/race-car-driver-sm_tcm107-2505.png",
+  "timestamp": "20121009020220",
+  "substitution": false,
+  "bytes": 5898,
+  "sha256": "aa835c7898be6eb07555592ccc1ae217c36e74b1ea5590fcfdd51cad09b9e51d",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/race-car-driver_tcm107-2504.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/pt_BR/Images/race-car-driver_tcm118-2504.png",
+  "timestamp": "20130527214051",
+  "substitution": true,
+  "bytes": 26678,
+  "sha256": "b5586b748bc53260fb2520902ffb26b7d2adb9d649cb200c04630efd63c63d42",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/rock-star-sm_tcm107-2507.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/rock-star-sm_tcm107-2507.png",
+  "timestamp": "20131102165914",
+  "substitution": false,
+  "bytes": 5935,
+  "sha256": "c29fa4c5637e9855290ed2d1761450652cb13582f02b9c39a2ebc3806649e8ee",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/rock-star_tcm107-2506.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/pt_BR/Images/rock-star_tcm118-2506.png",
+  "timestamp": "20130527235052",
+  "substitution": true,
+  "bytes": 26797,
+  "sha256": "fe1dcd40a9f491a1e4ffdff2ba646e58eab11caf95e8f228ec009612bfdec451",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/shopping_cart_tcm107-4354.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/shopping_cart_tcm107-4354.png",
+  "timestamp": "20130928091448",
+  "substitution": false,
+  "bytes": 2684,
+  "sha256": "abb001e5084810b5d88a201c95c739532b55eb5cf25a1e1740a18b796c12537b",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/snowboarder-sm_tcm107-2509.png",
+  "ok": false,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 0,
+  "sha256": null,
+  "gap": "no 200 capture anywhere (any locale, any year)"
+ },
+ {
+  "path": "/en_US/Images/snowboarder_tcm107-2508.png",
+  "ok": false,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 0,
+  "sha256": null,
+  "gap": "no 200 capture anywhere (any locale, any year)"
+ },
+ {
+  "path": "/en_US/Images/swim-instructor-sm_tcm107-2511.png",
+  "ok": false,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 0,
+  "sha256": null,
+  "gap": "no 200 capture anywhere (any locale, any year)"
+ },
+ {
+  "path": "/en_US/Images/swim-instructor_tcm107-2510.png",
+  "ok": false,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 0,
+  "sha256": null,
+  "gap": "no 200 capture anywhere (any locale, any year)"
+ },
+ {
+  "path": "/en_US/Images/teacher-sm_tcm107-2513.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/teacher-sm_tcm107-2513.png",
+  "timestamp": "20130524015134",
+  "substitution": false,
+  "bytes": 4982,
+  "sha256": "1b77d3aed95d5e00d1d90809d4b359c92bdc77d8ba4f5116301f2760680eaeba",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/teacher_tcm107-2512.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/teacher_tcm107-2512.png",
+  "timestamp": "20130524034341",
+  "substitution": false,
+  "bytes": 23680,
+  "sha256": "38c8c62378d487309d695b1f5fe0684ed6a5e3d0c5cad783270f61525a260e7a",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/trophy-sm_tcm107-1289.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/trophy-sm_tcm107-1289.png",
+  "timestamp": "20130121112529",
+  "substitution": false,
+  "bytes": 3124,
+  "sha256": "127a00ab139b9ae18af48f18b967635caf452eac0e07039804544b7d8f80ae2c",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/vet_tcm107-1283.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/vet_tcm107-1283.png",
+  "timestamp": "20130121160523",
+  "substitution": false,
+  "bytes": 63207,
+  "sha256": "241c99a70bf63e3a79ee9688f71cb3d1e1aeb1adceb7cdd9d2c7e3e2e49a4ad0",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/video-sm_tcm107-1247.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/video-sm_tcm107-1247.png",
+  "timestamp": "20130524040330",
+  "substitution": false,
+  "bytes": 3699,
+  "sha256": "2b73cf408082e4a09dfe26df0c50a988b0cd484e9bfa30e1ee94558b4a0ba636",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/video_tcm107-1271.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/video_tcm107-1271.png",
+  "timestamp": "20130121160511",
+  "substitution": false,
+  "bytes": 8043,
+  "sha256": "4775b828e4b6f184e176be56efc352b929950965eb59497ec572e2f4250fc58c",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/video_thumb_091102-ICanBeBallerina_tcm107-1339.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/video_thumb_091102-ICanBeBallerina_tcm107-1339.png",
+  "timestamp": "20130524045148",
+  "substitution": false,
+  "bytes": 17537,
+  "sha256": "133386a3b4c6e799dddffb4110397d61a54c3341b76a10752462da243dbcb040",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/video_thumb_091198-ICanBeDrummer_tcm107-1768.png",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 25329,
+  "sha256": "327f5f0f2bfea52f97a5bd47aee9180815b9d6648d49a5990b0158374bc4481f",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/en_US/Images/video_thumb_093378-trapezeartist_tcm107-1769.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/video_thumb_093378-trapezeartist_tcm107-1769.png",
+  "timestamp": "20130524061620",
+  "substitution": false,
+  "bytes": 21378,
+  "sha256": "3e07d6bcbb6832edc5b9ceefb680839131f46a423abfda657ff74a6dd442a382",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/video_thumb_09386-ICBPediatrician_tcm107-1765.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/video_thumb_09386-ICBPediatrician_tcm107-1765.png",
+  "timestamp": "20130524083226",
+  "substitution": false,
+  "bytes": 25955,
+  "sha256": "21224ebf53de49312404ccf74ff778f2dfd6e867eeba96ea09ff92b2fde2b171",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/video_thumb_09387-ICBPetVet_tcm107-1766.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/video_thumb_09387-ICBPetVet_tcm107-1766.png",
+  "timestamp": "20130524085040",
+  "substitution": false,
+  "bytes": 26739,
+  "sha256": "60821d953db6733b0f30a0e298460ea2f16312367d07702eadd99357c0acce9c",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/video_thumb_09388-ICBDentist_tcm107-1295.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/video_thumb_09388-ICBDentist_tcm107-1295.png",
+  "timestamp": "20130524070708",
+  "substitution": false,
+  "bytes": 27570,
+  "sha256": "1deeb184c170e0c99e10d47bd69c80b8c43210aa1e4735aa4f2f94542048b418",
+  "gap": null
+ },
+ {
+  "path": "/en_US/Images/video_thumb_09389-ICBBabysitter_tcm107-1767.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/en_US/Images/video_thumb_09389-ICBBabysitter_tcm107-1767.png",
+  "timestamp": "20130524064518",
+  "substitution": false,
+  "bytes": 24981,
+  "sha256": "6dc14aa5b7ca2eb699283a0e115dadd712c8db50afac1fc8127beb9358f7ef0f",
+  "gap": null
+ },
+ {
+  "path": "/resources/css/jquery.jscrollpane.css",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/resources/css/jquery.jscrollpane.css",
+  "timestamp": "20130512122249",
+  "substitution": false,
+  "bytes": 1680,
+  "sha256": "345b84a8f888b10ee684f96c1b76cc88b4254ed52cd944ab2c8cd2b31bd8d1b0",
+  "gap": null
+ },
+ {
+  "path": "/resources/games_data/amazingarchitect/architect.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 466524,
+  "sha256": "0818e3c4f0cc2db2f428ac2e8aef1415369c3fa8694e6f6280803235a1d2256e",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/amazingarchitect/data/config.xmlx",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 3176,
+  "sha256": "6971b185aeb5781c65b6bd52d1d6d6255cbb8e4ced535ad3b72296e705c60c6b",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/amazingarchitect/data/en_us/architect.xmlx",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 8765,
+  "sha256": "82a6e9bb7c7386ea2a24923654c3fc1a29b3629fb3b7f446d6090ccd8263dbeb",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/amazingarchitect/library/doorbuttoncarousel.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 29721,
+  "sha256": "50c2914c64781f9fc78a896d68d9d0bab3abae53fe11d7e660030db6d834150b",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/amazingarchitect/library/extrasbuttoncarousel.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 91183,
+  "sha256": "f963104e4131d375ca70b23e3637864c90bd688bfa9d3a1641e95946dde87be6",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/amazingarchitect/library/fontlibrary_latin.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 494497,
+  "sha256": "afc50e11657d63c67f7e08d71b39b4919752147a822b7282f223de30032d72d2",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/amazingarchitect/library/printableoutline.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 300371,
+  "sha256": "4b94f70e8c8db52366843d919265ca81ef9a59362e62c6787c370bd641a11866",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/amazingarchitect/library/roofbuttoncarousel.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 8018,
+  "sha256": "5cdb202fca2fa300728f130feb0f6df351e4a0e02f3875f9f66611ade2e7be3f",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/amazingarchitect/library/soundbank.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 80666,
+  "sha256": "d67f1ba3d9481ccebb346e69335dbb32da5af6b119e23d5a533ea62cbd024465",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/amazingarchitect/library/stickers.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 148138,
+  "sha256": "9fd54546bb38392156c37c60f055926a5bdf56444e14efb13825e43a7b9bda09",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/amazingarchitect/library/wallbuttoncarousel.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 38188,
+  "sha256": "278368dcbc89cdaaf8752c3805570781698a29c66bcf22299ef237c60979c0fd",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/amazingarchitect/library/windowbuttoncarousel.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 52625,
+  "sha256": "39d219b7f65af40ff88732c49f82e02c841744f9a9325c1e5bfae77048e45e02",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/amazingarchitect/styles/latin.css",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 680,
+  "sha256": "76789a1274ec502da7d7e6993982dace1392a4b1802c9f714579638686c4b791",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/data_diva/computerengineer.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 1624462,
+  "sha256": "e0cdc7151b1ed22a486ba9d5e80cd92b1a09a79a5e8ce6cbc81efcc96ecfd3d6",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/data_diva/data//en_us/computerengineer.xmlx",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 23545,
+  "sha256": "642f69bd147f9962b4e8f4f12fa8769e3e830fa640f3ffccc157accb9c71a591",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/data_diva/data/config.xmlx",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 1924,
+  "sha256": "43ecc52e751ca1d1839413a7e070b263057d7398aa13bfb1f06f4c630c1e32f4",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/data_diva/library/fontlibrary_latin.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 429462,
+  "sha256": "727b3d5e0d869335c17dda852b7d8956f16c4391bab6f68e658b8d6371d02c36",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/data_diva/library/soundbank.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 151101,
+  "sha256": "de2552e5b866aece0cbb6c6c3858e4af4ce8ca3540e42c0f2df497f985b08815",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/data_diva/printable/ce_laptopstickers_enus.pdf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 1071671,
+  "sha256": "6051a5d8c54d789a2cfea714eb5c16bfd6a50334e8531452b5b27a81fb2610d8",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/data_diva/styles/latin.css",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 499,
+  "sha256": "90d9057fd98b444f45acb48c5356c815d49055998e9eb09188e3b8350f5bbb5f",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/disco_ballroom/ballroomdancer.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 1956047,
+  "sha256": "d2ccbfcf3a8541f323e8748c2caad01743a448971e4f14cb2490576ba375f999",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/fantastic_concert/barbierockstar.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 3429804,
+  "sha256": "464c047a57ff905e1849f56ab574d6d629955d5f55a033850bf4f00081902526",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/global/swf/gameapi.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 83092,
+  "sha256": "fe1f2c0e1829f11da35f3bcfbd69c1a4585948c716959ec2a366d917eae2d7d0",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/goodmorning_barbie/newsanchor.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 1150990,
+  "sha256": "97cd16d216d87e450fdfcd8604ba716e0b81073696ed5e9663cbdfa48a185749",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/halfpipe_pixie/data//en_us/snowboarder.xmlx",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 5581,
+  "sha256": "be9565565a54fdd35ce3ca035c653b5461489068fd529103d9d6cbee9733ecd7",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/halfpipe_pixie/data/config.xmlx",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 1890,
+  "sha256": "6b9f1f3b19cd2414f3cf1fae1f602749d15b845a941cb9a74d5a2eebbd2f2ceb",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/halfpipe_pixie/library/fontlibrary_latin.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 537719,
+  "sha256": "b491021a9c1020a9ddb4721899a24256cb408045e56ba7f0a503c0961f82d76e",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/halfpipe_pixie/library/soundbank.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 182731,
+  "sha256": "d4dad5d88a4556d188a5b03cdb1de917d9c9b71ea9a30eee15e7203a82bb1432",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/halfpipe_pixie/snowboarder.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 834316,
+  "sha256": "a799112681cc6c4c2bad9c99d96884368f622c5199ba25f8f79a26c004d550a5",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/halfpipe_pixie/styles/latin.css",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 509,
+  "sha256": "8981c5d90f1226385dac96a8668e2cebb1b097a26010179329c04ae9489f5c70",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/little_critter_clinic/petvet.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 1512093,
+  "sha256": "3dbb0de6c0a2d824e7fa2bcbf85cdc7ce3c68addb0303c1fa84acf62baf90667",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/pompom_squad/cheerleader.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 672915,
+  "sha256": "2cfedd04e88d27637d8c6aa739e028963ca2835cc6a8c10c60951d4bd2cf296d",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/pompom_squad/data//en_us/cheerleader.xmlx",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 4273,
+  "sha256": "7699b9ef831effa9a7291f4a2f86b63a92be9cc96f7ee098b0ea152ec02f0c09",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/pompom_squad/data/config.xmlx",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 1999,
+  "sha256": "5ef869b5c0b6e288360359300e195650dc94fda720a1f4e791ce4c410d00f515",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/pompom_squad/library/fontlibrary_latin.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 167193,
+  "sha256": "c99e025313dcd539665fb2e817e6e2cd19f1a392a3d2b89d64fb64c09990af52",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/pompom_squad/library/soundbank.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 483017,
+  "sha256": "cb4b944e0021ad6463d9d98585589106726fe7817766957afea4b13f9c81fa0d",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/pompom_squad/styles/latin.css",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 166,
+  "sha256": "f67210d05e605acd13baed3cce0ec8e03518c58cde2edca62b189b29d8230279",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/potty_race/babysitter.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 3009860,
+  "sha256": "5f38c59e30efcffcf9092c891a6dabe8af6d2963b017b63d77a6d0b5eebced6d",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/potty_race/data//en_us/babysitter.xmlx",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 45710,
+  "sha256": "bfd4ec46ae76e68a083daa41c9a24ed8d241a96e9134a4c402eee729626de2e8",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/potty_race/data/config.xmlx",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 2252,
+  "sha256": "b03766108c07dc69616a324eb516d9ce19425cac03d9daef36a6aad22184b759",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/potty_race/library/fontlibrary_latin.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 494497,
+  "sha256": "afc50e11657d63c67f7e08d71b39b4919752147a822b7282f223de30032d72d2",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/potty_race/library/soundbank.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 45,
+  "sha256": "5023fc08e7d40209ba7f205e47efdf83228116de00e975011d9af9afd2d4ab41",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/potty_race/styles/latin.css",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 499,
+  "sha256": "38104143290b1dbdc0acf8fc330e9e5463b3da943ff9eae9dcfe618edd18a10f",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/presto_pizza/pizzachef.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 1052151,
+  "sha256": "91ee95349cd3a57ba466c63ac101311871a001f57d3d65afcdc1f0d3c23de203",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/ready_set_checkup/kiddoctor.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 2495450,
+  "sha256": "687b18637e1d011117dd30c02fb88350dc4ea447abe51561fcb3f99bd156e628",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/splashing_bash/data//en_us/swiminstructor.xmlx",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 5451,
+  "sha256": "2847582099201c58b9b5eb4aa8e694966eed39c43bdb44681ff41108c7a59b6d",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/splashing_bash/data/config.xmlx",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 2038,
+  "sha256": "9ff1bba012ed97d47c4bfe729227b060e3fe93ab7bbd5e1624f859b236d3cb58",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/splashing_bash/library/fontlibrary_latin.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 429469,
+  "sha256": "bff604b5bfe16f17e655c15c10f301d86e779fb31b4d1221bdc85cbcbc0fde06",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/splashing_bash/library/soundbank.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 162362,
+  "sha256": "99ec7e64eded2fa6d835f1ba7ebca732a3b47bceb28fe7e3f10afe7c224e61e3",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/splashing_bash/styles/latin.css",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 334,
+  "sha256": "30c7386063cdd79464d9097e59418da46705b200277acbb8c83569d2bfaadf08",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/splashing_bash/swiminstructor.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 920131,
+  "sha256": "0a75b170ebc3f657bd7f6bf4d32f1c39afb873db6ee54ab01196d13a8384b715",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/super_wedding_stylist/data//en_us/weddingplanner.xmlx",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 8078,
+  "sha256": "98e5d1717a2b975c764af145fa29c50119c8718bb3249aa51792e473158fa520",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/super_wedding_stylist/data/config.xmlx",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 2069,
+  "sha256": "72044787e94aab345f3664cf773bf4024f2a05e127a079371d787f40e0eb0c9f",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/super_wedding_stylist/library/fontlibrary_latin.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 494497,
+  "sha256": "afc50e11657d63c67f7e08d71b39b4919752147a822b7282f223de30032d72d2",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/super_wedding_stylist/library/soundbank.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 8901,
+  "sha256": "877ffa51a042d800d5c8ddb22c63f9266ab061bf8eb200d35e0338492c797ff8",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/super_wedding_stylist/styles/latin.css",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 368,
+  "sha256": "a91d7b213c18dc26e7416ee7185267e989ad340738d000abb86a180ebe71505c",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/games_data/super_wedding_stylist/weddingplanner.swf",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 1368447,
+  "sha256": "8709d06dd3be2dba698140f3047e308235439e961237c6fe5a6dc32d29a95158",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/img/arrow-promo-left.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/resources/img/arrow-promo-left.png",
+  "timestamp": "20130121160411",
+  "substitution": false,
+  "bytes": 8959,
+  "sha256": "b0ff682885cb6dfb9c79f5dfa88c75bba226f3d13bc77946134072146d467529",
+  "gap": null
+ },
+ {
+  "path": "/resources/img/arrow-promo-right.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/resources/img/arrow-promo-right.png",
+  "timestamp": "20130121160359",
+  "substitution": false,
+  "bytes": 8859,
+  "sha256": "26b1b41fb262219112ee83ee94a74bfcdc4f3eebf7e1572f0ae9dd9355c38cf4",
+  "gap": null
+ },
+ {
+  "path": "/resources/img/arrows-scrollbar.gif",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/resources/img/arrows-scrollbar.gif",
+  "timestamp": "20130524014122",
+  "substitution": false,
+  "bytes": 1365,
+  "sha256": "3067d0ea4e78508e7c82d8990a53fe29d7f78b94040f6649e959c50084ec6efc",
+  "gap": null
+ },
+ {
+  "path": "/resources/img/background-survey.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/resources/img/background-survey.png",
+  "timestamp": "20130511161529",
+  "substitution": false,
+  "bytes": 22805,
+  "sha256": "ad0d701891122b870a52a6bf69119315e5ac6b015872fc28881590331a2418a4",
+  "gap": null
+ },
+ {
+  "path": "/resources/img/background-title-videos.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/resources/img/background-title-videos.png",
+  "timestamp": "20130511142509",
+  "substitution": false,
+  "bytes": 8488,
+  "sha256": "32ab410ed610771a3b80282e8387efbc32f6de7789e9ddc887cfb05cc3609ae1",
+  "gap": null
+ },
+ {
+  "path": "/resources/img/background-videos.jpg",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/resources/img/background-videos.jpg",
+  "timestamp": "20130511165326",
+  "substitution": false,
+  "bytes": 96600,
+  "sha256": "80ca895fad3676c58bfdc1613275c46baf5946f881ba1ebdc25ee8f4cb73fdda",
+  "gap": null
+ },
+ {
+  "path": "/resources/img/btn-back-to-games.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/resources/img/btn-back-to-games.png",
+  "timestamp": "20130511160915",
+  "substitution": false,
+  "bytes": 16434,
+  "sha256": "e391db729a6b9832285423270ff2fccde96dfbc36de1c4bffc3be0d27c23e9fd",
+  "gap": null
+ },
+ {
+  "path": "/resources/img/logo-barbie.gif",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/resources/img/logo-barbie.gif",
+  "timestamp": "20130121112324",
+  "substitution": false,
+  "bytes": 4163,
+  "sha256": "52888a8f6b53291e299be9a3a7294f3e748c021310d18ce0b339a7dfecea3a29",
+  "gap": null
+ },
+ {
+  "path": "/resources/img/logo-i-can-be.gif",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/resources/img/logo-i-can-be.gif",
+  "timestamp": "20130121112422",
+  "substitution": false,
+  "bytes": 4791,
+  "sha256": "eee05e29723fe12413dc7924afe9ed13980ed2cca6a478c82e694ffe009595f5",
+  "gap": null
+ },
+ {
+  "path": "/resources/img/nav/btn-careers-shadow.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/resources/img/nav/btn-careers-shadow.png",
+  "timestamp": "20130302192759",
+  "substitution": false,
+  "bytes": 21015,
+  "sha256": "7bc98a339e520f08a8d7702e828b6ee6347167a36904516fe3203302e6d19abc",
+  "gap": null
+ },
+ {
+  "path": "/resources/img/nav/btn-careers.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/resources/img/nav/btn-careers.png",
+  "timestamp": "20130302192759",
+  "substitution": false,
+  "bytes": 19402,
+  "sha256": "93120f345c953dec4ed485538983625f36e6481ce59b562fd9789272cfd47732",
+  "gap": null
+ },
+ {
+  "path": "/resources/img/nav/btn-dolls-shadow.png",
+  "ok": false,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 0,
+  "sha256": null,
+  "gap": "no 200 capture anywhere (any locale, any year)"
+ },
+ {
+  "path": "/resources/img/nav/btn-dolls.png",
+  "ok": false,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 0,
+  "sha256": null,
+  "gap": "no 200 capture anywhere (any locale, any year)"
+ },
+ {
+  "path": "/resources/img/nav/btn-games-shadow.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/resources/img/nav/btn-games-shadow.png",
+  "timestamp": "20130302192759",
+  "substitution": false,
+  "bytes": 20188,
+  "sha256": "3f407a40b6a662dd382dba057b684a61d99669c480a9d289753c2d7ed739bd60",
+  "gap": null
+ },
+ {
+  "path": "/resources/img/nav/btn-games.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/resources/img/nav/btn-games.png",
+  "timestamp": "20130302192759",
+  "substitution": false,
+  "bytes": 18492,
+  "sha256": "e5fc7dcdee72f2605bc30051814c9ce358f4f9f2a5f89b4f55c75842bb99279c",
+  "gap": null
+ },
+ {
+  "path": "/resources/img/nav/btn-videos-shadow.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/resources/img/nav/btn-videos-shadow.png",
+  "timestamp": "20130302192759",
+  "substitution": false,
+  "bytes": 21267,
+  "sha256": "bbd09ebd173b94d75ba202cc2f75497b754eb48cc0e2272e887096648df9cc01",
+  "gap": null
+ },
+ {
+  "path": "/resources/img/nav/btn-videos.png",
+  "ok": true,
+  "source_url": null,
+  "timestamp": null,
+  "substitution": null,
+  "bytes": 18758,
+  "sha256": "569a91d79eaa46c8920be6c0726cb1539e95501d6e6e62ea5c6e0ff350374478",
+  "gap": "already present locally from this session's first recovery pass"
+ },
+ {
+  "path": "/resources/img/non_flash_vidBg.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/resources/img/non_flash_vidBg.png",
+  "timestamp": "20130511162522",
+  "substitution": false,
+  "bytes": 77441,
+  "sha256": "b7442da1808f17b4bdb07d651fcf147755c0990cc3a55ed46af6a8ad5efdff87",
+  "gap": null
+ },
+ {
+  "path": "/resources/img/sprite-buttons-aggregator.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/resources/img/sprite-buttons-aggregator.png",
+  "timestamp": "20130511150829",
+  "substitution": false,
+  "bytes": 39303,
+  "sha256": "7745b4479535cc9ec07bc9be72e04b5baa7bcf1aaf4e5f4f90cccae2d922daf7",
+  "gap": null
+ },
+ {
+  "path": "/resources/img/sprite-buttons-l.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/resources/img/sprite-buttons-l.png",
+  "timestamp": "20130511160714",
+  "substitution": false,
+  "bytes": 24932,
+  "sha256": "ecf97818a8f079940623ff0f4a0b55e7c3b87f8ba408f7b132bd526fc71c2446",
+  "gap": null
+ },
+ {
+  "path": "/resources/img/sprite-buttons-xl.png",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/resources/img/sprite-buttons-xl.png",
+  "timestamp": "20130511163430",
+  "substitution": false,
+  "bytes": 39410,
+  "sha256": "ecf4f1dcb3b26387481190abfe42ad337a1b39c586a0280670e7c788dc8d6087",
+  "gap": null
+ },
+ {
+  "path": "/resources/js/mylibs/jquery.jscrollpane.min.js",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/resources/js/mylibs/jquery.jscrollpane.min.js",
+  "timestamp": "20130512113943",
+  "substitution": false,
+  "bytes": 14616,
+  "sha256": "99fdbf169555c939a9d0e27ef9698c866ef66a0e81bcad4f095ebd5e9ece1b35",
+  "gap": null
+ },
+ {
+  "path": "/resources/js/mylibs/jquery.mousewheel.js",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/resources/js/mylibs/jquery.mousewheel.js",
+  "timestamp": "20130512113312",
+  "substitution": false,
+  "bytes": 2235,
+  "sha256": "efb37bd36e70840170b263767d00aa91f8e2701380b57651e613fd68028fb5b1",
+  "gap": null
+ },
+ {
+  "path": "/resources/js/prevent_scroll.js",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/resources/js/prevent_scroll.js",
+  "timestamp": "20130430151339",
+  "substitution": false,
+  "bytes": 8,
+  "sha256": "3d1f29d11c29ce897b0bb322e66dc0b641ef7355daedbe9f0e1a9f8353d35c4c",
+  "gap": null
+ },
+ {
+  "path": "/resources/swfs/video_player.swf",
+  "ok": true,
+  "source_url": "http://icanbe.barbie.com/resources/swfs/video_player.swf",
+  "timestamp": "20141108023343",
+  "substitution": false,
+  "bytes": 31501,
+  "sha256": "22eb0586652f9ec3963055eb8523184e7fd8241738ac30d0975dc809271b51b1",
+  "gap": null
+ }
+]
