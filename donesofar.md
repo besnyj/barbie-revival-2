@@ -342,3 +342,13 @@ Enquanto o agente dos dois jogos segue trabalhando, fiz o levantamento completo 
 - Novo `scripts/qa_icanbe.py` cobre as 38 URLs novas/afetadas (status, geometria do DOM, avisos, abas/cards, presença de Ruffle, redirecionamentos). Depois das correções, todas as páginas respondem 200 com 0 erros de console; as únicas requisições falhas restantes são de arquivos de runtime dos jogos nunca arquivados (config/soundBank/fontes dos jogos “só SWF principal”) — coerente com as lacunas documentadas, ainda a triar jogo a jogo.
 - Corrigido durante o QA: a checagem de boot do Ruffle **chamava** `newest()` antes do ruffle.js (defer) definir a função — o TypeError matava o polling (agora é checagem com `typeof`); o loader/aviso agora espera o `#flashgame` existir (o script fica antes do div; o swfobject original adiava para o DOM ready); o script mediaportal ainda estava nas páginas de vídeo e era buscado; thumbs de jogos associados sem arte davam 404.
 - Pendências: verificação de jogabilidade por jogo (7 conjuntos completos vs 6 só com SWF principal), triagem do status do potty-race no QA, revisão visual (screenshots) e o `<title>` vazio da página Team Barbie (mantido exatamente como no arquivo).
+
+## Header e controles do carrossel — concluído em 02/10/2026
+
+- Criada e integrada `public/assets/fundo-header-v2.png`, mantendo o canvas 2048×768 da imagem fornecida e reorganizando o visual para ter brilhos menores no alto e base rosa clara. O site principal mantém header 990×155 e o I Can Be mantém 990×244.
+- O novo fundo contínuo substitui no layout ativo a montagem anterior com laterais da arte antiga, gradiente central e glitter SVG. A arte anterior segue preservada no repositório.
+- Restauradas as setas diretamente do controlador Flash `HomeCDA.swf`: 15 quadros de `arrow_back_2`, 15 de `arrow_next_11` e 39 de `sparkleoutlineanim_8`, totalizando 69 PNGs em `public/carousel/original-arrows/`.
+- O controlador atual reproduz a sequência original a 30 fps: hover até o quadro 7, glitter até o quadro 39 e rollout até o quadro 15. Os quadros são pré-carregados; foco por teclado continua suportado e movimento reduzido recebe estado estático.
+- O fundo Welcome passou de tamanho natural para `cover`, centralizado, preenchendo 1920×1080 e 2560×1080 sem faixas laterais lisas. A imagem original 1672×941 permaneceu intacta.
+- Conferidos no navegador: carregamento do header, animação completa de ambas as setas, avanço de slide, fundo Welcome em dois formatos de tela, ausência de erros de JavaScript, requisições falhas e respostas HTTP de erro.
+- Backup local anterior às setas: `backups/homepage-carousel/20261002-original-arrow-hover-before.zip`.

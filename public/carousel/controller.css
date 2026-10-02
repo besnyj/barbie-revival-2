@@ -4,16 +4,15 @@
 .home-carousel-lower-frame{position:absolute;z-index:5;left:50%;top:499px;width:990px;height:450px;transform:translateX(-50%);pointer-events:none;background:url('/carousel/fixed-lower-frame.svg') center top/100% 100% no-repeat}
 .home-carousel-navigation{position:absolute;inset:0 0 -80px;z-index:20;pointer-events:none}
 .home-carousel-navigation button{pointer-events:auto;cursor:pointer}
-.home-carousel-arrow{position:absolute;top:228px;width:57px;height:57px;border:3px solid white;border-radius:50%;background:linear-gradient(#ffb3d9 0%,#f255ac 42%,#d91c89 100%);box-shadow:0 2px 5px #963466, inset 0 2px 4px #fff8;color:white}
-.home-carousel-arrow::before{content:"";position:absolute;top:14px;width:0;height:0;border-top:12px solid transparent;border-bottom:12px solid transparent;filter:drop-shadow(0 1px 1px #a63e76)}
+.home-carousel-arrow{position:absolute;top:228px;width:57px;height:57px;padding:0;border:0;background:none}
 .home-carousel-arrow.previous{left:8px}
-.home-carousel-arrow.previous::before{left:15px;border-right:16px solid white}
 .home-carousel-arrow.next{right:8px}
-.home-carousel-arrow.next::before{right:15px;border-left:16px solid white}
-.home-carousel-arrow::after{content:"";position:absolute;inset:-13px;border-radius:50%;opacity:0;pointer-events:none;background:radial-gradient(circle at 50% 0,#fff 0 3px,transparent 4.5px),radial-gradient(circle at 93% 22%,#fff7a8 0 2.5px,transparent 4px),radial-gradient(circle at 100% 68%,#fff 0 3px,transparent 4.5px),radial-gradient(circle at 57% 100%,#fff7a8 0 2.5px,transparent 4px),radial-gradient(circle at 9% 79%,#fff 0 3px,transparent 4.5px),radial-gradient(circle at 0 29%,#fff7a8 0 2.5px,transparent 4px);filter:drop-shadow(0 0 4px #fff);transform-origin:center;will-change:transform}
-.home-carousel-arrow:hover,.home-carousel-arrow:focus-visible{filter:brightness(1.12);outline:2px solid #fff;outline-offset:2px}
-.home-carousel-arrow:hover::after,.home-carousel-arrow:focus-visible::after{opacity:1;animation:carousel-arrow-glitter-spin 1.25s linear infinite}
-.home-carousel-dots{position:absolute;left:50%;top:541px;transform:translateX(-50%);display:flex;align-items:center;gap:16px}
+.home-carousel-arrow img{position:absolute;pointer-events:none;user-select:none}
+.home-carousel-arrow-art{top:-14px;left:-14px;width:85px;height:85px}
+.home-carousel-arrow-sparkle{top:-8px;left:-8px;width:73px;height:73px}
+.home-carousel-arrow-sparkle[hidden]{display:none}
+.home-carousel-arrow:focus-visible{outline:2px solid #fff;outline-offset:3px;border-radius:50%}
+.home-carousel-dots{position:absolute;left:50%;top:561px;transform:translateX(-50%);display:flex;align-items:center;gap:16px}
 .home-carousel-dot{--dot-light:#ffc4ed;--dot-dark:#d741a2;position:relative;width:26px;height:26px;padding:0;border:2px solid #fff;border-radius:50%;background:radial-gradient(circle,#fff 0 .7px,transparent 1px) 1px 2px/5px 7px,radial-gradient(circle,#ffffffc9 0 .6px,transparent 1px) 3px 1px/7px 5px,radial-gradient(circle,#a5147566 0 .6px,transparent 1px) 0 0/4px 6px,linear-gradient(135deg,var(--dot-light),var(--dot-dark));box-shadow:0 0 0 1px #ce70a5,0 2px 4px #83487266,inset 0 1px 3px #fff9;transition:transform .2s ease,box-shadow .2s ease}
 .home-carousel-dot::after{content:"";position:absolute;top:2px;left:4px;width:12px;height:12px;background:white;clip-path:polygon(50% 0,60% 39%,100% 50%,60% 61%,50% 100%,40% 61%,0 50%,40% 39%);filter:drop-shadow(0 0 2px white);animation:carousel-dot-sparkle 3.4s ease-in-out infinite;pointer-events:none}
 .home-carousel-dot:nth-child(2)::after{animation-delay:-.8s}
@@ -23,5 +22,4 @@
 .home-carousel-dot:hover{transform:scale(1.18)}
 .home-carousel-dot:focus-visible{outline:2px solid #9c126c;outline-offset:4px}
 @keyframes carousel-dot-sparkle{0%,100%{opacity:.5;scale:.7}45%{opacity:1;scale:1.15}65%{opacity:.8;scale:.9}}
-@keyframes carousel-arrow-glitter-spin{from{transform:rotate(0deg) scale(.9)}to{transform:rotate(360deg) scale(.9)}}
-@media(prefers-reduced-motion:reduce){.home-carousel-arrow,.home-carousel-dot{transition:none}.home-carousel-dot::after{animation:none}.home-carousel-arrow:hover::after,.home-carousel-arrow:focus-visible::after{animation:none;opacity:1}}
+@media(prefers-reduced-motion:reduce){.home-carousel-dot{transition:none}.home-carousel-dot::after{animation:none}}

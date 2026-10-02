@@ -56,6 +56,12 @@ A moldura curva não é o rodapé de links/texto do fim da página. O SVG preser
 
 Manter o visual atual de setas e indicadores como referência na implementação. O HTML/JS existente deve ser reaproveitado sem introduzir um framework só para esta seção.
 
+### Setas originais restauradas em 02/10/2026
+
+As setas e o brilho agora usam quadros exportados diretamente de `public/global/homepageCDARotation/HomeCDA.swf`, guardados em `public/carousel/original-arrows/`. Os símbolos Flash são `arrow_back_2` (id 23), `arrow_next_11` (id 26) e `sparkleoutlineanim_8` (id 22). O filme roda a 30 fps: as setas param no quadro 7 ao receber hover, voltam até o quadro 15 na saída, e o brilho para no quadro 39. O controlador reproduz esses tempos e preserva os botões HTML acessíveis. A exportação raster mantém a aparência dos quadros originais; a interação continua sob controle do carrossel atual para incluir a cena Welcome.
+
+Backup anterior à troca: `backups/homepage-carousel/20261002-original-arrow-hover-before.zip`.
+
 ## Fidelidade e incertezas
 
 - Uma referência rasterizada não confirma o nome da fonte. Usar a fonte informada/fornecida quando disponível; uma aproximação deve ser identificada como provisória, nunca apresentada como correspondência exata.

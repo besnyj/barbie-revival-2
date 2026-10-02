@@ -10,7 +10,90 @@ const slides = [
   {...welcome,label:'Welcome',kind:'scene'}
 ];
 
+// Frames exported from the original HomeCDA.swf arrow and sparkle MovieClips.
+// Flash played the arrow at 30 fps, stopped on frame 7 on rollover, and
+// stopped the sparkle outline on frame 39. The rollout ended on frame 15.
+const arrowFrame = (direction,frame) => `/carousel/original-arrows/${direction}/${frame}.png`;
+const sparkleFrame = frame => `/carousel/original-arrows/sparkle/${frame}.png`;
+const arrowFrameDuration = 1000 / 30;
+const arrowPreloads = [];
+
+function preloadOriginalArrowFrames() {
+  if (arrowPreloads.length) return;
+  for (const direction of ['previous','next']) {
+    for (let frame = 1; frame <= 15; frame++) {
+      const image = new Image();
+      image.src = arrowFrame(direction,frame);
+      arrowPreloads.push(image);
+    }
+  }
+  for (let frame = 1; frame <= 39; frame++) {
+    const image = new Image();
+    image.src = sparkleFrame(frame);
+    arrowPreloads.push(image);
+  }
+}
+
+function restoreOriginalArrow(button,direction) {
+  const art = document.createElement('img');
+  art.className = 'home-carousel-arrow-art';
+  art.src = arrowFrame(direction,1);
+  art.alt = '';
+  art.draggable = false;
+  const sparkle = document.createElement('img');
+  sparkle.className = 'home-carousel-arrow-sparkle';
+  sparkle.alt = '';
+  sparkle.draggable = false;
+  sparkle.hidden = true;
+  button.append(art,sparkle);
+
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  let pointerInside = false;
+  let focusInside = false;
+  let animation = 0;
+  let hovered = false;
+  const stopAnimation = () => { cancelAnimationFrame(animation); animation = 0; };
+  const setArrowFrame = frame => { art.src = arrowFrame(direction,frame); };
+  const play = (hover) => {
+    if (hover === hovered) return;
+    hovered = hover;
+    stopAnimation();
+    if (reducedMotion.matches) {
+      setArrowFrame(hover ? 7 : 1);
+      sparkle.hidden = true;
+      return;
+    }
+    const start = performance.now();
+    if (hover) {
+      setArrowFrame(2);
+      sparkle.src = sparkleFrame(1);
+      sparkle.hidden = false;
+    } else {
+      sparkle.hidden = true;
+      setArrowFrame(8);
+    }
+    const tick = now => {
+      const elapsedFrames = Math.max(0,Math.floor((now - start) / arrowFrameDuration));
+      if (hover) {
+        setArrowFrame(Math.min(7,2 + elapsedFrames));
+        sparkle.src = sparkleFrame(Math.min(39,1 + elapsedFrames));
+        if (elapsedFrames < 38) animation = requestAnimationFrame(tick);
+      } else {
+        setArrowFrame(Math.min(15,8 + elapsedFrames));
+        if (elapsedFrames < 7) animation = requestAnimationFrame(tick);
+      }
+    };
+    animation = requestAnimationFrame(tick);
+  };
+  const update = () => play(pointerInside || focusInside);
+  button.addEventListener('pointerenter',()=>{ pointerInside = true; update(); });
+  button.addEventListener('pointerleave',()=>{ pointerInside = false; update(); });
+  button.addEventListener('focus',()=>{ focusInside = button.matches(':focus-visible'); update(); });
+  button.addEventListener('blur',()=>{ focusInside = false; update(); });
+}
+
 export function renderHomeCarousel(host) {
+  preloadOriginalArrowFrames();
   const active = slides.filter(slide => slide.enabled !== false);
   host.classList.add('home-carousel');
   document.body.classList.add('home-with-carousel');
@@ -30,6 +113,8 @@ export function renderHomeCarousel(host) {
   next.className = 'home-carousel-arrow next';
   next.type = 'button';
   next.setAttribute('aria-label','Next slide');
+  restoreOriginalArrow(previous,'previous');
+  restoreOriginalArrow(next,'next');
   const dots = document.createElement('div');
   dots.className = 'home-carousel-dots';
   const dotButtons = active.map((slide, index) => {
@@ -52,7 +137,8 @@ export function renderHomeCarousel(host) {
     const slide = active[current];
     if (!slide) return;
     background.style.backgroundImage = `url("${slide.background}")`;
-    background.style.backgroundSize = slide.kind === 'legacy' ? '1920px 983px' : 'auto';
+    background.style.backgroundSize = slide.kind === 'legacy' ? '1920px 983px' : 'cover';
+    background.style.backgroundPosition = slide.kind === 'legacy' ? 'center top' : 'center center';
   };
   // The old controller calls these during loading. The four-slide controller
   // owns the selected background, so late Flash calls cannot desynchronize it.

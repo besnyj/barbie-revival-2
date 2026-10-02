@@ -191,3 +191,14 @@ While the Dreamhouse-games agent keeps working on the two games, this session pr
 - A usuária considerou o resultado falho e registrou que **RESTARAM MUITOS ERROS NESTA VERSÃO**. A qualidade visual e funcional ainda precisa de revisão antes de ser tratada como concluída; este checkpoint não declara fidelidade final.
 - A verificação visual final ficou incompleta por limitações/instabilidade do Ruffle no ambiente de preview. Não foram inventados bugs específicos além dos problemas gerais apontados pela usuária; os testes e lacunas anteriores continuam válidos apenas nos escopos em que foram executados.
 - O estado abaixo deste checkpoint é um ponto de recuperação para a próxima revisão. Não apagar backups ou assets ao continuar o trabalho.
+
+## Checkpoint — 2026-10-02 (header e carrossel revisados)
+
+- O header compartilhado do site principal agora usa a nova arte `public/assets/fundo-header-v2.png`, derivada da imagem fornecida “fundo header”: brilhos menores concentrados no alto e transição para rosa claro na base. A proporção existente foi mantida em 990×155. O mesmo fundo foi aplicado ao header separado do I Can Be, preservando seus 990×244.
+- As camadas antigas que fragmentavam o header (laterais de `nav_background_new.jpg`, gradiente central e glitter SVG sobreposto) foram retiradas da composição ativa. A imagem anterior `public/assets/fundo-header.png` continua preservada.
+- As setas do carrossel deixaram de usar a réplica CSS. Os símbolos `arrow_back_2`, `arrow_next_11` e `sparkleoutlineanim_8` foram identificados em `HomeCDA.swf`; seus quadros originais foram exportados para `public/carousel/original-arrows/` e reproduzidos a 30 fps pelo controlador HTML. O hover chega ao quadro 7, o glitter ao quadro 39 e a saída ao quadro 15, conforme o ActionScript original.
+- Os botões continuam sendo elementos HTML acessíveis e controlam também a cena Welcome. Todos os 69 quadros foram pré-carregados para evitar falhas visuais no primeiro hover. Em `prefers-reduced-motion`, a seta mostra o estado final sem reproduzir o glitter.
+- O fundo original da cena Welcome (`public/carousel/welcome/background.png`, 1672×941) agora usa encaixe proporcional `cover` e posição central. O padrão preenche a página inteira sem margens rosa lisas nas laterais; a arte fonte não foi alterada.
+- A composição atual também inclui o ajuste de posição das bolinhas do carrossel e dos elementos `silver-heart-middle` e `credit` da cena Welcome.
+- QA: header conferido nas rotas principais e no I Can Be; hover, rollout e clique das duas setas verificados; quadros finais 7/39/15 confirmados; navegação para o segundo slide confirmada; fundo Welcome conferido em 1920×1080 e 2560×1080. Nenhum erro de página, requisição falha ou resposta HTTP 4xx/5xx foi observado nesses testes.
+- Backup anterior à restauração das setas: `backups/homepage-carousel/20261002-original-arrow-hover-before.zip` (local e ignorado pelo Git), com integridade e SHA-256 verificados.

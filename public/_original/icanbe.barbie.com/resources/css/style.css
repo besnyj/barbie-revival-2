@@ -93,7 +93,7 @@ a { text-decoration:none; }
 a span { cursor:pointer; }
 body { background: url("../img/background-body.jpg") repeat-y top center #ffd5e9; font-family: 'ChaletRegular', Arial, sans-serif; }
 footer { margin:50px 0 0; font-size: 11px; text-align:center; }
-header { position: relative; z-index: 2;}
+header { position: relative; z-index: 2; background: linear-gradient(to bottom, transparent 0%, transparent 35%, #ffe4f1 100%) center / 100% 100% no-repeat, #ffe4f1 url('/assets/fundo-header-v2.png') center top / 990px auto no-repeat; }
 
 footer div.local ul { display:inline-block; padding: 0; margin: 0; }
 .ie7 footer div.local ul { margin: auto; display:inline;}

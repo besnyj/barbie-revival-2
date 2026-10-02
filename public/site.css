@@ -31,16 +31,12 @@
 .bottom-restoration h1{color:#cb6c7b}
 .bottom-restoration p{color:#965c68;font-size:16px}
 
-/* Compact header: preserve the original glittered edges and replace the ad block with pink. */
-.header{height:135px;background:linear-gradient(to bottom,#f69ac3 0%,#f6b5d2 45%,#fce6f2 100%);border-bottom:4px solid #ed4b9b}
-.header::before,.header::after{content:"";position:absolute;top:0;height:131px;pointer-events:none;z-index:0}
-.header::before{left:0;width:125px;background:url('/images/header/nav_background_new.jpg') left top no-repeat}
-.header::after{right:0;width:127px;background:url('/images/header/nav_background_new.jpg') right top no-repeat}
-.header-glitter{position:absolute;left:125px;top:0;width:738px;height:131px;z-index:0;pointer-events:none;background:url('/images/header/glitter-fall.svg') center top no-repeat;animation:header-glitter-intro 5s linear both}
-@keyframes header-glitter-intro{0%,100%{opacity:.85}20%{opacity:1}45%{opacity:.68}70%{opacity:.98}}
-#navigation{top:20px}
+/* One continuous supplied artwork across the existing 990 x 155 header. */
+.header{height:155px;background:linear-gradient(to bottom,transparent 0%,transparent 35%,#ffe4f1 100%) center/100% 100% no-repeat,#ffe4f1 url('/assets/fundo-header-v2.png') center top/990px auto no-repeat;border-bottom:4px solid #ed4b9b}
+.header::before,.header::after,.header-glitter{display:none}
+#navigation{top:40px}
 #navigation,.language{z-index:1}
-.language{top:70px}
+.language{top:90px}
 #background{background-position:center -75px}
 .nav-hit-areas{display:none;position:absolute;inset:0;z-index:2}
 .nav-paused .nav-hit-areas{display:block}
@@ -53,15 +49,8 @@
 .nav-hit-areas a:nth-child(6){left:610px;width:108px}
 .nav-hit-areas a:nth-child(7){left:718px;width:102px}
 .nav-hit-areas a:focus-visible{outline:2px solid #d83290;outline-offset:-3px}
-@media(prefers-reduced-motion:reduce){.header-glitter{animation:none}}
-
 /* Keep equal breathing room above the carousel and before the flat footer. */
 .home-layout{--home-section-gap:34px}
-.header{height:155px}
-.header::before,.header::after{height:151px}
-.header-glitter{height:151px}
-#navigation{top:40px}
-.language{top:90px}
 .home-layout .home-hero{margin:var(--home-section-gap) auto 0}
 
 /* The slide artwork is the page backdrop. Keep it behind every home section so

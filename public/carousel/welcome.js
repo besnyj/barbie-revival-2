@@ -17,7 +17,7 @@ const welcome = {
     {id:'purple-star-left', type:'image', file:'element 8.png', x:66,y:640,w:130,z:3,delay:510},
     {id:'silver-star-left', type:'image', file:'element 12.png', x:28,y:548,w:83,z:3,delay:550},
     {id:'pink-heart-middle', type:'image', file:'element 4.png', x:675,y:789,w:110,z:3,delay:600},
-    {id:'silver-heart-middle', type:'image', file:'element 11.png', x:870,y:835,w:172,z:3,delay:640},
+    {id:'silver-heart-middle', type:'image', file:'element 11.png', x:870,y:771,w:172,z:3,delay:640},
     {id:'pink-heart-right', type:'image', file:'element 4.png', x:1590,y:294,w:106,z:7,delay:680},
     {id:'pink-star-right', type:'image', file:'element 10.png', x:1743,y:255,w:187,z:7,delay:720},
     {id:'window', type:'image', file:'element 2.png', x:1245,y:573,w:645,z:4,delay:900,entrance:'zoom',tilt:2},
@@ -25,7 +25,7 @@ const welcome = {
     {id:'title', type:'text', text:'Welcome back', className:'welcome-title', x:652,y:269,w:1270,z:5,delay:1100,entrance:'glitter-reveal',tilt:4},
     {id:'subtitle', type:'text', text:'to old and\nnostalgic', className:'welcome-subtitle', x:800,y:475,w:465,z:5,delay:1450,entrance:'glitter-reveal',tilt:-4},
     {id:'barbiecom', type:'text', text:'Barbie.com!', className:'welcome-barbiecom', x:744,y:657,w:590,z:5,delay:1750,entrance:'glitter-reveal',tilt:1},
-    {id:'credit', type:'text', text:'A fan-made revival of the classic Barbie.com experience.', className:'welcome-credit', x:741,y:915,w:1170,z:6,delay:2100,entrance:'from-bottom',tilt:-1}
+    {id:'credit', type:'text', text:'A fan-made revival of the classic Barbie.com experience.', className:'welcome-credit', x:741,y:970,w:1170,z:6,delay:2100,entrance:'from-bottom',tilt:-1}
   ]
 };
 
