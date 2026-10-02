@@ -204,7 +204,7 @@ While the Dreamhouse-games agent keeps working on the two games, this session pr
 - QA: header conferido nas rotas principais e no I Can Be; hover, rollout e clique das duas setas verificados; quadros finais 7/39/15 confirmados; navegação para o segundo slide confirmada; fundo Welcome conferido em 1920×1080 e 2560×1080. Nenhum erro de página, requisição falha ou resposta HTTP 4xx/5xx foi observado nesses testes.
 - Backup anterior à restauração das setas: `backups/homepage-carousel/20261002-original-arrow-hover-before.zip` (local e ignorado pelo Git), com integridade e SHA-256 verificados.
 
-## Checkpoint — 2026-10-02 (Welcome e rodapé externo finalizados)
+## Checkpoint Barbie 2.10 — 2026-10-02 (Welcome e rodapé externo finalizados)
 
 - Os indicadores compartilhados do carrossel foram deslocados 20 px para baixo (`top: 561px`) sem alterar tamanho, espaçamento ou navegação.
 - Na cena Welcome, o crédito “A fan-made revival of the classic Barbie.com experience.” terminou em `y: 960`; o coração prateado central em `y: 781`; e a ilustração da página web em `y: 523`. Os ajustes foram feitos separadamente para preservar os demais elementos.
@@ -214,3 +214,4 @@ While the Dreamhouse-games agent keeps working on the two games, this session pr
 - QA visual local em navegador, com viewport de 1280 px: centro imóvel, laterais 20 px abaixo, curvas simétricas e continuidade de cor/sombra conferidos. `git diff --check` passou sem erros de whitespace.
 - Os três ZIPs dos slides Flash foram preservados nas pastas `carrossel/DREAMHOUSE PUZZLE PARTY/`, `carrossel/Galleries!/` e `carrossel/myDreamhouse/`, com os originais extraídos em cada subpasta `originais/`. O inventário de animações compartilhadas está em `carrossel/animacoes/README.md`.
 - Após a validação visual, toda a moldura/rodapé decorativo foi deslocada mais 10 px para baixo (`top: 509px`). O deslocamento é aplicado ao conjunto inteiro, mantendo inalterada a separação interna entre centro, laterais e conexões arredondadas.
+- Este checkpoint foi nomeado **Barbie 2.10** como baseline atual: o site está em bom estado visual. Alterações posteriores devem ser tratadas como uma nova fase, com mudanças potencialmente mais drásticas.

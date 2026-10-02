@@ -355,7 +355,7 @@ Enquanto o agente dos dois jogos segue trabalhando, fiz o levantamento completo 
 - Conferidos no navegador: carregamento do header, animação completa de ambas as setas, avanço de slide, fundo Welcome em dois formatos de tela, ausência de erros de JavaScript, requisições falhas e respostas HTTP de erro.
 - Backup local anterior às setas: `backups/homepage-carousel/20261002-original-arrow-hover-before.zip`.
 
-## Welcome e acabamento externo do carrossel — concluído em 02/10/2026
+## Barbie 2.10 — Welcome e acabamento externo do carrossel — concluído em 02/10/2026
 
 - Desci as bolinhas compartilhadas do carrossel em 20 px, mantendo a centralização e os quatro estados de navegação.
 - Reposicionei individualmente na cena Welcome o crédito final (`y: 960`), o coração prateado central (`y: 781`) e a janela que representa uma página web (`y: 523`).
@@ -365,3 +365,4 @@ Enquanto o agente dos dois jogos segue trabalhando, fiz o levantamento completo 
 - Conferi o resultado no navegador local em 1280 px: posição central preservada, laterais rebaixadas e junções arredondadas contínuas nos dois lados.
 - Organizei os três backups dos slides nas pastas correspondentes dentro de `carrossel/`, preservei os ZIPs e extraí os SWFs, fundos, controlador e XML em `originais/`. O catálogo de animações ficou documentado em `carrossel/animacoes/README.md`.
 - Depois da conferência visual, desci o rodapé decorativo completo mais 10 px (`top: 509px`), mantendo centro, laterais e conexões curvas deslocados juntos.
+- Barbie 2.10 fica registrado como o baseline atual, considerado bom para o site; mudanças futuras pertencem a uma etapa posterior e podem ser mais drásticas.
