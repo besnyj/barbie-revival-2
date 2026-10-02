@@ -137,6 +137,7 @@ window.addEventListener('DOMContentLoaded',async()=>{
   const jobs=[navJob];
   const main=document.getElementById('main');
   if(isHome){
+    const showOriginalCarousel=new URLSearchParams(location.search).has('original-carousel');
     const shoppingLink=url=>'/includes/partner-interstitial.aspx?redirect='+encodeURIComponent(url);
     const bottomButton=(name,image,index,href)=>`<a class="bottom-page-button" href="${href}" style="--button-index:${index}"><span class="bottom-page-art" style="background-image:url('/images/bottom-pages/${image}.png')" aria-hidden="true"></span><span class="bottom-page-label"><span>${name}</span><span class="bottom-page-arrow" aria-hidden="true">›</span></span></a>`;
     main.innerHTML='<div class="home-hero" aria-label="Barbie homepage slideshow"></div><section class="bottom-pages" aria-label="Páginas do bottom"><div class="bottom-pages-grid">'+
@@ -144,7 +145,15 @@ window.addEventListener('DOMContentLoaded',async()=>{
       '</div><section class="bottom-shopping" aria-labelledby="bottom-shopping-title"><h2 id="bottom-shopping-title"><span>Shopping</span></h2><div class="bottom-pages-grid">'+
       bottomButton('Barbie.com','barbie-com',4,shoppingLink('https://shop.mattel.com/pt-br/pages/barbie'))+bottomButton('Mattel Creations','mattel-creations',5,shoppingLink('https://creations.mattel.com/pages/barbie-signature'))+
       '</div></section></section>';
-    jobs.push(movie(main.firstElementChild,'/global/homepageCDARotation/HomeCDA.swf',910,520,{domain:'*'}));
+    if(showOriginalCarousel){
+      jobs.push(movie(main.firstElementChild,'/global/homepageCDARotation/HomeCDA.swf',910,520,{domain:'*'}));
+    }else{
+      for (const href of ['/home-shell.css','/carousel/controller.css','/carousel/welcome.css']) {
+        const style=document.createElement('link');style.rel='stylesheet';style.href=href;document.head.append(style);
+      }
+      const {renderHomeCarousel}=await import('/carousel/controller.js');
+      renderHomeCarousel(main.firstElementChild);
+    }
     main.querySelectorAll('.bottom-page-button').forEach(button=>button.addEventListener('click',event=>{
       if(event.metaKey||event.ctrlKey||event.shiftKey||event.altKey||event.button!==0)return;
       event.preventDefault();

@@ -11,15 +11,16 @@
 .bottom-page-button:hover,.bottom-page-button:focus-visible{transform:translateY(-7px) scale(1.035);box-shadow:0 5px 0 #f6c4b4,0 12px 22px #a9676670;outline:2px solid #d57d7c;outline-offset:3px}
 .bottom-page-button:active{transform:translateY(-2px) scale(.99)}
 .bottom-page-art{display:block;width:100%;height:98px;border-radius:15px 15px 5px 5px;background-size:cover;background-position:center}
-.bottom-page-label{min-height:43px;margin-top:5px;padding:3px 7px 3px 11px;border-radius:6px 6px 14px 14px;background:linear-gradient(#ffe2c5,#f4b29c 58%,#e59288);box-shadow:inset 0 2px 2px #ffffffa6,inset 0 -2px 1px #a85b5961;display:flex;align-items:center;justify-content:space-between;gap:2px;font-weight:bold;font-size:15px;line-height:1.08;text-shadow:0 1px 1px #fff7ed99}
-.bottom-page-arrow{width:27px;height:27px;flex:0 0 27px;display:grid;place-items:center;border:2px solid #fff9f0;border-radius:50%;background:linear-gradient(#ffe9d4,#efa992);color:#864554;font-size:28px;line-height:1;transition:transform .22s ease}
-.bottom-page-button:hover .bottom-page-arrow,.bottom-page-button:focus-visible .bottom-page-arrow{transform:translateX(3px)}
-.bottom-shopping{width:max-content;max-width:100%;margin:78px 0 0 auto;padding:23px 18px 20px;border:3px solid #e9a79d;border-radius:25px;background:linear-gradient(#fff9f3,#fae8e0);box-shadow:0 4px 15px #b9787040}
-.bottom-shopping h2{position:relative;display:table;min-width:230px;margin:-39px auto 20px;padding:0;border:0;background:transparent;color:#783f4e;font:italic bold 25px/1.2 Georgia,serif;isolation:isolate}
-.bottom-shopping h2::before,.bottom-shopping h2::after{content:"";position:absolute;z-index:0;top:9px;width:42px;height:38px;border:3px solid #fff9f0;background:linear-gradient(#ffdfc1,#f2ae98 58%,#df8d86)}
+.bottom-page-label{min-height:43px;margin-top:5px;padding:3px 7px 3px 11px;border-radius:6px 6px 14px 14px;background:#E62083;color:#fff;box-shadow:inset 0 2px 2px #ffffffa6,inset 0 -2px 1px #a85b5961;display:flex;align-items:center;justify-content:space-between;gap:2px;font-weight:bold;font-size:15px;line-height:1.08;text-shadow:0 1px 1px #95135366}
+.bottom-page-arrow{width:27px;height:27px;flex:0 0 27px;position:relative;display:grid;place-items:center;border:2px solid #fff9f0;border-radius:50%;background:#E62083;color:#fff;font-size:0;line-height:1;transition:transform .22s ease}
+.bottom-page-arrow::before{content:"";position:absolute;inset:0;margin:auto;width:16px;height:18px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 18'%3E%3Cpath d='M5 3 L11 9 L5 15' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/16px 18px no-repeat}
+.bottom-page-button:hover .bottom-page-arrow,.bottom-page-button:focus-visible .bottom-page-arrow{filter:brightness(1.12)}
+.bottom-shopping{width:max-content;max-width:100%;margin:78px max(0px,calc((100% - 682px)/2)) 0 auto;padding:23px 18px 20px;border:3px solid #E62083;border-radius:25px;background:linear-gradient(#fff9f3,#fae8e0);box-shadow:0 4px 15px #b9787040}
+.bottom-shopping h2{position:relative;display:table;min-width:230px;margin:-39px auto 20px;padding:0;border:0;background:transparent;color:#fff;font:italic bold 25px/1.2 Georgia,serif;isolation:isolate}
+.bottom-shopping h2::before,.bottom-shopping h2::after{content:"";position:absolute;z-index:0;top:9px;width:42px;height:38px;border:3px solid #fff9f0;background:#E62083}
 .bottom-shopping h2::before{left:-32px;clip-path:polygon(0 0,100% 0,100% 100%,0 100%,22% 50%)}
 .bottom-shopping h2::after{right:-32px;clip-path:polygon(0 0,100% 0,78% 50%,100% 100%,0 100%)}
-.bottom-shopping h2 span{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;gap:10px;padding:8px 25px 9px;border:3px solid #fff9f0;border-radius:22px 22px 26px 26px;background:linear-gradient(#ffe3c6,#f4b29c 42%,#e9978b);box-shadow:0 0 0 3px #dc8b86,0 5px 11px #a96b6657,inset 0 2px 2px #ffffffa8;text-shadow:0 1px 1px #fff8eead}
+.bottom-shopping h2 span{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;gap:10px;padding:8px 25px 9px;border:3px solid #fff9f0;border-radius:22px 22px 26px 26px;background:#E62083;box-shadow:0 0 0 3px #E62083,0 5px 11px #a96b6657,inset 0 2px 2px #ffffffa8;text-shadow:0 1px 1px #95135366}
 .bottom-shopping h2 span::before,.bottom-shopping h2 span::after{content:"♥";font:normal 18px Arial,sans-serif;color:#fff7ed;text-shadow:0 1px 2px #ae746a}
 @keyframes bottom-arrive{from{opacity:0;translate:0 16px}to{opacity:1;translate:0 0}}
 .bottom-page-button.is-clicked{animation:bottom-click .4s ease both}

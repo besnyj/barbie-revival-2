@@ -1,0 +1,17 @@
+.home-carousel{position:relative;width:910px;height:520px}
+.home-carousel-viewport{position:absolute;inset:0;overflow:hidden;background:transparent}
+.home-carousel-viewport ruffle-player{width:910px;height:520px}
+.home-carousel-navigation{position:absolute;inset:0;z-index:20;pointer-events:none}
+.home-carousel-navigation button{pointer-events:auto;cursor:pointer}
+.home-carousel-arrow{position:absolute;top:228px;width:57px;height:57px;border:3px solid white;border-radius:50%;background:linear-gradient(#ffb3d9 0%,#f255ac 42%,#d91c89 100%);box-shadow:0 2px 5px #963466, inset 0 2px 4px #fff8;color:white}
+.home-carousel-arrow::before{content:"";position:absolute;top:14px;width:0;height:0;border-top:12px solid transparent;border-bottom:12px solid transparent;filter:drop-shadow(0 1px 1px #a63e76)}
+.home-carousel-arrow.previous{left:8px}
+.home-carousel-arrow.previous::before{left:15px;border-right:16px solid white}
+.home-carousel-arrow.next{right:8px}
+.home-carousel-arrow.next::before{right:15px;border-left:16px solid white}
+.home-carousel-arrow:hover,.home-carousel-arrow:focus-visible{filter:brightness(1.12);outline:2px solid #fff;outline-offset:2px}
+.home-carousel-dots{position:absolute;left:606px;top:445px;display:flex;align-items:center;gap:23px}
+.home-carousel-dot{width:22px;height:22px;padding:0;border:2px solid #f9f3fc;border-radius:50%;background:#ffebf4;box-shadow:0 0 0 1px #ce70a5,0 1px 3px #834872}
+.home-carousel-dot.is-active{background:#f5ed35}
+.home-carousel-dot:hover,.home-carousel-dot:focus-visible{outline:2px solid #c21d8e;outline-offset:2px}
+@media(prefers-reduced-motion:reduce){.home-carousel-arrow,.home-carousel-dot{transition:none}}

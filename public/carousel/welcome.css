@@ -1,0 +1,26 @@
+@font-face{font-family:WelcomeSingleDay;src:url('/carousel/fonts/SingleDay-Regular.ttf') format('truetype');font-display:swap}
+@font-face{font-family:WelcomeBerkshire;src:url('/carousel/fonts/BerkshireSwash-Regular.ttf') format('truetype');font-display:swap}
+.scene-carousel{width:910px;height:520px}
+.scene-frame{position:relative;width:100%;height:100%;overflow:hidden;background:transparent}
+.scene-stage{position:absolute;left:50%;top:50%;width:1920px;height:1080px;transform-origin:center center;background:transparent}
+.scene-element{position:absolute;display:block;box-sizing:border-box;animation-duration:1s;animation-fill-mode:both;animation-timing-function:cubic-bezier(.18,.72,.18,1);animation-delay:var(--entry-delay)}
+.scene-element.entry-pop{animation-name:scene-pop}
+.scene-element.entry-from-left{animation-name:scene-from-left;animation-duration:1.4s}
+.scene-element.entry-from-right{animation-name:scene-from-right}
+.scene-element.entry-from-top{animation-name:scene-from-top}
+.scene-element.entry-from-bottom{animation-name:scene-from-bottom}
+.scene-element.entry-zoom{animation-name:scene-zoom}
+img.scene-element{height:auto;user-select:none;pointer-events:none}
+.scene-element:not(img){white-space:pre-line;text-align:center;line-height:1.04}
+.welcome-question{font:60px/1.04 WelcomeSingleDay,cursive;color:#a600ce;background:#fff;border-radius:28px;padding:12px 5px 15px;letter-spacing:2px}
+.welcome-title{font:200px/.99 WelcomeBerkshire,serif;color:#ff09a9;-webkit-text-stroke:13px white;paint-order:stroke fill;white-space:nowrap!important;letter-spacing:-5px;text-shadow:0 3px 1px #fa98d3;transform-origin:left top;transform:scaleX(.89)}
+.welcome-subtitle{font:86px/.9 'Kitten',WelcomeBerkshire,cursive;color:#ff54b8;-webkit-text-stroke:8px white;paint-order:stroke fill;font-style:italic}
+.welcome-barbiecom{font:94px/1 WelcomeBerkshire,serif;color:#a200c0;-webkit-text-stroke:10px white;paint-order:stroke fill;white-space:nowrap!important;letter-spacing:-3px}
+.welcome-credit{font:49px/1 'Kitten',WelcomeBerkshire,cursive;color:#ff9900;-webkit-text-stroke:6px white;paint-order:stroke fill;font-style:italic;white-space:nowrap!important}
+@keyframes scene-pop{from{opacity:0;scale:.35;rotate:-12deg}70%{opacity:1;scale:1.12}to{opacity:1;scale:1}}
+@keyframes scene-from-left{from{opacity:0;translate:-430px 0}to{opacity:1;translate:0 0}}
+@keyframes scene-from-right{from{opacity:0;translate:320px 0}to{opacity:1;translate:0 0}}
+@keyframes scene-from-top{from{opacity:0;translate:0 -140px}to{opacity:1;translate:0 0}}
+@keyframes scene-from-bottom{from{opacity:0;translate:0 120px}to{opacity:1;translate:0 0}}
+@keyframes scene-zoom{from{opacity:0;scale:.5}75%{opacity:1;scale:1.04}to{opacity:1;scale:1}}
+@media(prefers-reduced-motion:reduce){.scene-element{animation:none}}

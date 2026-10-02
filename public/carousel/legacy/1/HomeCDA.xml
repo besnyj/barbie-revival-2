@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<homeCDAs>
+  <numberOfButtons>1</numberOfButtons>
+  <showDefaultScreen>no</showDefaultScreen>
+  <firstChosenIndex>1</firstChosenIndex>
+  <thumbnailFilePath>ThumbnailButtons.swf</thumbnailFilePath>
+  <cda>
+    <trackingName>Dreamhouse Puzzle-Party – from Homepage CDA</trackingName>
+    <trackingCampaign>None</trackingCampaign>
+    <trackingChannel>Home</trackingChannel>
+    <trackingContenttype>cda</trackingContenttype>
+    <trackingAction>Click</trackingAction>
+    <filePath>/global/homepageCDARotation/DreamhousePuzzleParty.swf</filePath>
+    <autoSelectTime>3600</autoSelectTime>
+    <clickURL>http://dreamhouse.barbie.com/en-US/games/puzzle-party/</clickURL>
+    <openInSameWindow>yes</openInSameWindow>
+    <eventID>Home:P1 BLID Puzzle Game</eventID>
+    <eventCategory>CDA</eventCategory>
+  </cda>
+</homeCDAs>

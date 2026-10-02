@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-01",
+  "scenes": [
+    {
+      "id": "Contact",
+      "status": "inventoried-not-implemented",
+      "assets": [
+        {
+          "file": "background.png",
+          "width": 1672,
+          "height": 941,
+          "mode": "RGB",
+          "alphaBounds": null,
+          "sha256": "94e5729df3b1b947274dfd10112a775170a0f03060b81d13606fe9eb20e4993a"
+        },
+        {
+          "file": "element 1.png",
+          "width": 1122,
+          "height": 1402,
+          "mode": "RGBA",
+          "alphaBounds": [
+            0,
+            31,
+            1076,
+            1402
+          ],
+          "sha256": "3a4c99f7e4d99f68b23c95ee7b4b9170cff2dfffc4f088ff3c78f4e3865462fd"
+        },
+        {
+          "file": "element 2.png",
+          "width": 1122,
+          "height": 1402,
+          "mode": "RGBA",
+          "alphaBounds": [
+            121,
+            12,
+            1024,
+            1402
+          ],
+          "sha256": "c54a3e8b345eccfee228b84ed57c91dc73f96c0105b19960917cda453d8971fe"
+        },
+        {
+          "file": "reference.png",
+          "width": 1920,
+          "height": 1080,
+          "mode": "RGB",
+          "alphaBounds": null,
+          "sha256": "53492193dda3cd2eca33a0dca53fb2da3a62e1facacb4bd261d3cbf6d0eb83ce"
+        }
+      ]
+    },
+    {
+      "id": "Welcome",
+      "status": "inventoried-not-implemented",
+      "assets": [
+        {
+          "file": "background.png",
+          "width": 1672,
+          "height": 941,
+          "mode": "RGB",
+          "alphaBounds": null,
+          "sha256": "f56cf7a6a765ef8bdb59374c09418ed6fd45e5cb986596238758c2644c022bbf"
+        },
+        {
+          "file": "element 1.png",
+          "width": 1122,
+          "height": 1402,
+          "mode": "RGBA",
+          "alphaBounds": [
+            0,
+            0,
+            1122,
+            1378
+          ],
+          "sha256": "70407aca5ef9192c477ed3b872d148aec71546dc191d5f081a383d8d613f83b5"
+        },
+        {
+          "file": "element 10.png",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGBA",
+          "alphaBounds": [
+            0,
+            21,
+            1241,
+            1254
+          ],
+          "sha256": "3da9457e4cb5cae52a63ec6589a41f475a3891a82aed1960c0f33a303f6f6301"
+        },
+        {
+          "file": "element 11.png",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGBA",
+          "alphaBounds": [
+            21,
+            21,
+            1222,
+            1246
+          ],
+          "sha256": "1ce8e648c3c26c641889c41ec49966af1ee5056020e76d718d9aef5c41cc0dec"
+        },
+        {
+          "file": "element 12.png",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGBA",
+          "alphaBounds": [
+            0,
+            21,
+            1242,
+            1254
+          ],
+          "sha256": "f22b5be73afb903b5ee8053d959eccbe202f15e27382690cc8d28cb15a2bfabc"
+        },
+        {
+          "file": "element 2.png",
+          "width": 1448,
+          "height": 1086,
+          "mode": "RGBA",
+          "alphaBounds": [
+            0,
+            21,
+            1434,
+            1068
+          ],
+          "sha256": "267c641b6182fb2acec7292e1e50b0432a679c84c57005fb03ede1658f7487b8"
+        },
+        {
+          "file": "element 3.png",
+          "width": 1024,
+          "height": 1536,
+          "mode": "RGBA",
+          "alphaBounds": [
+            0,
+            12,
+            1023,
+            1516
+          ],
+          "sha256": "853fbf878d4c4776565ebede904c212a819b7ece58c01c986e7462f6f26d74b9"
+        },
+        {
+          "file": "element 4.png",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGBA",
+          "alphaBounds": [
+            0,
+            38,
+            1201,
+            1236
+          ],
+          "sha256": "963fad41931d046326ab06cf79a6a68faf90a56d30e0a7dfa5a898d4905bffa2"
+        },
+        {
+          "file": "element 5.png",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGBA",
+          "alphaBounds": [
+            0,
+            57,
+            1253,
+            1222
+          ],
+          "sha256": "6b07b2d0174c5ff53c4547eaa56bf46a904d742d2302f94c260788ba17350496"
+        },
+        {
+          "file": "element 6.png",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGBA",
+          "alphaBounds": [
+            82,
+            76,
+            1222,
+            1254
+          ],
+          "sha256": "541b73f68ce31fa052e9a913c6c586a4164112edf9f1e2d71d121b94b3eb27b6"
+        },
+        {
+          "file": "element 7.png",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGBA",
+          "alphaBounds": [
+            0,
+            48,
+            1228,
+            1254
+          ],
+          "sha256": "9ac79ce9b9ba3c7c4ed1e4ec9fe5613f0eb9207d731e73125fe4b4af1ee532cc"
+        },
+        {
+          "file": "element 8.png",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGBA",
+          "alphaBounds": [
+            0,
+            21,
+            1228,
+            1254
+          ],
+          "sha256": "66f1a6f7ce203a015a3a04e07b6e4b3d954bc29ab9c8e50717b37754042f94d3"
+        },
+        {
+          "file": "element 9.png",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGBA",
+          "alphaBounds": [
+            0,
+            53,
+            1228,
+            1254
+          ],
+          "sha256": "b80dd4ad8cb29dad758770e257de82527dd582d228a6abac1f71fc4a1d3f64dd"
+        },
+        {
+          "file": "reference.png",
+          "width": 1920,
+          "height": 1080,
+          "mode": "RGB",
+          "alphaBounds": null,
+          "sha256": "1dbb144fa612faecb571245752c3c22cbdb8340755bcfc8a61d96d70cf56ae0c"
+        }
+      ]
+    }
+  ]
+}
