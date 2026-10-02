@@ -1,7 +1,7 @@
 .home-carousel{position:relative;z-index:0;width:910px;height:520px}
 .home-carousel-viewport{position:absolute;inset:0;overflow:visible;background:transparent}
 .home-carousel-viewport ruffle-player{width:910px;height:520px}
-.home-carousel-lower-frame{position:absolute;z-index:5;left:50%;top:499px;width:990px;height:450px;transform:translateX(-50%);pointer-events:none}
+.home-carousel-lower-frame{position:absolute;z-index:5;left:50%;top:509px;width:990px;height:450px;transform:translateX(-50%);pointer-events:none}
 .home-carousel-lower-frame-piece{position:absolute;z-index:1;inset:0;display:block;background:transparent url('/carousel/fixed-lower-frame.svg') center top/100% 100% no-repeat}
 .home-carousel-lower-frame-piece.center{-webkit-mask-image:linear-gradient(to right,transparent 0,transparent calc(50% - 495px),#000 calc(50% - 495px),#000 calc(50% + 495px),transparent calc(50% + 495px),transparent 100%);mask-image:linear-gradient(to right,transparent 0,transparent calc(50% - 495px),#000 calc(50% - 495px),#000 calc(50% + 495px),transparent calc(50% + 495px),transparent 100%)}
 .home-carousel-lower-frame-piece.sides{top:20px;-webkit-mask-image:linear-gradient(to right,#000 0,#000 calc(50% - 495px),transparent calc(50% - 495px),transparent calc(50% + 495px),#000 calc(50% + 495px),#000 100%);mask-image:linear-gradient(to right,#000 0,#000 calc(50% - 495px),transparent calc(50% - 495px),transparent calc(50% + 495px),#000 calc(50% + 495px),#000 100%)}
