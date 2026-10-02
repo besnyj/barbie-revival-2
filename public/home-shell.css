@@ -1,2 +1,4 @@
 /* Home layout outside the carousel. Scene files must not style the footer. */
 .home-with-carousel .site>footer{position:relative;margin-top:52px;padding:22px 0 30px;background:#fff}
+.home-with-carousel .bottom-pages{position:relative;z-index:10}
+.home-with-carousel .bottom-pages{margin-top:105px}

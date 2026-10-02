@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 850" preserveAspectRatio="none" role="img" aria-label="Pink and yellow decorative frame beneath the carousel">
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffcbe6"/>
+      <stop offset=".22" stop-color="#ffe1f0"/>
+      <stop offset=".58" stop-color="#fff0f7"/>
+      <stop offset=".9" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff9be"/>
+      <stop offset=".42" stop-color="#ffe676"/>
+      <stop offset="1" stop-color="#f5c846"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffaf0" stop-opacity=".88"/>
+      <stop offset="1" stop-color="#fffaf0" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="softGlow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <path id="shape" d="M0 134 C38 106 90 102 160 103 L650 103 C795 103 878 67 960 8 C1042 67 1125 103 1270 103 L1760 103 C1830 102 1882 106 1920 134 L1920 850 L0 850 Z"/>
+    <path id="topLine" d="M0 134 C38 106 90 102 160 103 L650 103 C795 103 878 67 960 8 C1042 67 1125 103 1270 103 L1760 103 C1830 102 1882 106 1920 134"/>
+    <clipPath id="inside"><use href="#shape"/></clipPath>
+    <g id="sparkle" fill="none" stroke="#fff" stroke-linecap="round">
+      <path d="M0 -25 V25 M-25 0 H25" stroke-width="2.5"/>
+      <path d="M-13 -13 13 13 M13 -13 -13 13" stroke-width="1.3" opacity=".7"/>
+      <circle r="3.2" fill="#fff" stroke="none"/>
+    </g>
+  </defs>
+  <use href="#shape" fill="url(#panel)"/>
+  <g clip-path="url(#inside)" opacity=".7">
+    <use href="#sparkle" x="160" y="224" transform="rotate(8 160 224) scale(.75)"/>
+    <use href="#sparkle" x="340" y="182" transform="rotate(-7 340 182) scale(.52)"/>
+    <use href="#sparkle" x="508" y="265" transform="rotate(10 508 265) scale(.95)"/>
+    <use href="#sparkle" x="710" y="164" transform="rotate(-3 710 164) scale(.55)"/>
+    <use href="#sparkle" x="890" y="270" transform="rotate(9 890 270) scale(.7)"/>
+    <use href="#sparkle" x="1085" y="165" transform="rotate(-5 1085 165) scale(.6)"/>
+    <use href="#sparkle" x="1260" y="252" transform="rotate(12 1260 252) scale(.85)"/>
+    <use href="#sparkle" x="1460" y="178" transform="rotate(-10 1460 178) scale(.6)"/>
+    <use href="#sparkle" x="1645" y="275" transform="rotate(5 1645 275) scale(1.1)"/>
+    <use href="#sparkle" x="1805" y="177" transform="rotate(-8 1805 177) scale(.5)"/>
+    <g fill="#fff" opacity=".58">
+      <circle cx="85" cy="310" r="3"/><circle cx="244" cy="175" r="2.5"/>
+      <circle cx="405" cy="318" r="3"/><circle cx="584" cy="213" r="2"/>
+      <circle cx="777" cy="302" r="2.5"/><circle cx="964" cy="190" r="3"/>
+      <circle cx="1178" cy="308" r="2.5"/><circle cx="1364" cy="180" r="2"/>
+      <circle cx="1560" cy="319" r="3"/><circle cx="1735" cy="235" r="2.5"/>
+    </g>
+  </g>
+  <use href="#topLine" fill="none" stroke="#da93a7" stroke-opacity=".33" stroke-width="27" transform="translate(0 8)"/>
+  <use href="#topLine" fill="none" stroke="url(#gold)" stroke-width="24"/>
+  <use href="#topLine" fill="none" stroke="#fff6ba" stroke-width="6" transform="translate(0 -6)"/>
+  <ellipse cx="1175" cy="107" rx="48" ry="12" fill="#fff" opacity=".7" filter="url(#softGlow)"/>
+  <use href="#sparkle" x="1175" y="107"/>
+</svg>

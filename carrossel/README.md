@@ -44,12 +44,15 @@ Setas pertencem ao controlador. Indicadores correspondem apenas às cenas ativas
 | Parte | Dono no código | Regra para a próxima cena |
 |---|---|---|
 | Cabeçalho, navegação principal, páginas inferiores e rodapé | `public/app.js`, `public/site.css`, `public/home-shell.css` | Não remover nem alterar ao editar uma cena. Verificar a homepage inteira após a mudança. |
+| Moldura curva acima das páginas inferiores | `public/carousel/fixed-lower-frame.svg`, `public/carousel/controller.js` e `controller.css` | Peça fixa e vetorial, compartilhada pelos quatro slides. Sua borda amarela se sobrepõe à base do carrossel; o painel rosa fica atrás dos cartões. Não incluir essa moldura no fundo ou nos elementos de uma nova cena. |
 | Setas, bolinhas, duração, ordem e troca do fundo do site | `public/carousel/controller.js` e `controller.css` | Permanecem visíveis em todos os slides. Bolinhas são geradas da lista de slides ativos. |
 | Slides Flash originais | `public/global/homepageCDARotation/` e XMLs de uma cena em `public/carousel/legacy/` | Mantê-los na lista até pedido explícito para remover. A cópia XML isola cada slide sem modificar o original. |
 | Welcome | `public/carousel/welcome.js`, `welcome.css`, `welcome/` | Somente conteúdo, composição e animação de seus elementos. O palco é transparente. |
 | Novas cenas | Pasta de entrada em `carrossel/`, arquivos publicados em `public/carousel/` | Cada elemento declara entrada, atraso, posição, inclinação e camada; o controlador faz o resto. |
 
 As animações padrão são `pop`, `from-left`, `from-right`, `from-top`, `from-bottom` e `zoom`. Cada elemento pode escolher uma entrada e atraso; a animação reinicia ao voltar para a cena. `prefers-reduced-motion` desativa esses movimentos. Uma nova cena não deve alterar o CSS do rodapé ou incluir setas/bolinhas próprias.
+
+A moldura curva não é o rodapé de links/texto do fim da página. O SVG preserva o desenho do fundo dos slides antigos com traços e gradientes nítidos; o controlador o monta uma vez, fora da área recortada de cada slide. O `home-shell.css` posiciona os cartões sobre o painel. Ao revisar uma nova cena, conferir se a moldura e a frase final da cena continuam legíveis, sem mover a estrutura comum para dentro do slide.
 
 Manter o visual atual de setas e indicadores como referência na implementação. O HTML/JS existente deve ser reaproveitado sem introduzir um framework só para esta seção.
 

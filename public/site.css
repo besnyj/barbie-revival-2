@@ -54,3 +54,12 @@
 .nav-hit-areas a:nth-child(7){left:718px;width:102px}
 .nav-hit-areas a:focus-visible{outline:2px solid #d83290;outline-offset:-3px}
 @media(prefers-reduced-motion:reduce){.header-glitter{animation:none}}
+
+/* Restore breathing room around the original 990px home layout. */
+.header{height:155px}
+.header::before,.header::after{height:151px}
+.header-glitter{height:151px}
+#navigation{top:40px}
+.language{top:90px}
+.home-layout .home-hero{margin:80px auto 0}
+.home-layout #background{height:1083px;background-position:center top}

@@ -4,9 +4,9 @@ import welcome, {renderWelcome} from './welcome.js';
 // Each legacy entry uses the original HomeCDA.swf with a one-slide XML copy so
 // its original animation and click targets remain intact.
 const slides = [
-  {id:'dreamhouse-puzzle-party',label:'Dreamhouse Puzzle Party',kind:'legacy',legacy:1,background:'/images/header/01BG.jpg',duration:10000},
-  {id:'blid-profile',label:'BLID Profile',kind:'legacy',legacy:2,background:'/images/header/02BG.jpg',duration:10000},
-  {id:'my-dreamhouse',label:'My Dreamhouse',kind:'legacy',legacy:3,background:'/images/header/03BG.jpg',duration:10000},
+  {id:'dreamhouse-puzzle-party',label:'Dreamhouse Puzzle Party',kind:'legacy',legacy:1,background:'/images/header/01BG-clean.png',duration:10000},
+  {id:'blid-profile',label:'BLID Profile',kind:'legacy',legacy:2,background:'/images/header/02BG-clean.png',duration:10000},
+  {id:'my-dreamhouse',label:'My Dreamhouse',kind:'legacy',legacy:3,background:'/images/header/03BG-clean.png',duration:10000},
   {...welcome,label:'Welcome',kind:'scene'}
 ];
 
@@ -16,6 +16,9 @@ export function renderHomeCarousel(host) {
   document.body.classList.add('home-with-carousel');
   const viewport = document.createElement('div');
   viewport.className = 'home-carousel-viewport';
+  const lowerFrame = document.createElement('div');
+  lowerFrame.className = 'home-carousel-lower-frame';
+  lowerFrame.setAttribute('aria-hidden','true');
   const nav = document.createElement('nav');
   nav.className = 'home-carousel-navigation';
   nav.setAttribute('aria-label','Home carousel');
@@ -39,7 +42,7 @@ export function renderHomeCarousel(host) {
     return dot;
   });
   nav.append(previous,next,dots);
-  host.append(viewport,nav);
+  host.append(viewport,lowerFrame,nav);
   let current = -1;
   let timer;
   let generation = 0;
@@ -49,7 +52,7 @@ export function renderHomeCarousel(host) {
     const slide = active[current];
     if (!slide) return;
     background.style.backgroundImage = `url("${slide.background}")`;
-    background.style.backgroundSize = 'auto';
+    background.style.backgroundSize = slide.kind === 'legacy' ? '1920px 983px' : 'auto';
   };
   // The old controller calls these during loading. The four-slide controller
   // owns the selected background, so late Flash calls cannot desynchronize it.

@@ -1,5 +1,15 @@
 # Revisões das cenas
 
+## 01/10/2026 — moldura inferior fixa
+
+A curva amarela com painel rosa dos fundos antigos foi recriada em `public/carousel/fixed-lower-frame.svg`. Por ser vetorial, mantém a borda, o brilho e os gradientes nítidos em diferentes larguras. O controlador a monta uma única vez sobre a base do carrossel, independentemente do slide ativo; os cartões inferiores permanecem sobre o painel. A margem e o rodapé de texto continuam separados em `public/home-shell.css`.
+
+No Welcome, a frase laranja final foi colocada sobre a moldura para não desaparecer atrás da curva. O conteúdo e o fundo dos três slides Flash antigos não foram alterados. Backup anterior: `backups/homepage-carousel/20261001-212426-before-fixed-lower-frame.zip`. Prévia: `design-previews/fixed-frame-original-v2.png` e `design-previews/fixed-frame-welcome-v2.png`. Este desenho ainda aguarda avaliação visual da usuária para se tornar referência aprovada do fluxo.
+
+## 01/10/2026 — indicadores centralizados com glitter
+
+A pedido da usuária, o grupo de bolinhas passou a ser centralizado no carrossel, independentemente do número de slides. As bolinhas têm textura de glitter rosa e pequenos brilhos alternados; a ativa fica dourada com contorno rosa. O movimento reduzido desativa a cintilação. Alteração limitada a `public/carousel/controller.css`. Verificados no navegador: centralização, quatro indicadores, clique e atualização do ativo, movimento reduzido. Prévia: `design-previews/welcome-glitter-dots.png`.
+
 ## 01/10/2026 — entrada e proposta de fluxo
 
 Estado: inventário e leitura de referências concluídos; composição e animação ainda não implementadas. Nenhuma decisão visual aprovada nesta etapa.

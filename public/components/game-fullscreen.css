@@ -1,0 +1,47 @@
+.game-fullscreen-controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+  padding-top: 12px;
+  width: 100%;
+  flex: none;
+}
+
+.game-fullscreen-button {
+  padding: 9px 18px;
+  border: 2px solid #fff;
+  border-radius: 22px;
+  background: #a81762;
+  color: #fff;
+  font: bold 14px Arial, sans-serif;
+  cursor: pointer;
+}
+
+.game-fullscreen-button:hover { background: #86104d; }
+.game-fullscreen-button:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+.game-fullscreen-button:disabled { opacity: .65; cursor: wait; }
+.game-fullscreen-status { color: #fff; font: 13px Arial, sans-serif; }
+
+.game-fullscreen:fullscreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 16px;
+  background: #ea4498;
+  overflow: auto;
+}
+
+.game-fullscreen:fullscreen .game-fullscreen-surface {
+  flex: none;
+  width: min(100%, calc((100dvh - 96px) * var(--game-ratio)));
+  height: auto;
+  aspect-ratio: var(--game-ratio);
+  margin: 0 auto;
+}
+
+.game-fullscreen:fullscreen::backdrop { background: #ea4498; }

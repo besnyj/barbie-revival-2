@@ -1,6 +1,7 @@
 .home-carousel{position:relative;width:910px;height:520px}
 .home-carousel-viewport{position:absolute;inset:0;overflow:hidden;background:transparent}
 .home-carousel-viewport ruffle-player{width:910px;height:520px}
+.home-carousel-lower-frame{position:absolute;z-index:5;left:50%;top:500px;width:max(100vw,990px);height:450px;transform:translateX(-50%);pointer-events:none;background:url('/carousel/fixed-lower-frame.svg') center top/100% 100% no-repeat}
 .home-carousel-navigation{position:absolute;inset:0;z-index:20;pointer-events:none}
 .home-carousel-navigation button{pointer-events:auto;cursor:pointer}
 .home-carousel-arrow{position:absolute;top:228px;width:57px;height:57px;border:3px solid white;border-radius:50%;background:linear-gradient(#ffb3d9 0%,#f255ac 42%,#d91c89 100%);box-shadow:0 2px 5px #963466, inset 0 2px 4px #fff8;color:white}
@@ -10,8 +11,14 @@
 .home-carousel-arrow.next{right:8px}
 .home-carousel-arrow.next::before{right:15px;border-left:16px solid white}
 .home-carousel-arrow:hover,.home-carousel-arrow:focus-visible{filter:brightness(1.12);outline:2px solid #fff;outline-offset:2px}
-.home-carousel-dots{position:absolute;left:606px;top:445px;display:flex;align-items:center;gap:23px}
-.home-carousel-dot{width:22px;height:22px;padding:0;border:2px solid #f9f3fc;border-radius:50%;background:#ffebf4;box-shadow:0 0 0 1px #ce70a5,0 1px 3px #834872}
-.home-carousel-dot.is-active{background:#f5ed35}
-.home-carousel-dot:hover,.home-carousel-dot:focus-visible{outline:2px solid #c21d8e;outline-offset:2px}
-@media(prefers-reduced-motion:reduce){.home-carousel-arrow,.home-carousel-dot{transition:none}}
+.home-carousel-dots{position:absolute;left:50%;top:445px;transform:translateX(-50%);display:flex;align-items:center;gap:16px}
+.home-carousel-dot{--dot-light:#ffc4ed;--dot-dark:#d741a2;position:relative;width:26px;height:26px;padding:0;border:2px solid #fff;border-radius:50%;background:radial-gradient(circle,#fff 0 .7px,transparent 1px) 1px 2px/5px 7px,radial-gradient(circle,#ffffffc9 0 .6px,transparent 1px) 3px 1px/7px 5px,radial-gradient(circle,#a5147566 0 .6px,transparent 1px) 0 0/4px 6px,linear-gradient(135deg,var(--dot-light),var(--dot-dark));box-shadow:0 0 0 1px #ce70a5,0 2px 4px #83487266,inset 0 1px 3px #fff9;transition:transform .2s ease,box-shadow .2s ease}
+.home-carousel-dot::after{content:"";position:absolute;top:2px;left:4px;width:12px;height:12px;background:white;clip-path:polygon(50% 0,60% 39%,100% 50%,60% 61%,50% 100%,40% 61%,0 50%,40% 39%);filter:drop-shadow(0 0 2px white);animation:carousel-dot-sparkle 3.4s ease-in-out infinite;pointer-events:none}
+.home-carousel-dot:nth-child(2)::after{animation-delay:-.8s}
+.home-carousel-dot:nth-child(3)::after{animation-delay:-1.6s}
+.home-carousel-dot:nth-child(4)::after{animation-delay:-2.4s}
+.home-carousel-dot.is-active{--dot-light:#fffba2;--dot-dark:#e3ab08;transform:scale(1.13);box-shadow:0 0 0 2px #cf2487,0 0 9px #fff5b7,inset 0 1px 3px #fff9}
+.home-carousel-dot:hover{transform:scale(1.18)}
+.home-carousel-dot:focus-visible{outline:2px solid #9c126c;outline-offset:4px}
+@keyframes carousel-dot-sparkle{0%,100%{opacity:.5;scale:.7}45%{opacity:1;scale:1.15}65%{opacity:.8;scale:.9}}
+@media(prefers-reduced-motion:reduce){.home-carousel-arrow,.home-carousel-dot{transition:none}.home-carousel-dot::after{animation:none}}

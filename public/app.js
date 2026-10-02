@@ -8,7 +8,7 @@ const rewriteRules = [
 ];
 window.RufflePlayer = {config:{autoplay:'on',unmuteOverlay:'hidden',splashScreen:false,contextMenu:'off',warnOnUnsupportedContent:false,logLevel:(new URLSearchParams(location.search).has('ruffletrace')?'trace':'warn'),wmode:'transparent',allowScriptAccess:true,openUrlMode:'allow',urlRewriteRules:rewriteRules,publicPath:'/vendor/ruffle/'}};
 const sections = [
-  ['Games','/activities/fun_games/','fun_games'],['Videos','/activities/btv/','btv'],['Fashion','/activities/fashion/','fashion'],['Sisters & Friends','/activities/friends/','friends'],['Fairytale','/activities/fantasy/','fantasy'],['I Can Be…','/_original/icanbe.barbie.com/en_us/index.html','iCanBe']
+  ['Games','/activities/fun_games/','fun_games'],['Fairytale','/activities/fantasy/','fantasy'],['Fashion','/activities/fashion/','fashion'],['Sisters & Friends','/activities/friends/','friends'],['I Can Be…','/_original/icanbe.barbie.com/en_us/index.html','iCanBe'],['Videos','/activities/btv/','btv']
 ];
 const bottomPages = {
   '/restoration/blog':'Blog',
@@ -126,7 +126,7 @@ window.addEventListener('DOMContentLoaded',async()=>{
   for(const [name,href] of [['Barbie home','/'],...sections]){const a=document.createElement('a');a.href=href;a.setAttribute('aria-label',name);hitAreas.append(a);}
   nav.append(hitAreas);
   const navDeadline=performance.now()+5000;
-  const navJob=movie(nav,'/global/barbie_nav_new.swf?v=2',820,100,{cat:selected?.[2]||'homepage'});
+  const navJob=movie(nav,'/global/barbie_nav_ordered.swf?v=1',820,100,{cat:selected?.[2]||'homepage'});
   navJob.then(player=>setTimeout(()=>{
     if(!player.isConnected||typeof player.pause!=='function')return;
     player.pause();
@@ -137,6 +137,7 @@ window.addEventListener('DOMContentLoaded',async()=>{
   const jobs=[navJob];
   const main=document.getElementById('main');
   if(isHome){
+    document.body.classList.add('home-layout');
     const showOriginalCarousel=new URLSearchParams(location.search).has('original-carousel');
     const shoppingLink=url=>'/includes/partner-interstitial.aspx?redirect='+encodeURIComponent(url);
     const bottomButton=(name,image,index,href)=>`<a class="bottom-page-button" href="${href}" style="--button-index:${index}"><span class="bottom-page-art" style="background-image:url('/images/bottom-pages/${image}.png')" aria-hidden="true"></span><span class="bottom-page-label"><span>${name}</span><span class="bottom-page-arrow" aria-hidden="true">›</span></span></a>`;

@@ -1,1 +1,34 @@
-.classic-stage{width:810px;height:640px;padding:22px 0 0 84px;background:url('/images/shared/bgrnd_activities.gif') 15px 0 no-repeat}.classic-room{width:641px;height:326px}
+.classic-stage {
+  width: 100%;
+  margin: 24px auto 0;
+  padding: 20px;
+  background: #ea4498;
+}
+
+.classic-room {
+  width: 100%;
+  aspect-ratio: 641 / 326;
+  margin: 0 auto;
+  background: #ea4498;
+}
+
+body.fashion-page {
+  min-height: 100vh;
+  background: #ed398c url('/images/header/fashion-wallpaper.png') center top / cover fixed no-repeat;
+}
+
+body.friends-page {
+  min-height: 100vh;
+  background: #d7478b url('/images/header/friends-wallpaper.png') center top / cover fixed no-repeat;
+}
+
+.fashion-page #background,
+.friends-page #background {
+  display: none;
+}
+
+.fashion-page footer,
+.friends-page footer {
+  margin-top: 24px;
+  background: rgb(255 255 255 / 65%);
+}
