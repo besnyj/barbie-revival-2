@@ -16,6 +16,20 @@ const bottomPages = {
   '/restoration/e-book':'E-book',
   '/restoration/wallpapers':'Wallpapers'
 };
+const footerPages = {
+  '/restoration/privacy': {
+    title: 'Privacy',
+    message: 'Our privacy information is being restored along with the rest of Barbie.com. This page will return as the original material is recovered.'
+  },
+  '/restoration/credit': {
+    title: 'Credit',
+    message: 'The credits for this fan preservation are still being rebuilt. This page is under restoration and construction.'
+  },
+  '/restoration/about': {
+    title: 'About',
+    message: 'The Barbie Revival story is being restored. This page is under restoration and construction.'
+  }
+};
 const noop = ()=>{};
 window.trackAction = noop;
 window.trackClick = noop;
@@ -69,6 +83,47 @@ function renderInterstitial(redirect){
     leave();
   });
   document.body.append(stage);
+}
+function footerPageButton(label, href){
+  return `<a class="footer-page-button" href="${href}">${label}</a>`;
+}
+function renderFooterPage(container,page){
+  document.title = page.title + ' - Barbie Revival';
+  container.innerHTML = `<section class="footer-page footer-page-notice" aria-labelledby="footer-page-title">
+    <p class="footer-page-kicker">Barbie Revival</p>
+    <h1 id="footer-page-title">${page.title}</h1>
+    <p class="footer-page-message">${page.message}</p>
+    <div class="footer-page-actions">${footerPageButton('Back to Barbie','/')} ${footerPageButton('Site Map','/sitemap.aspx')}</div>
+  </section>`;
+}
+function renderSiteMap(container){
+  document.title = 'Site Map - Barbie Revival';
+  const sectionLinks = sections.map(([name,href]) => `<li>${footerPageButton(name,href)}</li>`).join('');
+  const pageLinks = [
+    ['Home','/'],
+    ['Site Map','/sitemap.aspx'],
+    ['Privacy','/restoration/privacy/'],
+    ['Credit','/restoration/credit/'],
+    ['About','/restoration/about/'],
+    ...Object.entries(bottomPages).map(([href,name]) => [name,href]),
+    ['Dreamhouse Puzzle Party','/dreamhouse/puzzle-party/'],
+    ['My Dreamhouse','/my-dreamhouse/']
+  ].map(([name,href]) => `<li>${footerPageButton(name,href)}</li>`).join('');
+  container.innerHTML = `<section class="footer-page site-map-page" aria-labelledby="site-map-title">
+    <p class="footer-page-kicker">Barbie Revival</p>
+    <h1 id="site-map-title">Site Map</h1>
+    <p class="footer-page-intro">Explore the restored Barbie.com sections and pages.</p>
+    <div class="site-map-grid">
+      <section class="site-map-group" aria-labelledby="site-map-sections-title">
+        <h2 id="site-map-sections-title">Main sections</h2>
+        <ul>${sectionLinks}</ul>
+      </section>
+      <section class="site-map-group" aria-labelledby="site-map-pages-title">
+        <h2 id="site-map-pages-title">More pages</h2>
+        <ul>${pageLinks}</ul>
+      </section>
+    </div>
+  </section>`;
 }
 document.addEventListener('click', event => {
   const link = event.target && event.target.closest ? event.target.closest('a') : null;
@@ -162,6 +217,8 @@ window.addEventListener('DOMContentLoaded',async()=>{
       button.classList.add('is-clicked');
       window.setTimeout(()=>{location.href=button.href},300);
     }));
+  }else if(footerPages[path]){
+    renderFooterPage(main,footerPages[path]);
   }else if(bottomPages[path]){
     const name=bottomPages[path];
     document.title=name+' - Barbie Revival';
@@ -187,7 +244,7 @@ window.addEventListener('DOMContentLoaded',async()=>{
     main.innerHTML='<div class="dreamhouse-status">My Dreamhouse is playable with recovered house and decoration artwork. The original online gallery and save services have not been verified. <a href="https://www.numuki.com/game/barbie-my-dreamhouse/">NuMuKi copy</a>.</div><div class="dreamhouse-game" aria-label="My Dreamhouse game"></div>';
     jobs.push(movie(main.querySelector('.dreamhouse-game'),'/my-dreamhouse/game-numuki.swf',990,800,{environment:origin+'/_original/design-my-dreamhouse.barbie.com',locale:'en-us'}));
   }else if(path==='/sitemap.aspx'){
-    main.innerHTML='<div class="site-map"><h1>Site Map</h1><ul>'+sections.map(([name,href])=>`<li><a href="${href}">${name}</a></li>`).join('')+'</ul></div>';
+    renderSiteMap(main);
   }else{
     document.title=(selected?.[0]||'Barbie')+' - Barbie';
     main.innerHTML='<section class="restoration-page"><h1>Under restoration</h1><p>This part of Barbie\'s world is coming back soon!</p><a class="pink-button" href="/">Back to Barbie</a></section>';

@@ -183,3 +183,11 @@ While the Dreamhouse-games agent keeps working on the two games, this session pr
 - New `scripts/qa_icanbe.py` covers all 38 new/affected URLs (status, DOM geometry, notices, tabs/cards, Ruffle presence, redirects). After fixes, every page returns 200 with 0 console errors; the only failed requests left are the games' runtime requests for files that were never archived (config/soundBank/fonts of the main-only games) — matching the documented gaps, still to be triaged per game.
 - Fixed during QA: the Ruffle boot check called the not-yet-defined `newest()` (TypeError killed the polling before the deferred `ruffle.js` ran — now a `typeof` check); the loader/notice scripts now poll for `#flashgame` because they sit before that div (swfobject originally deferred to DOM ready); the mediaportal script was still in the video pages and was being fetched; assoc-game thumbs with unrecovered art 404'd.
 - Still pending: per-game runtime playability check (the 7 complete sets vs the 6 main-SWF-only), triage of the potty-race QA status, visual review (screenshots), and the empty `<title>` on the dolls team page (kept exactly as archived).
+
+## Checkpoint — 2026-10-02 (encerramento da versão atual)
+
+- A header antiga foi restaurada conforme o último pedido da usuária. Os backups e assets existentes foram preservados.
+- As alterações tentadas nesta versão incluem ajustes de layout do carrossel, moldura/continuação do rodapé, navegação das bolinhas e setas, animações da cena Welcome, páginas do rodapé (`Site Map`, `Privacy`, `Credit` e `About`) e a arte de fundo de header fornecida para teste.
+- A usuária considerou o resultado falho e registrou que **RESTARAM MUITOS ERROS NESTA VERSÃO**. A qualidade visual e funcional ainda precisa de revisão antes de ser tratada como concluída; este checkpoint não declara fidelidade final.
+- A verificação visual final ficou incompleta por limitações/instabilidade do Ruffle no ambiente de preview. Não foram inventados bugs específicos além dos problemas gerais apontados pela usuária; os testes e lacunas anteriores continuam válidos apenas nos escopos em que foram executados.
+- O estado abaixo deste checkpoint é um ponto de recuperação para a próxima revisão. Não apagar backups ou assets ao continuar o trabalho.

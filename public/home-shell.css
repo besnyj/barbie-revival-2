@@ -1,4 +1,17 @@
 /* Home layout outside the carousel. Scene files must not style the footer. */
-.home-with-carousel .site>footer{position:relative;margin-top:52px;padding:22px 0 30px;background:#fff}
+.home-with-carousel .site>footer{position:relative;isolation:isolate;margin-top:52px;padding:22px 0 30px;background:#fff;z-index:10}
+.home-with-carousel .site>footer::before{content:"";position:absolute;z-index:0;top:14px;bottom:0;left:50%;width:100vw;transform:translateX(-50%);background:linear-gradient(to bottom,#fff8fc 0%,#fff 65%);border-top:1px solid #f3c4dc;box-shadow:0 -4px 14px #d879af22;pointer-events:none}
+.home-with-carousel .site>footer>*{position:relative;z-index:1}
 .home-with-carousel .bottom-pages{position:relative;z-index:10}
 .home-with-carousel .bottom-pages{margin-top:105px}
+
+/* Continue the lower carousel panel to the viewport edges and under the
+   shopping/footer content. The SVG keeps its natural curved top; the white
+   continuation prevents side gaps and future sections from exposing the
+   page backdrop. */
+.home-with-carousel .home-carousel-lower-frame{width:max(100vw,990px);height:800px;background:transparent url('/carousel/fixed-lower-frame.svg') center top/100% 450px no-repeat}
+.home-with-carousel .home-carousel-lower-frame::after{content:"";position:absolute;z-index:0;top:450px;right:0;bottom:0;left:0;background:#fff;pointer-events:none}
+
+/* Keep the reduced header-to-carousel gap when the shell stylesheet is loaded
+   after site.css by the home bootstrap. */
+.home-layout{--home-section-gap:34px}

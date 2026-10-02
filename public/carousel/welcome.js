@@ -22,10 +22,10 @@ const welcome = {
     {id:'pink-star-right', type:'image', file:'element 10.png', x:1743,y:255,w:187,z:7,delay:720},
     {id:'window', type:'image', file:'element 2.png', x:1245,y:573,w:645,z:4,delay:900,entrance:'zoom',tilt:2},
     {id:'question', type:'text', text:'Remember spending hours\nplaying Barbie games after school?', className:'welcome-question', x:970,y:104,w:900,z:5,delay:450,entrance:'from-top',tilt:-1},
-    {id:'title', type:'text', text:'Welcome back', className:'welcome-title', x:652,y:269,w:1270,z:5,delay:1100,entrance:'zoom',tilt:4},
-    {id:'subtitle', type:'text', text:'to old and\nnostalgic', className:'welcome-subtitle', x:800,y:475,w:465,z:5,delay:1450,entrance:'from-right',tilt:-4},
-    {id:'barbiecom', type:'text', text:'Barbie.com!', className:'welcome-barbiecom', x:744,y:657,w:590,z:5,delay:1750,entrance:'from-bottom',tilt:1},
-    {id:'credit', type:'text', text:'A fan-made revival of the classic Barbie.com experience.', className:'welcome-credit', x:741,y:1000,w:1170,z:6,delay:2100,entrance:'from-bottom',tilt:-1}
+    {id:'title', type:'text', text:'Welcome back', className:'welcome-title', x:652,y:269,w:1270,z:5,delay:1100,entrance:'glitter-reveal',tilt:4},
+    {id:'subtitle', type:'text', text:'to old and\nnostalgic', className:'welcome-subtitle', x:800,y:475,w:465,z:5,delay:1450,entrance:'glitter-reveal',tilt:-4},
+    {id:'barbiecom', type:'text', text:'Barbie.com!', className:'welcome-barbiecom', x:744,y:657,w:590,z:5,delay:1750,entrance:'glitter-reveal',tilt:1},
+    {id:'credit', type:'text', text:'A fan-made revival of the classic Barbie.com experience.', className:'welcome-credit', x:741,y:915,w:1170,z:6,delay:2100,entrance:'from-bottom',tilt:-1}
   ]
 };
 
@@ -33,11 +33,6 @@ export default welcome;
 
 export function renderWelcome(host) {
   host.classList.add('scene-carousel');
-  const credit = welcome.elements.find(item => item.id === 'credit');
-  const creditOverlay = document.createElement('div');
-  creditOverlay.className = 'scene-credit-overlay';
-  creditOverlay.textContent = credit.text;
-  host.parentElement.append(creditOverlay);
   const frame = document.createElement('div');
   frame.className = 'scene-frame';
   frame.setAttribute('aria-label', 'Welcome to the Barbie.com revival');
@@ -46,7 +41,6 @@ export function renderWelcome(host) {
   const paint = () => {
     stage.replaceChildren();
     for (const item of welcome.elements) {
-      if (item.id === 'credit') continue; // This text sits in front of the fixed lower frame.
       const element = document.createElement(item.type === 'image' ? 'img' : 'div');
       element.className = `scene-element entry-${item.entrance || 'pop'} ${item.className || ''}`;
       element.style.cssText = `left:${item.x}px;top:${item.y}px;width:${item.w}px;z-index:${item.z};--entry-delay:${item.delay}ms;rotate:${item.tilt || 0}deg`;
@@ -69,5 +63,5 @@ export function renderWelcome(host) {
   };
   new ResizeObserver(resize).observe(frame);
   resize();
-  return () => { stage.replaceChildren(); creditOverlay.remove(); };
+  return () => { stage.replaceChildren(); frame.remove(); };
 }

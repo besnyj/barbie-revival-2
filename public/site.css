@@ -55,11 +55,17 @@
 .nav-hit-areas a:focus-visible{outline:2px solid #d83290;outline-offset:-3px}
 @media(prefers-reduced-motion:reduce){.header-glitter{animation:none}}
 
-/* Restore breathing room around the original 990px home layout. */
+/* Keep equal breathing room above the carousel and before the flat footer. */
+.home-layout{--home-section-gap:34px}
 .header{height:155px}
 .header::before,.header::after{height:151px}
 .header-glitter{height:151px}
 #navigation{top:40px}
 .language{top:90px}
-.home-layout .home-hero{margin:80px auto 0}
-.home-layout #background{height:1083px;background-position:center top}
+.home-layout .home-hero{margin:var(--home-section-gap) auto 0}
+
+/* The slide artwork is the page backdrop. Keep it behind every home section so
+   the scene never gives way to a white strip before the lower frame or footer. */
+body.home-layout{background-color:#f8c9df}
+.home-layout #background{position:fixed;inset:0;width:100%;height:100%;min-height:100vh;z-index:0;background-position:center top;background-size:cover;background-repeat:no-repeat}
+.home-layout>.site{position:relative;z-index:1}
