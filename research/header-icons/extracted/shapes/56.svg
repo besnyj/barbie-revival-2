@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:ffdec="https://www.free-decompiler.com/flash" xmlns:xlink="http://www.w3.org/1999/xlink" ffdec:objectType="shape" height="24.9px" width="20.35px" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(1.0, 0.0, 0.0, 1.0, 0.0, 0.0)">
+    <path d="M2.6 10.4 Q3.0 6.4 5.45 3.8 7.9 1.2 11.0 1.5 14.15 1.8 16.05 4.85 18.0 7.85 17.6 11.85 17.2 15.85 14.75 18.45 12.25 21.05 9.15 20.75 6.05 20.45 4.1 17.4 2.2 14.35 2.6 10.4" fill="#007d8e" fill-rule="evenodd" stroke="none"/>
+    <path d="M9.7 9.95 L7.65 0.0 15.55 0.35 11.55 10.0 9.7 9.95" fill="#f2fafe" fill-rule="evenodd" stroke="none"/>
+    <path d="M9.25 14.35 L11.05 14.65 13.15 24.9 5.35 23.7 9.25 14.35" fill="#f2fafe" fill-rule="evenodd" stroke="none"/>
+    <path d="M8.1 11.5 L0.0 13.15 1.75 3.15 8.45 9.15 8.1 11.5" fill="#bce3f8" fill-rule="evenodd" stroke="none"/>
+    <path d="M11.45 12.4 L12.05 10.15 20.35 8.45 17.95 18.2 11.45 12.4" fill="#bce3f8" fill-rule="evenodd" stroke="none"/>
+    <path d="M6.35 10.75 Q6.55 8.75 7.8 7.45 9.0 6.15 10.55 6.3 12.1 6.45 13.1 8.0 14.05 9.5 13.85 11.5 13.65 13.5 12.4 14.8 11.15 16.1 9.6 15.95 8.05 15.8 7.1 14.25 6.15 12.75 6.35 10.75" fill="#dbeffb" fill-rule="evenodd" stroke="none"/>
+  </g>
+</svg>

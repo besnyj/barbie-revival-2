@@ -22,6 +22,9 @@
 .bottom-shopping h2::after{right:-32px;clip-path:polygon(0 0,100% 0,78% 50%,100% 100%,0 100%)}
 .bottom-shopping h2 span{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;gap:10px;padding:8px 25px 9px;border:3px solid #fff9f0;border-radius:22px 22px 26px 26px;background:#E62083;box-shadow:0 0 0 3px #E62083,0 5px 11px #a96b6657,inset 0 2px 2px #ffffffa8;text-shadow:0 1px 1px #95135366}
 .bottom-shopping h2 span::before,.bottom-shopping h2 span::after{content:"♥";font:normal 18px Arial,sans-serif;color:#fff7ed;text-shadow:0 1px 2px #ae746a}
+.home-layout .bottom-pages{display:flex;align-items:flex-start;justify-content:center;gap:28px}
+.home-layout .bottom-pages>.bottom-pages-grid{flex:0 0 auto;flex-wrap:nowrap;margin-top:60px}
+.home-layout .bottom-shopping{flex:0 0 auto;margin:0}
 @keyframes bottom-arrive{from{opacity:0;translate:0 16px}to{opacity:1;translate:0 0}}
 .bottom-page-button.is-clicked{animation:bottom-click .4s ease both}
 .bottom-page-button.is-clicked .bottom-page-label{filter:brightness(1.18)}
@@ -30,16 +33,26 @@
 .bottom-restoration{margin:38px auto 65px;border:2px solid #f4bbad;border-radius:22px;box-shadow:0 8px 20px #ac6b6a33}
 .bottom-restoration h1{color:#cb6c7b}
 .bottom-restoration p{color:#965c68;font-size:16px}
+.downloads-page{padding:55px 30px}
+.downloads-page h1{margin:0 0 44px}
 
 /* One continuous supplied artwork across the existing 990 x 155 header. */
 .header{height:155px;background:linear-gradient(to bottom,transparent 0%,transparent 35%,#ffe4f1 100%) center/100% 100% no-repeat,#ffe4f1 url('/assets/fundo-header-v2.png') center top/990px auto no-repeat;border-bottom:4px solid #ed4b9b}
 .header::before,.header::after,.header-glitter{display:none}
-#navigation{top:40px}
+#navigation{top:40px;background:url('/images/header/nav-fallback-home.png') no-repeat}
+#navigation[data-nav-snapshot="games"]{background-image:url('/images/header/nav-fallback-games.png')}
+#navigation[data-nav-snapshot="fairytale"]{background-image:url('/images/header/nav-fallback-fairytale.png')}
+#navigation[data-nav-snapshot="fashion"]{background-image:url('/images/header/nav-fallback-fashion.png')}
+#navigation[data-nav-snapshot="friends"]{background-image:url('/images/header/nav-fallback-friends.png')}
+#navigation[data-nav-snapshot="videos"]{background-image:url('/images/header/nav-fallback-videos.png')}
+#navigation.nav-ready{background-image:none}
+#navigation ruffle-player{display:none}
+#navigation.nav-ready ruffle-player{display:block}
 #navigation,.language{z-index:1}
 .language{top:90px}
 #background{background-position:center -75px}
-.nav-hit-areas{display:none;position:absolute;inset:0;z-index:2}
-.nav-paused .nav-hit-areas{display:block}
+.nav-hit-areas{display:block;position:absolute;inset:0;z-index:2}
+.nav-ready:not(.nav-paused) .nav-hit-areas{display:none}
 .nav-hit-areas a{position:absolute;top:0;height:100px}
 .nav-hit-areas a:nth-child(1){left:0;width:174px}
 .nav-hit-areas a:nth-child(2){left:174px;width:111px}
@@ -49,6 +62,12 @@
 .nav-hit-areas a:nth-child(6){left:610px;width:108px}
 .nav-hit-areas a:nth-child(7){left:718px;width:102px}
 .nav-hit-areas a:focus-visible{outline:2px solid #d83290;outline-offset:-3px}
+.nav-downloads{position:absolute;z-index:3;left:610px;top:0;width:108px;height:100px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding-bottom:11px;overflow:hidden;text-decoration:none}
+.nav-downloads::before{content:"";position:absolute;z-index:0;left:-610px;top:-40px;width:990px;height:155px;background:linear-gradient(to bottom,transparent 0%,transparent 35%,#ffe4f1 100%) center/100% 100% no-repeat,#ffe4f1 url('/assets/fundo-header-v2.png') center top/990px auto no-repeat}
+.nav-downloads img{position:relative;z-index:1;width:80px;height:52px;object-fit:contain;pointer-events:none}
+.nav-downloads span{position:relative;z-index:1;display:block;padding:2px 7px;background:#ffef69;color:#d31c81;font-size:11px;font-weight:900;line-height:14px;transform:rotate(-4deg);box-shadow:1px 2px 0 #d27f9c;pointer-events:none}
+.nav-downloads:hover img,.nav-downloads:focus-visible img{filter:drop-shadow(0 0 5px #fff) brightness(1.1)}
+.nav-downloads:focus-visible{outline:2px solid #d83290;outline-offset:-2px}
 /* Keep equal breathing room above the carousel and before the flat footer. */
 .home-layout{--home-section-gap:34px}
 .home-layout .home-hero{margin:var(--home-section-gap) auto 0}

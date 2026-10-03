@@ -19,7 +19,12 @@ body.fashion-page {
 
 body.friends-page {
   min-height: 100vh;
-  background: #d7478b url('/images/header/friends-wallpaper.png') center top / cover fixed no-repeat;
+  background-color: #fd96c6;
+  background-image: url('/images/header/friends-pattern-desktop.png');
+  background-position: center top;
+  background-size: min(820px, 70vw) auto;
+  background-repeat: repeat;
+  background-attachment: fixed;
 }
 
 .fashion-page #background,
@@ -27,8 +32,37 @@ body.friends-page {
   display: none;
 }
 
-.fashion-page footer,
-.friends-page footer {
-  margin-top: 24px;
-  background: rgb(255 255 255 / 65%);
+.fashion-page .site > footer,
+.friends-page .site > footer {
+  position: relative;
+  left: 50%;
+  isolation: isolate;
+  width: 100vw;
+  min-height: 270px;
+  margin-top: 96px;
+  margin-left: -50vw;
+  padding: 202px 30px 25px;
+  background:
+    url('/images/footer/original-glitters-sides.png') center 18px / 1800px 152px no-repeat,
+    linear-gradient(to bottom, #f7de93 0, #f5dc7f 16px, #f6dcea 18px, #f6e0ed 72px, #fbf0f7 152px, #fff 240px);
+}
+
+.fashion-page .site > footer::before,
+.friends-page .site > footer::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: -90px;
+  width: 100%;
+  height: 108px;
+  transform: translateX(-50%);
+  background: url('/images/footer/original-border-tab.png') center top / 1800px 108px no-repeat;
+  pointer-events: none;
+}
+
+.fashion-page .site > footer > *,
+.friends-page .site > footer > * {
+  position: relative;
+  z-index: 1;
 }

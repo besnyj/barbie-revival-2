@@ -8,13 +8,14 @@ const rewriteRules = [
 ];
 window.RufflePlayer = {config:{autoplay:'on',unmuteOverlay:'hidden',splashScreen:false,contextMenu:'off',warnOnUnsupportedContent:false,logLevel:(new URLSearchParams(location.search).has('ruffletrace')?'trace':'warn'),wmode:'transparent',allowScriptAccess:true,openUrlMode:'allow',urlRewriteRules:rewriteRules,publicPath:'/vendor/ruffle/'}};
 const sections = [
-  ['Games','/activities/fun_games/','fun_games'],['Fairytale','/activities/fantasy/','fantasy'],['Fashion','/activities/fashion/','fashion'],['Sisters & Friends','/activities/friends/','friends'],['I Can Be…','/_original/icanbe.barbie.com/en_us/index.html','iCanBe'],['Videos','/activities/btv/','btv']
+  ['Games','/activities/fun_games/','fun_games'],['Fairytale','/activities/fantasy/','fantasy'],['Fashion','/activities/fashion/','fashion'],['Sisters & Friends','/activities/friends/','friends'],['Downloads','/restoration/downloads/','homepage'],['Videos','/activities/btv/','btv']
 ];
 const bottomPages = {
   '/restoration/blog':'Blog',
   '/restoration/printables':'Printables',
   '/restoration/e-book':'E-book',
-  '/restoration/wallpapers':'Wallpapers'
+  '/restoration/wallpapers':'Wallpapers',
+  '/restoration/downloads':'Downloads'
 };
 const footerPages = {
   '/restoration/privacy': {
@@ -174,30 +175,54 @@ window.addEventListener('DOMContentLoaded',async()=>{
   const selected=sections.find(s=>normalize(s[1])===path);
   const isHome=path==='/'||path==='/index.aspx'||path==='/index.html';
   const nav=document.getElementById('navigation');
+  nav.dataset.navSnapshot={fun_games:'games',fantasy:'fairytale',fashion:'fashion',friends:'friends',btv:'videos'}[selected?.[2]]||'home';
   const accessible=document.createElement('div');accessible.className='fallback-links';
   for(const [name,href] of [['Barbie home','/'],...sections]){const a=document.createElement('a');a.href=href;a.textContent=name;accessible.append(a,document.createTextNode(' | '));}
   nav.append(accessible);
   const hitAreas=document.createElement('div');hitAreas.className='nav-hit-areas';
-  for(const [name,href] of [['Barbie home','/'],...sections]){const a=document.createElement('a');a.href=href;a.setAttribute('aria-label',name);hitAreas.append(a);}
+  for(const [name,href] of [['Barbie home','/'],...sections]){const a=document.createElement('a');a.href=href;a.setAttribute('aria-label',name);if(name==='Downloads'){a.tabIndex=-1;a.setAttribute('aria-hidden','true');}hitAreas.append(a);}
   nav.append(hitAreas);
+  const downloads=document.createElement('a');
+  downloads.className='nav-downloads';
+  downloads.href='/restoration/downloads/';
+  downloads.setAttribute('aria-label','Downloads');
+  downloads.innerHTML='<img src="/images/header/downloads-icon.png" alt=""><span>DOWNLOADS</span>';
+  nav.append(downloads);
   const navDeadline=performance.now()+5000;
-  const navJob=movie(nav,'/global/barbie_nav_ordered.swf?v=1',820,100,{cat:selected?.[2]||'homepage'});
-  navJob.then(player=>setTimeout(()=>{
-    if(!player.isConnected||typeof player.pause!=='function')return;
-    player.pause();
-    const playButton=player.shadowRoot?.getElementById('play-button');
-    if(playButton)playButton.style.display='none';
-    nav.classList.add('nav-paused');
-  },Math.max(0,navDeadline-performance.now())),noop);
+  const navJob=Promise.resolve().then(()=>movie(nav,'/global/barbie_nav_ordered.swf?v=1',820,100,{cat:selected?.[2]||'homepage'}));
+  navJob.then(async player=>{
+    const started=performance.now();
+    const ready=await new Promise(resolve=>{
+      const check=()=>{
+        if(!player.isConnected||player.shadowRoot?.getElementById('panic'))return resolve(false);
+        if(player.metadata)return resolve(true);
+        if(performance.now()-started>30000)return resolve(false);
+        setTimeout(check,50);
+      };
+      check();
+    });
+    if(!ready){player.remove();return;}
+    requestAnimationFrame(()=>requestAnimationFrame(()=>{
+      if(!player.isConnected)return;
+      nav.classList.add('nav-ready');
+      setTimeout(()=>{
+        if(!player.isConnected||typeof player.pause!=='function')return;
+        player.pause();
+        const playButton=player.shadowRoot?.getElementById('play-button');
+        if(playButton)playButton.style.display='none';
+        nav.classList.add('nav-paused');
+      },Math.max(0,navDeadline-performance.now()));
+    }));
+  },()=>nav.querySelector('ruffle-player')?.remove());
   const jobs=[navJob];
   const main=document.getElementById('main');
+  const bottomButton=(name,image,index,href)=>`<a class="bottom-page-button" href="${href}" style="--button-index:${index}"><span class="bottom-page-art" style="background-image:url('/images/bottom-pages/${image}.png')" aria-hidden="true"></span><span class="bottom-page-label"><span>${name}</span><span class="bottom-page-arrow" aria-hidden="true">›</span></span></a>`;
   if(isHome){
     document.body.classList.add('home-layout');
     const showOriginalCarousel=new URLSearchParams(location.search).has('original-carousel');
     const shoppingLink=url=>'/includes/partner-interstitial.aspx?redirect='+encodeURIComponent(url);
-    const bottomButton=(name,image,index,href)=>`<a class="bottom-page-button" href="${href}" style="--button-index:${index}"><span class="bottom-page-art" style="background-image:url('/images/bottom-pages/${image}.png')" aria-hidden="true"></span><span class="bottom-page-label"><span>${name}</span><span class="bottom-page-arrow" aria-hidden="true">›</span></span></a>`;
     main.innerHTML='<div class="home-hero" aria-label="Barbie homepage slideshow"></div><section class="bottom-pages" aria-label="Páginas do bottom"><div class="bottom-pages-grid">'+
-      bottomButton('Blog','blog',0,'/restoration/blog/')+bottomButton('Printables','printables',1,'/restoration/printables/')+bottomButton('E-book','e-books',2,'/restoration/e-book/')+bottomButton('Wallpapers','wallpapers',3,'/restoration/wallpapers/')+
+      bottomButton('I Can Be','i-can-be',0,'/_original/icanbe.barbie.com/en_US/index.html')+bottomButton('Blog','blog',1,'/restoration/blog/')+
       '</div><section class="bottom-shopping" aria-labelledby="bottom-shopping-title"><h2 id="bottom-shopping-title"><span>Shopping</span></h2><div class="bottom-pages-grid">'+
       bottomButton('Barbie.com','barbie-com',4,shoppingLink('https://shop.mattel.com/pt-br/pages/barbie'))+bottomButton('Mattel Creations','mattel-creations',5,shoppingLink('https://creations.mattel.com/pages/barbie-signature'))+
       '</div></section></section>';
@@ -210,15 +235,13 @@ window.addEventListener('DOMContentLoaded',async()=>{
       const {renderHomeCarousel}=await import('/carousel/controller.js');
       renderHomeCarousel(main.firstElementChild);
     }
-    main.querySelectorAll('.bottom-page-button').forEach(button=>button.addEventListener('click',event=>{
-      if(event.metaKey||event.ctrlKey||event.shiftKey||event.altKey||event.button!==0)return;
-      event.preventDefault();
-      event.stopPropagation();
-      button.classList.add('is-clicked');
-      window.setTimeout(()=>{location.href=button.href},300);
-    }));
   }else if(footerPages[path]){
     renderFooterPage(main,footerPages[path]);
+  }else if(path==='/restoration/downloads'){
+    document.title='Downloads - Barbie Revival';
+    main.innerHTML='<section class="restoration-page bottom-restoration downloads-page" aria-labelledby="downloads-title"><h1 id="downloads-title">Downloads</h1><div class="bottom-pages-grid">'+
+      bottomButton('Printables','printables',0,'/restoration/printables/')+bottomButton('E-book','e-books',1,'/restoration/e-book/')+bottomButton('Wallpapers','wallpapers',2,'/restoration/wallpapers/')+
+      '</div></section>';
   }else if(bottomPages[path]){
     const name=bottomPages[path];
     document.title=name+' - Barbie Revival';
@@ -249,6 +272,13 @@ window.addEventListener('DOMContentLoaded',async()=>{
     document.title=(selected?.[0]||'Barbie')+' - Barbie';
     main.innerHTML='<section class="restoration-page"><h1>Under restoration</h1><p>This part of Barbie\'s world is coming back soon!</p><a class="pink-button" href="/">Back to Barbie</a></section>';
   }
+  main.querySelectorAll('.bottom-page-button').forEach(button=>button.addEventListener('click',event=>{
+    if(event.metaKey||event.ctrlKey||event.shiftKey||event.altKey||event.button!==0)return;
+    event.preventDefault();
+    event.stopPropagation();
+    button.classList.add('is-clicked');
+    window.setTimeout(()=>{location.href=button.href},300);
+  }));
   document.querySelectorAll('#restoration button').forEach(button=>button.addEventListener('click',()=>document.getElementById('restoration').close()));
   document.getElementById('language-go').addEventListener('click',showRestoration);
   const results=await Promise.allSettled(jobs);
